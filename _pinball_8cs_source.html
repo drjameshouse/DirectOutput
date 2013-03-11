@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>DirectOutput: C:/Users/Tom/Documents/Visual Studio 2010/Projects/B2SBackglassServer/DirectOutput/Pinball.cs Source File</title>
+<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/Pinball.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -255,96 +255,97 @@ $(document).ready(function(){initNavTree('_pinball_8cs_source.html','');});
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a> = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Table();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableName = Path.GetFileNameWithoutExtension(TableFile.FullName);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.RomName = RomName;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a4ec2d059a0268c1d6f2540df87249ca2">Effects</a> = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_combined_effect_list.html" title="Provides combined access and enumeration of the content of several effect list. ">CombinedEffectList</a>(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_effect_list.html" title="Collection of IEffect objects. Every object can only exist once in the list and every objects needs t...">EffectList</a>[] { <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Effects, <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a53c22cf68f18f1b40e2a10a0a878a858" title="List of cabinet specific effects. ">Effects</a> });</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa85fc3aadb04dd4a151e24a9d0d68d98" title="Initializes the cabinet. ">Init</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Init(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#aab9681cee71d0e28020133158582cf37" title="Inits the update timer and starts the timer. ">Init</a>();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TriggerStaticEffects();</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Update();</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            PinmameInputManager.Init();</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableName = Path.GetFileNameWithoutExtension(TableFile.FullName);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableFilename = TableFile.FullName;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.RomName = RomName;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a4ec2d059a0268c1d6f2540df87249ca2">Effects</a> = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_combined_effect_list.html" title="Provides combined access and enumeration of the content of several effect list. ">CombinedEffectList</a>(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_effect_list.html" title="Collection of IEffect objects. Every object can only exist once in the list and every objects needs t...">EffectList</a>[] { <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Effects, <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a53c22cf68f18f1b40e2a10a0a878a858" title="List of cabinet specific effects. ">Effects</a> });</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa85fc3aadb04dd4a151e24a9d0d68d98" title="Initializes the cabinet. ">Init</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Init(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#aab9681cee71d0e28020133158582cf37" title="Inits the update timer and starts the timer. ">Init</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TriggerStaticEffects();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Update();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            PinmameInputManager.Init();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa">  201</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa" title="Finishes the Pinball object. ">Finish</a>()</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            PinmameInputManager.Terminate();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#aafb9f1aa48e0e5a39592de2eb21a9de3" title="Finishes the update timer. ">Finish</a>();</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Effects.Finish();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a53c22cf68f18f1b40e2a10a0a878a858" title="List of cabinet specific effects. ">Effects</a>.<a class="code" href="class_direct_output_1_1_f_x_1_1_effect_list.html#a487200870016087b9c0880dfe228953c" title="Calls Finish on all IEffect objects in the list. ">Finish</a>();</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa7dfb9fa7361cb737075ccb603ee6662" title="List of IToy objects describing the toys in the cabinet. ">Toys</a>.Finish();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Finish();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa">  202</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa" title="Finishes the Pinball object. ">Finish</a>()</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            PinmameInputManager.Terminate();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#aafb9f1aa48e0e5a39592de2eb21a9de3" title="Finishes the update timer. ">Finish</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.Effects.Finish();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a53c22cf68f18f1b40e2a10a0a878a858" title="List of cabinet specific effects. ">Effects</a>.<a class="code" href="class_direct_output_1_1_f_x_1_1_effect_list.html#a487200870016087b9c0880dfe228953c" title="Calls Finish on all IEffect objects in the list. ">Finish</a>();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa7dfb9fa7361cb737075ccb603ee6662" title="List of IToy objects describing the toys in the cabinet. ">Toys</a>.Finish();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Finish();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#a5ac683a3facea9a798b77c29f3b56ce8">  212</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_direct_output_1_1_pinball.html#a5ac683a3facea9a798b77c29f3b56ce8">ReceivePinmameData</a>(<span class="keywordtype">char</span> TableElementTypeChar, <span class="keywordtype">int</span> Number, <span class="keywordtype">int</span> Value)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        {</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            PinmameInputManager.EnqueuePinmameData(TableElementTypeChar, Number, Value);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        }</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#a5ac683a3facea9a798b77c29f3b56ce8">  213</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_direct_output_1_1_pinball.html#a5ac683a3facea9a798b77c29f3b56ce8">ReceivePinmameData</a>(<span class="keywordtype">char</span> TableElementTypeChar, <span class="keywordtype">int</span> Number, <span class="keywordtype">int</span> Value)</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            PinmameInputManager.EnqueuePinmameData(TableElementTypeChar, Number, Value);</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">        #region Event handlers</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span>        <span class="keywordtype">void</span> UpdateTimer_AlarmsTriggered(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="comment">//TODO: Implement update logic which takes both souces of update calls into account</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Update();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">        #region Event handlers</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor"></span>        <span class="keywordtype">void</span> UpdateTimer_AlarmsTriggered(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="comment">//TODO: Implement update logic which takes both souces of update calls into account</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Update();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> PinmameInputManager_AllPinmameDataProcessed(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">if</span> ((<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#a459cc07af382bc202fa3e7b2e0bb576d" title="Gets the timestamp for the next update. ">NextUpdate</a> - DateTime.Now).TotalMilliseconds &gt; 2)</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Update();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> PinmameInputManager_PinmameDataReceived(<span class="keywordtype">object</span> sender, DirectOutput.PinmameHandling.PinmameInputManager.PinmameDataReceivedEventArgs e)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.UpdateTableElement(e.PinmameData);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">        #region Constructor</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> PinmameInputManager_AllPinmameDataProcessed(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">if</span> ((<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#a459cc07af382bc202fa3e7b2e0bb576d" title="Gets the timestamp for the next update. ">NextUpdate</a> - DateTime.Now).TotalMilliseconds &gt; 2)</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783" title="List of IOutputController objects representing the output controllers in the cabinet. ">OutputControllers</a>.Update();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> PinmameInputManager_PinmameDataReceived(<span class="keywordtype">object</span> sender, DirectOutput.PinmameHandling.PinmameInputManager.PinmameDataReceivedEventArgs e)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.UpdateTableElement(e.PinmameData);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">        #region Constructor</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249">  247</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249" title="Initializes a new instance of the Pinball class. ">Pinball</a>()</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            PinmameInputManager.PinmameDataReceived += <span class="keyword">new</span> EventHandler&lt;DirectOutput.PinmameHandling.PinmameInputManager.PinmameDataReceivedEventArgs&gt;(PinmameInputManager_PinmameDataReceived);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            PinmameInputManager.PinmameDataProcessed += <span class="keyword">new</span> EventHandler&lt;EventArgs&gt;(PinmameInputManager_AllPinmameDataProcessed);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#a81f83f5a52cc57dd497e5d05f52c715b" title="Occurs when after alarms have been tiggered. ">AlarmsTriggered</a> += <span class="keyword">new</span> EventHandler&lt;EventArgs&gt;(UpdateTimer_AlarmsTriggered);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249">  248</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249" title="Initializes a new instance of the Pinball class. ">Pinball</a>()</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            PinmameInputManager.PinmameDataReceived += <span class="keyword">new</span> EventHandler&lt;DirectOutput.PinmameHandling.PinmameInputManager.PinmameDataReceivedEventArgs&gt;(PinmameInputManager_PinmameDataReceived);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            PinmameInputManager.PinmameDataProcessed += <span class="keyword">new</span> EventHandler&lt;EventArgs&gt;(PinmameInputManager_AllPinmameDataProcessed);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#a81f83f5a52cc57dd497e5d05f52c715b" title="Occurs when after alarms have been tiggered. ">AlarmsTriggered</a> += <span class="keyword">new</span> EventHandler&lt;EventArgs&gt;(UpdateTimer_AlarmsTriggered);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#a94c59ef9c39ff7fa332e61b4369fb017">  263</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249" title="Initializes a new instance of the Pinball class. ">Pinball</a>(FileInfo TableFile, <span class="keywordtype">string</span> RomName = <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            : this()</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a81376e34653a8219baf02424f6358b8e" title="Initializes and configures the Pinball object ">Init</a>(TableFile, RomName);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        } </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">        #endregion</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinball.html#a94c59ef9c39ff7fa332e61b4369fb017">  264</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249" title="Initializes a new instance of the Pinball class. ">Pinball</a>(FileInfo TableFile, <span class="keywordtype">string</span> RomName = <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            : this()</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html#a81376e34653a8219baf02424f6358b8e" title="Initializes and configures the Pinball object ">Init</a>(TableFile, RomName);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        } </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_8ceffd4ee35c3518d4e8bdc7e638efe8.html">Users</a></li><li class="navelem"><a class="el" href="dir_03194f5773826e6ca43df1e2a61818b0.html">Tom</a></li><li class="navelem"><a class="el" href="dir_b465032f9d54d08a7ff6e5672e91be1f.html">Documents</a></li><li class="navelem"><a class="el" href="dir_f71211ee6da9217887714a4b976cc090.html">Visual Studio 2010</a></li><li class="navelem"><a class="el" href="dir_26b1886cf9183b72f987c9f1ebaac1fa.html">Projects</a></li><li class="navelem"><a class="el" href="dir_4040e1ddfec3993e97b160a2cbdd17fa.html">B2SBackglassServer</a></li><li class="navelem"><a class="el" href="dir_1de50a106f8daa2151107e1f140eccea.html">DirectOutput</a></li><li class="navelem"><a class="el" href="_pinball_8cs.html">Pinball.cs</a></li>
-    <li class="footer">Generated on Mon Mar 11 2013 11:08:04 for DirectOutput by
+    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="_pinball_8cs.html">Pinball.cs</a></li>
+    <li class="footer">Generated on Mon Mar 11 2013 21:44:35 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

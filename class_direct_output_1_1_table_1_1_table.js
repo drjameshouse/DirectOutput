@@ -11,7 +11,9 @@ var class_direct_output_1_1_table_1_1_table =
     [ "Effects", "class_direct_output_1_1_table_1_1_table.html#a98fd3c8a7ce5d1ecf63b18610a7ae70d", null ],
     [ "RomName", "class_direct_output_1_1_table_1_1_table.html#a9b44f56f56ff4c2c25dd10ac3a47bce7", null ],
     [ "TableElements", "class_direct_output_1_1_table_1_1_table.html#ac7277a662bf6b0aeace8a5466a65e87e", null ],
+    [ "TableFilename", "class_direct_output_1_1_table_1_1_table.html#a93210ba4f3c56317131eee465684e329", null ],
     [ "TableName", "class_direct_output_1_1_table_1_1_table.html#acce9bcb673641b708c7ab0397e57eed1", null ],
     [ "RomNameChanged", "class_direct_output_1_1_table_1_1_table.html#a4782af4e70f058be620792817754d7f9", null ],
+    [ "TableFilenameChanged", "class_direct_output_1_1_table_1_1_table.html#a3c4b35adc1f315c62135eb542c0cda36", null ],
     [ "TableNameChanged", "class_direct_output_1_1_table_1_1_table.html#a83f772b02cdaf81bd0113ba683fa6e6a", null ]
 ];

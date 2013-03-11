@@ -11,6 +11,5 @@ var namespace_direct_output =
     [ "Scripting", "namespace_direct_output_1_1_scripting.html", "namespace_direct_output_1_1_scripting" ],
     [ "Table", "namespace_direct_output_1_1_table.html", "namespace_direct_output_1_1_table" ],
     [ "Pinball", "class_direct_output_1_1_pinball.html", "class_direct_output_1_1_pinball" ],
-    [ "Plugin", "class_direct_output_1_1_plugin.html", "class_direct_output_1_1_plugin" ],
     [ "UpdateTimer", "class_direct_output_1_1_update_timer.html", "class_direct_output_1_1_update_timer" ]
 ];

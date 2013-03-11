@@ -64,10 +64,11 @@ var NAVTREE =
         [ "Implementation guidelines for custom effects", "md_60__f_x.html#effects_implementationguideline", null ]
       ] ]
     ] ],
-    [ "Direct Plugin", "md_70__plugin.html", null ],
     [ "Contribute", "contribute.html", null ],
+    [ "Downloads", "downloads.html", null ],
     [ "Credits", "md_90__credits.html", null ],
     [ "About", "md_99__mainpage_and_about.html", null ],
+    [ "B2S.Server Plugin", "md_70__plugin.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -99,7 +100,7 @@ var NAVTREEINDEX =
 "_array_extensions_8cs.html",
 "class_direct_output_1_1_cab_1_1_cabinet_output_list.html",
 "class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a73800340c47aeceaa6339d963591d404",
-"class_direct_output_1_1_plugin.html#a41fff90fb4192fff4f4d21c30b36c4a1",
+"class_direct_output_1_1_scripting_1_1_script.html#a5bcea4dc3469c28119892a3209b2287b",
 "namespace_direct_output_1_1_cab.html"
 ];
 

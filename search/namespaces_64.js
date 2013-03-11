@@ -3,6 +3,7 @@ var searchData=
   ['basicfx',['BasicFX',['../namespace_direct_output_1_1_f_x_1_1_basic_f_x.html',1,'DirectOutput::FX']]],
   ['cab',['Cab',['../namespace_direct_output_1_1_cab.html',1,'DirectOutput']]],
   ['directoutput',['DirectOutput',['../namespace_direct_output.html',1,'']]],
+  ['directoutputplugin',['DirectOutputPlugin',['../namespace_direct_output_plugin.html',1,'']]],
   ['frontend',['FrontEnd',['../namespace_direct_output_1_1_front_end.html',1,'DirectOutput']]],
   ['fx',['FX',['../namespace_direct_output_1_1_f_x.html',1,'DirectOutput']]],
   ['general',['General',['../namespace_direct_output_1_1_general.html',1,'DirectOutput']]],

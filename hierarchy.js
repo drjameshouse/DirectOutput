@@ -36,10 +36,10 @@ var hierarchy =
       [ "DirectOutput.GlobalConfig.GlobalConfigEditor", "class_direct_output_1_1_global_config_1_1_global_config_editor.html", null ]
     ] ],
     [ "IDirectPlugin", null, [
-      [ "DirectOutput.Plugin", "class_direct_output_1_1_plugin.html", null ]
+      [ "DirectOutputPlugin.Plugin", "class_direct_output_plugin_1_1_plugin.html", null ]
     ] ],
     [ "IDirectPluginFrontend", null, [
-      [ "DirectOutput.Plugin", "class_direct_output_1_1_plugin.html", null ]
+      [ "DirectOutputPlugin.Plugin", "class_direct_output_plugin_1_1_plugin.html", null ]
     ] ],
     [ "IDisposable", null, [
       [ "DirectOutput.Cab.Out.LW.LedWiz", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html", null ]
