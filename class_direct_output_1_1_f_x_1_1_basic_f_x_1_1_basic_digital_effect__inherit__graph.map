@@ -1,0 +1,6 @@
+<map id="DirectOutput.FX.BasicFX.BasicDigitalEffect" name="DirectOutput.FX.BasicFX.BasicDigitalEffect">
+<area shape="rect" id="node2" href="$class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. This class does inherit IEffect. " alt="" coords="55,155,140,181"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node4" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="75,5,165,32"/>
+<area shape="rect" id="node5" href="$interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="148,80,207,107"/>
+</map>

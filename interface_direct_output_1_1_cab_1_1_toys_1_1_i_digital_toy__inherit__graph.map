@@ -1,0 +1,8 @@
+<map id="DirectOutput.Cab.Toys.IDigitalToy" name="DirectOutput.Cab.Toys.IDigitalToy">
+<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_toys_1_1_generic_digital_toy.html" title="Implementation of a generic digital toy. Implements IToy. " alt="" coords="507,49,709,90"/>
+<area shape="rect" id="node2" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy. &#160;The abstract class Toy implements this interface. ..." alt="" coords="145,56,191,83"/>
+<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="5,56,96,83"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_toys_1_1_contactor.html" title="Contactor toy. Basicaly just a more descriptive name for a GenericDigitalToy. Implements IToy..." alt="" coords="758,5,973,32"/>
+<area shape="rect" id="node6" href="$class_direct_output_1_1_cab_1_1_toys_1_1_flasher.html" title="DirectOutput.Cab.Toys.Flasher" alt="" coords="765,56,966,83"/>
+<area shape="rect" id="node7" href="$class_direct_output_1_1_cab_1_1_toys_1_1_replay_knocker.html" title="Replayknocker toy. Iherits GenericDigitalToy, implements IToy. " alt="" coords="766,107,965,149"/>
+</map>

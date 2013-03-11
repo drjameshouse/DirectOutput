@@ -1,0 +1,4 @@
+<map id="DirectOutput.Cab.Toys.IAnalogToy" name="DirectOutput.Cab.Toys.IAnalogToy">
+<area shape="rect" id="node2" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy. &#160;The abstract class Toy implements this interface. ..." alt="" coords="93,80,139,107"/>
+<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="71,5,161,32"/>
+</map>
