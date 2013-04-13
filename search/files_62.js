@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['basic_2ecs',['Basic.cs',['../_basic_8cs.html',1,'']]],
   ['basicanalogeffect_2ecs',['BasicAnalogEffect.cs',['../_basic_analog_effect_8cs.html',1,'']]],
   ['basicdigitaleffect_2ecs',['BasicDigitalEffect.cs',['../_basic_digital_effect_8cs.html',1,'']]],
   ['basicfx_2ecs',['BasicFX.cs',['../_basic_f_x_8cs.html',1,'']]],

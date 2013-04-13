@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['b2s_2eserver_20plugin',['B2S.Server Plugin',['../md_70__plugin.html',1,'']]]
+  ['b2s_20server_20plugin',['B2S Server Plugin',['../b2sserverplugin.html',1,'']]]
 ];

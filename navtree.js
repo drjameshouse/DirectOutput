@@ -57,6 +57,7 @@ var NAVTREE =
       ] ],
       [ "Multithreading", "md_50__architecture.html#architecture_multithreading", null ]
     ] ],
+    [ "B2S Server Plugin", "b2sserverplugin.html", null ],
     [ "Effects/FX", "md_60__f_x.html", [
       [ "Introduction", "md_60__f_x.html#effects_introduction", null ],
       [ "Builtin effects", "md_60__f_x.html#effects_builtineffects", null ],
@@ -64,11 +65,53 @@ var NAVTREE =
         [ "Implementation guidelines for custom effects", "md_60__f_x.html#effects_implementationguideline", null ]
       ] ]
     ] ],
-    [ "Contribute", "contribute.html", null ],
+    [ "Toys", "md_63__toys.html", [
+      [ "Introduction", "md_63__toys.html#toys_introduction", null ],
+      [ "Builtin toys", "md_63__toys.html#toys_builtineffects", null ],
+      [ "Custom toys", "md_63__toys.html#toys_customeffects", [
+        [ "Implementation guidelines for custom toys", "md_63__toys.html#toys_implementationguideline", null ]
+      ] ]
+    ] ],
+    [ "Output controllers", "md_65__output__controllers.html", [
+      [ "Introduction", "md_65__output__controllers.html#outputcontrollers_introduction", null ],
+      [ "Builtin output controllers", "md_65__output__controllers.html#outputcontrollers_builtineffects", null ],
+      [ "Custom output controllers", "md_65__output__controllers.html#outputcontrollers_customeffects", [
+        [ "Implementation guidelines for custom output controllers", "md_65__output__controllers.html#outputcontrollers_implementationguideline", null ]
+      ] ]
+    ] ],
+    [ "Scripting", "scripting.html", [
+      [ "Introduction", "scripting.html#scripting_introduction", null ],
+      [ "Scripting guidelines", "scripting.html#scripting_guidelines", null ]
+    ] ],
+    [ "Source Code", "sourcecode.html", [
+      [ "Introduction", "sourcecode.html#sourcecode_introduction", null ],
+      [ "Download source code/Fork source code", "sourcecode.html#sourcecode_fork", null ],
+      [ "Contribute your code/Pull requests", "sourcecode.html#sourcecode_pull", null ],
+      [ "Tools", "sourcecode.html#sourcecode_tools", null ],
+      [ "Using the source code", "sourcecode.html#sourcecode_use", null ],
+      [ "What is where", "sourcecode.html#sourcecode_where", [
+        [ "DirectOutput project", "sourcecode.html#sourcecode_wheredirectoutput", null ],
+        [ "Documentation project", "sourcecode.html#sourcecode_wheredocu", null ],
+        [ "B2SServerPlugin project", "sourcecode.html#sourcecode_wheredplugin", null ],
+        [ "DirectOutput_Test project", "sourcecode.html#sourcecode_wheredirectoutputest", null ]
+      ] ],
+      [ "Extending and changing the source code (guidelines)", "sourcecode.html#sourcecode_extend", null ]
+    ] ],
+    [ "Contribute", "contribute.html", [
+      [ "Report bugs and issues", "contribute.html#contribute_bugs", null ],
+      [ "Squash some bugs", "contribute.html#contribute_squashbugs", null ],
+      [ "Share your knowledge", "contribute.html#contribute_help", null ],
+      [ "Create scripts", "contribute.html#contribute_scripting", null ],
+      [ "Contribute to the source code", "contribute.html#contribute_source", null ]
+    ] ],
     [ "Downloads", "downloads.html", null ],
+    [ "History, ToDo and Roadmap", "_history_todo_roadmap.html", [
+      [ "ToDo", "_history_todo_roadmap.html#todo", null ],
+      [ "Roadmap", "_history_todo_roadmap.html#roadmap", null ],
+      [ "History", "_history_todo_roadmap.html#history", null ]
+    ] ],
     [ "Credits", "md_90__credits.html", null ],
     [ "About", "md_99__mainpage_and_about.html", null ],
-    [ "B2S.Server Plugin", "md_70__plugin.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -85,7 +128,7 @@ var NAVTREE =
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Properties", "functions_prop.html", null ],
+        [ "Properties", "functions_prop.html", "functions_prop" ],
         [ "Events", "functions_evnt.html", null ]
       ] ]
     ] ],
@@ -98,10 +141,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_array_extensions_8cs.html",
-"class_direct_output_1_1_cab_1_1_cabinet_output_list.html",
-"class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a73800340c47aeceaa6339d963591d404",
-"class_direct_output_1_1_scripting_1_1_script.html#a5bcea4dc3469c28119892a3209b2287b",
-"namespace_direct_output_1_1_cab.html"
+"_table_config_column_8cs_source.html",
+"class_direct_output_1_1_cab_1_1_toys_1_1_toy_event_args.html#ab1335e7fb8704c3b1d37ab3704b18dc8",
+"class_direct_output_1_1_global_config_1_1_config.html#a29b12839925fd458c89e247f1c69caa0",
+"dir_3e554180b925145de090e82e9ce1143b.html",
+"namespace_direct_output_1_1_table.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,6 +1,7 @@
 var _table_element_type_enum_8cs =
 [
     [ "TableElementTypeEnum", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38", [
+      [ "Unknown", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Lamp", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a5331717d33d4e634fd3c5ec209f475d2", null ],
       [ "Switch", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38abbc155fb2b111bf61c4f5ff892915e6b", null ],
       [ "Solenoid", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38acd0cc31af3b532343f47d341e0489d5a", null ],

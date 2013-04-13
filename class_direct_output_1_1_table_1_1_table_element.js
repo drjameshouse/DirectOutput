@@ -2,6 +2,7 @@ var class_direct_output_1_1_table_1_1_table_element =
 [
     [ "TableElement", "class_direct_output_1_1_table_1_1_table_element.html#aac90c230fdbf105dbfb2e1424aa5fb24", null ],
     [ "TableElement", "class_direct_output_1_1_table_1_1_table_element.html#af82a85b8254ad9f8d4111da6f6d86505", null ],
+    [ "GetTableElementData", "class_direct_output_1_1_table_1_1_table_element.html#a2ce495f4addefa5e0447cdd234c24225", null ],
     [ "AssignedEffects", "class_direct_output_1_1_table_1_1_table_element.html#acc272a31437e43cc44eeba5db8a6738a", null ],
     [ "Name", "class_direct_output_1_1_table_1_1_table_element.html#aa3bf769ded52c368382cbe79b28bb883", null ],
     [ "Number", "class_direct_output_1_1_table_1_1_table_element.html#abe3aaf3084213a79a47c3bfe8993d405", null ],

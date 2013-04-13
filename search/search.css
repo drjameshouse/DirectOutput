@@ -100,7 +100,7 @@
     display: none;
     position: absolute;
     left: 0; top: 0;
-    border: 1px solid #91A5CD;
+    border: 1px solid #93A6CD;
     background-color: #F9FAFC;
     z-index: 1;
     padding-top: 4px;
@@ -145,7 +145,7 @@ a.SelectItem:active {
 
 a.SelectItem:hover {
     color: #FFFFFF;
-    background-color: #3E588A;
+    background-color: #40598C;
     outline-style: none;
     text-decoration: none;
     cursor: pointer;
@@ -199,7 +199,7 @@ body.SRPage {
 
 .SRSymbol {
     font-weight: bold; 
-    color: #435F95;
+    color: #456097;
     font-family: Arial, Verdana, sans-serif;
     text-decoration: none;
     outline: none;
@@ -207,7 +207,7 @@ body.SRPage {
 
 a.SRScope {
     display: block;
-    color: #435F95; 
+    color: #456097; 
     font-family: Arial, Verdana, sans-serif;
     text-decoration: none;
     outline: none;

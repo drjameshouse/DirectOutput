@@ -1,13 +1,18 @@
 var dir_3e554180b925145de090e82e9ce1143b =
 [
     [ "BasicFX", "dir_aee55ada2a4069f3106bcc13e6391e99.html", "dir_aee55ada2a4069f3106bcc13e6391e99" ],
+    [ "DelayFX", "dir_5a3e4daf3e255850d50ad6ec20ef9405.html", "dir_5a3e4daf3e255850d50ad6ec20ef9405" ],
     [ "LedControlFX", "dir_48a941d235a344e5fc82aaf0eb1b09fd.html", "dir_48a941d235a344e5fc82aaf0eb1b09fd" ],
     [ "ListFX", "dir_4297f7c2e79c610ace180093d5c9d8ae.html", "dir_4297f7c2e79c610ace180093d5c9d8ae" ],
+    [ "NullFX", "dir_01d71632148962f30a30f39273cde283.html", "dir_01d71632148962f30a30f39273cde283" ],
     [ "AssignedEffect.cs", "_assigned_effect_8cs.html", [
       [ "AssignedEffect", "class_direct_output_1_1_f_x_1_1_assigned_effect.html", "class_direct_output_1_1_f_x_1_1_assigned_effect" ]
     ] ],
     [ "AssignedEffectList.cs", "_assigned_effect_list_8cs.html", [
       [ "AssignedEffectList", "class_direct_output_1_1_f_x_1_1_assigned_effect_list.html", "class_direct_output_1_1_f_x_1_1_assigned_effect_list" ]
+    ] ],
+    [ "AssignedEffectOrder.cs", "_assigned_effect_order_8cs.html", [
+      [ "AssignedEffectOrder", "class_direct_output_1_1_f_x_1_1_assigned_effect_order.html", "class_direct_output_1_1_f_x_1_1_assigned_effect_order" ]
     ] ],
     [ "CombinedEffectList.cs", "_combined_effect_list_8cs.html", [
       [ "CombinedEffectList", "class_direct_output_1_1_f_x_1_1_combined_effect_list.html", "class_direct_output_1_1_f_x_1_1_combined_effect_list" ],

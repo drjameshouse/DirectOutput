@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knock',['Knock',['../class_direct_output_1_1_cab_1_1_toys_1_1_replay_knocker.html#a738e85eafbbcf46618d4fe1bf5663bbd',1,'DirectOutput.Cab.Toys.ReplayKnocker.Knock()'],['../class_direct_output_1_1_cab_1_1_toys_1_1_replay_knocker.html#a59192ef33724f020bddd7391b155191b',1,'DirectOutput.Cab.Toys.ReplayKnocker.Knock(int NumberOfKnocks)'],['../class_direct_output_1_1_cab_1_1_toys_1_1_replay_knocker.html#aef3abbee9b49f6b146c9c678c1c7cab3',1,'DirectOutput.Cab.Toys.ReplayKnocker.Knock(int NumberOfKnocks, int IntervallMs)']]]
+  ['knock',['Knock',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_replay_knocker.html#af77accf01529adbb3d676a6c927f33a3',1,'DirectOutput.Cab.Toys.Basic.ReplayKnocker.Knock()'],['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_replay_knocker.html#a812b64b91df89646665fdb4871bd6796',1,'DirectOutput.Cab.Toys.Basic.ReplayKnocker.Knock(int NumberOfKnocks)'],['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_replay_knocker.html#aaabd6e2cb0bf2a4017dd64c342e184f5',1,'DirectOutput.Cab.Toys.Basic.ReplayKnocker.Knock(int NumberOfKnocks, int IntervallMs)']]]
 ];

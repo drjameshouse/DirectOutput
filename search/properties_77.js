@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workerthreadisactive',['WorkerThreadIsActive',['../class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ad8dc2932fd46b18324746afb584ce823',1,'DirectOutput::PinmameHandling::PinmameInputManager']]]
+  ['workerthreadisactive',['WorkerThreadIsActive',['../class_direct_output_1_1_input_handling_1_1_input_manager.html#a1ca5b8a4fd4419bca00e1dc7abae0858',1,'DirectOutput::InputHandling::InputManager']]]
 ];

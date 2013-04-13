@@ -4,7 +4,7 @@ var class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect =
     [ "LedControlEffect", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#aaece52ddcec3e34e2c30093a6877aa72", null ],
     [ "Finish", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a400df76794c876af0c91180249687d35", null ],
     [ "Init", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a9621693ea31bed07511b3ab474c1d800", null ],
-    [ "Trigger", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a363f36a886a0b7b40076f561bd2c5abc", null ],
+    [ "Trigger", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a59b99b460e700d00214fb431187dfc96", null ],
     [ "Blink", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a2826ec54c6a0021997af187b8d3fb872", null ],
     [ "BlinkInterval", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#affb37de87d8183fa6d333c14eb94467c", null ],
     [ "Duration", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a8823242a4de037b357375a2ed4b3645b", null ],

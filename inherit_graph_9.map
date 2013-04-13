@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_direct_output_1_1_f_x_1_1_assigned_effect_list.html" title="List of effects which are assigned to some other object. " alt="" coords="230,5,402,46"/>
+<area shape="rect" id="node1" href="$class_direct_output_1_1_f_x_1_1_assigned_effect.html" title="Handles the assignemt of a effect to a AssignedEffectList. " alt="" coords="6,38,178,79"/>
+<area shape="rect" id="node2" href="$class_direct_output_1_1_f_x_1_1_assigned_effect_order.html" title="DirectOutput.FX.Assigned\lEffectOrder" alt="" coords="227,5,399,46"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html" title="The effect fires a assigned effect after a specified delay. " alt="" coords="228,70,399,111"/>
 </map>

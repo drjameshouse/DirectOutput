@@ -109,198 +109,207 @@ $(document).ready(function(){initNavTree('_pinmame_input_manager_8cs_source.html
 <div class="contents">
 <a href="_pinmame_input_manager_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿using System;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Linq;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> System.Text;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> System.Threading;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> DirectOutput.Table;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>DirectOutput.PinmameHandling</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html">   18</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html" title="Manages the data received from PinMame and controls the worker thread which processes the data...">PinmameInputManager</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> MaxDataProcessingTimeMs = 10;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Threading;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="namespace_direct_output_1_1_pinmame_handling.html">    9</a></span>&#160;<span class="keyword">namespace </span>DirectOutput.PinmameHandling</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html">   15</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html" title="Manages the data received from PinMame and controls the worker thread which processes the data...">PinmameInputManager</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> MaxDataProcessingTimeMs = 10;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">object</span> PinmameDataQueueLocker = <span class="keyword">new</span> object();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">private</span> Queue&lt;TableElementData&gt; PinmameDataQueue = <span class="keyword">new</span> Queue&lt;TableElementData&gt;();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">object</span> PinmameDataQueueLocker = <span class="keyword">new</span> object();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">private</span> Queue&lt;PinmameData&gt; PinmameDataQueue = <span class="keyword">new</span> Queue&lt;PinmameData&gt;();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a7f76de30e8f43a10c0f71529c2b998d2">   32</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> EnqueuePinmameData(Char TableElementTypeChar, <span class="keywordtype">int</span> Number, <span class="keywordtype">int</span> Value)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            EnqueuePinmameData(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a>(TableElementTypeChar, Number, Value));</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a770205b90866a2af76b25251f9247a56">   42</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> EnqueuePinmameData(<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a> Data)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            lock (PinmameDataQueueLocker)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                PinmameDataQueue.Enqueue(Data);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            lock (WorkerThreadLocker)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                Monitor.Pulse(WorkerThreadLocker);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a7f76de30e8f43a10c0f71529c2b998d2">   29</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> EnqueuePinmameData(Char TableElementTypeChar, <span class="keywordtype">int</span> Number, <span class="keywordtype">int</span> Value)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            EnqueuePinmameData(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_table_element_data.html" title="Data received from Pinmame ">TableElementData</a>(TableElementTypeChar, Number, Value));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a4b9249f3982a4b2c89c18099b6d310ad">   39</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> EnqueuePinmameData(<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_table_element_data.html" title="Data received from Pinmame ">TableElementData</a> Data)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            lock (PinmameDataQueueLocker)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                PinmameDataQueue.Enqueue(Data);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            lock (WorkerThreadLocker)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                Monitor.Pulse(WorkerThreadLocker);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#acb05b027c3d308b9a14d3bafadf8ce30">   63</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Init()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            StartWorkerThread();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a79140d93f9c568e1b7efd53a42edee80">   73</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Terminate()</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            TerminateWorkerThread();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#acb05b027c3d308b9a14d3bafadf8ce30">   60</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Init()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            StartWorkerThread();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a79140d93f9c568e1b7efd53a42edee80">   70</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Terminate()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            TerminateWorkerThread();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StartWorkerThread()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StartWorkerThread()</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span> (!WorkerThreadIsActive)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    WorkerThread = <span class="keyword">new</span> Thread(WorkerThreadDoIt);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    WorkerThread.Name = <span class="stringliteral">&quot;PinmameInputManager Input WorkerThread &quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    WorkerThread.Start();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">catch</span> (Exception E)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;PinmameInputManager Workerthread could not start.&quot;</span>, E);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> TerminateWorkerThread()</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (WorkerThread != null)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">try</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    KeepWorkerThreadAlive = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    lock (WorkerThreadLocker)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                        Monitor.Pulse(WorkerThreadLocker);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <span class="keywordflow">if</span> (!WorkerThread.Join(1000))</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        WorkerThread.Abort();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    WorkerThread = null;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">catch</span> (Exception E)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;A error occurd during termination of PinmameInputManager Workerthread&quot;</span>, E);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">private</span> Thread WorkerThread { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">object</span> WorkerThreadLocker = <span class="keyword">new</span> object();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">bool</span> KeepWorkerThreadAlive = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> WorkerThreadDoIt()</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">while</span> (KeepWorkerThreadAlive)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                DateTime Start = DateTime.Now;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">while</span> (PinmameDataQueue.Count &gt; 0 &amp;&amp; (DateTime.Now - Start).Milliseconds &lt;= MaxDataProcessingTimeMs &amp;&amp; KeepWorkerThreadAlive)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    PinmameData D;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    lock (PinmameDataQueueLocker)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        D = PinmameDataQueue.Dequeue();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    OnPinmameDataReceived(D);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                OnPinmameDataProcessed();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">if</span> (KeepWorkerThreadAlive)</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    lock (WorkerThreadLocker)</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                    {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                        <span class="keywordflow">while</span> (PinmameDataQueue.Count == 0 &amp;&amp; KeepWorkerThreadAlive)</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                        {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                            Monitor.Wait(WorkerThreadLocker, 50);  <span class="comment">// Lock is released while we’re waiting</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> WorkerThreadIsActive</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ad8dc2932fd46b18324746afb584ce823">  162</a></span>&#160;        {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keyword">get</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">if</span> (WorkerThread != null)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    <span class="keywordflow">if</span> (WorkerThread.IsAlive)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a0cde256f2b9916be4c8bf78c176752dc">  176</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">event</span> EventHandler&lt;EventArgs&gt; <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a0cde256f2b9916be4c8bf78c176752dc">PinmameDataProcessed</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a1fa3e7d079590673bb975b411de1704d">  180</a></span>&#160;        <span class="keyword">protected</span> <span class="keywordtype">void</span> OnPinmameDataProcessed()</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">if</span> (PinmameDataProcessed != null)</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                PinmameDataProcessed(<span class="keyword">this</span>, <span class="keyword">new</span> EventArgs());</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ac8c486c470df223e6ee3d802bc0d096e">  192</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">event</span> EventHandler&lt;PinmameDataReceivedEventArgs&gt; <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ac8c486c470df223e6ee3d802bc0d096e" title="Event is fired if new pinmamedata has been received ">PinmameDataReceived</a>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnPinmameDataReceived(<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a>)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">if</span> (PinmameDataReceived != null &amp;&amp; PinmameData != null)</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                PinmameDataReceived(<span class="keyword">this</span>, <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html" title="Eventargs for the PinmamedataReceived Event ">PinmameDataReceivedEventArgs</a>(PinmameData));</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (!WorkerThreadIsActive)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    WorkerThread = <span class="keyword">new</span> Thread(WorkerThreadDoIt);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                    WorkerThread.Name = <span class="stringliteral">&quot;PinmameInputManager Input WorkerThread &quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    WorkerThread.Start();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <span class="keywordflow">catch</span> (Exception E)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a1e13bd3df7d60a039f2c763543d3bbbf" title="Writes a exception message to the log. ">Exception</a>(<span class="stringliteral">&quot;PinmameInputManager Workerthread could not start.&quot;</span>, E);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;PinmameInputManager Workerthread could not start.&quot;</span>, E);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> TerminateWorkerThread()</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (WorkerThread != null)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    KeepWorkerThreadAlive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    lock (WorkerThreadLocker)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        Monitor.Pulse(WorkerThreadLocker);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    <span class="keywordflow">if</span> (!WorkerThread.Join(1000))</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        WorkerThread.Abort();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    WorkerThread = null;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">catch</span> (Exception E)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    Log.Exception(<span class="stringliteral">&quot;A error occured during termination of PinmameInputManager Workerthread&quot;</span>, E);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;A error occured during termination of PinmameInputManager Workerthread&quot;</span>, E);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keyword">private</span> Thread WorkerThread { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">object</span> WorkerThreadLocker = <span class="keyword">new</span> object();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">bool</span> KeepWorkerThreadAlive = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> WorkerThreadDoIt()</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <span class="keywordflow">while</span> (KeepWorkerThreadAlive)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                DateTime Start = DateTime.Now;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">while</span> (PinmameDataQueue.Count &gt; 0 &amp;&amp; (DateTime.Now - Start).Milliseconds &lt;= MaxDataProcessingTimeMs &amp;&amp; KeepWorkerThreadAlive)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    TableElementData D;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    lock (PinmameDataQueueLocker)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        D = PinmameDataQueue.Dequeue();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                        OnPinmameDataReceived(D);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    <span class="keywordflow">catch</span> (Exception E)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                        Log.Exception(<span class="stringliteral">&quot;A exception occured while processing input data for table element {0} {1} with value {2}&quot;</span>.Build(D.TableElementType, D.Number, D.Value), E);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                OnPinmameDataProcessed();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">if</span> (KeepWorkerThreadAlive)</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    lock (WorkerThreadLocker)</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        <span class="keywordflow">while</span> (PinmameDataQueue.Count == 0 &amp;&amp; KeepWorkerThreadAlive)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                        {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                            Monitor.Wait(WorkerThreadLocker, 50);  <span class="comment">// Lock is released while we’re waiting</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> WorkerThreadIsActive</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ad8dc2932fd46b18324746afb584ce823">  171</a></span>&#160;        {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">get</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">if</span> (WorkerThread != null)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    <span class="keywordflow">if</span> (WorkerThread.IsAlive)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a0cde256f2b9916be4c8bf78c176752dc">  185</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">event</span> EventHandler&lt;EventArgs&gt; <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a0cde256f2b9916be4c8bf78c176752dc">PinmameDataProcessed</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#a1fa3e7d079590673bb975b411de1704d">  189</a></span>&#160;        <span class="keyword">protected</span> <span class="keywordtype">void</span> OnPinmameDataProcessed()</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">if</span> (PinmameDataProcessed != null)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                PinmameDataProcessed(<span class="keyword">this</span>, <span class="keyword">new</span> EventArgs());</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ac8c486c470df223e6ee3d802bc0d096e">  201</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">event</span> EventHandler&lt;PinmameDataReceivedEventArgs&gt; <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager.html#ac8c486c470df223e6ee3d802bc0d096e" title="Event is fired if new pinmamedata has been received ">PinmameDataReceived</a>;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html">  206</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html" title="Eventargs for the PinmamedataReceived Event ">PinmameDataReceivedEventArgs</a> : EventArgs</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        {</div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a32ea2f6075bb33e176243cc20b31181d">  208</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a> { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a6a7140be3a2e6e07566e3a941410e0f7">  209</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38" title="Enum for the different TableElement types. ">TableElementTypeEnum</a> TableElementType { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a>.<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html#addd5e2080ad210b40b6a086cdf8c6ebb" title="Gets or sets the type of the table element. ">TableElementType</a>; } }</div>
-<div class="line"><a name="l00210"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#ae9a548c03424969c86a31f6bfe78a6ee">  210</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">int</span> Number { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a>.<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html#a0ba378998a6de9f85e98c847c1e7b96a" title="Gets or sets the number of the table element. ">Number</a>; } }</div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a7c6402a6e13de6d2e695fedbe300e9a6">  211</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">int</span> State { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a>.<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html#a4fb42860bbef99abf8bae5072350c7f1" title="Gets or sets the value of the table element. ">Value</a>; } }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a683392e8b0bb9f32cc00162d92360d59">  213</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a683392e8b0bb9f32cc00162d92360d59">PinmameDataReceivedEventArgs</a>() { }</div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#aa072c594ab820a88a8a4fa8e02c449b6">  214</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html" title="Eventargs for the PinmamedataReceived Event ">PinmameDataReceivedEventArgs</a>(<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_data.html" title="Data received from Pinmame ">PinmameData</a>)</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                this.PinmameData = PinmameData;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            }</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> OnPinmameDataReceived(<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_table_element_data.html" title="Data received from Pinmame ">TableElementData</a> PinmameData)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">if</span> (PinmameDataReceived != null &amp;&amp; PinmameData != null)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                PinmameDataReceived(<span class="keyword">this</span>, <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html" title="Eventargs for the PinmamedataReceived Event ">PinmameDataReceivedEventArgs</a>(PinmameData));</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html">  215</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html" title="Eventargs for the PinmamedataReceived Event ">PinmameDataReceivedEventArgs</a> : EventArgs</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        {</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a4d05dd6486bde727d44e762808cb43ae">  217</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_table_element_data.html" title="Data received from Pinmame ">TableElementData</a> PinmameData { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a6a7140be3a2e6e07566e3a941410e0f7">  218</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38" title="Enum for the different TableElement types. ">TableElementTypeEnum</a> TableElementType { <span class="keyword">get</span> { <span class="keywordflow">return</span> PinmameData.<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_table_element_data.html#af50dc74c2111f41106c3c02dff7c23f4" title="Gets or sets the type of the table element. ">TableElementType</a>; } }</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#ae9a548c03424969c86a31f6bfe78a6ee">  219</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">int</span> Number { <span class="keyword">get</span> { <span class="keywordflow">return</span> PinmameData.Number; } }</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a9735dc6de36adaceb55a8298467ca10e">  220</a></span>&#160;            <span class="keyword">public</span> <span class="keywordtype">int</span> Value { <span class="keyword">get</span> { <span class="keywordflow">return</span> PinmameData.Value; } }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}</div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a683392e8b0bb9f32cc00162d92360d59">  222</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#a683392e8b0bb9f32cc00162d92360d59">PinmameDataReceivedEventArgs</a>() { }</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html#ac0b7abac261cb2db59d40e7467c4bf15">  223</a></span>&#160;            <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_pinmame_input_manager_1_1_pinmame_data_received_event_args.html" title="Eventargs for the PinmamedataReceived Event ">PinmameDataReceivedEventArgs</a>(<a class="code" href="class_direct_output_1_1_pinmame_handling_1_1_table_element_data.html" title="Data received from Pinmame ">TableElementData</a> PinmameData)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                this.PinmameData = PinmameData;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_2fd870b2647d52df96c8fd76a7e42bab.html">PinmameHandling</a></li><li class="navelem"><a class="el" href="_pinmame_input_manager_8cs.html">PinmameInputManager.cs</a></li>
-    <li class="footer">Generated on Mon Mar 11 2013 21:44:35 for DirectOutput by
+    <li class="footer">Generated on Mon Apr 8 2013 18:08:19 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
