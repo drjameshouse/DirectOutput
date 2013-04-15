@@ -76,6 +76,10 @@ var NAVTREE =
       [ "Introduction", "md_65__output__controllers.html#outputcontrollers_introduction", null ],
       [ "Builtin output controllers", "md_65__output__controllers.html#outputcontrollers_builtineffects", null ],
       [ "Custom output controllers", "md_65__output__controllers.html#outputcontrollers_customeffects", [
+        [ "Interfaces for output controllers", "md_65__output__controllers.html#outputcontrollers_interfaces", [
+          [ "IOutputController interface", "md_65__output__controllers.html#outputcontrollers_ioutputcontroller", null ],
+          [ "IOutput interface", "md_65__output__controllers.html#outputcontrollers_ioutput", null ]
+        ] ],
         [ "Implementation guidelines for custom output controllers", "md_65__output__controllers.html#outputcontrollers_implementationguideline", null ]
       ] ]
     ] ],
@@ -105,13 +109,13 @@ var NAVTREE =
       [ "Contribute to the source code", "contribute.html#contribute_source", null ]
     ] ],
     [ "Downloads", "downloads.html", null ],
-    [ "History, ToDo and Roadmap", "_history_todo_roadmap.html", [
-      [ "ToDo", "_history_todo_roadmap.html#todo", null ],
-      [ "Roadmap", "_history_todo_roadmap.html#roadmap", null ],
-      [ "History", "_history_todo_roadmap.html#history", null ]
+    [ "History and Roadmap", "_history_roadmap.html", [
+      [ "Roadmap", "_history_roadmap.html#roadmap", null ],
+      [ "History", "_history_roadmap.html#history", null ]
     ] ],
     [ "Credits", "md_90__credits.html", null ],
     [ "About", "md_99__mainpage_and_about.html", null ],
+    [ "Todo List", "todo.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -141,11 +145,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_array_extensions_8cs.html",
-"_table_config_column_8cs_source.html",
-"class_direct_output_1_1_cab_1_1_toys_1_1_toy_event_args.html#ab1335e7fb8704c3b1d37ab3704b18dc8",
-"class_direct_output_1_1_global_config_1_1_config.html#a29b12839925fd458c89e247f1c69caa0",
-"dir_3e554180b925145de090e82e9ce1143b.html",
-"namespace_direct_output_1_1_table.html"
+"_sortable_binding_list_8cs.html",
+"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#ab999763841cd18fb10abaa72b6ac1ce0",
+"class_direct_output_1_1_general_1_1_generic_1_1_sortable_binding_list_3_01_t_01_4.html#a46446a12a97171adb81e35cd117f16d3",
+"class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad",
+"namespace_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['samplebuilder_2ecs',['SampleBuilder.cs',['../_sample_builder_8cs.html',1,'']]],
   ['script_2ecs',['Script.cs',['../_script_8cs.html',1,'']]],
   ['scriptinfo_2ecs',['ScriptInfo.cs',['../_script_info_8cs.html',1,'']]],
   ['scriptinfo_2edesigner_2ecs',['ScriptInfo.Designer.cs',['../_script_info_8_designer_8cs.html',1,'']]],

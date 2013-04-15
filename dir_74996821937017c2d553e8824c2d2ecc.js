@@ -8,5 +8,5 @@ var dir_74996821937017c2d553e8824c2d2ecc =
     [ "Form1.Designer.cs", "_form1_8_designer_8cs.html", [
       [ "Form1", "class_direct_output___test_1_1_form1.html", "class_direct_output___test_1_1_form1" ]
     ] ],
-    [ "Program.cs", "_program_8cs.html", null ]
+    [ "Program.cs", "_direct_output___test_2_program_8cs.html", null ]
 ];

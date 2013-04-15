@@ -126,8 +126,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">        #region Led Control files</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file_list.html">LedControlIniFileList</a> _LedControlIniFiles = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file_list.html">LedControlIniFileList</a>();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">//TODO: Serialisierung anpassen, doku auch anpassen</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span>        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file_list.html">LedControlIniFileList</a> LedControlIniFiles</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file_list.html">LedControlIniFileList</a> LedControlIniFiles</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a545dc7443c89a524360259b122dcd662">   29</a></span>&#160;        {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _LedControlIniFiles; }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keyword">set</span> { _LedControlIniFiles = value; }</div>
@@ -139,7 +138,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">        #region Cabinet</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">        #region Cabinet config file</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> _CabinetConfigFilePattern=<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> _CabinetConfigFilePattern = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> CabinetConfigFilePattern</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a29b12839925fd458c89e247f1c69caa0">   49</a></span>&#160;        {</div>
@@ -166,11 +165,11 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">return</span> CC.Directory;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> null;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        } </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">        #region Cabinet Scripts file patterns</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> _CabinetScriptFilePatterns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a>() ;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> _CabinetScriptFilePatterns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a>();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> CabinetScriptFilePatterns</div>
 <div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#acf5c11a9d3811535ebbdb2db9d1c822d">   94</a></span>&#160;        {</div>
@@ -196,7 +195,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//private EffectList _Effects = new EffectList();</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"></span>       </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">//[XmlElementAttribute(Order = 5)]</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">//public EffectList Effects</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">//{</span></div>
@@ -210,7 +209,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">        #region Table script files</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> _TableScriptFilePatterns=<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> _TableScriptFilePatterns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a>();</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> TableScriptFilePatterns</div>
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a04664f33d0202b6ea313ae4fa45444eb">  147</a></span>&#160;        {</div>
@@ -225,12 +224,12 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordflow">return</span> TableScriptFilePatterns.<a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html#af16a9405685e5ed236c7f22bcc4b4ae7" title="Gets the files matching one of the entries in this list ">GetMatchingFiles</a>(GetReplaceValuesDictionary(FullTableFilename));</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            }</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> List&lt;FileInfo&gt;();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        } </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">        #region Table Config</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> _TableConfigFilePattern=<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor"></span>        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> _TableConfigFilePattern = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a>();</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> TableConfigFilePattern</div>
 <div class="line"><a name="l00180"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#ad85a6436ad73b4f1144fb6d760fe8089">  180</a></span>&#160;        {</div>
@@ -249,7 +248,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            }</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">return</span> null;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
@@ -262,11 +261,11 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00219"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#adac8e0ebeab4f91a78fec439bac65fe0">  219</a></span>&#160;        {</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _UpdateTimerIntervall; }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keyword">set</span> { _UpdateTimerIntervall = value; }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        } </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">        #endregion</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">private</span> Dictionary&lt;string, string&gt; GetReplaceValuesDictionary(<span class="keywordtype">string</span> TableFileName=null)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">private</span> Dictionary&lt;string, string&gt; GetReplaceValuesDictionary(<span class="keywordtype">string</span> TableFileName = null)</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        {</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            Dictionary&lt;string, string&gt; D = <span class="keyword">new</span> Dictionary&lt;string, string&gt;();</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            D.Add(<span class="stringliteral">&quot;GlobalConfigDirectory&quot;</span>, GlobalConfigDirectory.FullName);</div>
@@ -321,16 +320,16 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> GlobalConfigFilename</div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a828a74f1c1aad1aff93a56b2d9151b7c">  305</a></span>&#160;        {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="comment">//TODO: CHeck if this should be loaded from the registry.</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="comment">//TODO: Check if this should be loaded from the registry.</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment"></span>        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">string</span> GlobalConfigFilename</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a828a74f1c1aad1aff93a56b2d9151b7c">  306</a></span>&#160;        {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> Path.Combine(GlobalConfigDirectoryName, <span class="stringliteral">&quot;GlobalConfig.xml&quot;</span>); }</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
 <div class="line"><a name="l00315"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a77971ac4d6400350e72459805d6ede27">  315</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> FileInfo GetGlobalConfigFile()</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;             <span class="keywordflow">return</span> <span class="keyword">new</span> FileInfo(GlobalConfigFilename); </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> FileInfo(GlobalConfigFilename);</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        }</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">        #endregion</span></div>
@@ -373,7 +372,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a99344b85024f39acda73ebf34e0c3550">  366</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_config.html" title="Global configuration for the DirectOutput framework.  ">Config</a> GetGlobalConfigFromConfigXmlFile(<span class="keywordtype">string</span> GlobalConfigFileName=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a99344b85024f39acda73ebf34e0c3550">  366</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_config.html" title="Global configuration for the DirectOutput framework.  ">Config</a> GetGlobalConfigFromConfigXmlFile(<span class="keywordtype">string</span> GlobalConfigFileName = <span class="stringliteral">&quot;&quot;</span>)</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        {</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="keywordtype">string</span> GCFileName = (GlobalConfigFilename.IsNullOrWhiteSpace() ? <a class="code" href="class_direct_output_1_1_global_config_1_1_config.html" title="Global configuration for the DirectOutput framework.  ">Config</a>.<a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a828a74f1c1aad1aff93a56b2d9151b7c" title="Filename of the global config file (readonly). ">GlobalConfigFilename</a> : GlobalConfigFilename);</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29" title="Writes the specified message to the logfile. ">Write</a>(<span class="stringliteral">&quot;Loading global config file: {0}&quot;</span>.Build(GCFileName));</div>
@@ -390,7 +389,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                    }</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                    <span class="keywordflow">catch</span> (Exception E)</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                    {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                        <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a1e13bd3df7d60a039f2c763543d3bbbf" title="Writes a exception message to the log. ">Exception</a>(<span class="stringliteral">&quot;A exception occured when trying to load: {0}&quot;</span>.Build(GCFileName),E);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                        <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a1e13bd3df7d60a039f2c763543d3bbbf" title="Writes a exception message to the log. ">Exception</a>(<span class="stringliteral">&quot;A exception occured when trying to load: {0}&quot;</span>.Build(GCFileName), E);</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                        <span class="keywordflow">return</span> null;</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                    }</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                }</div>
@@ -400,9 +399,9 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                    <span class="keywordflow">return</span> null;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                }</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            }</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordflow">catch</span>(Exception E)</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <span class="keywordflow">catch</span> (Exception E)</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            {</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a1e13bd3df7d60a039f2c763543d3bbbf" title="Writes a exception message to the log. ">Exception</a>(<span class="stringliteral">&quot;A exception occured when trying to access: {0}&quot;</span>.Build(GCFileName),E);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a1e13bd3df7d60a039f2c763543d3bbbf" title="Writes a exception message to the log. ">Exception</a>(<span class="stringliteral">&quot;A exception occured when trying to access: {0}&quot;</span>.Build(GCFileName), E);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                <span class="keywordflow">return</span> null;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            }</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        }</div>
@@ -419,17 +418,17 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            }</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        }</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00422"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a7c46a49c2f4d58ae986e9ab9520ef391">  422</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> SaveGlobalConfig(<span class="keywordtype">string</span> GlobalConfigFilename=<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00422"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a7c46a49c2f4d58ae986e9ab9520ef391">  422</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> SaveGlobalConfig(<span class="keywordtype">string</span> GlobalConfigFilename = <span class="stringliteral">&quot;&quot;</span>)</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        {</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="keywordtype">string</span> GCFileName=(GlobalConfigFilename.IsNullOrWhiteSpace()?<a class="code" href="class_direct_output_1_1_global_config_1_1_config.html" title="Global configuration for the DirectOutput framework.  ">Config</a>.<a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a828a74f1c1aad1aff93a56b2d9151b7c" title="Filename of the global config file (readonly). ">GlobalConfigFilename</a>:GlobalConfigFilename);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <span class="keywordtype">string</span> GCFileName = (GlobalConfigFilename.IsNullOrWhiteSpace() ? <a class="code" href="class_direct_output_1_1_global_config_1_1_config.html" title="Global configuration for the DirectOutput framework.  ">Config</a>.<a class="code" href="class_direct_output_1_1_global_config_1_1_config.html#a828a74f1c1aad1aff93a56b2d9151b7c" title="Filename of the global config file (readonly). ">GlobalConfigFilename</a> : GlobalConfigFilename);</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <span class="keywordflow">if</span> (File.Exists(GCFileName))</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            {</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                <span class="comment">//Create a backup of the current global config file</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                File.Copy(GCFileName, Path.Combine(Path.GetDirectoryName(GCFileName), <span class="stringliteral">&quot;{1} old (replaced {0}){2}&quot;</span>.Build(DateTime.Now.ToString(<span class="stringliteral">&quot;yyyy-MM-dd HH-mm-ss&quot;</span>), Path.GetFileNameWithoutExtension(GCFileName),Path.GetExtension(GCFileName))));</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;                File.Copy(GCFileName, Path.Combine(Path.GetDirectoryName(GCFileName), <span class="stringliteral">&quot;{1} old (replaced {0}){2}&quot;</span>.Build(DateTime.Now.ToString(<span class="stringliteral">&quot;yyyy-MM-dd HH-mm-ss&quot;</span>), Path.GetFileNameWithoutExtension(GCFileName), Path.GetExtension(GCFileName))));</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            };</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;            DirectoryInfo GCDirectory = <span class="keyword">new</span> FileInfo(GCFileName).Directory;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;            </div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            GCDirectory.CreateDirectoryPath();</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            GetGlobalConfigXml().WriteToFile(GCFileName, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
@@ -453,7 +452,7 @@ $(document).ready(function(){initNavTree('_config_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_562f9ec09258a4e5f00221a0aac5ca2e.html">GlobalConfig</a></li><li class="navelem"><a class="el" href="_config_8cs.html">Config.cs</a></li>
-    <li class="footer">Generated on Sat Apr 13 2013 17:11:47 for DirectOutput by
+    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

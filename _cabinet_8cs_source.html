@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('_cabinet_8cs_source.html','');});
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29" title="Writes the specified message to the logfile. ">Write</a>(<span class="stringliteral">&quot;No predefined LedWizequivalent toys found in cabinet config. Will add a LedWizEquivalent toy for every LedWiz unit connected to the system.&quot;</span>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">foreach</span> (<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. The abstract OutputController class implements this inter...">IOutputController</a> OC <span class="keywordflow">in</span> OutputControllers.Where(OC =&gt; OC is LedWiz))</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">foreach</span> (<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a> OC <span class="keywordflow">in</span> OutputControllers.Where(OC =&gt; OC is LedWiz))</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    Toys.Add(<span class="keyword">new</span> LedWizEquivalent((LedWiz)OC));</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29" title="Writes the specified message to the logfile. ">Write</a>(<span class="stringliteral">&quot;Added LedWizEquivalent for LedWiz Nr. {0}&quot;</span>.Build(((LedWiz)OC).Number));</div>
@@ -334,7 +334,7 @@ $(document).ready(function(){initNavTree('_cabinet_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="_cabinet_8cs.html">Cabinet.cs</a></li>
-    <li class="footer">Generated on Sat Apr 13 2013 17:11:47 for DirectOutput by
+    <li class="footer">Generated on Mon Apr 15 2013 13:28:16 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -117,45 +117,44 @@ $(document).ready(function(){initNavTree('_form1_8cs_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> System.Text;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> System.Windows.Forms;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> DirectOutput;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> DirectOutput.Table;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="namespace_direct_output___test.html">   12</a></span>&#160;<span class="keyword">namespace </span>DirectOutput_Test</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code" href="class_direct_output___test_1_1_form1.html">Form1</a> : Form</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">   16</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">Form1</a>()</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            InitializeComponent();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button1_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> DirectOutput.GlobalConfig;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> DirectOutput_Test.Properties;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> System.Configuration;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="namespace_direct_output___test.html">   15</a></span>&#160;<span class="keyword">namespace </span>DirectOutput_Test</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html">   17</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code" href="class_direct_output___test_1_1_form1.html">Form1</a> : Form</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">   19</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">Form1</a>()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            InitializeComponent();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            DirectOutput.Cab.Cabinet C = <span class="keyword">new</span> DirectOutput.Cab.Cabinet();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            C.AutoConfig();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            DirectOutput.Frontend.CabinetInfo CI = <span class="keyword">new</span> DirectOutput.Frontend.CabinetInfo(C);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            CI.Show();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button1_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            DirectOutput.Cab.Cabinet C = <span class="keyword">new</span> DirectOutput.Cab.Cabinet();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            C.AutoConfig();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            DirectOutput.Frontend.CabinetInfo CI = <span class="keyword">new</span> DirectOutput.Frontend.CabinetInfo(C);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            CI.Show();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button2_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button2_Click_1(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a> T = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            T.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#a54c9b01e78d96d4db12e806c54cf3fcb" title="Gets or sets the static effects list for the table.  AssignedEffects contained in AssignedStaticEffec...">AssignedStaticEffects</a>.Add(<span class="keyword">new</span> DirectOutput.FX.AssignedEffectOrder(<span class="stringliteral">&quot;Test&quot;</span>, 5));</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            T.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#ac7277a662bf6b0aeace8a5466a65e87e" title="Lists the TableElement objects for the Table.  This list is automaticaly extend with new TableElement...">TableElements</a>.<a class="code" href="class_direct_output_1_1_table_1_1_table_element_list.html#a572ed9ad3bced8021e6101a87b05c7ed" title="Adds a TableElement to the list. ">Add</a>(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_table_1_1_table_element.html" title="Represents a element (e.g. Switch, Solenoid) of a pinball table ">TableElement</a>(<a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38" title="Enum for the different TableElement types. ">TableElementTypeEnum</a>.Solenoid, 1, 1));</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            T.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#ac7277a662bf6b0aeace8a5466a65e87e" title="Lists the TableElement objects for the Table.  This list is automaticaly extend with new TableElement...">TableElements</a>[0].AssignedEffects.<a class="code" href="class_direct_output_1_1_table_1_1_table_element_list.html#a572ed9ad3bced8021e6101a87b05c7ed" title="Adds a TableElement to the list. ">Add</a>(<span class="keyword">new</span> DirectOutput.FX.AssignedEffectOrder(<span class="stringliteral">&quot;TestEffect&quot;</span>, 2));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            T.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#a98fd3c8a7ce5d1ecf63b18610a7ae70d" title="List of table specific effects. ">Effects</a>.Add(<span class="keyword">new</span> DirectOutput.FX.BasicFX.BasicDigitalEffect() { Name = <span class="stringliteral">&quot;TestEffect&quot;</span>, DigitalToyName = <span class="stringliteral">&quot;Blabla&quot;</span> });</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordtype">string</span> S = T.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#aa7f28bbc19a4fc1dfb752fab5c5406e2" title="Returns a serialized XML representation of the Table configuration. ">GetConfigXml</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            Console.WriteLine(S);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button2_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button2_Click_1(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -163,7 +162,7 @@ $(document).ready(function(){initNavTree('_form1_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_74996821937017c2d553e8824c2d2ecc.html">DirectOutput_Test</a></li><li class="navelem"><a class="el" href="_form1_8cs.html">Form1.cs</a></li>
-    <li class="footer">Generated on Sat Apr 13 2013 17:11:47 for DirectOutput by
+    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
