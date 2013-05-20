@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -117,44 +118,41 @@ $(document).ready(function(){initNavTree('_form1_8cs_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> System.Text;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using</span> System.Windows.Forms;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using</span> DirectOutput;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> DirectOutput.GlobalConfig;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using</span> DirectOutput.GlobalConfiguration;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using</span> DirectOutput_Test.Properties;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using</span> System.Configuration;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using</span> System.IO;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="namespace_direct_output___test.html">   15</a></span>&#160;<span class="keyword">namespace </span>DirectOutput_Test</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html">   17</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code" href="class_direct_output___test_1_1_form1.html">Form1</a> : Form</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">   19</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">Form1</a>()</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            InitializeComponent();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button1_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="namespace_direct_output___test.html">   16</a></span>&#160;<span class="keyword">namespace </span>DirectOutput_Test</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html">   18</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">partial class </span><a class="code" href="class_direct_output___test_1_1_form1.html">Form1</a> : Form</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">   20</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad">Form1</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            InitializeComponent();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            DirectOutput.Cab.Cabinet C = <span class="keyword">new</span> DirectOutput.Cab.Cabinet();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            C.AutoConfig();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            DirectOutput.Frontend.CabinetInfo CI = <span class="keyword">new</span> DirectOutput.Frontend.CabinetInfo(C);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            CI.Show();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> Form1_Load(<span class="keywordtype">object</span> sender, EventArgs e)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            DirectOutput.Frontend.MainMenu.Open(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>(<span class="keyword">new</span> FileInfo(<span class="stringliteral">@&quot;X:\Visual Pinball\Tables\plugins\DirectOutput\Config\GlobalConfig_B2SServer.xml&quot;</span>),<span class="keyword">new</span> FileInfo(<span class="stringliteral">@&quot;Y:\Media\Visual Pinball\Tables\Big Brave\Big_Brave_VP915_1.1.2FS_dB2S_NoLw.vpt&quot;</span>),<span class="stringliteral">&quot;&quot;</span>));</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button2_Click(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;           </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> button2_Click_1(<span class="keywordtype">object</span> sender, EventArgs e)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;   </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -162,20 +160,20 @@ $(document).ready(function(){initNavTree('_form1_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_74996821937017c2d553e8824c2d2ecc.html">DirectOutput_Test</a></li><li class="navelem"><a class="el" href="_form1_8cs.html">Form1.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

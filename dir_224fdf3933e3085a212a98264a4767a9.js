@@ -7,7 +7,7 @@ var dir_224fdf3933e3085a212a98264a4767a9 =
     [ "Frontend", "dir_6cbc8b889a4a695d2f7ea7dfc5e5ac58.html", "dir_6cbc8b889a4a695d2f7ea7dfc5e5ac58" ],
     [ "FX", "dir_3e554180b925145de090e82e9ce1143b.html", "dir_3e554180b925145de090e82e9ce1143b" ],
     [ "General", "dir_36adbf483c8de90af02d887a293f450a.html", "dir_36adbf483c8de90af02d887a293f450a" ],
-    [ "GlobalConfig", "dir_562f9ec09258a4e5f00221a0aac5ca2e.html", "dir_562f9ec09258a4e5f00221a0aac5ca2e" ],
+    [ "GlobalConfiguration", "dir_0c4436386385a689a563d78e5ce04cc2.html", "dir_0c4436386385a689a563d78e5ce04cc2" ],
     [ "InputHandling", "dir_3b8b2c48a9598d22b8026291a54b3259.html", "dir_3b8b2c48a9598d22b8026291a54b3259" ],
     [ "LedControl", "dir_3fefcb4df4d383a16339164eba8053b5.html", "dir_3fefcb4df4d383a16339164eba8053b5" ],
     [ "Properties", "dir_c70bed428e162dbef4da8f6304c21709.html", "dir_c70bed428e162dbef4da8f6304c21709" ],
@@ -15,7 +15,7 @@ var dir_224fdf3933e3085a212a98264a4767a9 =
     [ "Table", "dir_2126cebc896d48b570679b125f14762f.html", "dir_2126cebc896d48b570679b125f14762f" ],
     [ "DirectOutput.cs", "_direct_output_8cs.html", null ],
     [ "Log.cs", "_log_8cs.html", [
-      [ "Log", "class_direct_output_1_1_log.html", null ]
+      [ "Log", "class_direct_output_1_1_log.html", "class_direct_output_1_1_log" ]
     ] ],
     [ "Pinball.cs", "_pinball_8cs.html", [
       [ "Pinball", "class_direct_output_1_1_pinball.html", "class_direct_output_1_1_pinball" ]

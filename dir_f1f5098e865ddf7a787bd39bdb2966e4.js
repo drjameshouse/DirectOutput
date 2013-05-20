@@ -26,5 +26,11 @@ var dir_f1f5098e865ddf7a787bd39bdb2966e4 =
     ] ],
     [ "OutputList.cs", "_output_list_8cs.html", [
       [ "OutputList", "class_direct_output_1_1_cab_1_1_out_1_1_output_list.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_list" ]
+    ] ],
+    [ "OutputNameAttribute.cs", "_output_name_attribute_8cs.html", [
+      [ "OutputNameAttribute", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute" ]
+    ] ],
+    [ "OutputNameConverter.cs", "_output_name_converter_8cs.html", [
+      [ "OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter" ]
     ] ]
 ];

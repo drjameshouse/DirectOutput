@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -109,14 +110,16 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <p class="enddd">EM support. Will need some extensions of the external interface.  </p>
 </dd>
 <dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html">DirectOutput.Cab.Out.IOutputController</a>  </dt>
-<dd>Invent some common, proper interface for the AutoConfig of Output controllers which support automatic detection and configuration.  </dd>
+<dd><p class="startdd">Invent some common, proper interface for the AutoConfig of Output controllers which support automatic detection and configuration. </p>
+<p class="enddd">Revisit IOutputController interface to determine wether it would be a good idea to use a more generric approch for the outputs collection.  </p>
+</dd>
 <dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html#a7d78290f26d38086c675ff6135cbc29d">DirectOutput.Cab.Out.LW.LedWizOutput.LedWizOutput</a>  (int LedWizOutputNumber)</dt>
 <dd>Generate unique output names  </dd>
 <dt><a class="anchor" id="_todo000007"></a>Class <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html">DirectOutput.FX.AssignedEffect</a>  </dt>
 <dd>Add conditions (expressions that evluate to true or false) for assigned effects. CSScript makes this easy, but unlopading of changed effects will not be possible without restarting the framework.  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_direct_output_1_1_global_config_1_1_config.html#a828a74f1c1aad1aff93a56b2d9151b7c">DirectOutput.GlobalConfig.Config.GlobalConfigFilename</a>  </dt>
-<dd>Check if this should be loaded from the registry.  </dd>
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_direct_output_1_1_global_config_1_1_config.html#a545dc7443c89a524360259b122dcd662">DirectOutput.GlobalConfig.Config.LedControlIniFiles</a>  </dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a42d2e81f230d9ecfd5f80aa50d31c6a9">DirectOutput.GlobalConfiguration.GlobalConfig.EnableLogging</a>  </dt>
+<dd>Extend log class to respect this setting  </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056">DirectOutput.GlobalConfiguration.GlobalConfig.LedControlIniFiles</a>  </dt>
 <dd>Check serialization of the property.  </dd>
 <dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_direct_output_1_1_led_control_1_1_led_control_config_list.html#a0fdca07d90c98a35fbe96ead1c851aa5">DirectOutput.LedControl.LedControlConfigList.GetTable</a>  (string RomName, Cabinet Cabinet)</dt>
 <dd>Modify to allow mixing of LedControl data with xml config </dd>
@@ -127,20 +130,20 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:18 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:36 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

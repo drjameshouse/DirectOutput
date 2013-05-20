@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['cabinet',['Cabinet',['../class_direct_output_1_1_frontend_1_1_cabinet_info.html#ad4d7c9ce762534c4c6c04a99b2493263',1,'DirectOutput.Frontend.CabinetInfo.Cabinet()'],['../class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb',1,'DirectOutput.Pinball.Cabinet()']]],
-  ['cabinetconfigfilepattern',['CabinetConfigFilePattern',['../class_direct_output_1_1_global_config_1_1_config.html#a29b12839925fd458c89e247f1c69caa0',1,'DirectOutput::GlobalConfig::Config']]],
+  ['cabinet',['Cabinet',['../class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html#a61300804cf4bc51d5aa2bd3710f0b806',1,'DirectOutput.Cab.Out.OutputNameConverter.Cabinet()'],['../class_direct_output_1_1_frontend_1_1_cabinet_info.html#ad4d7c9ce762534c4c6c04a99b2493263',1,'DirectOutput.Frontend.CabinetInfo.Cabinet()'],['../class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb',1,'DirectOutput.Pinball.Cabinet()']]],
+  ['cabinetconfigfilepatterns',['CabinetConfigFilePatterns',['../class_direct_output_1_1_global_configuration_1_1_global_config.html#a2ac7c2a66b193f3d286f692c33c0a724',1,'DirectOutput::GlobalConfiguration::GlobalConfig']]],
   ['cabinetconfigurationfilename',['CabinetConfigurationFilename',['../class_direct_output_1_1_cab_1_1_cabinet.html#ace619086291087d131550a4cad2bbd3e',1,'DirectOutput::Cab::Cabinet']]],
-  ['cabinetscriptfilepatterns',['CabinetScriptFilePatterns',['../class_direct_output_1_1_global_config_1_1_config.html#acf5c11a9d3811535ebbdb2db9d1c822d',1,'DirectOutput::GlobalConfig::Config']]],
+  ['cabinetscriptfilepatterns',['CabinetScriptFilePatterns',['../class_direct_output_1_1_global_configuration_1_1_global_config.html#a6860dd1b98508e46b6db56c4edb4c0be',1,'DirectOutput::GlobalConfiguration::GlobalConfig']]],
   ['cancelnamechange',['CancelNameChange',['../class_direct_output_1_1_f_x_1_1_before_effect_name_change_avent_args.html#a05e09f2ae206395307e5fd02232df32f',1,'DirectOutput::FX::BeforeEffectNameChangeAventArgs']]],
-  ['color',['Color',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_led_effect.html#af855ea0ed2b5cabe2c1ff39cdd1422b2',1,'DirectOutput::FX::BasicFX::BasicRGBLedEffect']]],
+  ['color',['Color',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a55d7d3c26e2cd7292c06a41ef189a0d5',1,'DirectOutput::FX::BasicFX::BasicRGBEffect']]],
   ['colorconfig',['ColorConfig',['../class_direct_output_1_1_led_control_1_1_table_config_setting.html#a8ee0cc30200d9f8b5ec877f8319cd86f',1,'DirectOutput::LedControl::TableConfigSetting']]],
   ['colorconfigurations',['ColorConfigurations',['../class_direct_output_1_1_led_control_1_1_led_control_config.html#a487b4dbd255fef5e98cfd500e260b4e5',1,'DirectOutput::LedControl::LedControlConfig']]],
   ['colorname',['ColorName',['../class_direct_output_1_1_led_control_1_1_table_config_setting.html#a4440800da9a1b30fa18734324a46fa51',1,'DirectOutput::LedControl::TableConfigSetting']]],

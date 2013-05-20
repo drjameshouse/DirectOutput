@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/GlobalConfig/FilePatternList.cs Source File</title>
+<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/GlobalConfiguration/FilePatternList.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -112,15 +113,15 @@ $(document).ready(function(){initNavTree('_file_pattern_list_8cs_source.html',''
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.IO;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> System.Linq;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>DirectOutput.GlobalConfig</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>DirectOutput.GlobalConfiguration</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html">FilePatternList</a> : List&lt;FilePattern&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a> : List&lt;FilePattern&gt;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern_list.html#af16a9405685e5ed236c7f22bcc4b4ae7">   14</a></span>&#160;        <span class="keyword">public</span> List&lt;FileInfo&gt; GetMatchingFiles(Dictionary&lt;string, string&gt; ReplaceValues=null)</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html#a7645aade98451ef114ed7ee9292fc3e8">   14</a></span>&#160;        <span class="keyword">public</span> List&lt;FileInfo&gt; GetMatchingFiles(Dictionary&lt;string, string&gt; ReplaceValues=null)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            List&lt;FileInfo&gt; L = <span class="keyword">new</span> List&lt;FileInfo&gt;();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> P <span class="keywordflow">in</span> <span class="keyword">this</span>) {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                List&lt;FileInfo&gt; PL = P.<a class="code" href="class_direct_output_1_1_global_config_1_1_file_pattern.html#a76b25df5fa630faa66db01056ff6a6fc" title="Gets the files matching the value of the property Pattern. ">GetMatchingFiles</a>(ReplaceValues);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> P <span class="keywordflow">in</span> <span class="keyword">this</span>) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                List&lt;FileInfo&gt; PL = P.<a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html#ab813b9cfd47579f00b2899c4beb29bc9" title="Gets the files matching the value of the property Pattern. ">GetMatchingFiles</a>(ReplaceValues);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordflow">foreach</span> (FileInfo FI <span class="keywordflow">in</span> PL)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                    <span class="keywordflow">if</span> (!L.Any(x=&gt;x.FullName==FI.FullName))</div>
@@ -131,29 +132,45 @@ $(document).ready(function(){initNavTree('_file_pattern_list_8cs_source.html',''
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            }</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">return</span> L;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html#adda5d90460a17c428878ad3ca726c593">   36</a></span>&#160;        <span class="keyword">public</span> FileInfo GetFirstMatchingFile(Dictionary&lt;string, string&gt; ReplaceValues = null)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. ">FilePattern</a> P <span class="keywordflow">in</span> <span class="keyword">this</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                FileInfo F = P.<a class="code" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html#a800a3a5579ff26c67295c0e6b2fc85eb" title="Gets the first file matching the value of the Pattern property. ">GetFirstMatchingFile</a>(ReplaceValues);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span> (F != null)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">return</span> F;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> null;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_562f9ec09258a4e5f00221a0aac5ca2e.html">GlobalConfig</a></li><li class="navelem"><a class="el" href="_file_pattern_list_8cs.html">FilePatternList.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_0c4436386385a689a563d78e5ce04cc2.html">GlobalConfiguration</a></li><li class="navelem"><a class="el" href="_file_pattern_list_8cs.html">FilePatternList.cs</a></li>
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

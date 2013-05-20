@@ -7,5 +7,5 @@ var class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivale
     [ "Reset", "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a740dbf1cdb7bb1a22e452fe24181f181", null ],
     [ "SetOutputValue", "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#aa82beeacdc83a35ffb140cb7239f8b83", null ],
     [ "LedWizNumber", "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a32f9d6ebdd6579e0980bdc9f5e0862df", null ],
-    [ "Outputs", "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a31935757edf3a01d1b3384054ccb244d", null ]
+    [ "Outputs", "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#adaf8a34e086deba318abb30072fab95c", null ]
 ];

@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -112,23 +113,24 @@ $(document).ready(function(){initNavTree('_i_output_controller_8cs_source.html',
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> DirectOutput.General.Generic;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span>DirectOutput.Cab.Out</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="comment">//TODO: Invent some common, proper interface for the AutoConfig of Output controllers which support automatic detection and configuration.</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html">   11</a></span>&#160;<span class="comment"></span>    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a>: <a class="code" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html">INamedItem</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> Init();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> Finish();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">//TODO: Invent some common, proper interface for the AutoConfig of Output controllers which support automatic detection and configuration.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">//TODO: Revisit IOutputController interface to determine wether it would be a good idea to use a more generric approch for the outputs collection.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">interface </span><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> : <a class="code" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html">INamedItem</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> Init();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> Finish();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#aa707e66632aec42122eececa4063b104">   31</a></span>&#160;        <span class="keyword">new</span> <span class="keywordtype">string</span> Name { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a6fa4e594ea6c526ad86a5ba2f41027bc">   36</a></span>&#160;        <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_list.html" title="List of IOutput objects ">OutputList</a> Outputs { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#aa707e66632aec42122eececa4063b104">   32</a></span>&#160;        <span class="keyword">new</span> <span class="keywordtype">string</span> Name { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a6fa4e594ea6c526ad86a5ba2f41027bc">   37</a></span>&#160;        <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_list.html" title="List of IOutput objects ">OutputList</a> Outputs { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> Update();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> Update();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -136,20 +138,20 @@ $(document).ready(function(){initNavTree('_i_output_controller_8cs_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="dir_f1f5098e865ddf7a787bd39bdb2966e4.html">Out</a></li><li class="navelem"><a class="el" href="_i_output_controller_8cs.html">IOutputController.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:16 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:33 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

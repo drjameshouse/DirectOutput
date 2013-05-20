@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -119,12 +120,12 @@ $(document).ready(function(){initNavTree('_output_controller_event_args_8cs_sour
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html" title="EventArgs for events of IOutputControllers ">OutputControllerEventArgs</a> : EventArgs</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#a0333c89f9140aabf5fd2c8d0ebbd1c41">   18</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a> OutputController { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#a0333c89f9140aabf5fd2c8d0ebbd1c41">   18</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> OutputController { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#a1ceef6a7a09d68116923a37fcd4106f9">   24</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> Name { <span class="keyword">get</span> { <span class="keywordflow">return</span> OutputController.<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#aa707e66632aec42122eececa4063b104" title="Name of the IOutputController. This property is fully implemented in the abstract OutputController cl...">Name</a>; } }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#a1ceef6a7a09d68116923a37fcd4106f9">   24</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> Name { <span class="keyword">get</span> { <span class="keywordflow">return</span> OutputController.<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#aa707e66632aec42122eececa4063b104" title="Name of the IOutputController. This property is fully implemented in the abstract OutputControllerBas...">Name</a>; } }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#a687aee0ff43c17b7de33889b874478d2">   26</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html" title="EventArgs for events of IOutputControllers ">OutputControllerEventArgs</a>(<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a> OutputController)</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#a687aee0ff43c17b7de33889b874478d2">   26</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html" title="EventArgs for events of IOutputControllers ">OutputControllerEventArgs</a>(<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> OutputController)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            this.OutputController = OutputController;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
@@ -139,20 +140,20 @@ $(document).ready(function(){initNavTree('_output_controller_event_args_8cs_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="dir_f1f5098e865ddf7a787bd39bdb2966e4.html">Out</a></li><li class="navelem"><a class="el" href="_output_controller_event_args_8cs.html">OutputControllerEventArgs.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:16 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:33 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -113,7 +114,7 @@ $(document).ready(function(){initNavTree('namespace_direct_output_1_1_cab_1_1_ou
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="namespace_direct_output_1_1_cab_1_1_out.html" title="DirectOutput.Cab.Out is the namespace for all output controller related classes like different output...">DirectOutput.Cab.Out</a> is the namespace for all output controller related classes like different output controller classes (all implementing <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a>).  
+<p><a class="el" href="namespace_direct_output_1_1_cab_1_1_out.html" title="DirectOutput.Cab.Out is the namespace for all output controller related classes like different output...">DirectOutput.Cab.Out</a> is the namespace for all output controller related classes like different output controller classes (all implementing <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>).  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -130,8 +131,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for outputs of any output controller. The <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output.html" title="Basic IOutput implementation. ">Output</a> class implements this interface and can be inherited for the implementation of other output types. It is important to ensure that all classes inherting this interface are XML serializeable.  <a href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html">IOutputController</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for all outputcontrollers.<br/>
- The abstract OutputController class implements this interface and can be inherited for other output controller classes.<br/>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for all outputcontrollers. Only classes implementing this interface can be used as output controllers in the framework.<br/>
+ The abstract <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html" title="Abstract OutputController base class.  Implements IOutputController. ">OutputControllerBase</a> class implements this interface and can be inherited for other output controller classes.<br/>
  It is important to ensure that all classes inherting this interface are XML serializeable.  <a href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output.html">Output</a></td></tr>
@@ -139,13 +140,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html">OutputControllerBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract OutputController base class.<br/>
- Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a>.  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#details">More...</a><br/></td></tr>
+ Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>.  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html">OutputControllerEventArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EventArgs for events of IOutputControllers  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html">OutputControllerList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a> objects  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> objects  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html">OutputEventArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EventArgs for events of <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> objects.  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html#details">More...</a><br/></td></tr>
@@ -153,9 +154,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_list.html">OutputList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> objects  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_list.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute.html">OutputNameAttribute</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html">OutputNameConverter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="namespace_direct_output_1_1_cab_1_1_out.html" title="DirectOutput.Cab.Out is the namespace for all output controller related classes like different output...">DirectOutput.Cab.Out</a> is the namespace for all output controller related classes like different output controller classes (all implementing <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers.  The abstract OutputController class implements this inte...">IOutputController</a>). </p>
+<div class="textblock"><p><a class="el" href="namespace_direct_output_1_1_cab_1_1_out.html" title="DirectOutput.Cab.Out is the namespace for all output controller related classes like different output...">DirectOutput.Cab.Out</a> is the namespace for all output controller related classes like different output controller classes (all implementing <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>). </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -163,20 +168,20 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab.html">Cab</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab_1_1_out.html">Out</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:18 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:36 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -412,7 +413,7 @@ $(document).ready(function(){initNavTree('_table_info_8cs_source.html','');});
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            }</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            {</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                SaveTableConfigDialog.InitialDirectory = GlobalConfig.Config.GlobalConfigDirectoryName;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                SaveTableConfigDialog.InitialDirectory = Pinball.GlobalConfig.GetGlobalConfigDirectory().FullName;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            }</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">if</span> (SaveTableConfigDialog.ShowDialog() == DialogResult.OK)</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            {</div>
@@ -446,20 +447,20 @@ $(document).ready(function(){initNavTree('_table_info_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6cbc8b889a4a695d2f7ea7dfc5e5ac58.html">Frontend</a></li><li class="navelem"><a class="el" href="_table_info_8cs.html">TableInfo.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

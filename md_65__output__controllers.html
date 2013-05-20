@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -105,7 +106,7 @@ $(document).ready(function(){initNavTree('md_65__output__controllers.html','');}
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="outputcontrollers_introduction"></a>
 Introduction</h1>
-<p>Output controllers are devices like the Ledwiz or maybe your own Arduino invention controlling one or several physical outputs in a cabinet.</p>
+<p>Output controllers are devices like the Ledwiz or maybe your own Arduino or Raspberry PI invention controlling one or several physical outputs in a cabinet.</p>
 <div class="image">
 <img src="OutputControllerArchitecture.png" alt="OutputControllerArchitecture.png"/>
 </div>
@@ -115,7 +116,7 @@ Builtin output controllers</h1>
 <p>Currently support for the LedWiz is built in the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework.</p>
 <h1><a class="anchor" id="outputcontrollers_customeffects"></a>
 Custom output controllers</h1>
-<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework allows for the implementaion of custom output controllers. This can be done trough scripting (see chapter on scripting) or the classes required for a custom outputcontroller can be integrated in the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> project.</p>
+<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework allows for the implementation of custom output controllers. This can be done trough scripting (see chapter on scripting) or the classes required for a custom outputcontroller can be integrated in the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> project.</p>
 <h2><a class="anchor" id="outputcontrollers_interfaces"></a>
 Interfaces for output controllers</h2>
 <h3><a class="anchor" id="outputcontrollers_ioutputcontroller"></a>
@@ -177,20 +178,20 @@ Implementation guidelines for custom output controllers</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:18 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:36 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

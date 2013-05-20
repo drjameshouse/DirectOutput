@@ -5,7 +5,7 @@ var NAVTREE =
       [ "Requirements", "md_10__installation_and_configuration.html#installation_requirements", null ],
       [ "Installation", "md_10__installation_and_configuration.html#installation_installation", null ],
       [ "Configuration", "md_10__installation_and_configuration.html#installation_configuration", [
-        [ "Visual Pinball Table Config", "md_10__installation_and_configuration.html#installation_visualpinballtableconfig", null ],
+        [ "Visual Pinball Table Configuration", "md_10__installation_and_configuration.html#installation_visualpinballtableconfig", null ],
         [ "Visual Pinball core.vbs Adjustment", "md_10__installation_and_configuration.html#installation_visualpinballcorevbs", null ],
         [ "Global Configuration", "md_10__installation_and_configuration.html#installation_globalconfig", null ],
         [ "Cabinet Configuration", "md_10__installation_and_configuration.html#installation_cabinetconfig", null ],
@@ -14,13 +14,15 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Global Configuration", "globalconfig.html", [
+      [ "Introduction", "globalconfig.html#globalconfig_introduction", null ],
       [ "Global configuration file sections", "globalconfig.html#globalconfig_settings", [
-        [ "CabinetConfigFilePattern", "globalconfig.html#globalconfig_cabinetconfigfilepattern", null ],
-        [ "CabinetScriptsFilePattern", "globalconfig.html#globalconfig_cabinetscriptsfilepattern", null ],
-        [ "TableConfigFilePattern", "globalconfig.html#globalconfig_tableconfigfilepattern", null ],
         [ "TableScriptFilePatterns", "globalconfig.html#globalconfig_tablescriptsfilepattern", null ],
+        [ "CabinetConfigFilePatterns", "globalconfig.html#globalconfig_cabinetconfigfilepattern", null ],
+        [ "CabinetScriptsFilePattern", "globalconfig.html#globalconfig_cabinetscriptsfilepattern", null ],
+        [ "TableConfigFilePatterns", "globalconfig.html#globalconfig_tableconfigfilepatterns", null ],
         [ "LedControlIniFiles", "globalconfig.html#globalconfig_ledcontrolinifiles", null ],
-        [ "UpdateTimerIntervall", "globalconfig.html#globalconfig_updatetimerintervall", null ]
+        [ "UpdateTimerIntervall", "globalconfig.html#globalconfig_updatetimerintervall", null ],
+        [ "Logging", "globalconfig.html#globalconfig_logging", null ]
       ] ],
       [ "Example", "globalconfig.html#globalconfig_example", null ]
     ] ],
@@ -36,7 +38,19 @@ var NAVTREE =
       ] ],
       [ "Example cabinet configuration", "cabinetconfig.html#cabinetconfig_example", null ]
     ] ],
-    [ "Table configuration", "tableconfig.html", null ],
+    [ "Table configuration", "tableconfig.html", [
+      [ "Introduction", "tableconfig.html#tableconfig_introduction", null ],
+      [ "Table config file", "tableconfig.html#tableconfig_configfilestructure", [
+        [ "Table elements section", "tableconfig.html#tableconfig_configfilestructuretableelements", null ],
+        [ "Assigned static effects section", "tableconfig.html#tableconfig_configfilestructurestaticeffects", null ],
+        [ "Effects section", "tableconfig.html#tableconfig_configfilestructureeffects", [
+          [ "BasicAnalogEffect", "tableconfig.html#tableconfig_configfilestructureeffectsbasicanalogeffect", null ],
+          [ "BasicDigitalEffect", "tableconfig.html#tableconfig_configfilestructureeffectsbasicdigitaleffect", null ],
+          [ "BasicRGBEffect", "tableconfig.html#tableconfig_configfilestructureeffectsbasicrgbeffect", null ],
+          [ "ListEffect", "tableconfig.html#tableconfig_configfilestructureeffectslisteffect", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "LedControl files", "ledcontrolfiles.html", [
       [ "Introduction", "ledcontrolfiles.html#ledcontrol_introduction", null ],
       [ "Auto Configuration", "ledcontrolfiles.html#ledcontrol_autoconfig", [
@@ -67,8 +81,8 @@ var NAVTREE =
     ] ],
     [ "Toys", "md_63__toys.html", [
       [ "Introduction", "md_63__toys.html#toys_introduction", null ],
-      [ "Builtin toys", "md_63__toys.html#toys_builtineffects", null ],
-      [ "Custom toys", "md_63__toys.html#toys_customeffects", [
+      [ "Builtin toys", "md_63__toys.html#toys_builtin", null ],
+      [ "Custom toys", "md_63__toys.html#toys_custom", [
         [ "Implementation guidelines for custom toys", "md_63__toys.html#toys_implementationguideline", null ]
       ] ]
     ] ],
@@ -145,11 +159,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_array_extensions_8cs.html",
-"_sortable_binding_list_8cs.html",
-"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#ab999763841cd18fb10abaa72b6ac1ce0",
-"class_direct_output_1_1_general_1_1_generic_1_1_sortable_binding_list_3_01_t_01_4.html#a46446a12a97171adb81e35cd117f16d3",
-"class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad",
-"namespace_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent.html"
+"_table_config_8cs.html",
+"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a2be5a667f8370bc1695d9c660f88e6d4",
+"class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#ada402fefd4a225b5f1cc1c28aa9c2f76",
+"class_direct_output_1_1_update_timer.html#aad363b9b58b7708842903dfeddfac427",
+"namespace_direct_output_1_1_f_x.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

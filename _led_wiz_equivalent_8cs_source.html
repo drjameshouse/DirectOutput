@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -117,20 +118,20 @@ $(document).ready(function(){initNavTree('_led_wiz_equivalent_8cs_source.html','
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a>:<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations ">ToyBase</a>,<a class="code" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy.  The abstract class Toy implements this interface. ...">IToy</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output_list.html" title="List of LedWizEquivalentOutput objects. ">xLedWizEquivalentOutputList</a> _Outputs=<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output_list.html" title="List of LedWizEquivalentOutput objects. ">xLedWizEquivalentOutputList</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html" title="List of LedWizEquivalentOutput objects. ">LedWizEquivalentOutputList</a> _Outputs=<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html" title="List of LedWizEquivalentOutput objects. ">LedWizEquivalentOutputList</a>();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#aa82beeacdc83a35ffb140cb7239f8b83">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> SetOutputValue(<span class="keywordtype">int</span> OutputNumber, <span class="keywordtype">int</span> Value)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">xLedWizEquivalentOutput</a> LWO= Outputs.First(O =&gt; O.LedWizEquivalentOutputNumber == OutputNumber);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a> LWO= Outputs.First(O =&gt; O.LedWizEquivalentOutputNumber == OutputNumber);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">if</span> (LWO != null)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                LWO.<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#a3a0a8b3d95ed003595c78d4afe81be8f" title="Gets or sets the value of the output.  Valid values must be in the range of 0-48. ...">Value</a> = Value;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                LWO.<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a08029ef33072f0b90f98e87c16810b84" title="Gets or sets the value of the output.  Valid values must be in the range of 0-48. ...">Value</a> = Value;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output_list.html" title="List of LedWizEquivalentOutput objects. ">xLedWizEquivalentOutputList</a> Outputs</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a31935757edf3a01d1b3384054ccb244d">   39</a></span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html" title="List of LedWizEquivalentOutput objects. ">LedWizEquivalentOutputList</a> Outputs</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#adaf8a34e086deba318abb30072fab95c">   39</a></span>&#160;        {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _Outputs; }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keyword">set</span> { _Outputs = value; }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
@@ -146,7 +147,7 @@ $(document).ready(function(){initNavTree('_led_wiz_equivalent_8cs_source.html','
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#ae367b6418ce655db5f05b393cfbcffda">   63</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>)</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Outputs.<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output_list.html#a577413bb6f450307dc339cc465b1cae1" title="Initializes all LedWizEquivalentOutput objects in the list. ">Init</a>(Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb" title="Gets the Cabinet object for the Pinball object. ">Cabinet</a>); </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Outputs.<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html#a2061c3cd1afeb0380d7dab4b30349c6e" title="Initializes all LedWizEquivalentOutput objects in the list. ">Init</a>(Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb" title="Gets the Cabinet object for the Pinball object. ">Cabinet</a>); </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a740dbf1cdb7bb1a22e452fe24181f181">   71</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Reset()</div>
@@ -167,7 +168,7 @@ $(document).ready(function(){initNavTree('_led_wiz_equivalent_8cs_source.html','
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            this.Name = <span class="stringliteral">&quot;LedWizEquivalent {0}&quot;</span>.Build(LedWiz.Number);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">foreach</span> (DirectOutput.Cab.Out.IOutput O in LedWiz.Outputs)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                Outputs.Add(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">xLedWizEquivalentOutput</a>() {OutputName=<span class="stringliteral">&quot;{0}\\{1}&quot;</span>.Build(LedWiz.Name,O.Name),LedWizEquivalentOutputNumber=((DirectOutput.Cab.Out.LW.LedWizOutput)O).LedWizOutputNumber});</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                Outputs.Add(<span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a>() {OutputName=<span class="stringliteral">&quot;{0}\\{1}&quot;</span>.Build(LedWiz.Name,O.Name),LedWizEquivalentOutputNumber=((DirectOutput.Cab.Out.LW.LedWizOutput)O).LedWizOutputNumber});</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
@@ -181,20 +182,20 @@ $(document).ready(function(){initNavTree('_led_wiz_equivalent_8cs_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="dir_4547d09389004a70f9bf66b1c6024b77.html">Toys</a></li><li class="navelem"><a class="el" href="dir_e7b0f10dbd739845c2b3c8b924fd1a57.html">LWEquivalent</a></li><li class="navelem"><a class="el" href="_led_wiz_equivalent_8cs.html">LedWizEquivalent.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:16 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:33 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

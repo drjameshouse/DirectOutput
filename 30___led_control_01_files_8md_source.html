@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -120,19 +121,19 @@ $(document).ready(function(){initNavTree('30___led_control_01_files_8md.html',''
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;Please check the &lt;a href=&quot;http:<span class="comment">//www.hyperspin-fe.com/forum/forumdisplay.php?34-HyperPin-Support&quot;&gt;HyperSpin Forum&lt;/a&gt; for more information on LedControl.ini files and details on the VBScript solution which uses the LedControl files normally.</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;\section ledcontrol_autoconfig Auto Configuration</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;\subsection ledcontrol_autoconfigtable Auto Table config</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;If no Table config file exists for the currently executed table, the framework tries to configure itself, based on classical LedControl.ini files.</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;The loading of the LedControl files works as follows:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;1. The framework tries to locate entries for LedControl files in the GlobalConfig.</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;If entries are found, these files are loaded and used to configure the LedWizEquivalent toy with the matching LedWiz number.</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;If a file does not exist, can not be read or parsed, the framework will silently ignore the file.</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;2. If no entries for LedControl files exist in the GlobalConfig, the framework will try to load a single LedControl.ini file (named LedControl.ini) from one of the following directories:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;\section ledcontrol_autoconfig Auto Configuration</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;\subsection ledcontrol_autoconfigtable Auto Table config</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;If no Table config file exists for the currently executed table, the framework tries to configure itself, based on classical LedControl.ini files.</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;The loading of the LedControl files works as follows:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;1. The framework tries to locate entries for LedControl files in the GlobalConfig.</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;If entries are found, these files are loaded and used to configure the LedWizEquivalent toy(s) with the matching LedWiz number(s).</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;If a file does not exist, can not be read or parsed, the framework will silently ignore the file.</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;2. If no entries for LedControl files exist in the GlobalConfig, the framework will try to load a single LedControl.ini file (named LedControl.ini) from one of the following directories:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- Table directory</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- Global config directory</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- DirectOutput.dll directory</div>
@@ -143,18 +144,18 @@ $(document).ready(function(){initNavTree('30___led_control_01_files_8md.html',''
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;Since the LedControlEffect sends the output data to a IToy of type LedWizEquivalent (basically a toy behaving like a LedWiz), auto config does also configure the cabinet based on the following rules:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;1. If the cabinet does already contain LedWizEquivalent toy objects, the LedWizEquivalent toys with numbers matching the number of the LedControl files will be used for the outputs. If at least one preconfigured LedWizEquivalent toy exists in the cabinet, auto config will not add other LedWizEquivalent toys.</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;1. If the cabinet configuration does already contain LedWizEquivalent toy objects, the LedWizEquivalent toys with numbers matching the number of the LedControl files will be used for the outputs. If at least one preconfigured LedWizEquivalent toy exists in the cabinet, auto config will not add other LedWizEquivalent toys.</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;2. If no LedWizEquivalent toys exist in the cabinet config, the framework will try to detect all connected Ledwiz controllers and add LedWiz IOutputController as well as LedWizEquivalent IToy objects for every Ledwiz.</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;\section ledcontrol_manualconfig Manual Configuration</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Instead of relying on the automatic cabinet config, you can also specifiy your own cabinet config for the use with LedControl.ini files.</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;Instead of relying on the automatic cabinet config, you can also specifiy your own cabinet configuration for the use with LedControl.ini files.</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;To be usable for the LedControl functions of the framework, the list of toys in the cabinet must contain one or several LedWizEquivalent IToy objects and the outputs for the LedWizEquivalents. Normaly the outputs of the LedWizEquivalent toys will point to the outputs of a single LedWiz IOutputController, but you are free to point to any other output of any IOutputController configured in your system (e.g. you could use outputs of 2 diffrent LedWiz controllers in one LedWizEquivalent toy.</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;To be usable for the LedControl functions of the framework, the list of toys in the cabinet must contain one or several LedWizEquivalent IToy objects and the outputs for the LedWizEquivalents. Normaly the outputs of the LedWizEquivalent toys will point to the outputs of a single LedWiz IOutputController, but you are free to point to any other output of any IOutputController configured in your system (e.g. you could use outputs of 2 different LedWiz controllers in one LedWizEquivalent toy).</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;When LedControl data is used for the Table configuration, the number of the LedWizEquivalent is used to match to the correct LedControl.ini file.</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;\section ledcontrol_example Example LedControl.ini</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;\section ledcontrol_example Example LedControl.ini</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;The following LedControl.ini is used in my cabinet to control 10 contactors,1 replay knocker, 5 lamps, 5 RGBLeds and 1 shaker.</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;~~~~~~~~~~~~~~~~~~~~~~~~~{.ini}</div>
@@ -320,20 +321,20 @@ $(document).ready(function(){initNavTree('30___led_control_01_files_8md.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="30___led_control_01_files_8md.html">30_LedControl Files.md</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

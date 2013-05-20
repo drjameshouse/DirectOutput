@@ -10,6 +10,5 @@ var searchData=
   ['colorconfiglist_2ecs',['ColorConfigList.cs',['../_color_config_list_8cs.html',1,'']]],
   ['colorlist_2ecs',['ColorList.cs',['../_color_list_8cs.html',1,'']]],
   ['combinedeffectlist_2ecs',['CombinedEffectList.cs',['../_combined_effect_list_8cs.html',1,'']]],
-  ['config_2ecs',['Config.cs',['../_config_8cs.html',1,'']]],
   ['contactor_2ecs',['Contactor.cs',['../_contactor_8cs.html',1,'']]]
 ];

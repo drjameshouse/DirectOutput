@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -122,15 +123,17 @@ $(document).ready(function(){initNavTree('99___mainpage_and_about_8md.html','');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;Welcome to the DirectOutput framework <span class="keywordflow">for</span> <span class="keyword">virtual</span> pinball cabinets</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;===================================================================</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;This framework tries to solve several issues with the current solution to control toys in cabinets:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;* __Stuttering__ is hopefully a thing of the past. By <span class="keyword">using</span> several threads the framework isolates the main thread doing the work in Visual Pinball from the communication with the Ledwiz.</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;* __More outputs__ are also possible. Instead of <span class="keyword">using</span> only one LedWiz it is now possible to connect several LedWiz units </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;* __More configuration options__ are available troughthe DirectOutput framework as well.</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;* __Open <span class="keywordflow">for</span> extensions__ means that the framework is able to load uncompiled C#-script files containing <span class="keyword">new</span> effects, toys or other types of output controllers at runtime. After the scripts have been loaded they are copiled and integrated into the framework.</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;To make the start with the DirectOutput framework easy and painless it is possible to reuse the LedControl.ini file used <span class="keywordflow">for</span> the configuration of the VBScript solution.</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;During my first experiments with Visual Pinbal on my laptop, I thought that it would be a cool idea to a some kind of force feedback to the system. It didn<span class="stringliteral">&#39;t take me long to find out that a solution for this idea, did already exist. </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">When I started to build my own cabinet the current vbscript implementation supporting only one LedWiz with 32 outputs became too limited pretty soon. On somes table there were also stuttering issues. So I started to think about another solution and began to implement the DirectOutput framework.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="stringliteral">The DirectOutput framework tries to overcome the limitations of the current solution to control toys in cabinets:</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">* __Stuttering__ is hopefully a thing of the past. By using several threads the framework isolates the main thread doing the work in Visual Pinball from the communication with the Ledwiz.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">* __More outputs__ are also possible. Instead of using only one LedWiz it is now possible to connect several LedWiz units or other custom output controllers as well.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">* __More configuration options__ are available troughthe DirectOutput framework as well.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">* __Open for extensions__ means that the framework is able to load uncompiled C#-script files containing new effects, toys or other types of output controllers at runtime. After the scripts have been loaded they are copiled and integrated into the framework.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">To make the start with the DirectOutput framework easy and painless it is possible to reuse the LedControl.ini file used for the configuration of the VBScript solution.</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -138,20 +141,20 @@ $(document).ready(function(){initNavTree('99___mainpage_and_about_8md.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="99___mainpage_and_about_8md.html">99_MainpageAndAbout.md</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -117,30 +118,30 @@ $(document).ready(function(){initNavTree('_list_effect_8cs_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;       </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html" title="List of effects which are assigned to some other object. ">AssignedEffectList</a> _Effects;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html" title="List of effects which are assigned to some other object. ">AssignedEffectList</a> _AssignedEffects;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html" title="List of effects which are assigned to some other object. ">AssignedEffectList</a> Effects</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a5fb7b3bfd0605b9433c94954461b515d">   26</a></span>&#160;        {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _Effects; }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">set</span> { _Effects = value; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html" title="List of effects which are assigned to some other object. ">AssignedEffectList</a> AssignedEffects</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a822d69d9a65a5b4cb26b3e633a603ae6">   26</a></span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _AssignedEffects; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">set</span> { _AssignedEffects = value; }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a75c437eb1f4e78a38aebf78632b278bb">   36</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Trigger(Table.TableElementData TableElementData)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            Effects.<a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html#ae800e7739871a2045c419c2c7e9886e7" title="Triggers all AssignedEffectOrder objects in the list. ">Trigger</a>(TableElementData);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            AssignedEffects.<a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html#ae800e7739871a2045c419c2c7e9886e7" title="Triggers all AssignedEffectOrder objects in the list. ">Trigger</a>(TableElementData);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a73800340c47aeceaa6339d963591d404">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            Effects.Init(Pinball);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            AssignedEffects.Init(Pinball);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#ae171f245fce991f45c736820e1339e87">   54</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            Effects.Finish();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            AssignedEffects.Finish();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
@@ -155,20 +156,20 @@ $(document).ready(function(){initNavTree('_list_effect_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_3e554180b925145de090e82e9ce1143b.html">FX</a></li><li class="navelem"><a class="el" href="dir_4297f7c2e79c610ace180093d5c9d8ae.html">ListFX</a></li><li class="navelem"><a class="el" href="_list_effect_8cs.html">ListEffect.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

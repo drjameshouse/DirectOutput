@@ -1,7 +1,8 @@
 var searchData=
 [
+  ['saveconfigdata',['SaveConfigData',['../class_direct_output_1_1_frontend_1_1_global_config_edit.html#aa89d8a3a908804909b3e7a9665104d4e',1,'DirectOutput::Frontend::GlobalConfigEdit']]],
   ['saveconfigxmlfile',['SaveConfigXmlFile',['../class_direct_output_1_1_cab_1_1_cabinet.html#a5436db2ff478323a279c53d2245713b1',1,'DirectOutput.Cab.Cabinet.SaveConfigXmlFile()'],['../class_direct_output_1_1_table_1_1_table.html#acf7aba6a1b8e0a28aa8ba5daa955b8a1',1,'DirectOutput.Table.Table.SaveConfigXmlFile()']]],
-  ['saveglobalconfig',['SaveGlobalConfig',['../class_direct_output_1_1_global_config_1_1_config.html#a7c46a49c2f4d58ae986e9ab9520ef391',1,'DirectOutput::GlobalConfig::Config']]],
+  ['saveglobalconfig',['SaveGlobalConfig',['../class_direct_output_1_1_global_configuration_1_1_global_config.html#af7ae1ee9330b9ae82b5061b39f387b1b',1,'DirectOutput::GlobalConfiguration::GlobalConfig']]],
   ['script',['Script',['../class_direct_output_1_1_scripting_1_1_script.html#aa583ed97e0e4f5b926debc0935346c92',1,'DirectOutput.Scripting.Script.Script(string ScriptFilename, bool ThrowExceptions=false)'],['../class_direct_output_1_1_scripting_1_1_script.html#a0442e7bcc7225700accd4ccc3cb2756e',1,'DirectOutput.Scripting.Script.Script(FileInfo ScriptFile, bool ThrowExceptions=false)'],['../class_direct_output_1_1_scripting_1_1_script.html#a150d3cdf75cc04cd27e8f7deff47a8e1',1,'DirectOutput.Scripting.Script.Script()']]],
   ['scriptinfo',['ScriptInfo',['../class_direct_output_1_1_frontend_1_1_script_info.html#aee1f061922b81d1147ad10e460694127',1,'DirectOutput::Frontend::ScriptInfo']]],
   ['setbrightness',['SetBrightness',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_lamp.html#aed9afdc3e4f4119ddab05d5b72168b31',1,'DirectOutput.Cab.Toys.Basic.Lamp.SetBrightness()'],['../interface_direct_output_1_1_cab_1_1_toys_1_1_i_lamp_toy.html#a48e008261d00b8329a1332e7275d17c5',1,'DirectOutput.Cab.Toys.ILampToy.SetBrightness()']]],

@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -184,7 +185,7 @@ Properties</h2></td></tr>
 <tr class="separator:a98fd3c8a7ce5d1ecf63b18610a7ae70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54c9b01e78d96d4db12e806c54cf3fcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html">AssignedEffectList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_table_1_1_table.html#a54c9b01e78d96d4db12e806c54cf3fcb">AssignedStaticEffects</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a54c9b01e78d96d4db12e806c54cf3fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the static effects list for the table.<br/>
- AssignedEffects contained in AssignedStaticEffects are triggered when the <a class="el" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a> is started. The Trigger method is called with a <a class="el" href="class_direct_output_1_1_table_1_1_table_element.html" title="Represents a element (e.g. Switch, Solenoid) of a pinball table ">TableElement</a> containing a Swith with number -1 and a Value of -1.<br/>
+ AssignedEffects contained in AssignedStaticEffects are triggered when the <a class="el" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a> is started. The Trigger method is called with null as the <a class="el" href="class_direct_output_1_1_table_1_1_table_element.html" title="Represents a element (e.g. Switch, Solenoid) of a pinball table ">TableElement</a> parameter.<br/>
   <a href="#a54c9b01e78d96d4db12e806c54cf3fcb">More...</a><br/></td></tr>
 <tr class="separator:a54c9b01e78d96d4db12e806c54cf3fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -481,7 +482,7 @@ Events</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets or sets the static effects list for the table.<br/>
- AssignedEffects contained in AssignedStaticEffects are triggered when the <a class="el" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a> is started. The Trigger method is called with a <a class="el" href="class_direct_output_1_1_table_1_1_table_element.html" title="Represents a element (e.g. Switch, Solenoid) of a pinball table ">TableElement</a> containing a Swith with number -1 and a Value of -1.<br/>
+ AssignedEffects contained in AssignedStaticEffects are triggered when the <a class="el" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a> is started. The Trigger method is called with null as the <a class="el" href="class_direct_output_1_1_table_1_1_table_element.html" title="Represents a element (e.g. Switch, Solenoid) of a pinball table ">TableElement</a> parameter.<br/>
  </p>
 <p>The static effects list. </p>
 
@@ -706,20 +707,20 @@ Events</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_table.html">Table</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_table_1_1_table.html">Table</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:20 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:39 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

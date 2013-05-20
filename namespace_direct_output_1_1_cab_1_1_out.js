@@ -9,5 +9,7 @@ var namespace_direct_output_1_1_cab_1_1_out =
     [ "OutputControllerEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args" ],
     [ "OutputControllerList", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list" ],
     [ "OutputEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args" ],
-    [ "OutputList", "class_direct_output_1_1_cab_1_1_out_1_1_output_list.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_list" ]
+    [ "OutputList", "class_direct_output_1_1_cab_1_1_out_1_1_output_list.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_list" ],
+    [ "OutputNameAttribute", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute" ],
+    [ "OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter" ]
 ];

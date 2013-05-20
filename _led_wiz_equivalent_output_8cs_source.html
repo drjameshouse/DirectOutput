@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -113,57 +114,58 @@ $(document).ready(function(){initNavTree('_led_wiz_equivalent_output_8cs_source.
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>DirectOutput.Cab.Toys.LWEquivalent</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">xLedWizEquivalentOutput</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#ab999763841cd18fb10abaa72b6ac1ce0">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> OutputName { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#a2ca819916a85635468ac9ccff84a75e3">   25</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> LedWizEquivalentOutputNumber { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        [XmlIgnoreAttribute]</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> Value</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#a3a0a8b3d95ed003595c78d4afe81be8f">   36</a></span>&#160;        {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">get</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">if</span> (_Output != null)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)(_Output.Value/5.3125);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">set</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">if</span> (_Output != null)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    _Output.<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#a3a0a8b3d95ed003595c78d4afe81be8f" title="Gets or sets the value of the output.  Valid values must be in the range of 0-48. ...">Value</a> = (byte)(value.Limit(0, 48) * 5.3125);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">private</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> _Output;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#ae4fb3b04ff275c52fafe0ed1aaae8099">   59</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a> <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">if</span> (Cabinet.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a85d370c78279d60ef3b5c9aa2b3334ee" title="List of IOutput objects representing all outputs of all all output controllers in the cabinet...">Outputs</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet_output_list.html#a303e224af289c90796c50169678cb726" title="Checks if the specified IOutput exists in the list. ">Contains</a>(OutputName))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                _Output = Cabinet.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a85d370c78279d60ef3b5c9aa2b3334ee" title="List of IOutput objects representing all outputs of all all output controllers in the cabinet...">Outputs</a>[OutputName];</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                _Output = null;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#ad7b6cd7b7e60e33b5f454650806bd144">   74</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Reset()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            Value = 0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1x_led_wiz_equivalent_output.html#af82a4eec849fd88783ac8827931ee219">   82</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Finish()</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            Value = 0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            _Output = null;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        [OutputName]</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a2be5a667f8370bc1695d9c660f88e6d4">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> OutputName { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a4a4eb26835ea8ee4e13743c4fb075146">   26</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> LedWizEquivalentOutputNumber { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        [XmlIgnoreAttribute]</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> Value</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a08029ef33072f0b90f98e87c16810b84">   37</a></span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keyword">get</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="keywordflow">if</span> (_Output != null)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)(_Output.Value/5.3125);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">set</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">if</span> (_Output != null)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    _Output.<a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a08029ef33072f0b90f98e87c16810b84" title="Gets or sets the value of the output.  Valid values must be in the range of 0-48. ...">Value</a> = (byte)(value.Limit(0, 48) * 5.3125);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">private</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> _Output;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#ad14e6aaa9d2d5bd13700b0fe09ae5a90">   60</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a> <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span> (Cabinet.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a85d370c78279d60ef3b5c9aa2b3334ee" title="List of IOutput objects representing all outputs of all all output controllers in the cabinet...">Outputs</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet_output_list.html#a303e224af289c90796c50169678cb726" title="Checks if the specified IOutput exists in the list. ">Contains</a>(OutputName))</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                _Output = Cabinet.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a85d370c78279d60ef3b5c9aa2b3334ee" title="List of IOutput objects representing all outputs of all all output controllers in the cabinet...">Outputs</a>[OutputName];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                _Output = null;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a9a6c3e0ab1664f8e8bd79f9c416e719c">   75</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Reset()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            Value = 0;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a4499c3f595bb1659f24e175169fa4830">   83</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Finish()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            Value = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            _Output = null;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -171,20 +173,20 @@ $(document).ready(function(){initNavTree('_led_wiz_equivalent_output_8cs_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="dir_4547d09389004a70f9bf66b1c6024b77.html">Toys</a></li><li class="navelem"><a class="el" href="dir_e7b0f10dbd739845c2b3c8b924fd1a57.html">LWEquivalent</a></li><li class="navelem"><a class="el" href="_led_wiz_equivalent_output_8cs.html">LedWizEquivalentOutput.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:16 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:33 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

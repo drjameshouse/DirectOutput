@@ -7,7 +7,7 @@ var dir_aee55ada2a4069f3106bcc13e6391e99 =
       [ "BasicDigitalEffect", "class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_digital_effect.html", "class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_digital_effect" ]
     ] ],
     [ "BasicFX.cs", "_basic_f_x_8cs.html", null ],
-    [ "BasicRGBLedEffect.cs", "_basic_r_g_b_led_effect_8cs.html", [
-      [ "BasicRGBLedEffect", "class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_led_effect.html", "class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_led_effect" ]
+    [ "BasicRGBEffect.cs", "_basic_r_g_b_effect_8cs.html", [
+      [ "BasicRGBEffect", "class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html", "class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect" ]
     ] ]
 ];

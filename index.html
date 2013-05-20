@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -104,10 +105,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="caption">
 DirectOutput framework for virtual pinball cabinets</div></div>
  <h1>Welcome to the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework for virtual pinball cabinets</h1>
-<p>This framework tries to solve several issues with the current solution to control toys in cabinets:</p>
+<p>During my first experiments with Visual Pinbal on my laptop, I thought that it would be a cool idea to a some kind of force feedback to the system. It didn't take me long to find out that a solution for this idea, did already exist. When I started to build my own cabinet the current vbscript implementation supporting only one LedWiz with 32 outputs became too limited pretty soon. On somes table there were also stuttering issues. So I started to think about another solution and began to implement the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework.</p>
+<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework tries to overcome the limitations of the current solution to control toys in cabinets:</p>
 <ul>
 <li><b>Stuttering</b> is hopefully a thing of the past. By using several threads the framework isolates the main thread doing the work in Visual Pinball from the communication with the Ledwiz.</li>
-<li><b>More outputs</b> are also possible. Instead of using only one LedWiz it is now possible to connect several LedWiz units</li>
+<li><b>More outputs</b> are also possible. Instead of using only one LedWiz it is now possible to connect several LedWiz units or other custom output controllers as well.</li>
 <li><b>More configuration options</b> are available troughthe <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework as well.</li>
 <li><b>Open for extensions</b> means that the framework is able to load uncompiled C#-script files containing new effects, toys or other types of output controllers at runtime. After the scripts have been loaded they are copiled and integrated into the framework.</li>
 </ul>
@@ -118,20 +120,20 @@ DirectOutput framework for virtual pinball cabinets</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:20 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:40 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

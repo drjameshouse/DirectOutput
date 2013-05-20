@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -103,47 +104,72 @@ $(document).ready(function(){initNavTree('globalconfig.html','');});
 <div class="title">Global Configuration </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The global configuration of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework defines which files the system loads for the <a class="el" href="cabinetconfig.html">Cabinet</a> and Table configuration. In addition the global conguration specifies which C#-script files containing extension for the framework to load and compile. The global configuration information is valid for the whole framework no matter what cabinet or table config is loaded.</p>
+<div class="textblock"><h1><a class="anchor" id="globalconfig_introduction"></a>
+Introduction</h1>
+<p>The global configuration of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework defines which files the system loads for the <a class="el" href="cabinetconfig.html">Cabinet</a> and <a class="el" href="tableconfig.html">Table</a> configuration. In addition the global conguration specifies which C#-script files containing extensions for the framework to load and compile. The global configuration information is valid for the whole framework no matter what cabinet or table config is loaded.</p>
+<p>Depending on the interface used to communicate with the framework, different global configuration files are loaded.</p>
+<p>For the B2S.Server Plugin the configuration file "GlobalConfiguration_b2SServer.xml" is loaded. The framework is searching for this file in the following locations:</p>
+<ul>
+<li>A directory named -config- withing the directory of the DirectOutput.dll.</li>
+<li>A shortcut named -config- to a directory.</li>
+<li>Table directory.</li>
+<li>Directory of the DirectOutput.dll.</li>
+</ul>
 <h1><a class="anchor" id="globalconfig_settings"></a>
 Global configuration file sections</h1>
-<h2><a class="anchor" id="globalconfig_cabinetconfigfilepattern"></a>
-CabinetConfigFilePattern</h2>
-<p>CabinetConfigFilePattern defines the pattern for the <a class="el" href="cabinetconfig.html">cabinet configuration file</a>. This setting supports wildcards (* represents any number of characters, ? represents one character). In addition the following placeholders are supported:</p>
+<h2><a class="anchor" id="globalconfig_tablescriptsfilepattern"></a>
+TableScriptFilePatterns</h2>
+<p>GlobalScriptsFilePatterns defines the search patterns for global script files. The script files are loaded and compiled before the cabinet and table configs or any other scripts are loaded. This setting supports wildcards (* represents any number of characters, ? represents one character). In addition the following placeholders are supported:</p>
 <ul>
 <li>{DllDir} represents the directory of the DirectOutput.dll.</li>
-<li>{GlobalConfigDir} represents the default global config directory (usually same as {DllDir}).</li>
+<li>{GlobalConfigDir} represents the global config directory.</li>
+</ul>
+<p>A GlobalScriptsFilePatterns section could contain the following content:</p>
+<div class="fragment"><div class="line">&lt;GlobalScriptFilePatterns&gt;</div>
+<div class="line">  &lt;FilePattern&gt;{GlobalConfigDir}\cabinet*.cs&lt;/FilePattern&gt;</div>
+<div class="line">&lt;/GlobalScriptFilePatterns&gt;</div>
+</div><!-- fragment --><h2><a class="anchor" id="globalconfig_cabinetconfigfilepattern"></a>
+CabinetConfigFilePatterns</h2>
+<p>CabinetConfigFilePatterns defines the patterns for the <a class="el" href="cabinetconfig.html">cabinet configuration file</a>. If the patterns are matching more than one file, only the first matching file is loaded for the cabinet configuration. This setting supports wildcards (* represents any number of characters, ? represents one character). In addition the following placeholders are supported:</p>
+<ul>
+<li>{DllDir} represents the directory of the DirectOutput.dll.</li>
+<li>{GlobalConfigDir} represents the default global config directory.</li>
 </ul>
 <p>A typical CabinetConfigFilePattern sections might looks as follows:</p>
-<div class="fragment"><div class="line">&lt;CabinetConfigFilePattern&gt;{GlobalConfigDir}\cabinet.xml&lt;/CabinetConfigFilePattern&gt;</div>
+<div class="fragment"><div class="line">&lt;CabinetConfigFilePatterns&gt;</div>
+<div class="line">  &lt;FilePattern&gt;{GlobalConfigDir}\cabinet.xml&lt;/FilePattern&gt;</div>
+<div class="line">&lt;/CabinetConfigFilePatterns&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="globalconfig_cabinetscriptsfilepattern"></a>
 CabinetScriptsFilePattern</h2>
-<p>CabinetScriptsFilePattern defines the search patterns for cabinet script files. The script files are loaded an compiled before the cabinet config is loaded. This settings supports the same wildcards and placeholders as the <em>CabinetConfigFilePattern</em> setting. This section can contain any number of file patterns.</p>
+<p>CabinetScriptsFilePattern defines the search patterns for cabinet script files. The script files are loaded an compiled before the cabinet config is loaded. This settings supports the same wildcards and placeholders as the <em>CabinetConfigFilePatterns</em> setting.</p>
 <p>A CabinetScriptsFilePattern section could contain the following content:</p>
 <div class="fragment"><div class="line">&lt;CabinetScriptFilePatterns&gt;</div>
-<div class="line">  &lt;Pattern&gt;{GlobalConfigDir}\cabinet*.cs&lt;/Pattern&gt;</div>
+<div class="line">  &lt;FilePattern&gt;{GlobalConfigDir}\cabinet*.cs&lt;/FilePattern&gt;</div>
 <div class="line">&lt;/CabinetScriptFilePatterns&gt;</div>
-</div><!-- fragment --><h2><a class="anchor" id="globalconfig_tableconfigfilepattern"></a>
-TableConfigFilePattern</h2>
-<p>TableConfigFilePattern defines the search pattern which is used to lookup the table configuration file. This setting supports wildcards (* represents any number of characters, ? represents one character). In addition the following placeholders are supported:</p>
+</div><!-- fragment --><h2><a class="anchor" id="globalconfig_tableconfigfilepatterns"></a>
+TableConfigFilePatterns</h2>
+<p>TableConfigFilePatterns define the search patterns which are used to lookup the table configuration file. If more than one file matches the search patterns, only the first matching file is loaded for the table configuration. This setting supports wildcards (* represents any number of characters, ? represents one character). In addition the following placeholders are supported:</p>
 <ul>
 <li>{TableDir} represents the full path to the directory of the table.</li>
 <li>{TableDirName} represents the name of the table directory (last part of {TableDir}).</li>
 <li>{TableName} represents the name of the table without extensions.</li>
 <li>{DllDir} represents the directory of the DirectOutput.dll.</li>
-<li>{GlobalConfigDir} represents the default global config directory (usually same as {DllDir}).</li>
+<li>{GlobalConfigDir} represents the default global config directory.</li>
 </ul>
 <p>A typical TableConfigFilePattern section looks as follows:</p>
-<div class="fragment"><div class="line">&lt;TableConfigFilePattern&gt;{GlobalConfigDir}\ {TableName}.xml&lt;/TableConfigFilePattern&gt;</div>
+<div class="fragment"><div class="line">&lt;TableScriptFilePatterns&gt;</div>
+<div class="line">  &lt;FilePattern&gt;{GlobalConfigDir}\\{TableName}.xml&lt;/FilePattern&gt;</div>
+<div class="line">&lt;/TableScripsFilePatterns&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="globalconfig_tablescriptsfilepattern"></a>
 TableScriptFilePatterns</h2>
-<p>TableScriptsFilePatterns defines the search patterns for table specific script files. The script files are loaded and compiled before the table config is loaded. This settings supports the same wildcards and placeholders as the <em>TableConfigFilePattern</em> setting.</p>
+<p>TableScriptsFilePatterns define the search patterns for table specific script files. The script files are loaded and compiled before the table config is loaded. This settings supports the same wildcards and placeholders as the <em>TableConfigFilePatterns</em> setting.</p>
 <p>A typical TableScriptsFilePattern section might looks as follows:</p>
 <div class="fragment"><div class="line">&lt;TableScriptFilePatterns&gt;</div>
-<div class="line">  &lt;Pattern&gt;{GlobalConfigDir}\ {TableName}*.cs&lt;/Pattern&gt;</div>
-<div class="line">&lt;/TableScripsFilePatterns&gt;</div>
+<div class="line">  &lt;FilePattern&gt;{GlobalConfigDir}\\{TableName}*.cs&lt;/FilePattern&gt;</div>
+<div class="line">&lt;/TableScriptFilePatterns&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="globalconfig_ledcontrolinifiles"></a>
 LedControlIniFiles</h2>
-<p>LedControlIniFiles holds the paths to LedControl.ini files as well as the LedWiz number assiociated with the ledcontrol.ini files. LedControl.ini files can be used as a fallback solution if no cabinet and/or cabinet config is loaded. The LedControlIniFiles section can contain any number of LedControlIniFile sections.</p>
+<p>LedControlIniFiles holds the paths to LedControl.ini files as well as the LedWiz number assiociated with the ledcontrol.ini files. LedControl.ini files can be used as a fallback solution if no cabinet and/or cabinet config is loaded. The LedControlIniFiles section can contain up to 16 LedControlIniFile sections.</p>
 <p>A LedControlIniFile section defines a single LedControl.ini file and the associated LedWiz number.</p>
 <ul>
 <li><em>FileName</em> contains the full filename of the LedControl.ini file.</li>
@@ -159,64 +185,89 @@ LedControlIniFiles</h2>
 <div class="line">&lt;/LedControlIniFiles&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="globalconfig_updatetimerintervall"></a>
 UpdateTimerIntervall</h2>
-<p>UpdateTimerIntervall contains the minimal interval in milliseconds at which the update timer fires. Be carefull when changing this setting, since very low values might impact the performance of the framework. The value of this setting default to 20 milliseconds.</p>
+<p>UpdateTimerIntervall contains the minimal interval in milliseconds at which the update timer fires. Be carefull when changing this setting, since very low values might impact the performance of the framework. The value of this setting defaults to 20 milliseconds.</p>
 <p>A typical expample for this setting is:</p>
 <div class="fragment"><div class="line">&lt;UpdateTimerIntervall&gt;20&lt;/UpdateTimerIntervall&gt;</div>
+</div><!-- fragment --><h2><a class="anchor" id="globalconfig_logging"></a>
+Logging</h2>
+<p>EnableLogging does whats its name says. It enables log output to the file specified in the LogFilePattern.</p>
+<p>The LogFilePattern can defines a filename for the log file and can include the following placeholders:</p>
+<ul>
+<li>{DllDir} represents the directory of the DirectOutput.dll.</li>
+<li>{GlobalConfigDir} represents the default global config directory.</li>
+<li>{TableDir} represents the full path to the directory of the table.</li>
+<li>{TableDirName} represents the name of the table directory (last part of {TableDir}).</li>
+<li>{TableName} represents the name of the table without extensions.</li>
+<li>{RomName} is the name of the game rom.</li>
+<li>{DateTime} is a timestamp containing the current date and type in the following form: yyyymmdd_hhmmss.</li>
+<li>{Date} is the current date in the following form: yyyymmdd.</li>
+<li>{Time} is the current time in the following form: hhmmss</li>
+</ul>
+<p>Typical entries for the loggin configuration might look as follows:</p>
+<div class="fragment"><div class="line">&lt;EnableLogging&gt;<span class="keyword">true</span>&lt;/EnableLogging&gt;</div>
+<div class="line">&lt;LogFilePattern&gt;.TableName}_{DateTime}.log&lt;/LogFilePattern&gt;</div>
 </div><!-- fragment --><h1><a class="anchor" id="globalconfig_example"></a>
 Example</h1>
 <div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;Config&gt;</div>
-<div class="line"></div>
-<div class="line">  &lt;CabinetConfigFilePattern&gt;{GlobalConfigDir}\cabinet.xml&lt;/CabinetConfigFilePattern&gt;</div>
-<div class="line"></div>
-<div class="line">  &lt;CabinetScriptFilePatterns&gt;</div>
-<div class="line">    &lt;Pattern&gt;{GlobalConfigDir}\cabinet*.cs&lt;/Pattern&gt;</div>
-<div class="line">  &lt;/CabinetScriptFilePatterns&gt;</div>
-<div class="line"></div>
-<div class="line">  &lt;TableConfigFilePattern&gt;{GlobalConfigDir}\ {TableName}.xml&lt;/TableConfigFilePattern&gt;</div>
-<div class="line"></div>
-<div class="line">  &lt;TableScriptFilePatterns&gt;</div>
-<div class="line">    &lt;Pattern&gt;{GlobalConfigDir}\ {TableName}*.cs&lt;/Pattern&gt;</div>
-<div class="line">  &lt;/TableScriptFilePatterns&gt;</div>
+<div class="line">&lt;GlobalConfig&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;LedControlIniFiles&gt;</div>
-<div class="line"></div>
 <div class="line">    &lt;LedControlIniFile&gt;</div>
 <div class="line">      &lt;Filename&gt;c:\Ledcontrol\LedControl.ini&lt;/Filename&gt;</div>
 <div class="line">      &lt;LedWizNumber&gt;1&lt;/LedWizNumber&gt;</div>
-<div class="line">    &lt;/LedControlIniFile&gt;</div>
-<div class="line"></div>
 <div class="line">    &lt;LedControlIniFile&gt;</div>
-<div class="line">      &lt;Filename&gt;c:\Ledcontrol\LedControl.ini&lt;/Filename&gt;</div>
+<div class="line">      &lt;Filename&gt;c:\Ledcontrol\LedControl2.ini&lt;/Filename&gt;</div>
 <div class="line">      &lt;LedWizNumber&gt;2&lt;/LedWizNumber&gt;</div>
 <div class="line">    &lt;/LedControlIniFile&gt;</div>
-<div class="line"></div>
 <div class="line">  &lt;/LedControlIniFiles&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;CabinetConfigFilePatterns&gt;</div>
+<div class="line">    &lt;FilePattern&gt;{GlobalConfigDir}\cabinet.xml&lt;/FilePattern&gt;</div>
+<div class="line">  &lt;/CabinetConfigFilePatterns&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;CabinetScriptFilePatterns&gt;</div>
+<div class="line">    &lt;FilePattern&gt;{GlobalConfigDir}\cabinet*.cs&lt;/FilePattern&gt;</div>
+<div class="line">  &lt;/CabinetScriptFilePatterns&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;TableScriptFilePatterns&gt;</div>
+<div class="line">    &lt;FilePattern&gt;{GlobalConfigDir}\\{TableName}*.cs&lt;/FilePattern&gt;</div>
+<div class="line">  &lt;/TableScriptFilePatterns&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;TableConfigFilePatterns&gt;</div>
+<div class="line">    &lt;FilePattern&gt;{GlobalConfigDir}\\{TableName}.xml&lt;/FilePattern&gt;</div>
+<div class="line">  &lt;/TableConfigFilePatterns&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;GlobalScriptFilePatterns&gt;</div>
+<div class="line">    &lt;FilePattern&gt;{GlobalConfigDir}\cabinet*.cs&lt;/FilePattern&gt;</div>
+<div class="line">  &lt;/GlobalScriptFilePatterns&gt;</div>
 <div class="line"></div>
 <div class="line">  &lt;UpdateTimerIntervall&gt;20&lt;/UpdateTimerIntervall&gt;</div>
 <div class="line"></div>
-<div class="line">&lt;/Config&gt;</div>
+<div class="line">  &lt;EnableLogging&gt;<span class="keyword">false</span>&lt;/EnableLogging&gt;</div>
+<div class="line">  &lt;LogFilePattern&gt;.\DirectOutput.log&lt;/LogFilePattern&gt;</div>
+<div class="line"></div>
+<div class="line">&lt;/GlobalConfig&gt;</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:18 for DirectOutput by
+    <li class="footer">Generated on Mon May 20 2013 12:37:35 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

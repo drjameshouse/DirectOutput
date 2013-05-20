@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/GlobalConfig/LedControlIniFile.cs Source File</title>
+<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/GlobalConfiguration/LedControlIniFile.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -112,14 +113,14 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.IO;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>DirectOutput.GlobalConfig</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>DirectOutput.GlobalConfiguration</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html">LedControlIniFile</a> : INotifyPropertyChanged</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html">LedControlIniFile</a> : INotifyPropertyChanged</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">        #region INotifyPropertyChanged Member</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#afed1e07a2c7982522a30505fca0b0632">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">event</span> PropertyChangedEventHandler <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#afed1e07a2c7982522a30505fca0b0632">PropertyChanged</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a27f73e4624606c651eb2bb845195c8f8">   12</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">event</span> PropertyChangedEventHandler <a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a27f73e4624606c651eb2bb845195c8f8">PropertyChanged</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> NotifyPropertyChanged(<span class="keywordtype">string</span> PropertyName)</div>
@@ -139,7 +140,7 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">private</span> FileInfo _File;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> Filename</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a80338e36346eb2232d6e97851ded1568">   32</a></span>&#160;        {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a580bee0ec6d942a5dd78eb0b854cae75">   32</a></span>&#160;        {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _Filename; }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">set</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            {</div>
@@ -157,7 +158,7 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">public</span> FileInfo File</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a03556c76df51fa53015565f90c61321f">   50</a></span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#aba7719cdf18fa01ef03ea8f7781e0e81">   50</a></span>&#160;        {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keyword">get</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">return</span> _File;</div>
@@ -165,7 +166,7 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> FileExists</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#ab88f231f8ee67933441e6cde979e60cd">   58</a></span>&#160;        {</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#adf6573472d051767d058f7894ff9f9db">   58</a></span>&#160;        {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">get</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">if</span> (File != null)</div>
@@ -176,8 +177,8 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> FileStatus</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a6f154d70b2ffae319ddd9e7cf0da472e">   70</a></span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> Status</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a4fda48c67587022cdd10628dc7c1c106">   70</a></span>&#160;        {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keyword">get</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">if</span> (Filename.IsNullOrWhiteSpace())</div>
@@ -200,28 +201,28 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> LedWizNumber</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a6afd7d5b321c03c34f26337211b5a150">   93</a></span>&#160;        {</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#af872157fe16e05ca75477bd6c8b25fff">   93</a></span>&#160;        {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _LedWizNumber; }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">set</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                _LedWizNumber = value;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                _LedWizNumber = value.Limit(1,16);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                NotifyPropertyChanged(<span class="stringliteral">&quot;LedWizNumber&quot;</span>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a0507265c037615e5d223d4879beee8f2">  103</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> ToString()</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#ad2a26c71390a9552dbfeb934408f9d47">  103</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> ToString()</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> <span class="stringliteral">&quot;{0} (LedWiz:{1})&quot;</span>.Build(Filename,LedWizNumber);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a32914fb6357c092fe140d1d267dd6eb0">  108</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html">LedControlIniFile</a>(<span class="keywordtype">string</span> Filename)</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a6e103d4192831f1b44748f36dd032683">  108</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html">LedControlIniFile</a>(<span class="keywordtype">string</span> Filename, <span class="keywordtype">int</span> LedWizNumber)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            this.Filename = Filename;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            this.LedWizNumber = <span class="keywordtype">int</span>.MaxValue;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            this.LedWizNumber = LedWizNumber;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a0dcd711bfb95a2537ba491455bc93914">  114</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_config_1_1_led_control_ini_file.html#a0dcd711bfb95a2537ba491455bc93914">LedControlIniFile</a>() { }</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#ac105ac01de948f9ef13ee4ddaee0b7d1">  114</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#ac105ac01de948f9ef13ee4ddaee0b7d1">LedControlIniFile</a>() { }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
@@ -232,21 +233,21 @@ $(document).ready(function(){initNavTree('_led_control_ini_file_8cs_source.html'
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_562f9ec09258a4e5f00221a0aac5ca2e.html">GlobalConfig</a></li><li class="navelem"><a class="el" href="_led_control_ini_file_8cs.html">LedControlIniFile.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:17 for DirectOutput by
+    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_0c4436386385a689a563d78e5ce04cc2.html">GlobalConfiguration</a></li><li class="navelem"><a class="el" href="_led_control_ini_file_8cs.html">LedControlIniFile.cs</a></li>
+    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>
