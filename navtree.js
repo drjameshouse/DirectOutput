@@ -81,7 +81,16 @@ var NAVTREE =
     ] ],
     [ "Toys", "md_63__toys.html", [
       [ "Introduction", "md_63__toys.html#toys_introduction", null ],
-      [ "Builtin toys", "md_63__toys.html#toys_builtin", null ],
+      [ "Builtin toys", "md_63__toys.html#toys_builtin", [
+        [ "Contactor", "md_63__toys.html#toys_contactor", null ],
+        [ "Lamp", "md_63__toys.html#toys_lamp", null ],
+        [ "RGBLed", "md_63__toys.html#toys_rgbled", null ],
+        [ "ReplayKnocker", "md_63__toys.html#toys_replayknocker", null ],
+        [ "Motor/Shaker/GearMotor", "md_63__toys.html#toys_motor", null ],
+        [ "Flasher", "md_63__toys.html#toys_flasher", null ],
+        [ "LedWizEquivalent", "md_63__toys.html#toys_ledwizequivalent", null ],
+        [ "GenericAnalogToy", "md_63__toys.html#toys_genericdigitaltoy", null ]
+      ] ],
       [ "Custom toys", "md_63__toys.html#toys_custom", [
         [ "Implementation guidelines for custom toys", "md_63__toys.html#toys_implementationguideline", null ]
       ] ]
@@ -163,7 +172,7 @@ var NAVTREEINDEX =
 "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a2be5a667f8370bc1695d9c660f88e6d4",
 "class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#ada402fefd4a225b5f1cc1c28aa9c2f76",
 "class_direct_output_1_1_update_timer.html#aad363b9b58b7708842903dfeddfac427",
-"namespace_direct_output_1_1_f_x.html"
+"namespace_direct_output_1_1_cab_1_1_toys.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

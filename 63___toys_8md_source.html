@@ -113,15 +113,103 @@ $(document).ready(function(){initNavTree('63___toys_8md.html','');});
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;==========</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;\section toys_introduction Introduction </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;\section toys_builtin Builtin toys </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;Toys are the part of the DirectOutput framework representing the gadgets that you have installed in you cabinet. Typically toys are controlling one or several outputs (referenced by the name of the output) and their are themselfs controlled by effects. The framework contains a bunch of built in toys (e.g. contactor or RGB led) and additional toys can be added through scripting.</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;\section toys_builtin Builtin toys </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;\section toys_custom Custom toys </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;At the time of writting the framework contains the following toys:</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;\subsection toys_implementationguideline  Implementation guidelines <span class="keywordflow">for</span> custom toys</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;\subsection toys_contactor Contactor </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;The contactor toy represents a contactor. It implements the following important members</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;* __Property State__ is a readonly boolean (<span class="keyword">true</span> or <span class="keyword">false</span>) value representing the current state of the contactor.</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;* __Property OutputName__ is the name of the output assigned to the toy.</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;* __Method SetState(<span class="keywordtype">bool</span> State)__ sets the state of the contactor. </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;The XML to configure a contactor toy looks as follows:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;&lt;Contactor&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;&lt;/Contactor&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;\subsection toys_lamp <a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a5331717d33d4e634fd3c5ec209f475d2">Lamp</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;&lt;<a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a5331717d33d4e634fd3c5ec209f475d2">Lamp</a>&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;&lt;/<a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a5331717d33d4e634fd3c5ec209f475d2">Lamp</a>&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;\subsection toys_rgbled RGBLed</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;&lt;RGBLed&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  &lt;OutputNameRed&gt;Name of a output&lt;/OutputNameRed&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  &lt;OutputNameGreen&gt;Name of a output&lt;/OutputNameGreen&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  &lt;OutputNameBlue&gt;Name of a output&lt;/OutputNameBlue&gt;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;&lt;/RGBLed&gt;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;\subsection toys_replayknocker ReplayKnocker</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;&lt;ReplayKnocker&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  &lt;DefaultIntervallMs&gt;300&lt;/DefaultIntervallMs&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;&lt;/ReplayKnocker&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;\subsection toys_motor Motor/Shaker/GearMotor</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;&lt;Motor&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  &lt;MaxRunTimeMs&gt;300000&lt;/MaxRunTimeMs&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  &lt;MinPower&gt;10&lt;/MinPower&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  &lt;MaxPower&gt;255&lt;/MaxPower&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  &lt;KickstartPower&gt;128&lt;/KickstartPower&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  &lt;KickstartDurationMs&gt;100&lt;/KickstartDurationMs&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;&lt;/Motor&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;\subsection toys_flasher Flasher</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;&lt;Flasher&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  &lt;DefaultIntervallMs&gt;150&lt;/DefaultIntervallMs&gt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  &lt;FlashDurationMs&gt;20&lt;/FlashDurationMs&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;&lt;/Flasher&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;\subsection toys_ledwizequivalent LedWizEquivalent</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;&lt;LedWizEquivalent&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  &lt;Outputs /&gt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  &lt;LedWizNumber&gt;-1&lt;/LedWizNumber&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;&lt;/LedWizEquivalent&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;\subsection toys_genericdigitaltoy GenericDigitalToy</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;&lt;GenericDigitalToy&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;&lt;/GenericDigitalToy&gt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;\subsection toys_genericdigitaltoy GenericAnalogToy</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;&lt;GenericAnalogToy&gt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;&lt;/GenericAnalogToy&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;\section toys_custom Custom toys </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;\subsection toys_implementationguideline  Implementation guidelines <span class="keywordflow">for</span> custom toys</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -129,7 +217,7 @@ $(document).ready(function(){initNavTree('63___toys_8md.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="63___toys_8md.html">63_Toys.md</a></li>
-    <li class="footer">Generated on Mon May 20 2013 12:37:34 for DirectOutput by
+    <li class="footer">Generated on Tue May 21 2013 21:07:43 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
