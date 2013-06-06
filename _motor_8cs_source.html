@@ -111,149 +111,150 @@ $(document).ready(function(){initNavTree('_motor_8cs_source.html','');});
 <div class="contents">
 <a href="_motor_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿using System.Xml.Serialization;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> DirectOutput.Cab.Toys.Generic;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>DirectOutput.Cab.Toys.Basic</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html">   11</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html" title="Motor toy supporting max. and min. power, max. runtime and kickstart settings.  Inherits from Generic...">Motor</a> : <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_analog_toy.html" title="Implementation of a generic analog toy. Implements IToy. ">GenericAnalogToy</a>, <a class="code" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy.  The abstract class Toy implements this interface. ...">IToy</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _MaxRuntimeMs = 300000;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> MaxRunTimeMs</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a801b8296f10e4a18da1abd9e8c6c6bb1">   24</a></span>&#160;        {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _MaxRuntimeMs; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">set</span> { _MaxRuntimeMs = value.Limit(0, <span class="keywordtype">int</span>.MaxValue); }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> DirectOutput.PinballSupport;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>DirectOutput.Cab.Toys.Basic</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html" title="Motor toy supporting max. and min. power, max. runtime and kickstart settings.  Inherits from Generic...">Motor</a> : <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_analog_toy.html" title="Implementation of a generic analog toy. Implements IToy. ">GenericAnalogToy</a>, <a class="code" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy.  The abstract class Toy implements this interface. ...">IToy</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _MaxRuntimeMs = 300000;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> MaxRunTimeMs</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a801b8296f10e4a18da1abd9e8c6c6bb1">   25</a></span>&#160;        {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _MaxRuntimeMs; }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">set</span> { _MaxRuntimeMs = value.Limit(0, <span class="keywordtype">int</span>.MaxValue); }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _MinPower = 10;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> MinPower</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a182aef8e304ffee4b1ab4ed4eba87bce">   41</a></span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _MinPower; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">set</span> { _MinPower = value.Limit(0, 255); }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _MaxPower = 255;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> MaxPower</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#ad768ecea569926f6d0bdb709d923889f">   56</a></span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _MaxPower; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">set</span> { _MaxPower = value.Limit(0, 255); }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _MinPower = 10;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> MinPower</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a182aef8e304ffee4b1ab4ed4eba87bce">   42</a></span>&#160;        {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _MinPower; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">set</span> { _MinPower = value.Limit(0, 255); }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _MaxPower = 255;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> MaxPower</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#ad768ecea569926f6d0bdb709d923889f">   57</a></span>&#160;        {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _MaxPower; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">set</span> { _MaxPower = value.Limit(0, 255); }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _KickstartPower = 128;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> KickstartPower</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#acebd0bb29e4059f532f80ff453409610">   75</a></span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _KickstartPower; }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">set</span> { _KickstartPower = value.Limit(0, 255); }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _KickstartDurationMs = 100;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> KickstartDurationMs</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a10d109d7dee8b37c7257798636318001">   91</a></span>&#160;        {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _KickstartDurationMs; }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">set</span> { _KickstartDurationMs = value.Limit(0, 5000); }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _KickstartPower = 128;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> KickstartPower</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#acebd0bb29e4059f532f80ff453409610">   76</a></span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _KickstartPower; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">set</span> { _KickstartPower = value.Limit(0, 255); }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _KickstartDurationMs = 100;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> KickstartDurationMs</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a10d109d7dee8b37c7257798636318001">   92</a></span>&#160;        {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _KickstartDurationMs; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keyword">set</span> { _KickstartDurationMs = value.Limit(0, 5000); }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        [XmlIgnoreAttribute]</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> Power</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a73f1b142a82316c63f7a921dd04fdc76">  104</a></span>&#160;        {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">get</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)((Value - MinPower) * ((<span class="keywordtype">double</span>)(MaxPower - MinPower) / 255));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        [XmlIgnoreAttribute]</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> Power</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a73f1b142a82316c63f7a921dd04fdc76">  105</a></span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">get</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)((Value - MinPower) * ((<span class="keywordtype">double</span>)(MaxPower - MinPower) / 255));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">int</span> MotorPower;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">bool</span> KickstartActive = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#adae6cc77ea2a9ac016e3bae45c379825">  120</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> SetPower(<span class="keywordtype">int</span> Power)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">if</span> (this.Power != Power)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                MotorPower = Power;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">if</span> (!KickstartActive)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    <span class="keywordflow">if</span> (KickstartPower &gt; 0 &amp;&amp; Power&lt;KickstartPower &amp;&amp; KickstartDurationMs &gt; 0)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        KickstartActive = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        SetValue(KickstartPower);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#a766e125cc4ac3f8738c2c5620aaf7b61" title="Registers the specied AlarmHandler for a alarm after the specified duration. ">RegisterAlarm</a>(KickstartDurationMs, StartMotor);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                        StartMotor();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StartMotor()</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            KickstartActive = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="keywordflow">if</span> (MotorPower == 0)</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                StopMotor();</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                SetMotorPower(MotorPower);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keywordflow">if</span> (MaxRunTimeMs &gt; 0)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#af85388a3d2aa84c2d5860951468df7fe" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StartMotor);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#a766e125cc4ac3f8738c2c5620aaf7b61" title="Registers the specied AlarmHandler for a alarm after the specified duration. ">RegisterAlarm</a>(MaxRunTimeMs, StopMotor);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> SetMotorPower(<span class="keywordtype">int</span> Power)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordtype">int</span> ScaledPower = (int)(MinPower + (MaxPower - MinPower) / 255 * (double)MotorPower).Limit(MinPower, MaxPower);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            SetValue(ScaledPower);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StopMotor()</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            KickstartActive = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            SetValue(0);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            UpdateTimer.UnregisterAlarm(StartMotor);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            UpdateTimer.UnregisterAlarm(StopMotor);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">int</span> MotorPower;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">bool</span> KickstartActive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#adae6cc77ea2a9ac016e3bae45c379825">  121</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> SetPower(<span class="keywordtype">int</span> Power)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">if</span> (this.Power != Power)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                MotorPower = Power;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">if</span> (!KickstartActive)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    <span class="keywordflow">if</span> (KickstartPower &gt; 0 &amp;&amp; Power&lt;KickstartPower &amp;&amp; KickstartDurationMs &gt; 0)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        KickstartActive = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        SetValue(KickstartPower);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#acf99b2f798354e49897540b188792a07" title="Registers the specied AlarmHandler for a alarm after the specified duration. ">RegisterAlarm</a>(KickstartDurationMs, StartMotor);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                        StartMotor();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StartMotor()</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            KickstartActive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">if</span> (MotorPower == 0)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                StopMotor();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                SetMotorPower(MotorPower);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">if</span> (MaxRunTimeMs &gt; 0)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a3a86f786088c73edb503d46b5c5ab784" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StartMotor);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#acf99b2f798354e49897540b188792a07" title="Registers the specied AlarmHandler for a alarm after the specified duration. ">RegisterAlarm</a>(MaxRunTimeMs, StopMotor);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> SetMotorPower(<span class="keywordtype">int</span> Power)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordtype">int</span> ScaledPower = (int)(MinPower + (MaxPower - MinPower) / 255 * (double)MotorPower).Limit(MinPower, MaxPower);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            SetValue(ScaledPower);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StopMotor()</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            KickstartActive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            SetValue(0);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a3a86f786088c73edb503d46b5c5ab784" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StartMotor);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a3a86f786088c73edb503d46b5c5ab784" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StopMotor);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keyword">private</span> UpdateTimer UpdateTimer;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a7e54b9610455195f86c95337e50a5a9e">  187</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a> = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            base.<a class="code" href="class_direct_output_1_1_update_timer.html#aab9681cee71d0e28020133158582cf37" title="Inits the update timer and starts the timer. ">Init</a>(Pinball);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#aac42522667f0a07566e726308d4c57af">  197</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#af85388a3d2aa84c2d5860951468df7fe" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StartMotor);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a>.<a class="code" href="class_direct_output_1_1_update_timer.html#af85388a3d2aa84c2d5860951468df7fe" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StopMotor);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a> = null;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            base.<a class="code" href="class_direct_output_1_1_update_timer.html#aafb9f1aa48e0e5a39592de2eb21a9de3" title="Finishes the update timer. ">Finish</a>();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a> <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a7e54b9610455195f86c95337e50a5a9e">  188</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a> = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            base.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a55cb9d9a5a2a67da206470a548692e8f" title="Inits the object.  Doesn&#39;t do anything and is only implemented for completeness. ">Init</a>(Pinball);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#aac42522667f0a07566e726308d4c57af">  198</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a3a86f786088c73edb503d46b5c5ab784" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StartMotor);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a>.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a3a86f786088c73edb503d46b5c5ab784" title="Unregisters the alarm for the specified alarm handler. ">UnregisterAlarm</a>(StopMotor);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html" title="The AlarmHandler classed is used to execute scheduled events (e.g. regular updates on a effect) in th...">AlarmHandler</a> = null;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            base.<a class="code" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a214f18192b0536ac642f5968b392e4b5" title="Finishes the object. Clears all alarm lists. ">Finish</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -261,7 +262,7 @@ $(document).ready(function(){initNavTree('_motor_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="dir_4547d09389004a70f9bf66b1c6024b77.html">Toys</a></li><li class="navelem"><a class="el" href="dir_225291e675deaaf0016ff948494c5c22.html">Basic</a></li><li class="navelem"><a class="el" href="_motor_8cs.html">Motor.cs</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:43 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:12 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

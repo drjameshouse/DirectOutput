@@ -8,8 +8,8 @@ var dir_224fdf3933e3085a212a98264a4767a9 =
     [ "FX", "dir_3e554180b925145de090e82e9ce1143b.html", "dir_3e554180b925145de090e82e9ce1143b" ],
     [ "General", "dir_36adbf483c8de90af02d887a293f450a.html", "dir_36adbf483c8de90af02d887a293f450a" ],
     [ "GlobalConfiguration", "dir_0c4436386385a689a563d78e5ce04cc2.html", "dir_0c4436386385a689a563d78e5ce04cc2" ],
-    [ "InputHandling", "dir_3b8b2c48a9598d22b8026291a54b3259.html", "dir_3b8b2c48a9598d22b8026291a54b3259" ],
     [ "LedControl", "dir_3fefcb4df4d383a16339164eba8053b5.html", "dir_3fefcb4df4d383a16339164eba8053b5" ],
+    [ "PinballSupport", "dir_84f62bc4d69f796887e7897fa350551e.html", "dir_84f62bc4d69f796887e7897fa350551e" ],
     [ "Properties", "dir_c70bed428e162dbef4da8f6304c21709.html", "dir_c70bed428e162dbef4da8f6304c21709" ],
     [ "Scripting", "dir_a9f6899b18cf4ddc2ea408237b3806d8.html", "dir_a9f6899b18cf4ddc2ea408237b3806d8" ],
     [ "Table", "dir_2126cebc896d48b570679b125f14762f.html", "dir_2126cebc896d48b570679b125f14762f" ],
@@ -19,8 +19,5 @@ var dir_224fdf3933e3085a212a98264a4767a9 =
     ] ],
     [ "Pinball.cs", "_pinball_8cs.html", [
       [ "Pinball", "class_direct_output_1_1_pinball.html", "class_direct_output_1_1_pinball" ]
-    ] ],
-    [ "UpdateTimer.cs", "_update_timer_8cs.html", [
-      [ "UpdateTimer", "class_direct_output_1_1_update_timer.html", "class_direct_output_1_1_update_timer" ]
     ] ]
 ];

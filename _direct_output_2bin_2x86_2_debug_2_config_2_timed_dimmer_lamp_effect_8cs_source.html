@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_direct_output_2bin_2x86_2_debug_2_con
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a> Timer;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> UpdateTimer Timer;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StartDimmer(<span class="keywordtype">int</span> TargetBrightness)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
@@ -242,14 +242,14 @@ $(document).ready(function(){initNavTree('_direct_output_2bin_2x86_2_debug_2_con
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            ResolveName(Pinball);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Timer = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            Timer.<a class="code" href="class_direct_output_1_1_update_timer.html#aa520670ac12252a2dcd8cac70ef63757" title="Registers the method specified in IntervalAlarmHandler for interval alarms.  Interval alarms are fire...">RegisterIntervalAlarm</a>(20, UpdateDimmer);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Timer = Pinball.UpdateTimer;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            Timer.RegisterIntervalAlarm(20, UpdateDimmer);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> (LampToy != null)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                TargetBrightness = LampToy.Brightness;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                Timer = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                Timer.<a class="code" href="class_direct_output_1_1_update_timer.html#aa520670ac12252a2dcd8cac70ef63757" title="Registers the method specified in IntervalAlarmHandler for interval alarms.  Interval alarms are fire...">RegisterIntervalAlarm</a>(20, UpdateDimmer);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                Timer = Pinball.UpdateTimer;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                Timer.RegisterIntervalAlarm(20, UpdateDimmer);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            }</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
 <div class="line"><a name="l00185"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html#a8435b211decd13f81320a0b77f6e460a">  185</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('_direct_output_2bin_2x86_2_debug_2_con
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_f8c638ca5f65d7c3040708023e5bd0ba.html">bin</a></li><li class="navelem"><a class="el" href="dir_ab4eb986837fd4027f0cdca021112583.html">x86</a></li><li class="navelem"><a class="el" href="dir_c58736be93caf121dcff0ad1cf3252ac.html">Debug</a></li><li class="navelem"><a class="el" href="dir_cbc2ec39b0f7df97a3c2492a36164da6.html">Config</a></li><li class="navelem"><a class="el" href="_direct_output_2bin_2x86_2_debug_2_config_2_timed_dimmer_lamp_effect_8cs.html">TimedDimmerLampEffect.cs</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:42 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:12 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

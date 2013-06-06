@@ -5,6 +5,7 @@ var searchData=
   ['lamp_2ecs',['Lamp.cs',['../_lamp_8cs.html',1,'']]],
   ['lamptoy',['LampToy',['../class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html#ab9ac13750527c891770380789b5e4fa6',1,'DirectOutput::FX::TimedDimmerLampEffect']]],
   ['lamptoyname',['LampToyName',['../class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html#a6afe89e15ae44db98d038d21c82c6291',1,'DirectOutput::FX::TimedDimmerLampEffect']]],
+  ['led',['LED',['../namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a53e0dbc06e48e3d381ac224fa8bae3df',1,'DirectOutput']]],
   ['ledcontrol_2ecs',['LedControl.cs',['../_led_control_8cs.html',1,'']]],
   ['ledcontrolconfig',['LedControlConfig',['../class_direct_output_1_1_led_control_1_1_led_control_config.html',1,'DirectOutput::LedControl']]],
   ['ledcontrolconfig',['LedControlConfig',['../class_direct_output_1_1_led_control_1_1_led_control_config.html#a7ff3f8af7055411238cd3b79dbfe794f',1,'DirectOutput.LedControl.LedControlConfig.LedControlConfig()'],['../class_direct_output_1_1_led_control_1_1_led_control_config.html#ad5458a885cff063cafcf3449ecff92a3',1,'DirectOutput.LedControl.LedControlConfig.LedControlConfig(string LedControlIniFilename, int LedWizNumber, bool ThrowExceptions=false)'],['../class_direct_output_1_1_led_control_1_1_led_control_config.html#a10b0572488e5b9a4a4744de758450ce8',1,'DirectOutput.LedControl.LedControlConfig.LedControlConfig(FileInfo LedControlIniFile, int LedWizNumber, bool ThrowExceptions=false)']]],
@@ -16,6 +17,7 @@ var searchData=
   ['ledcontroleffect',['LedControlEffect',['../class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a425a7b7cc646ec628ded98f8afd9c7c6',1,'DirectOutput.FX.LedControlFX.LedControlEffect.LedControlEffect()'],['../class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#aaece52ddcec3e34e2c30093a6877aa72',1,'DirectOutput.FX.LedControlFX.LedControlEffect.LedControlEffect(string LedWizEquivalentName, int FirstOutputNumber)']]],
   ['ledcontroleffect_2ecs',['LedControlEffect.cs',['../_led_control_effect_8cs.html',1,'']]],
   ['ledcontrol_20files',['LedControl files',['../ledcontrolfiles.html',1,'']]],
+  ['ledcontrolfiletester',['LedControlFileTester',['../namespace_led_control_file_tester.html',1,'']]],
   ['ledcontrolfx_2ecs',['LedControlFX.cs',['../_led_control_f_x_8cs.html',1,'']]],
   ['ledcontrolini',['LedControlIni',['../namespace_direct_output_1_1_table.html#a69fc6b30de3d57bc3cf6b568dbb581e2aaf1975821db5fe8fe9ba78959842f046',1,'DirectOutput::Table']]],
   ['ledcontrolinifile',['LedControlIniFile',['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a6e103d4192831f1b44748f36dd032683',1,'DirectOutput.GlobalConfiguration.LedControlIniFile.LedControlIniFile(string Filename, int LedWizNumber)'],['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#ac105ac01de948f9ef13ee4ddaee0b7d1',1,'DirectOutput.GlobalConfiguration.LedControlIniFile.LedControlIniFile()']]],
@@ -50,5 +52,6 @@ var searchData=
   ['log',['Log',['../class_direct_output_1_1_log.html',1,'DirectOutput']]],
   ['log_2ecs',['Log.cs',['../_log_8cs.html',1,'']]],
   ['logfilepattern',['LogFilePattern',['../class_direct_output_1_1_global_configuration_1_1_global_config.html#aaecb5b8258cb46769635ed67f64acd91',1,'DirectOutput::GlobalConfiguration::GlobalConfig']]],
-  ['lw_2ecs',['LW.cs',['../_l_w_8cs.html',1,'']]]
+  ['lw_2ecs',['LW.cs',['../_l_w_8cs.html',1,'']]],
+  ['properties',['Properties',['../namespace_led_control_file_tester_1_1_properties.html',1,'LedControlFileTester']]]
 ];

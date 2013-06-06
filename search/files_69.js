@@ -5,7 +5,7 @@ var searchData=
   ['ieffect_2ecs',['IEffect.cs',['../_i_effect_8cs.html',1,'']]],
   ['ilamptoy_2ecs',['ILampToy.cs',['../_i_lamp_toy_8cs.html',1,'']]],
   ['inameditem_2ecs',['INamedItem.cs',['../_i_named_item_8cs.html',1,'']]],
-  ['inputmanager_2ecs',['InputManager.cs',['../_input_manager_8cs.html',1,'']]],
+  ['inputqueue_2ecs',['InputQueue.cs',['../_input_queue_8cs.html',1,'']]],
   ['inserteventargs_2ecs',['InsertEventArgs.cs',['../_insert_event_args_8cs.html',1,'']]],
   ['intextensions_2ecs',['IntExtensions.cs',['../_int_extensions_8cs.html',1,'']]],
   ['ioutput_2ecs',['IOutput.cs',['../_i_output_8cs.html',1,'']]],

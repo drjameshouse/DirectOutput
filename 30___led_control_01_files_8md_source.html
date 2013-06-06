@@ -125,20 +125,20 @@ $(document).ready(function(){initNavTree('30___led_control_01_files_8md.html',''
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;\subsection ledcontrol_autoconfigtable Auto Table config</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;If no Table config file exists for the currently executed table, the framework tries to configure itself, based on classical LedControl.ini files.</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;If no Table config file exists for the currently loaded table or if the table configuration file specifies that it can be mix with ledcontrol configurations, the framework tries to load classical LedControl.ini files.</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;The loading of the LedControl files works as follows:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;1. The framework tries to locate entries for LedControl files in the GlobalConfig.</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;If entries are found, these files are loaded and used to configure the LedWizEquivalent toy(s) with the matching LedWiz number(s).</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;If a file does not exist, can not be read or parsed, the framework will silently ignore the file.</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;2. If no entries for LedControl files exist in the GlobalConfig, the framework will try to load a single LedControl.ini file (named LedControl.ini) from one of the following directories:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;2. If no entries for LedControl files exist in the GlobalConfig, the framework will try to load LedControl.ini files name ledcontrol.ini, ledcontrol2.ini up to ledcontrol16.ini from one of the following directories:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- Table directory</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- Global config directory</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- DirectOutput.dll directory</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Based on the loaded data, the system will configure the effects controlling the LedWizEquivalent toys. Auto config does always use the LedControl effect for its configuration process.</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Based on the loaded data, the system will configure the effects controlling the LedWizEquivalent toys.</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;\subsection ledcontrol_autoconfigcabinet Auto Cabinet Config</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('30___led_control_01_files_8md.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="30___led_control_01_files_8md.html">30_LedControl Files.md</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:43 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -151,16 +151,17 @@ Outputcontroller</h3>
 Please check the docu on the classes for details on all class members and class descriptions.</div></div>
  <h1><a class="anchor" id="architecture_multithreading"></a>
 Multithreading</h1>
-<p>This framework distributes its work over several threads to ensure that there are no (or at least very little) side effects and performance problems with the application calling the frame work functions.</p>
-<p>If the framework is called with new data from the outside (B2S.Server), all it will do is to put the received data in a queue and notifiy a worker thread. After that the independent worker thread will take care of the received data and take all necessary actions. In addition to the workerthread a timed update thread (implemented in UpdateTimer and accessible through Pinball.UpdateTimer) which is run at regular intervals takes care of timed effects.</p>
-<p>The LedWiz object does also use a separate thread for each connected LedWiz, to overcome the response time problems of the LedWiz. </p>
+<p>This framework distributes its work over several threads to ensure that there are no (or at least very little) side effects and performance problems with the application calling the framework functions.</p>
+<p>If the framework is called with new data from the outside (e.g. through B2S.Server), all it will do is to put the received data in a queue and notifiy the main loop thread. After that the independent mainloop thread will take care of the received data and take all necessary actions.</p>
+<p>The LedWiz object does also use a separate thread for each connected LedWiz, to overcome the response time problems of the LedWiz.</p>
+<p>Depending on the config you are using other threads might be active as well. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 21 2013 21:07:44 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

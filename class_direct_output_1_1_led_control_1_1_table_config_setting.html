@@ -122,8 +122,25 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_led_control_1_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9517852b0ab3ec7bf886c801a49bdad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a9517852b0ab3ec7bf886c801a49bdad8">ParseSettingData</a> (string SettingData, bool ThrowExceptions=false)</td></tr>
-<tr class="memdesc:a9517852b0ab3ec7bf886c801a49bdad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the setting data. <br/>
+<tr class="memitem:a7b7207bcc469b75b561ad1aa7b1a6e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a7b7207bcc469b75b561ad1aa7b1a6e91">ParseSettingData</a> (string SettingData)</td></tr>
+<tr class="memdesc:a7b7207bcc469b75b561ad1aa7b1a6e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the setting data. <br/>
+ Possible config settings:<br/>
+ S1<br/>
+ S4 1500 (Solenoid4: 1500ms)<br/>
+ S8 300 I32 (Solenoid8: 300ms Intensity32)<br/>
+ W15 300 2 (Switch15: 2Times within 300ms Period)<br/>
+ ON Red (Red)<br/>
+ S5 Red 10 (Solenoid 5: Red 10milliseconds)<br/>
+ S7 White (Solenoid 7: White)<br/>
+ ON Orange I48 (On Orange, I48 is probably not relevant)<br/>
+ L88 Blink I44 (Lamp88:Blink with insensity 44)<br/>
+ W58 Blink 5 (Switch48: Blink 5 times.<br/>
+ s4 420 24 (flash 24 times within 420 milliseconds) <br/>
+ First char(s):<br/>
+ L??=Lamp, S??=Solenoid, W??=Switch, B=Blink (very likely), 0=off, 1=on, on=on, off=off  <a href="#a7b7207bcc469b75b561ad1aa7b1a6e91">More...</a><br/></td></tr>
+<tr class="separator:a7b7207bcc469b75b561ad1aa7b1a6e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72439fc7c3659901aa96235be4775804"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a72439fc7c3659901aa96235be4775804">TableConfigSetting</a> (string SettingData)</td></tr>
+<tr class="memdesc:a72439fc7c3659901aa96235be4775804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html" title="A single setting from a LedControl.ini file. ">TableConfigSetting</a> class. Parses the setting data. <br/>
  Possible config settings:<br/>
  S1<br/>
  S4 1500 (Solenoid4: 1500ms)<br/>
@@ -136,24 +153,8 @@ Public Member Functions</h2></td></tr>
  L88 Blink I44 (Lamp88:Blink with insensity 44)<br/>
  W58 Blink 5 (Switch48: Blink 5 times.<br/>
  First char(s):<br/>
- L??=Lamp, S??=Solenoid, W??=Switch, B=Blink (very likely), 0=off, 1=on, on=on, off=off  <a href="#a9517852b0ab3ec7bf886c801a49bdad8">More...</a><br/></td></tr>
-<tr class="separator:a9517852b0ab3ec7bf886c801a49bdad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af096d21bbce10eee4ef2e3ea9be18eba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#af096d21bbce10eee4ef2e3ea9be18eba">TableConfigSetting</a> (string SettingData, bool ThrowExceptions=false)</td></tr>
-<tr class="memdesc:af096d21bbce10eee4ef2e3ea9be18eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html" title="A single setting from a LedControl.ini file. ">TableConfigSetting</a> class. Parses the setting data. <br/>
- Possible config settings:<br/>
- S1<br/>
- S4 1500 (Solenoid4: 1500ms)<br/>
- S8 300 I32 (Solenoid8: 300ms Intensity32)<br/>
- W15 300 2 (Switch15: 2Times 300ms Period)<br/>
- ON Red (Red)<br/>
- S5 Red 10 (Solenoid 5: Red Blink 10 times)<br/>
- S7 White (Solenoid 7: White)<br/>
- ON Orange I48 (On Orange, I48 is probably not relevant)<br/>
- L88 Blink I44 (Lamp88:Blink with insensity 44)<br/>
- W58 Blink 5 (Switch48: Blink 5 times.<br/>
- First char(s):<br/>
- L??=Lamp, S??=Solenoid, W??=Switch, B=Blink (very likely), 0=off, 1=on, on=on, off=off  <a href="#af096d21bbce10eee4ef2e3ea9be18eba">More...</a><br/></td></tr>
-<tr class="separator:af096d21bbce10eee4ef2e3ea9be18eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ L??=Lamp, S??=Solenoid, W??=Switch, B=Blink (very likely), 0=off, 1=on, on=on, off=off  <a href="#a72439fc7c3659901aa96235be4775804">More...</a><br/></td></tr>
+<tr class="separator:a72439fc7c3659901aa96235be4775804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a2f7ca12729df412eff5384b0367e80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a8a2f7ca12729df412eff5384b0367e80">TableConfigSetting</a> ()</td></tr>
 <tr class="separator:a8a2f7ca12729df412eff5384b0367e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -189,13 +190,16 @@ Properties</h2></td></tr>
 <tr class="memitem:a282dcddbc85d7f1f6367aac5fa954f99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a282dcddbc85d7f1f6367aac5fa954f99">Blink</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a282dcddbc85d7f1f6367aac5fa954f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number blinks.  <a href="#a282dcddbc85d7f1f6367aac5fa954f99">More...</a><br/></td></tr>
 <tr class="separator:a282dcddbc85d7f1f6367aac5fa954f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079f94659b3bde26ead38554fc64dae5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a079f94659b3bde26ead38554fc64dae5">BlinkIntervalMs</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a079f94659b3bde26ead38554fc64dae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the blink interval in milliseconds.  <a href="#a079f94659b3bde26ead38554fc64dae5">More...</a><br/></td></tr>
+<tr class="separator:a079f94659b3bde26ead38554fc64dae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A single setting from a LedControl.ini file. </p>
 
 <p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00008">8</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af096d21bbce10eee4ef2e3ea9be18eba"></a>
+<a class="anchor" id="a72439fc7c3659901aa96235be4775804"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -203,18 +207,8 @@ Properties</h2></td></tr>
           <td class="memname">DirectOutput.LedControl.TableConfigSetting.TableConfigSetting </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>SettingData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>SettingData</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ThrowExceptions</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,18 +230,19 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">SettingData</td><td>The setting data.</td></tr>
-    <tr><td class="paramname">ThrowExceptions</td><td>If set to <code>true</code> exceptions are thrown on errors in the data.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">System.Exception</td><td>No data to parse. or Cant parse the part {0} of the ledcontrol table config setting {1}..Build(Parts[0], SettingData) or Cant parse the part {0} of the ledcontrol table config setting {1}..Build(Parts[2], SettingData) </td></tr>
+    <tr><td class="paramname">System.Exception</td><td>No data to parse.<br/>
+ or <br/>
+ Cant parse the part {0} of the ledcontrol table config setting {1}. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00289">289</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
+<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00282">282</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
 
 </div>
 </div>
@@ -264,12 +259,12 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00296">296</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
+<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00290">290</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9517852b0ab3ec7bf886c801a49bdad8"></a>
+<a class="anchor" id="a7b7207bcc469b75b561ad1aa7b1a6e91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -277,18 +272,8 @@ Properties</h2></td></tr>
           <td class="memname">void DirectOutput.LedControl.TableConfigSetting.ParseSettingData </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>SettingData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>SettingData</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ThrowExceptions</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,30 +283,30 @@ Properties</h2></td></tr>
  S1<br/>
  S4 1500 (Solenoid4: 1500ms)<br/>
  S8 300 I32 (Solenoid8: 300ms Intensity32)<br/>
- W15 300 2 (Switch15: 2Times 300ms Period)<br/>
+ W15 300 2 (Switch15: 2Times within 300ms Period)<br/>
  ON Red (Red)<br/>
- S5 Red 10 (Solenoid 5: Red Blink 10 times)<br/>
+ S5 Red 10 (Solenoid 5: Red 10milliseconds)<br/>
  S7 White (Solenoid 7: White)<br/>
  ON Orange I48 (On Orange, I48 is probably not relevant)<br/>
  L88 Blink I44 (Lamp88:Blink with insensity 44)<br/>
  W58 Blink 5 (Switch48: Blink 5 times.<br/>
+ s4 420 24 (flash 24 times within 420 milliseconds) <br/>
  First char(s):<br/>
  L??=Lamp, S??=Solenoid, W??=Switch, B=Blink (very likely), 0=off, 1=on, on=on, off=off </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">SettingData</td><td>The setting data.</td></tr>
-    <tr><td class="paramname">ThrowExceptions</td><td>If set to <code>true</code> exceptions are thrown on errors in the data.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">System.Exception</td><td>No data to parse. or Cant parse the part {0} of the ledcontrol table config setting {1}. </td></tr>
+    <tr><td class="paramname">System.Exception</td><td>No data to parse. or Cant parse the part {0} of the ledcontrol table config setting {1}.. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00127">127</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
+<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00135">135</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
 
 </div>
 </div>
@@ -348,6 +333,31 @@ Properties</h2></td></tr>
 <p>The number of blinks. -1 means infinite number of blinks. </p>
 
 <p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00102">102</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a079f94659b3bde26ead38554fc64dae5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DirectOutput.LedControl.TableConfigSetting.BlinkIntervalMs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the blink interval in milliseconds. </p>
+<p>The blink interval in milliseconds. </p>
+
+<p>Definition at line <a class="el" href="_table_config_setting_8cs_source.html#l00110">110</a> of file <a class="el" href="_table_config_setting_8cs_source.html">TableConfigSetting.cs</a>.</p>
 
 </div>
 </div>
@@ -564,7 +574,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_led_control.html">LedControl</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html">TableConfigSetting</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:46 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:15 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

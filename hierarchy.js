@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "DirectOutput.PinballSupport.AlarmHandler", "class_direct_output_1_1_pinball_support_1_1_alarm_handler.html", null ],
     [ "DirectOutput.FX.AssignedEffect", "class_direct_output_1_1_f_x_1_1_assigned_effect.html", [
       [ "DirectOutput.FX.AssignedEffectOrder", "class_direct_output_1_1_f_x_1_1_assigned_effect_order.html", null ],
       [ "DirectOutput.FX.DelayFX.DelayEffect", "class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html", null ]
@@ -27,7 +28,6 @@ var hierarchy =
       [ "DirectOutput.General.Generic.RemoveEventArgs< Ty >", "class_direct_output_1_1_general_1_1_generic_1_1_remove_event_args_3_01_ty_01_4.html", null ],
       [ "DirectOutput.General.Generic.SetEventArgs< Ty >", "class_direct_output_1_1_general_1_1_generic_1_1_set_event_args_3_01_ty_01_4.html", null ],
       [ "DirectOutput.General.Generic.ValidateItemEventArgs< Ty >", "class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html", null ],
-      [ "DirectOutput.InputHandling.InputManager.InputDataReceivedEventArgs", "class_direct_output_1_1_input_handling_1_1_input_manager_1_1_input_data_received_event_args.html", null ],
       [ "DirectOutput.Table.TableElementValueChangedEventArgs", "class_direct_output_1_1_table_1_1_table_element_value_changed_event_args.html", null ]
     ] ],
     [ "ExtList< AssignedEffectOrder >", null, [
@@ -44,7 +44,8 @@ var hierarchy =
       [ "DirectOutput.Frontend.MainMenu", "class_direct_output_1_1_frontend_1_1_main_menu.html", null ],
       [ "DirectOutput.Frontend.ScriptInfo", "class_direct_output_1_1_frontend_1_1_script_info.html", null ],
       [ "DirectOutput.Frontend.TableInfo", "class_direct_output_1_1_frontend_1_1_table_info.html", null ],
-      [ "DirectOutput_Test.Form1", "class_direct_output___test_1_1_form1.html", null ]
+      [ "DirectOutput_Test.Form1", "class_direct_output___test_1_1_form1.html", null ],
+      [ "LedControlFileTester.Form1", "class_led_control_file_tester_1_1_form1.html", null ]
     ] ],
     [ "DirectOutput.GlobalConfiguration.GlobalConfig", "class_direct_output_1_1_global_configuration_1_1_global_config.html", null ],
     [ "IDirectPlugin", null, [
@@ -146,9 +147,11 @@ var hierarchy =
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
+          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ]
         ] ],
         [ "DirectOutput.FX.LedControlFX.LedControlEffect", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html", null ],
+        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
@@ -167,7 +170,6 @@ var hierarchy =
       [ "DirectOutput.GlobalConfiguration.LedControlIniFile", "class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html", null ],
       [ "DirectOutput.Table.TableElement", "class_direct_output_1_1_table_1_1_table_element.html", null ]
     ] ],
-    [ "DirectOutput.InputHandling.InputManager", "class_direct_output_1_1_input_handling_1_1_input_manager.html", null ],
     [ "IXmlSerializable", null, [
       [ "DirectOutput.Cab.Out.OutputControllerList", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html", null ],
       [ "DirectOutput.Cab.Out.OutputList", "class_direct_output_1_1_cab_1_1_out_1_1_output_list.html", null ],
@@ -219,6 +221,9 @@ var hierarchy =
       [ "DirectOutput.Cab.Toys.ToyList", "class_direct_output_1_1_cab_1_1_toys_1_1_toy_list.html", null ]
     ] ],
     [ "DirectOutput.Pinball", "class_direct_output_1_1_pinball.html", null ],
+    [ "Queue< TableElementData >", null, [
+      [ "DirectOutput.PinballSupport.InputQueue", "class_direct_output_1_1_pinball_support_1_1_input_queue.html", null ]
+    ] ],
     [ "DirectOutput.Scripting.Script", "class_direct_output_1_1_scripting_1_1_script.html", null ],
     [ "StringConverter", null, [
       [ "DirectOutput.Cab.Out.OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", null ]
@@ -227,5 +232,5 @@ var hierarchy =
     [ "DirectOutput.LedControl.TableConfig", "class_direct_output_1_1_led_control_1_1_table_config.html", null ],
     [ "DirectOutput.LedControl.TableConfigSetting", "class_direct_output_1_1_led_control_1_1_table_config_setting.html", null ],
     [ "DirectOutput.Table.TableElementData", "class_direct_output_1_1_table_1_1_table_element_data.html", null ],
-    [ "DirectOutput.UpdateTimer", "class_direct_output_1_1_update_timer.html", null ]
+    [ "DirectOutput.General.ThreadTools", "class_direct_output_1_1_general_1_1_thread_tools.html", null ]
 ];

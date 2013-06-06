@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('tableconfig.html','');});
 Introduction</h1>
 <p>The table configuration defines the table elements (e.g. solenoids or lamps), the configuration of the effects and the assigment of the effects to the table elements. The assigned effects are triggered if the value of a table element changes (typicaly when new data from Pinmame is received).</p>
 <p>In addition there is also a collection of static effects which are triggered when the framework is starting up. Use the static effects to control toys which dont have to change their state during game play (e.g. set illuminated flipper button to a specific color).</p>
+<p>The framework does also allow to mix the configuration in a table config file with configurations loaded from ledcontrol files. This will allow you to use configurations from the <a href="http://vpuniverse.com/ledwiz/login.php">LedWiz Config Tool</a> for commonly used gadgets and to supplement this with your own config.</p>
 <h1><a class="anchor" id="tableconfig_configfilestructure"></a>
 Table config file</h1>
 <p>Table configurations are stored as XML-files. The basic structure of a table configuration file contains the following sections:</p>
@@ -130,6 +131,9 @@ Table config file</h1>
 <div class="line">  &lt;AssignedStaticEffects&gt;</div>
 <div class="line">       ... Static effects assignments ...</div>
 <div class="line">  &lt;/AssignedStaticEffects&gt;</div>
+<div class="line"></div>
+<div class="line">  &lt;AddLedControlConfig&gt;<span class="keyword">true</span>/<span class="keyword">false</span>&lt;/AddLedControlConfig&gt;</div>
+<div class="line"></div>
 <div class="line">&lt;/Table&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="tableconfig_configfilestructuretableelements"></a>
 Table elements section</h2>
@@ -208,15 +212,20 @@ ListEffect</h3>
 <li><b>Name</b> is the name of the effect. Hard to guess?</li>
 <li><b>AssignedEffects</b> section contains any number of ordered effect assignments.</li>
 <li><b>EffectName</b> contains the name of the assigned effect.</li>
-<li><b>Order</b> is a number specifying the order in which the assigned effects are executed. </li>
+<li><b>Order</b> is a number specifying the order in which the assigned effects are executed.</li>
 </ul>
+<h2><a class="anchor" id="tableconfig_configfilestructureaddledcontrolconfig"></a>
+AddLedControlConfig section</h2>
+<p>This section does only contrin true or false.</p>
+<p>True will tell the system to supplement the table config which has been loaded from the config xml with configurations from ledcontrol file(s) if available.</p>
+<p>False will not add configs from ledcontrol file(s). </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 21 2013 21:07:44 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -128,7 +128,7 @@ Implementation guidelines for custom effects</h2>
 <li>Ensure that your effect class is XMLSerializable. As a rule of thumb, your class must implement a paramaterless constructor and all settings for the effect have to be available through public properties.</li>
 <li>Bear in mind that the <em>Trigger</em> method might be called with <em>null</em> instead of a <em>TableElement</em> if the effect is assigned as a static effect. Make sure you effect doesn't fail in this situation.</li>
 <li>Be fault tolerant and handle all errors if necessary. In particular keep care that no exception is thrown, if the toy which is specified by its name in your effect is of a wrong type.</li>
-<li>If your effect needs timed events, register for the alarm function of the <em>UpdateTimer</em> in the <em>Pinball.UpdateTimer</em>. This will ensure that the necessary update functions are called and at the same time make sure that unnessecary update calls are triggered.</li>
+<li>If your effect needs timed events, register for the alarm function of the <em>Alarms</em> object in the <em>Pinball</em> object. This will ensure that the necessary update functions are called and at the same time make sure that no unnessecary update calls to output controllers are triggered.</li>
 <li>Comment your code! At least the public methods and properties of your effect should be properly documented with XML comments.</li>
 <li>to be continued..... </li>
 </ul>
@@ -138,7 +138,7 @@ Implementation guidelines for custom effects</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 21 2013 21:07:44 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('_cabinet_8cs_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29" title="Writes the specified message to the logfile. ">Write</a>(<span class="stringliteral">&quot;Cabinet auto configuration started&quot;</span>);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> (!OutputControllers.Any(OC =&gt; OC is <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html" title="IOutputController class for LedWiz controllers.  The code for this class (mainly the private...">LedWiz</a>))</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29" title="Writes the specified message to the logfile. ">Write</a>(<span class="stringliteral">&quot;No predefined LedWiz controllers found in cabinet config. Will try to located LedWiz units.&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29" title="Writes the specified message to the logfile. ">Write</a>(<span class="stringliteral">&quot;No predefined LedWiz controllers found in cabinet config. Will try to locate LedWiz units.&quot;</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                List&lt;int&gt; Numbers = LedWiz.GetLedwizNumbers();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">foreach</span> (<span class="keywordtype">int</span> N <span class="keywordflow">in</span> Numbers)</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('_cabinet_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6fb70b3c1cd57f067c92ca359f99cb63.html">Cab</a></li><li class="navelem"><a class="el" href="_cabinet_8cs.html">Cabinet.cs</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:42 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:12 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

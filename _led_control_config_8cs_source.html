@@ -234,152 +234,114 @@ $(document).ready(function(){initNavTree('_led_control_config_8cs_source.html','
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordtype">int</span> ColumnCount = OutData[0].Split(<span class="keyword">new</span> <span class="keywordtype">char</span>[] { <span class="charliteral">&#39;,&#39;</span> }).Length;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">foreach</span> (<span class="keywordtype">string</span> OutLine <span class="keywordflow">in</span> OutData)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">if</span> (OutLine.Split(<span class="keyword">new</span> <span class="keywordtype">char</span>[] { <span class="charliteral">&#39;,&#39;</span> }).Length != ColumnCount)</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    Log.Exception(<span class="stringliteral">&quot;Section {0} of file {1} does not have the same number of columns in all lines.&quot;</span>.Build(OutStartString, LedControlIniFile));</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    <span class="keywordflow">if</span> (ThrowExceptions)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Section {0} of file {1} does not have the same number of columns in all lines.&quot;</span>.Build(OutStartString, LedControlIniFile));</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            ColorConfigurations.ParseLedControlData(ColorData, ThrowExceptions);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            TableConfigurations.ParseLedcontrolData(OutData, ThrowExceptions);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            ResolveOutputNumbers();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            ResolveRGBColors();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> ResolveRGBColors()</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">foreach</span> (TableConfig TC <span class="keywordflow">in</span> TableConfigurations)</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">foreach</span> (TableConfigColumn C <span class="keywordflow">in</span> TC.Columns)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    <span class="keywordflow">foreach</span> (TableConfigSetting S <span class="keywordflow">in</span> C)</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                        <span class="keywordflow">if</span> (ColorConfigurations.Contains(S.ColorName))</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                        {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                            ColorConfig CC = ColorConfigurations[S.ColorName];</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                            <span class="keywordflow">if</span> (CC != null)</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                            {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                S.ColorConfig = CC;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                            }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                        }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> ResolveOutputNumbers()</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="comment">//Get the number of required outputs per column</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            Dictionary&lt;int, int&gt; RequiredOutputs = <span class="keyword">new</span> Dictionary&lt;int, int&gt;();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keywordflow">foreach</span> (TableConfig TC <span class="keywordflow">in</span> TableConfigurations)</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                TC.Columns.Sort();</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">foreach</span> (TableConfigColumn C <span class="keywordflow">in</span> TC.Columns)</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    <span class="keywordflow">foreach</span> (TableConfigSetting S <span class="keywordflow">in</span> C)</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                    {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                        <span class="keywordtype">int</span> Cnt = (S.OutputType == <a class="code" href="namespace_direct_output_1_1_led_control.html#ab2d86fcac2a0d355ebf397b872edc5f9">OutputTypeEnum</a>.RGBOutput ? 3 : 1);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                        <span class="keywordflow">if</span> (RequiredOutputs.ContainsKey(C.Number))</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                        {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                            <span class="keywordflow">if</span> (RequiredOutputs[C.Number] &lt; Cnt)</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                            {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                RequiredOutputs[C.Number] = Cnt;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                            }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                        {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                            RequiredOutputs.Add(C.Number, Cnt);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="comment">//Assign number of required outputs to columns</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">foreach</span> (TableConfig TC <span class="keywordflow">in</span> TableConfigurations)</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">foreach</span> (TableConfigColumn C <span class="keywordflow">in</span> TC.Columns)</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <span class="keywordflow">if</span> (RequiredOutputs.ContainsKey(C.Number))</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                    {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                        C.RequiredOutputCount = RequiredOutputs[C.Number];</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                        C.RequiredOutputCount = 1;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                    }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                }</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="comment">//Set LedWiz output numbers to columns</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">foreach</span> (TableConfig TC <span class="keywordflow">in</span> TableConfigurations)</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                <span class="keywordtype">int</span> FirstOutputNumber = 1;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">foreach</span> (TableConfigColumn C <span class="keywordflow">in</span> TC.Columns)</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                    C.FirstOutputNumber = FirstOutputNumber;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                    FirstOutputNumber += C.RequiredOutputCount;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="comment">//Dump();</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">//private void Dump()</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">//{</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="comment">//    string A = &quot;&quot;;</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="comment">//    foreach (TableConfig TC in TableConfigurations)</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="comment">//    {</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">//        A+=&quot;Cols: {0:##}, &quot;.Build( TC.Columns.Count);</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">//        foreach (TableConfigColumn C in TC.Columns)</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="comment">//        {</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">//            A+=&quot;({0:00} {1} {2:00})&quot;.Build( C.Number, C.RequiredOutputCount, C.FirstOutputNumber);</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="comment">//        }</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">//        A += &quot;\n&quot;;</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="comment">//    }</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="comment">//    A.WriteToFile(&quot;c:\\parseresult.txt&quot;);</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">//}</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html#a7ff3f8af7055411238cd3b79dbfe794f">  288</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html" title="Ledcontrol configuration read from a ledcontrol.ini file. ">LedControlConfig</a>()</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            this.TableConfigurations = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_list.html">TableConfigList</a>();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            this.ColorConfigurations = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_color_config_list.html" title="List of color configurations from a ledcontrol.ini file. ">ColorConfigList</a>();</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html#ad5458a885cff063cafcf3449ecff92a3">  308</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html" title="Ledcontrol configuration read from a ledcontrol.ini file. ">LedControlConfig</a>(<span class="keywordtype">string</span> LedControlIniFilename,<span class="keywordtype">int</span> LedWizNumber, <span class="keywordtype">bool</span> ThrowExceptions=<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            : this()</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            ParseLedControlIni(<span class="keyword">new</span> FileInfo(LedControlIniFilename), ThrowExceptions);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            this.LedWizNumber = LedWizNumber;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html#a10b0572488e5b9a4a4744de758450ce8">  329</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html" title="Ledcontrol configuration read from a ledcontrol.ini file. ">LedControlConfig</a>(FileInfo LedControlIniFile, <span class="keywordtype">int</span> LedWizNumber, <span class="keywordtype">bool</span> ThrowExceptions = <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            : this()</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            ParseLedControlIni(LedControlIniFile, ThrowExceptions);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            this.LedWizNumber = LedWizNumber;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            ColorConfigurations.ParseLedControlData(ColorData, ThrowExceptions);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            TableConfigurations.ParseLedcontrolData(OutData, ThrowExceptions);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            ResolveOutputNumbers();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            ResolveRGBColors();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> ResolveRGBColors()</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">foreach</span> (TableConfig TC <span class="keywordflow">in</span> TableConfigurations)</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">foreach</span> (TableConfigColumn C <span class="keywordflow">in</span> TC.Columns)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">foreach</span> (TableConfigSetting S <span class="keywordflow">in</span> C)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                        <span class="keywordflow">if</span> (ColorConfigurations.Contains(S.ColorName))</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                        {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            ColorConfig CC = ColorConfigurations[S.ColorName];</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                            <span class="keywordflow">if</span> (CC != null)</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                            {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                S.ColorConfig = CC;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                            }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                    }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> ResolveOutputNumbers()</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="comment">//Get the number of required outputs per column</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            Dictionary&lt;int, int&gt; RequiredOutputs = <span class="keyword">new</span> Dictionary&lt;int, int&gt;();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">foreach</span> (TableConfig TC <span class="keywordflow">in</span> TableConfigurations)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                TC.Columns.Sort();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keywordflow">foreach</span> (TableConfigColumn C <span class="keywordflow">in</span> TC.Columns)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    <span class="keywordflow">foreach</span> (TableConfigSetting S <span class="keywordflow">in</span> C)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                        <span class="keywordtype">int</span> Cnt = (S.OutputType == <a class="code" href="namespace_direct_output_1_1_led_control.html#ab2d86fcac2a0d355ebf397b872edc5f9">OutputTypeEnum</a>.RGBOutput ? 3 : 1);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                        <span class="keywordflow">if</span> (RequiredOutputs.ContainsKey(C.Number))</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                            <span class="keywordflow">if</span> (RequiredOutputs[C.Number] &lt; Cnt)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                            {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                RequiredOutputs[C.Number] = Cnt;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                            }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                        {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                            RequiredOutputs.Add(C.Number, Cnt);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                    </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;         </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="comment">//Dump();</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="comment">//private void Dump()</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="comment">//{</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="comment">//    string A = &quot;&quot;;</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="comment">//    foreach (TableConfig TC in TableConfigurations)</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="comment">//    {</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">//        A+=&quot;Cols: {0:##}, &quot;.Build( TC.Columns.Count);</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="comment">//        foreach (TableConfigColumn C in TC.Columns)</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">//        {</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="comment">//            A+=&quot;({0:00} {1} {2:00})&quot;.Build( C.Number, C.RequiredOutputCount, C.FirstOutputNumber);</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">//        }</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">//        A += &quot;\n&quot;;</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">//    }</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="comment">//    A.WriteToFile(&quot;c:\\parseresult.txt&quot;);</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html#a7ff3f8af7055411238cd3b79dbfe794f">  250</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html" title="Ledcontrol configuration read from a ledcontrol.ini file. ">LedControlConfig</a>()</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            this.TableConfigurations = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_list.html">TableConfigList</a>();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            this.ColorConfigurations = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_color_config_list.html" title="List of color configurations from a ledcontrol.ini file. ">ColorConfigList</a>();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html#ad5458a885cff063cafcf3449ecff92a3">  270</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html" title="Ledcontrol configuration read from a ledcontrol.ini file. ">LedControlConfig</a>(<span class="keywordtype">string</span> LedControlIniFilename,<span class="keywordtype">int</span> LedWizNumber, <span class="keywordtype">bool</span> ThrowExceptions=<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            : this()</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            ParseLedControlIni(<span class="keyword">new</span> FileInfo(LedControlIniFilename), ThrowExceptions);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            this.LedWizNumber = LedWizNumber;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html#a10b0572488e5b9a4a4744de758450ce8">  291</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_led_control_config.html" title="Ledcontrol configuration read from a ledcontrol.ini file. ">LedControlConfig</a>(FileInfo LedControlIniFile, <span class="keywordtype">int</span> LedWizNumber, <span class="keywordtype">bool</span> ThrowExceptions = <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            : this()</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            ParseLedControlIni(LedControlIniFile, ThrowExceptions);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            this.LedWizNumber = LedWizNumber;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -387,7 +349,7 @@ $(document).ready(function(){initNavTree('_led_control_config_8cs_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_3fefcb4df4d383a16339164eba8053b5.html">LedControl</a></li><li class="navelem"><a class="el" href="_led_control_config_8cs.html">LedControlConfig.cs</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:43 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:12 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

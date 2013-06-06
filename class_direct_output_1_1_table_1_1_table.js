@@ -7,6 +7,7 @@ var class_direct_output_1_1_table_1_1_table =
     [ "SaveConfigXmlFile", "class_direct_output_1_1_table_1_1_table.html#acf7aba6a1b8e0a28aa8ba5daa955b8a1", null ],
     [ "TriggerStaticEffects", "class_direct_output_1_1_table_1_1_table.html#aa847e6bc016bce992a5b7dc6edc89565", null ],
     [ "UpdateTableElement", "class_direct_output_1_1_table_1_1_table.html#a1596610d6d0e65609d132c966a1ceefc", null ],
+    [ "AddLedControlConfig", "class_direct_output_1_1_table_1_1_table.html#a4871460c4656fa219287a0f1ec0dc58e", null ],
     [ "AssignedStaticEffects", "class_direct_output_1_1_table_1_1_table.html#a54c9b01e78d96d4db12e806c54cf3fcb", null ],
     [ "ConfigurationSource", "class_direct_output_1_1_table_1_1_table.html#a6feb7b524484489a59c6f41dea2b7394", null ],
     [ "Effects", "class_direct_output_1_1_table_1_1_table.html#a98fd3c8a7ce5d1ecf63b18610a7ae70d", null ],

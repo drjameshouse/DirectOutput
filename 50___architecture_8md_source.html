@@ -145,12 +145,13 @@ $(document).ready(function(){initNavTree('50___architecture_8md.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;\section architecture_multithreading Multithreading</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;This framework distributes its work over several threads to ensure that there are no (or at least very little) side effects and performance problems with the application calling the frame work functions.</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;This framework distributes its work over several threads to ensure that there are no (or at least very little) side effects and performance problems with the application calling the framework functions.</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;If the framework is called with new data from the outside (B2S.Server), all it will do is to put the received data in a queue and notifiy a worker thread. After that the independent worker thread will take care of the received data and take all necessary actions.</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;In addition to the workerthread a timed update thread (implemented in UpdateTimer and accessible through Pinball.UpdateTimer) which is run at regular intervals takes care of timed effects.</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;The LedWiz object does also use a separate thread for each connected LedWiz, to overcome the response time problems of the LedWiz. </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;If the framework is called with new data from the outside (e.g. through B2S.Server), all it will do is to put the received data in a queue and notifiy the main loop thread. After that the independent mainloop thread will take care of the received data and take all necessary actions.</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;The LedWiz object does also use a separate thread for each connected LedWiz, to overcome the response time problems of the LedWiz. </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;Depending on the config you are using other threads might be active as well.</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -158,7 +159,7 @@ $(document).ready(function(){initNavTree('50___architecture_8md.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="50___architecture_8md.html">50_Architecture.md</a></li>
-    <li class="footer">Generated on Tue May 21 2013 21:07:43 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

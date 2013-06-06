@@ -118,32 +118,71 @@ Contactor</h2>
 <li><b>Property OutputName</b> is the name of the output assigned to the toy.</li>
 <li><b>Method SetState(bool State)</b> sets the state of the contactor.</li>
 </ul>
-<p>The XML to configure a contactor toy looks as follows: ~~~~~~~~~~~~~{.xml} &lt;Contactor&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;/Contactor&gt;</p>
-<h2><a class="anchor" id="toys_lamp"></a>
+<p>The XML to configure a contactor toy looks as follows: </p>
+<div class="fragment"><div class="line">&lt;Contactor&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">&lt;/Contactor&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_lamp"></a>
 Lamp</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;Lamp&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;/Lamp&gt;</p>
-<h2><a class="anchor" id="toys_rgbled"></a>
+<div class="fragment"><div class="line">&lt;<a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a5331717d33d4e634fd3c5ec209f475d2">Lamp</a>&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">&lt;/<a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a5331717d33d4e634fd3c5ec209f475d2">Lamp</a>&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_rgbled"></a>
 RGBLed</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;RGBLed&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputNameRed&gt;Name of a output&lt;/OutputNameRed&gt; &lt;OutputNameGreen&gt;Name of a output&lt;/OutputNameGreen&gt; &lt;OutputNameBlue&gt;Name of a output&lt;/OutputNameBlue&gt; &lt;/RGBLed&gt;</p>
-<h2><a class="anchor" id="toys_replayknocker"></a>
+<div class="fragment"><div class="line">&lt;RGBLed&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputNameRed&gt;Name of a output&lt;/OutputNameRed&gt;</div>
+<div class="line">  &lt;OutputNameGreen&gt;Name of a output&lt;/OutputNameGreen&gt;</div>
+<div class="line">  &lt;OutputNameBlue&gt;Name of a output&lt;/OutputNameBlue&gt;</div>
+<div class="line">&lt;/RGBLed&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_replayknocker"></a>
 ReplayKnocker</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;ReplayKnocker&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;DefaultIntervallMs&gt;300&lt;/DefaultIntervallMs&gt; &lt;/ReplayKnocker&gt;</p>
-<h2><a class="anchor" id="toys_motor"></a>
+<div class="fragment"><div class="line">&lt;ReplayKnocker&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">  &lt;DefaultIntervallMs&gt;300&lt;/DefaultIntervallMs&gt;</div>
+<div class="line">&lt;/ReplayKnocker&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_motor"></a>
 Motor/Shaker/GearMotor</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;Motor&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;MaxRunTimeMs&gt;300000&lt;/MaxRunTimeMs&gt; &lt;MinPower&gt;10&lt;/MinPower&gt; &lt;MaxPower&gt;255&lt;/MaxPower&gt; &lt;KickstartPower&gt;128&lt;/KickstartPower&gt; &lt;KickstartDurationMs&gt;100&lt;/KickstartDurationMs&gt; &lt;/Motor&gt;</p>
-<h2><a class="anchor" id="toys_flasher"></a>
+<div class="fragment"><div class="line">&lt;Motor&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">  &lt;MaxRunTimeMs&gt;300000&lt;/MaxRunTimeMs&gt;</div>
+<div class="line">  &lt;MinPower&gt;10&lt;/MinPower&gt;</div>
+<div class="line">  &lt;MaxPower&gt;255&lt;/MaxPower&gt;</div>
+<div class="line">  &lt;KickstartPower&gt;128&lt;/KickstartPower&gt;</div>
+<div class="line">  &lt;KickstartDurationMs&gt;100&lt;/KickstartDurationMs&gt;</div>
+<div class="line">&lt;/Motor&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_flasher"></a>
 Flasher</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;Flasher&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;DefaultIntervallMs&gt;150&lt;/DefaultIntervallMs&gt; &lt;FlashDurationMs&gt;20&lt;/FlashDurationMs&gt; &lt;/Flasher&gt;</p>
-<h2><a class="anchor" id="toys_ledwizequivalent"></a>
+<div class="fragment"><div class="line">&lt;Flasher&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">  &lt;DefaultIntervallMs&gt;150&lt;/DefaultIntervallMs&gt;</div>
+<div class="line">  &lt;FlashDurationMs&gt;20&lt;/FlashDurationMs&gt;</div>
+<div class="line">&lt;/Flasher&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_ledwizequivalent"></a>
 LedWizEquivalent</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;LedWizEquivalent&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;Outputs&gt; &lt;LedWizNumber&gt;-1&lt;/LedWizNumber&gt; &lt;/LedWizEquivalent&gt;</p>
-<h2><a class="anchor" id="toys_genericdigitaltoy"></a>
+<div class="fragment"><div class="line">&lt;LedWizEquivalent&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;Outputs /&gt;</div>
+<div class="line">  &lt;LedWizNumber&gt;-1&lt;/LedWizNumber&gt;</div>
+<div class="line">&lt;/LedWizEquivalent&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_genericdigitaltoy"></a>
 GenericAnalogToy</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;GenericDigitalToy&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;/GenericDigitalToy&gt;</p>
-<h2><a class="anchor" id="toys_genericdigitaltoy"></a>
+<div class="fragment"><div class="line">&lt;GenericDigitalToy&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">&lt;/GenericDigitalToy&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="toys_genericdigitaltoy"></a>
 GenericAnalogToy</h2>
-<p>~~~~~~~~~~~~~{.xml} &lt;GenericAnalogToy&gt; &lt;Name&gt;Toy name&lt;/Name&gt; &lt;OutputName&gt;Name of a output&lt;/OutputName&gt; &lt;/GenericAnalogToy&gt;</p>
-<h1><a class="anchor" id="toys_custom"></a>
+<div class="fragment"><div class="line">&lt;GenericAnalogToy&gt;</div>
+<div class="line">  &lt;Name&gt;Toy name&lt;/Name&gt;</div>
+<div class="line">  &lt;OutputName&gt;Name of a output&lt;/OutputName&gt;</div>
+<div class="line">&lt;/GenericAnalogToy&gt;</div>
+</div><!-- fragment --><h1><a class="anchor" id="toys_custom"></a>
 Custom toys</h1>
 <h2><a class="anchor" id="toys_implementationguideline"></a>
 Implementation guidelines for custom toys</h2>
@@ -153,7 +192,7 @@ Implementation guidelines for custom toys</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 21 2013 21:07:44 for DirectOutput by
+    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

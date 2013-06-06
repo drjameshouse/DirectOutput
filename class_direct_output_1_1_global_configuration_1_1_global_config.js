@@ -21,6 +21,5 @@ var class_direct_output_1_1_global_configuration_1_1_global_config =
     [ "LedControlIniFiles", "class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056", null ],
     [ "LogFilePattern", "class_direct_output_1_1_global_configuration_1_1_global_config.html#aaecb5b8258cb46769635ed67f64acd91", null ],
     [ "TableConfigFilePatterns", "class_direct_output_1_1_global_configuration_1_1_global_config.html#ac3adfeed96f082414d45a3ac8b932dc7", null ],
-    [ "TableScriptFilePatterns", "class_direct_output_1_1_global_configuration_1_1_global_config.html#ad00a3fa0522b5f634f245e759fa85764", null ],
-    [ "UpdateTimerIntervall", "class_direct_output_1_1_global_configuration_1_1_global_config.html#a8e257fccb6f9ef0340b0513542b6240d", null ]
+    [ "TableScriptFilePatterns", "class_direct_output_1_1_global_configuration_1_1_global_config.html#ad00a3fa0522b5f634f245e759fa85764", null ]
 ];
