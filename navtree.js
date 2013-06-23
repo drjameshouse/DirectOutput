@@ -4,6 +4,7 @@ var NAVTREE =
     [ "Installation and Configuration", "md_10__installation_and_configuration.html", [
       [ "Requirements", "md_10__installation_and_configuration.html#installation_requirements", null ],
       [ "Installation", "md_10__installation_and_configuration.html#installation_installation", null ],
+      [ "B2S.Server Configuration", "md_10__installation_and_configuration.html#installation_b2sserverconfig", null ],
       [ "Visual Pinball core.vbs Adjustment", "md_10__installation_and_configuration.html#installation_visualpinballcorevbs", null ],
       [ "Visual Pinball Table Configuration", "md_10__installation_and_configuration.html#installation_visualpinballtableconfig", null ],
       [ "Configuration", "md_10__installation_and_configuration.html#installation_configuration", [
@@ -170,11 +171,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_handler_8cs.html",
-"_replay_knocker_8cs.html",
-"class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_analog_toy.html#a393cce3fb87ca08fd2ad9213f986797f",
-"class_direct_output_1_1_general_1_1_generic_1_1_remove_event_args_3_01_ty_01_4.html",
-"class_direct_output_1_1_table_1_1_table_element_list.html#a24ae8077fd2c8ca0b27e20b3811d5666",
-"md_63__toys.html#toys_rgbled"
+"_r_g_b_led_8cs.html",
+"class_direct_output_1_1_cab_1_1_toys_1_1_color.html#ac03b8bb0ec190810709861cdbaddbcf4",
+"class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#ab5c85fd70fe31f3cb0d69b97bfbc4832",
+"class_direct_output_1_1_table_1_1_table.html#acf7aba6a1b8e0a28aa8ba5daa955b8a1",
+"ledcontrolfiles.html#ledcontrol_introduction"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

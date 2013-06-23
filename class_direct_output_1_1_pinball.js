@@ -1,11 +1,14 @@
 var class_direct_output_1_1_pinball =
 [
     [ "Pinball", "class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249", null ],
-    [ "Pinball", "class_direct_output_1_1_pinball.html#a36948995ee193121536141d76894a944", null ],
+    [ "Pinball", "class_direct_output_1_1_pinball.html#aa07b49f0487d65de579b69d9433b6d87", null ],
     [ "Finish", "class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa", null ],
-    [ "Init", "class_direct_output_1_1_pinball.html#a61db9dc5f4df35524b1bd472de675570", null ],
+    [ "Init", "class_direct_output_1_1_pinball.html#aa1344df3ca7be7500e89f83f5e967f8c", null ],
+    [ "InitStatistics", "class_direct_output_1_1_pinball.html#a4dc4f68eecdb4d96bc2e6a0aa1239a70", null ],
     [ "ReceiveData", "class_direct_output_1_1_pinball.html#add8d0701706913120586ac3e885e9238", null ],
     [ "ToString", "class_direct_output_1_1_pinball.html#a1d31e41a9db03561fd9a885071d2519f", null ],
+    [ "UpdateTableElementStatistics", "class_direct_output_1_1_pinball.html#ae300f976b1049043c924e69a01be435e", null ],
+    [ "WriteStatisticsToLog", "class_direct_output_1_1_pinball.html#a71993601bbfe0ac747fec94ebab2df9a", null ],
     [ "Alarms", "class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9", null ],
     [ "Cabinet", "class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb", null ],
     [ "Effects", "class_direct_output_1_1_pinball.html#a4ec2d059a0268c1d6f2540df87249ca2", null ],

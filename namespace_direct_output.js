@@ -10,6 +10,6 @@ var namespace_direct_output =
     [ "Properties", "namespace_direct_output_1_1_properties.html", null ],
     [ "Scripting", "namespace_direct_output_1_1_scripting.html", "namespace_direct_output_1_1_scripting" ],
     [ "Table", "namespace_direct_output_1_1_table.html", "namespace_direct_output_1_1_table" ],
-    [ "Log", "class_direct_output_1_1_log.html", "class_direct_output_1_1_log" ],
+    [ "Log", "class_direct_output_1_1_log.html", null ],
     [ "Pinball", "class_direct_output_1_1_pinball.html", "class_direct_output_1_1_pinball" ]
 ];

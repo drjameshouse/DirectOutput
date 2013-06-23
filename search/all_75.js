@@ -7,5 +7,6 @@ var searchData=
   ['updateglobalconfigdata',['UpdateGlobalConfigData',['../class_direct_output_1_1_frontend_1_1_global_config_edit.html#a09b68bf9e5a7f0f08921641e49400239',1,'DirectOutput::Frontend::GlobalConfigEdit']]],
   ['updatestate',['UpdateState',['../class_direct_output_1_1_table_1_1_table_element_list.html#a292fc0748ab61f061de6fdeda5f5f95b',1,'DirectOutput::Table::TableElementList']]],
   ['updatetableconfig',['UpdateTableConfig',['../class_direct_output_1_1_led_control_1_1_led_control_config_list.html#a646c584493b427f8a3eb324a82be5d26',1,'DirectOutput::LedControl::LedControlConfigList']]],
-  ['updatetableelement',['UpdateTableElement',['../class_direct_output_1_1_table_1_1_table.html#a1596610d6d0e65609d132c966a1ceefc',1,'DirectOutput::Table::Table']]]
+  ['updatetableelement',['UpdateTableElement',['../class_direct_output_1_1_table_1_1_table.html#a1596610d6d0e65609d132c966a1ceefc',1,'DirectOutput::Table::Table']]],
+  ['updatetableelementstatistics',['UpdateTableElementStatistics',['../class_direct_output_1_1_pinball.html#ae300f976b1049043c924e69a01be435e',1,'DirectOutput::Pinball']]]
 ];

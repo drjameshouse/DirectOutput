@@ -8,6 +8,8 @@ var _table_element_type_enum_8cs =
       [ "GIString", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a6ae6b9305f5c9497e044279080ced526", null ],
       [ "Mech", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38ae45ae8e1d63029c402b37a5eebcf5f4f", null ],
       [ "EMTable", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a4c67e7b0cbd737d90b9d7b09a5fc04f5", null ],
-      [ "LED", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a53e0dbc06e48e3d381ac224fa8bae3df", null ]
+      [ "LED", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a53e0dbc06e48e3d381ac224fa8bae3df", null ],
+      [ "Score", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a5dd135d1bcfa7f63c3b7f25425c2a4a1", null ],
+      [ "ScoreDigit", "_table_element_type_enum_8cs.html#a175aa273230ef2862f0ed4e5551ceb38a25671b51820e2534108abe82a44ef450", null ]
     ] ]
 ];

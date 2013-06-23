@@ -21,7 +21,8 @@
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="directoutputstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -194,7 +195,7 @@ $(document).ready(function(){initNavTree('_direct_output___e_m_2bin_2_debug_2_co
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_update_timer.html">UpdateTimer</a> Timer;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">private</span> UpdateTimer Timer;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> StartDimmer(<span class="keywordtype">int</span> TargetBrightness)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
@@ -241,14 +242,14 @@ $(document).ready(function(){initNavTree('_direct_output___e_m_2bin_2_debug_2_co
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            ResolveName(Pinball);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Timer = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            Timer.<a class="code" href="class_direct_output_1_1_update_timer.html#aa520670ac12252a2dcd8cac70ef63757" title="Registers the method specified in IntervalAlarmHandler for interval alarms.  Interval alarms are fire...">RegisterIntervalAlarm</a>(20, UpdateDimmer);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            Timer = Pinball.UpdateTimer;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            Timer.RegisterIntervalAlarm(20, UpdateDimmer);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> (LampToy != null)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                TargetBrightness = LampToy.Brightness;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                Timer = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a0987b46f64738b943c3e4b81a9ffe360" title="Gets the UpdateTimer for the Pinball object. ">UpdateTimer</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                Timer.<a class="code" href="class_direct_output_1_1_update_timer.html#aa520670ac12252a2dcd8cac70ef63757" title="Registers the method specified in IntervalAlarmHandler for interval alarms.  Interval alarms are fire...">RegisterIntervalAlarm</a>(20, UpdateDimmer);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                Timer = Pinball.UpdateTimer;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                Timer.RegisterIntervalAlarm(20, UpdateDimmer);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            }</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
 <div class="line"><a name="l00185"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html#a8435b211decd13f81320a0b77f6e460a">  185</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
@@ -273,20 +274,20 @@ $(document).ready(function(){initNavTree('_direct_output___e_m_2bin_2_debug_2_co
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1c22e4f67c276ddac8734020e579869f.html">DirectOutput_EM</a></li><li class="navelem"><a class="el" href="dir_ed45c74d947dfdbd63576167a1938cce.html">bin</a></li><li class="navelem"><a class="el" href="dir_95a158e03530f78a803c79faf533d5c6.html">Debug</a></li><li class="navelem"><a class="el" href="dir_d3d4127ad45b449e031fd09b1e9afe22.html">Config</a></li><li class="navelem"><a class="el" href="_direct_output___e_m_2bin_2_debug_2_config_2_timed_dimmer_lamp_effect_8cs.html">TimedDimmerLampEffect.cs</a></li>
-    <li class="footer">Generated on Mon Apr 15 2013 13:28:16 for DirectOutput by
+    <li class="footer">Generated on Sun Jun 23 2013 20:51:22 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
 </div>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39987816-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39987816-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 </script>
 </body>
 </html>

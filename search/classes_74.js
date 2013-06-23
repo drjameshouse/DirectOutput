@@ -13,6 +13,7 @@ var searchData=
   ['tableinfo',['TableInfo',['../class_direct_output_1_1_frontend_1_1_table_info.html',1,'DirectOutput::Frontend']]],
   ['threadtools',['ThreadTools',['../class_direct_output_1_1_general_1_1_thread_tools.html',1,'DirectOutput::General']]],
   ['timeddimmerlampeffect',['TimedDimmerLampEffect',['../class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html',1,'DirectOutput::FX']]],
+  ['timespanstatistics',['TimeSpanStatistics',['../class_direct_output_1_1_general_1_1_time_span_statistics.html',1,'DirectOutput::General']]],
   ['toybase',['ToyBase',['../class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html',1,'DirectOutput::Cab::Toys']]],
   ['toyeventargs',['ToyEventArgs',['../class_direct_output_1_1_cab_1_1_toys_1_1_toy_event_args.html',1,'DirectOutput::Cab::Toys']]],
   ['toylist',['ToyList',['../class_direct_output_1_1_cab_1_1_toys_1_1_toy_list.html',1,'DirectOutput::Cab::Toys']]],

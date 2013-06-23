@@ -127,100 +127,112 @@ $(document).ready(function(){initNavTree('10___installation_01and_01configuratio
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;\section installation_installation Installation</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;Unzip the contents of the zip-file containing the framework to the following subpath of the B2S-Server: {B2S-Server directory}\\plugin\\DirectOutput</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;Unzip the contents of the zip-file containing the framework to the following subpath of the B2S-Server: {B2S-Server directory}\\plugins\\DirectOutput</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;The B2S-Server will automatically detect the framework on startup and integrate it. Please check &lt;a href=<span class="stringliteral">&quot;http://www.vpforums.org/index.php?showforum=86&quot;</span>&gt;VPForums&lt;/a&gt; <span class="keywordflow">for</span> more information on the B2S-Server.</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;Typically the directory and file structure of your installtion should look like <span class="keyword">this</span> (depending on the framework version, more files might exist in the installtion directory):</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;Typically the directory and file structure of your installtion should look like <span class="keyword">this</span> (depending on the framework version, more files might exist in the installation directory):</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;\image html Installation_DirectoryStructure.png DirectOutput Installation</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;Alternatively the DirectOutput framework can also be put into any other directory on your system and a windows shortcut pointing to <span class="keyword">this</span> directory can be added to the {B2S-Server directory}\\plugin directory. The B2S.Server will follow <span class="keyword">this</span> shortcut to your plugin directory.</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;Alternatively the DirectOutput framework can also be put into any other directory on your system and a windows shortcut pointing to <span class="keyword">this</span> directory can be added to the {B2S-Server directory}\\plugins directory. The B2S.Server will follow <span class="keyword">this</span> shortcut to your plugin directory.</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;\section installation_visualpinballcorevbs Visual Pinball core.vbs Adjustment</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;\section installation_b2sserverconfig B2S.Server Configuration</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;If you have used the &lt;a href=<span class="stringliteral">&quot;http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive&quot;</span>&gt;VBScript solution&lt;/a&gt; to control your LedWiz you will have to _remove_ the following line from your core.vbs:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;To enable the plugin support in the B2S.Server (DirectOutput is a B2S.Server plugin) you need to add the _ArePluginsOn_ option to your B2STableSettings.xml file (located in the same directory as the B2S.Server):</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;~~~~~~~~~~~~~~~{.vbs}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;ExecuteGlobal GetTextFile(<span class="stringliteral">&quot;ledcontrol.vbs&quot;</span>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;~~~~~~~~~~~~~~~</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;If you dont <span class="keyword">remove</span> the mentioned statement you<span class="stringliteral">&#39;ll run into trouble since the framework and the ledcontrol.vbs solutions will run simultaneously!</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">\section installation_visualpinballtableconfig Visual Pinball Table Configuration</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">Tables using the DirectOutput framework resp. the B2S-Server have to instanciate the B2S.Server instead of the Pinmame.Controller.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">Replace the following line in the table scripts of the tables you want to use the DirectOutput framework</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~{.vbs}</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">Set Controller = CreateObject(&quot;VPinMAME.Controller&quot;)     </span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">with</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;~~~~~~~~~~~~~~~{.xml}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;&lt;B2STableSettings&gt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  ....</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  &lt;ArePluginsOn&gt;1&lt;/ArePluginsOn&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  ...</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;&lt;/B2STableSettings&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;~~~~~~~~~~~~~~~</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;\section installation_visualpinballcorevbs Visual Pinball core.vbs Adjustment</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;If you have used the &lt;a href=<span class="stringliteral">&quot;http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive&quot;</span>&gt;VBScript solution&lt;/a&gt; to control your LedWiz before you will have to _REMOVE_ the following line from your core.vbs:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;~~~~~~~~~~~~~~~{.vbs}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;ExecuteGlobal GetTextFile(<span class="stringliteral">&quot;ledcontrol.vbs&quot;</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;~~~~~~~~~~~~~~~</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;If you dont <span class="keyword">remove</span> the mentioned statement you<span class="stringliteral">&#39;ll run into trouble since the framework and the ledcontrol.vbs solutions will run simultaneously!</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~{.vbs}</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral">Set Controller = CreateObject(&quot;B2S.Server&quot;) </span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">\section installation_visualpinballtableconfig Visual Pinball Table Configuration</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">Tables using the DirectOutput framework resp. the B2S-Server have to instanciate the B2S.Server instead of the Pinmame.Controller.</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral">\section installation_configuration Configuration </span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">\subsection installation_autoconfiguration Using Auto configuration</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral">If correctly installed the DirectOutput framework can configure itself automatically. This means that you dont need to create any of the config files mentioned in the sections below to get started.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral">Auto configuration will automatically detect the LedWiz units connected to your system and try to lookup the ledcontrol.ini file with table configurations in the following locations:</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral">- Table directory</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="stringliteral">- Config directory of DirectOutput</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral">- Directory containing the DirectOutput.dll</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="stringliteral">Replace the following line in the table scripts of the tables you want to use the B2S.Server and the DirectOutput framework</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~{.vbs}</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="stringliteral">Set Controller = CreateObject(&quot;VPinMAME.Controller&quot;)     </span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="stringliteral">with</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~{.vbs}</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="stringliteral">Set Controller = CreateObject(&quot;B2S.Server&quot;) </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="stringliteral">~~~~~~~~~~~~~~~</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="stringliteral"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral">Up to 16 LedWiz units are supported, which can be controlled by numbered ledcontrol.ini files. For LedWiz nr. 1 the file ledcontrol.ini will be loaded, for LedWiz numbers 2-16 files ledcontrol{LedWizNumber}.ini (e.g. ledcontrol2.ini) will be loaded.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="stringliteral">\section installation_configuration Configuration </span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">The create your own lecontrol.ini files it is best to use the &lt;a href=&quot;http://vpuniverse.com/ledwiz/login.php&quot;&gt;LedWiz Config Tool&lt;/a&gt;.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="stringliteral">\subsection installation_autoconfiguration Using Auto configuration</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral">At the moment only LedWiz units are automatically detected. If you are using other output controllers you will have to create a cabinet configuration file, specifying the output controllers and some matching LedWizEquivalent toys, to allow the use of ledcontrol files.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="stringliteral">If correctly installed the DirectOutput framework can configure itself automatically. This means that you dont need to create any of the config files mentioned in the sections below to get started.</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="stringliteral">\subsection installation_configfiles Using configuration files</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="stringliteral">Auto configuration will automatically detect the LedWiz units connected to your system and try to lookup the ledcontrol.ini file with table configurations in the following locations:</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="stringliteral">The auto configuration function of the framework does only support some basic functionality of the framework. If you want to unleash the full power of DirectOutput, you can venture into the more detailed configuration options.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="stringliteral">\subsection installation_globalconfig Global Configuration</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="stringliteral">- Table directory</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="stringliteral">- Config directory of DirectOutput</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="stringliteral">- Directory containing the DirectOutput.dll</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="stringliteral">The global configuration specifies some global settings for the framework, like the places where cabinet and table configurations are looked up. </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="stringliteral">Up to 16 LedWiz units are supported, which can be controlled by numbered ledcontrol.ini files. For LedWiz nr. 1 the file ledcontrol.ini will be loaded, for LedWiz numbers 2-16 files ledcontrol{LedWizNumber}.ini (e.g. ledcontrol2.ini) will be loaded.</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="stringliteral">If the framework is called through the B2S.Server Plugin it will search for a file named _GlobalConfiguration_b2SServer.xml_ in the following places:</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="stringliteral">- A directory named _config_ withing the directory of the DirectOutput.dll.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="stringliteral">- A shortcut named _config_ to a directory. </span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral">- Table directory.</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral">- Directory of the DirectOutput.dll.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="stringliteral">The create your own lecontrol.ini files it is best to use the &lt;a href=&quot;http://vpuniverse.com/ledwiz/login.php&quot;&gt;LedWiz Config Tool&lt;/a&gt;.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="stringliteral">At the moment only LedWiz units are automatically detected. If you are using other output controllers you will have to create a cabinet configuration file, specifying the output controllers and some matching LedWizEquivalent toys, to allow the use of ledcontrol files.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="stringliteral">\subsection installation_configfiles Using configuration files</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">If no global configuration file can be found, the framework tries to configure itself by detecting LedWiz units and searching ledcontrol.ini file in the table directory, the config directory of the DirectOutput framework or the dll directory of the framework (see section on auto configuration above). In this mode, the framework behaves like the vbscript solution.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="stringliteral">The auto configuration function of the framework does only support some basic functionality of the framework. If you want to unleash the full power of DirectOutput, you can venture into the more detailed configuration options.</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">To create your own global configuration, you can either use the built in global configuration editor or write a XML-file with the necessary information yourself.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="stringliteral">\subsection installation_globalconfig Global Configuration</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">Please read the page on Global Configuration for a detailed explanation of the settings.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="stringliteral">The global configuration specifies some global settings for the framework, like the places where cabinet and table configurations are looked up. </span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral">\subsection installation_cabinetconfig Cabinet Configuration</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="stringliteral">The cabinet configuration specifies the output controllers (e.g. Ledwiz) and toys (e.g. contactors and RGB leds) in your cabinet. </span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral">Typicaly the cabinet configuration file will be named cabinet.xml and reside in the config directory of the DirectOutput framework. Be sure to configure a file pattern in the global configuration pointing on your own cabinet configuration file.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="stringliteral">If the framework is called through the B2S.Server Plugin it will search for a file named _GlobalConfiguration_b2SServer.xml_ in the following places:</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="stringliteral">- A directory named _config_ withing the directory of the DirectOutput.dll.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="stringliteral">- A shortcut named _config_ to a directory. </span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="stringliteral">- Table directory.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="stringliteral">- Directory of the DirectOutput.dll.</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">Please read the page on Cabinet Configuration for more information.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="stringliteral">If no global configuration file can be found, the framework tries to configure itself by detecting LedWiz units and searching ledcontrol.ini file in the table directory, the config directory of the DirectOutput framework or the dll directory of the framework (see section on auto configuration above). In this mode, the framework behaves like the vbscript solution.</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">\subsection installation_tableconfig Table Configuration</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="stringliteral">To create your own global configuration, you can either use the built in global configuration editor or write a XML-file with the necessary information yourself.</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">The table configuration specifies the elements on a pinball table (e.g. solenoids or lamps) and the effects assigned to the table elements. </span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral">  </span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">Please read the page on Table Configuration for details.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="stringliteral">Please read the page on Global Configuration for a detailed explanation of the settings.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="stringliteral">\subsection installation_cabinetconfig Cabinet Configuration</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">\subsection installation_ledcontrolini LedControl.ini files</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="stringliteral">The cabinet configuration specifies the output controllers (e.g. Ledwiz) and toys (e.g. contactors and RGB leds) in your cabinet. </span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">The DirectOutput framework can use one or several classical LedControl.ini files to configure tables.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="stringliteral">Typicaly the cabinet configuration file will be named cabinet.xml and reside in the config directory of the DirectOutput framework. Be sure to configure a file pattern in the global configuration pointing on your own cabinet configuration file.</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral">Please refer to the page LedControl Files for details.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="stringliteral">Please read the page on Cabinet Configuration for more information.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="stringliteral">\subsection installation_tableconfig Table Configuration</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="stringliteral">The table configuration specifies the elements on a pinball table (e.g. solenoids or lamps) and the effects assigned to the table elements. </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="stringliteral">  </span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="stringliteral">Please read the page on Table Configuration for details.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="stringliteral">\subsection installation_ledcontrolini LedControl.ini files</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="stringliteral">The DirectOutput framework can use one or several classical LedControl.ini files to configure tables.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="stringliteral">Please refer to the page LedControl Files for details.</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -228,7 +240,7 @@ $(document).ready(function(){initNavTree('10___installation_01and_01configuratio
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="10___installation_01and_01configuration_8md.html">10_Installation and configuration.md</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Sun Jun 23 2013 20:51:23 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

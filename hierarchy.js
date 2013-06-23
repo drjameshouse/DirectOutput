@@ -45,7 +45,7 @@ var hierarchy =
       [ "DirectOutput.Frontend.ScriptInfo", "class_direct_output_1_1_frontend_1_1_script_info.html", null ],
       [ "DirectOutput.Frontend.TableInfo", "class_direct_output_1_1_frontend_1_1_table_info.html", null ],
       [ "DirectOutput_Test.Form1", "class_direct_output___test_1_1_form1.html", null ],
-      [ "LedControlFileTester.Form1", "class_led_control_file_tester_1_1_form1.html", null ]
+      [ "LedControlFileTester.LedControlFileTestWizard", "class_led_control_file_tester_1_1_led_control_file_test_wizard.html", null ]
     ] ],
     [ "DirectOutput.GlobalConfiguration.GlobalConfig", "class_direct_output_1_1_global_configuration_1_1_global_config.html", null ],
     [ "IDirectPlugin", null, [
@@ -148,9 +148,13 @@ var hierarchy =
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
+          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
+          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ]
         ] ],
         [ "DirectOutput.FX.LedControlFX.LedControlEffect", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html", null ],
+        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
+        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
@@ -225,6 +229,9 @@ var hierarchy =
       [ "DirectOutput.PinballSupport.InputQueue", "class_direct_output_1_1_pinball_support_1_1_input_queue.html", null ]
     ] ],
     [ "DirectOutput.Scripting.Script", "class_direct_output_1_1_scripting_1_1_script.html", null ],
+    [ "DirectOutput.General.SimpleStatistics< T >", "class_direct_output_1_1_general_1_1_simple_statistics_3_01_t_01_4.html", [
+      [ "DirectOutput.General.TimeSpanStatistics", "class_direct_output_1_1_general_1_1_time_span_statistics.html", null ]
+    ] ],
     [ "StringConverter", null, [
       [ "DirectOutput.Cab.Out.OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", null ]
     ] ],

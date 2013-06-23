@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_main_menu_8cs_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            Version V = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            DateTime BuildDate = <span class="keyword">new</span> DateTime(2000, 1, 1).AddDays(V.Build).AddSeconds(V.Revision * 2);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            Version.Text = <span class="stringliteral">&quot;Version {0} as of {1}&quot;</span>.Build(V.ToString(), BuildDate.ToString(<span class="stringliteral">&quot;yyyy.MM.dd hh:mm&quot;</span>));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            Version.Text = <span class="stringliteral">&quot;Version {0} as of {1}&quot;</span>.Build(V.ToString(), BuildDate.ToString(<span class="stringliteral">&quot;yyyy.MM.dd HH:mm&quot;</span>));</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            TableName.Text = (Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableName.IsNullOrWhiteSpace() ? <span class="stringliteral">&quot;&lt;No table name set&gt;&quot;</span> : Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableName);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            TableFilename.Text = (Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableFilename.IsNullOrWhiteSpace() ? <span class="stringliteral">&quot;&lt;No table file name set&gt;&quot;</span> : Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c" title="Gets the table object for the Pinball object. ">Table</a>.TableFilename);</div>
@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('_main_menu_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_6cbc8b889a4a695d2f7ea7dfc5e5ac58.html">Frontend</a></li><li class="navelem"><a class="el" href="_main_menu_8cs.html">MainMenu.cs</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:12 for DirectOutput by
+    <li class="footer">Generated on Sun Jun 23 2013 20:51:22 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

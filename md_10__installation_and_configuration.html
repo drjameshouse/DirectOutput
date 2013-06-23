@@ -114,23 +114,31 @@ Installation</h1>
 <p>You are also very welcome to fork/download and enhance the source code from GitHub.</p>
 <h1><a class="anchor" id="installation_installation"></a>
 Installation</h1>
-<p>Unzip the contents of the zip-file containing the framework to the following subpath of the B2S-Server: {B2S-Server directory}\plugin\<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a></p>
+<p>Unzip the contents of the zip-file containing the framework to the following subpath of the B2S-Server: {B2S-Server directory}\plugins\<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a></p>
 <p>The B2S-Server will automatically detect the framework on startup and integrate it. Please check <a href="http://www.vpforums.org/index.php?showforum=86">VPForums</a> for more information on the B2S-Server.</p>
-<p>Typically the directory and file structure of your installtion should look like this (depending on the framework version, more files might exist in the installtion directory):</p>
+<p>Typically the directory and file structure of your installtion should look like this (depending on the framework version, more files might exist in the installation directory):</p>
 <div class="image">
 <img src="Installation_DirectoryStructure.png" alt="Installation_DirectoryStructure.png"/>
 <div class="caption">
 DirectOutput Installation</div></div>
-<p>Alternatively the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework can also be put into any other directory on your system and a windows shortcut pointing to this directory can be added to the {B2S-Server directory}\plugin directory. The B2S.Server will follow this shortcut to your plugin directory.</p>
-<h1><a class="anchor" id="installation_visualpinballcorevbs"></a>
+<p>Alternatively the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework can also be put into any other directory on your system and a windows shortcut pointing to this directory can be added to the {B2S-Server directory}\plugins directory. The B2S.Server will follow this shortcut to your plugin directory.</p>
+<h1><a class="anchor" id="installation_b2sserverconfig"></a>
+B2S.Server Configuration</h1>
+<p>To enable the plugin support in the B2S.Server (<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> is a B2S.Server plugin) you need to add the <em>ArePluginsOn</em> option to your B2STableSettings.xml file (located in the same directory as the B2S.Server):</p>
+<div class="fragment"><div class="line">&lt;B2STableSettings&gt;</div>
+<div class="line">  ....</div>
+<div class="line">  &lt;ArePluginsOn&gt;1&lt;/ArePluginsOn&gt;</div>
+<div class="line">  ...</div>
+<div class="line">&lt;/B2STableSettings&gt;</div>
+</div><!-- fragment --><h1><a class="anchor" id="installation_visualpinballcorevbs"></a>
 Visual Pinball core.vbs Adjustment</h1>
-<p>If you have used the <a href="http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive">VBScript solution</a> to control your LedWiz you will have to <em>remove</em> the following line from your core.vbs:</p>
+<p>If you have used the <a href="http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive">VBScript solution</a> to control your LedWiz before you will have to <em>REMOVE</em> the following line from your core.vbs:</p>
 <div class="fragment"><div class="line">ExecuteGlobal GetTextFile(<span class="stringliteral">&quot;ledcontrol.vbs&quot;</span>)</div>
 </div><!-- fragment --><p>If you dont remove the mentioned statement you'll run into trouble since the framework and the ledcontrol.vbs solutions will run simultaneously!</p>
 <h1><a class="anchor" id="installation_visualpinballtableconfig"></a>
 Visual Pinball Table Configuration</h1>
 <p>Tables using the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework resp. the B2S-Server have to instanciate the B2S.Server instead of the Pinmame.Controller.</p>
-<p>Replace the following line in the table scripts of the tables you want to use the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework</p>
+<p>Replace the following line in the table scripts of the tables you want to use the B2S.Server and the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework</p>
 <div class="fragment"><div class="line">Set Controller = CreateObject(<span class="stringliteral">&quot;VPinMAME.Controller&quot;</span>)     </div>
 </div><!-- fragment --><p>with</p>
 <div class="fragment"><div class="line">Set Controller = CreateObject(<span class="stringliteral">&quot;B2S.Server&quot;</span>) </div>
@@ -183,7 +191,7 @@ LedControl.ini files</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Sun Jun 23 2013 20:51:23 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

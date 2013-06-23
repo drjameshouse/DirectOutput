@@ -15,7 +15,7 @@ var dir_224fdf3933e3085a212a98264a4767a9 =
     [ "Table", "dir_2126cebc896d48b570679b125f14762f.html", "dir_2126cebc896d48b570679b125f14762f" ],
     [ "DirectOutput.cs", "_direct_output_8cs.html", null ],
     [ "Log.cs", "_log_8cs.html", [
-      [ "Log", "class_direct_output_1_1_log.html", "class_direct_output_1_1_log" ]
+      [ "Log", "class_direct_output_1_1_log.html", null ]
     ] ],
     [ "Pinball.cs", "_pinball_8cs.html", [
       [ "Pinball", "class_direct_output_1_1_pinball.html", "class_direct_output_1_1_pinball" ]
