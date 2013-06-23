@@ -109,10 +109,10 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="title">C:/Users/Tom/Documents/GitHub/DirectOutput/Documentation/27_TableConfig.md</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="27___table_config_8md.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿Table configuration {#tableconfig}</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;===================</div>
+<a href="27___table_config_8md.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿Table configuration file {#tableconfigfile}</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;========================</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;\section tableconfig_introduction Introduction</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;\section tableconfigfile_introduction Introduction</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;The table configuration defines the table elements (e.g. solenoids or lamps), the configuration of the effects and the assigment of the effects to the table elements. The assigned effects are triggered <span class="keywordflow">if</span> the value of a table element changes (typicaly when <span class="keyword">new</span> data from Pinmame is received).</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;The framework does also allow to mix the configuration in a table config file with configurations loaded from ledcontrol files. This will allow you to use configurations from the &lt;a href=<span class="stringliteral">&quot;http://vpuniverse.com/ledwiz/login.php&quot;</span>&gt;LedWiz Config Tool&lt;/a&gt; <span class="keywordflow">for</span> commonly used gadgets and to supplement <span class="keyword">this</span> with your own config. </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;\section tableconfig_configfilestructure Table config file </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;\section tableconfigfile_configfilestructure Table config file </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;Table configurations are stored as XML-files. The basic structure of a table configuration file contains the following sections:</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;&lt;/Table&gt;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;~~~~~~~~~~~~~</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;\subsection tableconfig_configfilestructuretableelements Table elements section</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;\subsection tableconfigfile_configfilestructuretableelements Table elements section</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;The TableElements section contains the definition of the table elements (solenoids, lamps and so on) of the pinball table. Table elements are configured <span class="keyword">using</span> TableElement sections. A TableElements secation can contain any number of TableElement sections.</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    &lt;/TableElement&gt;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;~~~~~~~~~~~~~</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;\subsection tableconfig_configfilestructurestaticeffects Assigned <span class="keyword">static</span> effects section</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;\subsection tableconfigfile_configfilestructurestaticeffects Assigned <span class="keyword">static</span> effects section</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;The AssignedStaticEffects contains the assignment of the <span class="keyword">static</span> effects which are triggered when the system starts up. The <span class="keyword">static</span> effects are defined by <span class="keyword">using</span> AssignedEffectOrder sections. </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;~~~~~~~~~~~~~</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;\subsection tableconfig_configfilestructureeffects Effects section</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;\subsection tableconfigfile_configfilestructureeffects Effects section</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;The effects section contains the configurations <span class="keywordflow">for</span> all table effects. Effects configured in <span class="keyword">this</span> section can be referenced by their name in the <span class="keyword">static</span> effects section and in the assigned effect sections of the various table elements.</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;At the time of writting the following built in effects exist in the framewwork:</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;\subsubsection tableconfig_configfilestructureeffectsbasicanalogeffect BasicAnalogEffect</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;\subsubsection tableconfigfile_configfilestructureeffectsbasicanalogeffect BasicAnalogEffect</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;The BasicAnalogEffect can be used to control toys which are <span class="keyword">using</span> analog outputs (e.g. lamps). These toys have to implement the IAnalogToy interface.</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;* __ValueOn__ is the value which will be <span class="keyword">set</span> <span class="keywordflow">for</span> the toy, <span class="keywordflow">if</span> the effect is triggered by a table element having a value which is not equal 0. The value will also be used the <span class="keyword">set</span> the value of the referenced toy, <span class="keywordflow">if</span> the effect is assigned as a <span class="keyword">static</span> effect. </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;* __ValueOff__ is the value which will be <span class="keyword">set</span> <span class="keywordflow">for</span> the toy, <span class="keywordflow">if</span> the effect is triggered by a table element having a value of 0.</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;\subsubsection tableconfig_configfilestructureeffectsbasicdigitaleffect BasicDigitalEffect</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;\subsubsection tableconfigfile_configfilestructureeffectsbasicdigitaleffect BasicDigitalEffect</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;The BasicDigitalEffect is used to control toy which are <span class="keyword">using</span> digital outputs (e.g. contactors). The toys have to implement the IDigitalToy interface.</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;* __Name__ is as usual the name of the effect.</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;* __DigitalToyName__ is the name of the assigned toy. The assigned toy has be configured in the cabinet and must to implement the IDigitalToy interface.</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;\subsubsection tableconfig_configfilestructureeffectsbasicrgbeffect BasicRGBEffect</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;\subsubsection tableconfigfile_configfilestructureeffectsbasicrgbeffect BasicRGBEffect</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;The BasicRGBEffect is used to control RGBLeds or any other toy implementing the IRGBToy interface. Depending on the vaölue of the table element triggering the effect, the IRGBToy will be set to the configured color or to off. A table element value of 0 will turn of the IRGBToy, a value not equal 0 will set the toy to the specified color.</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;* __RGBToyName__ is the name of the assigned RGB toy. This toy must implement the IRGBToy interface.</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;* __Color__  defines color which is set for the toy, if table element triggering the effect has a value which not equal 0. The color can be specified as a hexadecimal color definition (e.g. \#ff0000 for red), comma separated color (e.g. 0,255,0 for green) or color name as defined in the cabinet colors section.</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;\subsubsection tableconfig_configfilestructureeffectslisteffect ListEffect</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;\subsubsection tableconfigfile_configfilestructureeffectslisteffect ListEffect</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;The ListEffect is a effect which triggers a list of other effects assigned to the list effect. The data of the table element which has triggered the effect is passed on to the effects assigned to the list effect.</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;Used as a static effect the ListEffect will trigger all assigned effect as well.</div>
@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;* __Order__ is a number specifying the order in which the assigned effects are executed.</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;\subsection tableconfig_configfilestructureaddledcontrolconfig AddLedControlConfig section</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;\subsection tableconfigfile_configfilestructureaddledcontrolconfig AddLedControlConfig section</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;This section does only contrin true or false.</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('27___table_config_8md.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="27___table_config_8md.html">27_TableConfig.md</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -111,29 +111,38 @@ $(document).ready(function(){initNavTree('99___mainpage_and_about_8md.html','');
 <div class="contents">
 <a href="99___mainpage_and_about_8md.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;﻿About</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;=====</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;The DirectOutput framework was implemented by &lt;a href=<span class="stringliteral">&quot;http://www.vpforums.org/index.php?showuser=58068&quot;</span>&gt;SwissLizard&lt;/a&gt;.</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;\image html swisslizard.png <span class="stringliteral">&quot;Swisslizard&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;The DirectOutput framework was implemented by &lt;a href=<span class="stringliteral">&quot;http://vpuniverse.com/forums/user/668-swisslizard/&quot;</span>&gt;SwissLizard&lt;/a&gt;.</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;\image html swisslizard.png <span class="stringliteral">&quot;Swisslizard&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;\mainpage notitle</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;\image html DirectOutput_Big.png <span class="stringliteral">&quot;DirectOutput framework for virtual pinball cabinets&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;Welcome to the DirectOutput framework <span class="keywordflow">for</span> <span class="keyword">virtual</span> pinball cabinets</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;===================================================================</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;During my first experiments with Visual Pinbal on my laptop, I thought that it would be a cool idea to a some kind of force feedback to the system. It didn<span class="stringliteral">&#39;t take me long to find out that a solution for this idea, did already exist. </span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="stringliteral">When I started to build my own cabinet the current vbscript implementation supporting only one LedWiz with 32 outputs became too limited pretty soon. On somes table there were also stuttering issues. So I started to think about another solution and began to implement the DirectOutput framework.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="stringliteral">The DirectOutput framework tries to overcome the limitations of the current solution to control toys in cabinets:</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">* __Stuttering__ is hopefully a thing of the past. By using several threads the framework isolates the main thread doing the work in Visual Pinball from the communication with the Ledwiz.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">* __More outputs__ are also possible. Instead of using only one LedWiz it is now possible to connect several LedWiz units or other custom output controllers as well.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">* __More configuration options__ are available troughthe DirectOutput framework as well.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">* __Open for extensions__ means that the framework is able to load uncompiled C#-script files containing new effects, toys or other types of output controllers at runtime. After the scripts have been loaded they are copiled and integrated into the framework.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">To make the start with the DirectOutput framework easy and painless it is possible to reuse the LedControl.ini file used for the configuration of the VBScript solution.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;\mainpage notitle</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;\image html DirectOutput_Big.png <span class="stringliteral">&quot;DirectOutput framework for virtual pinball cabinets&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;Welcome to the DirectOutput framework <span class="keywordflow">for</span> <span class="keyword">virtual</span> pinball cabinets</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;===================================================================</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;\note Please take note that <span class="keyword">this</span> documentation is not yet complete and that some parts of it might change in the future. </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;During my first experiments with Visual Pinbal on my laptop, I thought that it would be a cool idea to a some kind of force feedback to the system. It didn<span class="stringliteral">&#39;t take me long to find out that a solution for this idea, did already exist. </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral">When I started to build my own cabinet the current vbscript implementation supporting only one LedWiz with 32 outputs became too limited pretty soon. On somes table there were also stuttering issues. So I started to think about another solution and began to implement the DirectOutput framework.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="stringliteral">The DirectOutput framework tries to overcome the limitations of the current solution to control toys in cabinets:</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">* __Stuttering__ is hopefully a thing of the past. By using several threads the framework isolates the main thread doing the work in Visual Pinball from the communication with the Ledwiz.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">* __More outputs__ are also possible. Instead of using only one LedWiz it is now possible to connect several LedWiz units or other custom output controllers as well.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="stringliteral">* __More configuration options__ are available troughthe DirectOutput framework as well.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">* __Open for extensions__ means that the framework is able to load uncompiled C#-script files containing new effects, toys or other types of output controllers at runtime. After the scripts have been loaded they are copiled and integrated into the framework.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">To make the start with the DirectOutput framework easy and painless it is possible to reuse the LedControl.ini file used for the configuration of the VBScript solution.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">If you are new to the DirectOutput framework the page on \rel installation is a good starting point.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">Enjoy (virtual) pinball and keep pinball alive!</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -141,7 +150,7 @@ $(document).ready(function(){initNavTree('99___mainpage_and_about_8md.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="99___mainpage_and_about_8md.html">99_MainpageAndAbout.md</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

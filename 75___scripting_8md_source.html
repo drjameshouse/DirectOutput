@@ -124,14 +124,18 @@ $(document).ready(function(){initNavTree('75___scripting_8md.html','');});
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;\section scripting_guidelines Scripting guidelines</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;- Document your code. We all know the saying <span class="stringliteral">&quot;It was hard to write, so it should be hard to understand as well&quot;</span>, but <span class="keyword">this</span> is definitvely not the goal of the DirectOutput project. You dont need to document every line of code you write, but at least the <span class="keyword">public</span> <span class="keyword">function</span> and the classes shoud be documented. The prefered way of code documentation are XML comments (have a look at the source code of the framework or one of the scripting examples to <span class="keyword">get</span> a idea).</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;- Use descriptive names <span class="keywordflow">for</span> classes, methods and namespaces.</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;- Think about exception handling. To ensure reliable operation of the framework, please implement proper exception handling <span class="keywordflow">for</span> your classes.</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;- The framework is <span class="keyword">using</span> &lt;a target=<span class="stringliteral">&quot;_blank&quot;</span> href=<span class="stringliteral">&quot;http://support.microsoft.com/kb/815813/en-us&quot;</span>&gt;XMLSerialization&lt;/a&gt; to save and load the configuration of the framework. This means that everything which has to be saved in the configuration must be XML serializable. If your <span class="keyword">class </span>doesn&#39;t work with the built in XML serializer, you might need to implement the &lt;a href=<span class="stringliteral">&quot;http://msdn.microsoft.com/en-us/library/system.xml.serialization.ixmlserializable.aspx&quot;</span>&gt;IXmlSerializable interface&lt;/a&gt;.</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;- If you are working on effects, toys or output controllers, please read the implementation guidelines on the documention pages on these topics.</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -139,7 +143,7 @@ $(document).ready(function(){initNavTree('75___scripting_8md.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="75___scripting_8md.html">75_Scripting.md</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

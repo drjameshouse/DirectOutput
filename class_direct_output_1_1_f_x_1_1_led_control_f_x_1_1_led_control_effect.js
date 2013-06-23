@@ -10,6 +10,7 @@ var class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect =
     [ "Duration", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a8823242a4de037b357375a2ed4b3645b", null ],
     [ "FirstOutputNumber", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a0be364a23c0b3631ed810f092e2f2075", null ],
     [ "Intensity", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a93a6ff2c5a036a43f521ab3cde7a967e", null ],
+    [ "IsRGBEffect", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a7c9e171ea96d4f403292e8d685073ee5", null ],
     [ "LedWizEquivalentName", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#af64c6f391e9203500e21f664654495ee", null ],
     [ "RGBColor", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a1fd699c9e65d34bdb4b13a8725709dbb", null ]
 ];

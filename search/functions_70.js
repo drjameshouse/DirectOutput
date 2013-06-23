@@ -6,9 +6,9 @@ var searchData=
   ['parseledcontroldataline',['ParseLedControlDataLine',['../class_direct_output_1_1_led_control_1_1_table_config.html#a0c99ab78427e0e730fc5c40858ddccb7',1,'DirectOutput::LedControl::TableConfig']]],
   ['parsesettingdata',['ParseSettingData',['../class_direct_output_1_1_led_control_1_1_table_config_setting.html#a7b7207bcc469b75b561ad1aa7b1a6e91',1,'DirectOutput::LedControl::TableConfigSetting']]],
   ['peek',['Peek',['../class_direct_output_1_1_pinball_support_1_1_input_queue.html#abd67265a2cd97919ef5ff0fa193d583d',1,'DirectOutput::PinballSupport::InputQueue']]],
-  ['pinball',['Pinball',['../class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249',1,'DirectOutput.Pinball.Pinball()'],['../class_direct_output_1_1_pinball.html#a36948995ee193121536141d76894a944',1,'DirectOutput.Pinball.Pinball(FileInfo GlobalConfigFile, FileInfo TableFile, string RomName=&quot;&quot;)']]],
+  ['pinball',['Pinball',['../class_direct_output_1_1_pinball.html#ad9af98c907afb338db115f821b341249',1,'DirectOutput.Pinball.Pinball()'],['../class_direct_output_1_1_pinball.html#aa07b49f0487d65de579b69d9433b6d87',1,'DirectOutput.Pinball.Pinball(string GlobalConfigFilename=&quot;&quot;, string TableFilename=&quot;&quot;, string RomName=&quot;&quot;)']]],
   ['plugin',['Plugin',['../class_b2_s_server_plugin_1_1_plugin.html#af178142a8cdf15cfbc8ea65ce204a5db',1,'B2SServerPlugin::Plugin']]],
   ['pluginfinish',['PluginFinish',['../class_b2_s_server_plugin_1_1_plugin.html#a6be4ffd8b6a75992d2b4d65a98ebd172',1,'B2SServerPlugin::Plugin']]],
   ['plugininit',['PluginInit',['../class_b2_s_server_plugin_1_1_plugin.html#a972b722e8805aee26db7abb8d51ee70c',1,'B2SServerPlugin::Plugin']]],
-  ['pluginshowfrontend',['PluginShowFrontend',['../class_b2_s_server_plugin_1_1_plugin.html#a2c424a0826d4ffa1bdc2c80a8f14fbd2',1,'B2SServerPlugin::Plugin']]]
+  ['pluginshowfrontend',['PluginShowFrontend',['../class_b2_s_server_plugin_1_1_plugin.html#af6fcd1afcd42fc3b1897e3c5fbc44f9b',1,'B2SServerPlugin::Plugin']]]
 ];

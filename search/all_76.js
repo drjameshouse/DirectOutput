@@ -8,5 +8,6 @@ var searchData=
   ['valuechanged',['ValueChanged',['../interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html#a3da20bce53c19ae6d7242570af9029cd',1,'DirectOutput.Cab.Out.IOutput.ValueChanged()'],['../class_direct_output_1_1_cab_1_1_out_1_1_output.html#a4120906213d6f331c84a057875adc547',1,'DirectOutput.Cab.Out.Output.ValueChanged()'],['../class_direct_output_1_1_table_1_1_table_element.html#a696e5bc982a009f22f4b3cdcc77b618a',1,'DirectOutput.Table.TableElement.ValueChanged()']]],
   ['valuechangedeventhandler',['ValueChangedEventHandler',['../class_direct_output_1_1_cab_1_1_out_1_1_output.html#ab37659c7c637bf0329c2e5b263a2b4a7',1,'DirectOutput::Cab::Out::Output']]],
   ['valueoff',['ValueOff',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_analog_effect.html#a3e37e68bf18fd0ad0a9310eb6dbed9bd',1,'DirectOutput::FX::BasicFX::BasicAnalogEffect']]],
-  ['valueon',['ValueOn',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_analog_effect.html#adbde2ce701c2a8f79b38fa8bc1332d16',1,'DirectOutput::FX::BasicFX::BasicAnalogEffect']]]
+  ['valueon',['ValueOn',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_analog_effect.html#adbde2ce701c2a8f79b38fa8bc1332d16',1,'DirectOutput::FX::BasicFX::BasicAnalogEffect']]],
+  ['valuescount',['ValuesCount',['../class_direct_output_1_1_general_1_1_simple_statistics_3_01_t_01_4.html#a487e95110af1d07064f065b8f65d235d',1,'DirectOutput::General::SimpleStatistics&lt; T &gt;']]]
 ];

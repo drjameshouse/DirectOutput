@@ -152,30 +152,31 @@ $(document).ready(function(){initNavTree('_table_config_8cs_source.html','');});
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="comment">//Assign Romname from first column</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            ShortRomName = DataColumns[0];</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Columns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_column_list.html" title="List of columns of a LedCOntrol.ini file.  Inherits List&gt;T&lt;. ">TableConfigColumnList</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Columns.ParseControlData(LedControlData, ThrowExceptions);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            Columns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_column_list.html" title="List of columns of a LedCOntrol.ini file.  Inherits List&gt;T&lt;. ">TableConfigColumnList</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            Columns.ParseControlData(LedControlData, ThrowExceptions);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html#a9ebade584e4f5acbda667de1f4b41169">   73</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html">TableConfig</a>()</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            Columns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_column_list.html" title="List of columns of a LedCOntrol.ini file.  Inherits List&gt;T&lt;. ">TableConfigColumnList</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html#a9ebade584e4f5acbda667de1f4b41169">   74</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html">TableConfig</a>()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            Columns = <span class="keyword">new</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_column_list.html" title="List of columns of a LedCOntrol.ini file.  Inherits List&gt;T&lt;. ">TableConfigColumnList</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html#a813c11ea16eb3afc578291be2c843650">   94</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html">TableConfig</a>(<span class="keywordtype">string</span> LedControlData, <span class="keywordtype">bool</span> ThrowExceptions)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            : this()</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            ParseLedControlDataLine(LedControlData, ThrowExceptions);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html#a813c11ea16eb3afc578291be2c843650">   95</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config.html">TableConfig</a>(<span class="keywordtype">string</span> LedControlData, <span class="keywordtype">bool</span> ThrowExceptions)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            : this()</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            ParseLedControlDataLine(LedControlData, ThrowExceptions);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -183,7 +184,7 @@ $(document).ready(function(){initNavTree('_table_config_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_3fefcb4df4d383a16339164eba8053b5.html">LedControl</a></li><li class="navelem"><a class="el" href="_table_config_8cs.html">TableConfig.cs</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:12 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:55 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

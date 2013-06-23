@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('77___source_01_code_8md.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- GhostDoc was used to help documenting the code. This addon <span class="keywordflow">for</span> Visual Studio is available at &lt;a target=<span class="stringliteral">&quot;_blank&quot;</span> href=<span class="stringliteral">&quot;http://submain.com/products/ghostdoc.aspx&quot;</span>&gt;http:<span class="comment">//submain.com/products/ghostdoc.aspx&lt;/a&gt;.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;- DoxyGen is used to generate the documention on the framework. Doxygen open source and can be found at &lt;a target=<span class="stringliteral">&quot;_blank&quot;</span> href=<span class="stringliteral">&quot;http://www.doxygen.org/&quot;</span>&gt;http:<span class="comment">//www.doxygen.org/&lt;/a&gt;. The config file for doxygen is included in the project files on GitHub.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;- 7Zip is used to create the deployment packages of the framework. It is available at &lt;a target=<span class="stringliteral">&quot;_blank&quot;</span> href=<span class="stringliteral">&quot;http://www.7-zip.org/&quot;</span>&gt;http:<span class="comment">//www.7-zip.org/&lt;/a&gt;.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;- filever.exe from Microsoft is used to extract the assembly version of the framework and embed it in the docu (all done in post build).</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;\section sourcecode_use Using the source code</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
@@ -183,42 +183,50 @@ $(document).ready(function(){initNavTree('77___source_01_code_8md.html','');});
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;This project was only added, to allow documentation editing within Visual Studio.</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;\subsection sourcecode_wheredplugin B2SServerPlugin project</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;\subsection sourcecode_whereplugin B2SServerPlugin project</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;The B2SServerPlugin project contains the implementaion of the plugin <span class="keywordflow">for</span> the B2SServer.</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;Nothing <span class="keywordflow">else</span> should be put into <span class="keyword">this</span> project to avoid depedency issues.</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;\subsection sourcecode_wheredirectoutputest DirectOutput_Test project</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;For more information about the plugin please read \ref b2sserverplugin</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;Just a small test project which was sometimes used <span class="keywordflow">for</span> component and unit testing. </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;\subsection sourcecode_wheredplugin LedControlFileTester project</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;Nothing is documented in it and all of its contents should be regarded as irrelevant and likely wrong. This project will probably be removed from the solution. </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;This project contains the source code <span class="keywordflow">for</span> the LedControlFileTester.exe which as part of the DirectOutput package.</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;\section sourcecode_extend Extending and changing the source code (guidelines)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;Every contribution to the source code is very welcome! It is however recommend to observe a few guidelines:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;- Please document you code using XML comments. Doxygen is used to create to dumention on the framework and will automatically create docu pages for all classes using the XML comments you enter. At least the classes themselfs and the public methods sould be documented. GhostDoc can be very helpfull the create the necessary comments.</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;- Put things in the right namespace and directory. There a separate namespaces for the major areas of the framework. Please put your code into a meaningfull namespace. If you implement something completly new (e.g. a new output controller), consider putting your addition into a sub namespace (e.g. DirectOutput.Cab.Out.MyOutputController), but think twice before you add a new main namespace (e.g. DirectOutput.MyAddition).</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;- Use descriptive names for classes, methods and namespaces.</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;- Think about exception handling. To ensure reliable operation of the framework, please implement proper exception handling for your classes.</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- Be very carefull and conservative when changing one of the outside interfaces (e.g. B2S Server Plugin) of the framework. Changes in these areas might lead to compatibility problems with external programms and components.</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;- The framework is using &lt;a target=&quot;_blank&quot; href=&quot;http:<span class="comment">//support.microsoft.com/kb/815813/en-us&quot;&gt;XMLSerialization&lt;/a&gt; to save and load the configuration of the framework. This means that everything which has to be saved in the configuration must be XML serializable. If your class doesn&#39;t work with the built in XML serializer, you might need to implement the &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/system.xml.serialization.ixmlserializable.aspx&quot;&gt;IXmlSerializable interface&lt;/a&gt;.</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;- If you are working on effects, toys or output controllers, please read the implementation guidelines on the documention pages on these topics.</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;- If you are planning for bigger extensions or changes it might be wise, to check with the &lt;a target=&quot;_blank&quot; href=&quot;https:<span class="comment">//github.com/DirectOutput?tab=members&quot;&gt;members of the DirectOutput project&lt;/a&gt; first.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;Read \ref ledcontrol_testingapp <span class="keywordflow">for</span> more information on <span class="keyword">this</span> tool.</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;\subsection sourcecode_wheredirectoutputest DirectOutput_Test project</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;Just a small test project which was sometimes used <span class="keywordflow">for</span> component and unit testing. </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;Nothing is documented in it and all of its contents should be regarded as irrelevant and likely wrong. This project will probably be removed from the solution. </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;\section sourcecode_extend Extending and changing the source code (guidelines)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;Every contribution to the source code is very welcome! It is however recommend to observe a few guidelines:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- Please document you code using XML comments. Doxygen is used to create to dumention on the framework and will automatically create docu pages for all classes using the XML comments you enter. At least the classes themselfs and the public methods sould be documented. GhostDoc can be very helpfull the create the necessary comments.</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;- Put things in the right namespace and directory. There a separate namespaces for the major areas of the framework. Please put your code into a meaningfull namespace. If you implement something completly new (e.g. a new output controller), consider putting your addition into a sub namespace (e.g. DirectOutput.Cab.Out.MyOutputController), but think twice before you add a new main namespace (e.g. DirectOutput.MyAddition).</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;- Use descriptive names for classes, methods and namespaces.</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;- Think about exception handling. To ensure reliable operation of the framework, please implement proper exception handling for your classes.</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;- Be very carefull and conservative when changing one of the outside interfaces (e.g. B2S Server Plugin) of the framework. Changes in these areas might lead to compatibility problems with external programms and components.</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;- The framework is using &lt;a target=&quot;_blank&quot; href=&quot;http:<span class="comment">//support.microsoft.com/kb/815813/en-us&quot;&gt;XMLSerialization&lt;/a&gt; to save and load the configuration of the framework. This means that everything which has to be saved in the configuration must be XML serializable. If your class doesn&#39;t work with the built in XML serializer, you might need to implement the &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/system.xml.serialization.ixmlserializable.aspx&quot;&gt;IXmlSerializable interface&lt;/a&gt;.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- If you are working on effects, toys or output controllers, please read the implementation guidelines on the documention pages on these topics.</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;- If you are planning for bigger extensions or changes it might be wise, to check with the &lt;a target=&quot;_blank&quot; href=&quot;https:<span class="comment">//github.com/DirectOutput?tab=members&quot;&gt;members of the DirectOutput project&lt;/a&gt; first.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -226,7 +234,7 @@ $(document).ready(function(){initNavTree('77___source_01_code_8md.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="77___source_01_code_8md.html">77_Source Code.md</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

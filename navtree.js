@@ -1,19 +1,46 @@
 var NAVTREE =
 [
   [ "DirectOutput", "index.html", [
-    [ "Installation and Configuration", "md_10__installation_and_configuration.html", [
-      [ "Requirements", "md_10__installation_and_configuration.html#installation_requirements", null ],
-      [ "Installation", "md_10__installation_and_configuration.html#installation_installation", null ],
-      [ "Visual Pinball core.vbs Adjustment", "md_10__installation_and_configuration.html#installation_visualpinballcorevbs", null ],
-      [ "Visual Pinball Table Configuration", "md_10__installation_and_configuration.html#installation_visualpinballtableconfig", null ],
-      [ "Configuration", "md_10__installation_and_configuration.html#installation_configuration", [
-        [ "Using Auto configuration", "md_10__installation_and_configuration.html#installation_autoconfiguration", null ],
-        [ "Using configuration files", "md_10__installation_and_configuration.html#installation_configfiles", null ],
-        [ "Global Configuration", "md_10__installation_and_configuration.html#installation_globalconfig", null ],
-        [ "Cabinet Configuration", "md_10__installation_and_configuration.html#installation_cabinetconfig", null ],
-        [ "Table Configuration", "md_10__installation_and_configuration.html#installation_tableconfig", null ],
-        [ "LedControl.ini files", "md_10__installation_and_configuration.html#installation_ledcontrolini", null ]
+    [ "Installation and Configuration", "installation.html", [
+      [ "Requirements", "installation.html#installation_requirements", null ],
+      [ "Download", "installation.html#installation_download", null ],
+      [ "Installation", "installation.html#installation_installation", null ],
+      [ "B2S.Server Configuration", "installation.html#installation_b2sserverconfig", null ],
+      [ "Visual Pinball core.vbs Adjustment", "installation.html#installation_visualpinballcorevbs", null ],
+      [ "Configuration", "installation.html#installation_configuration", [
+        [ "Using Auto configuration", "installation.html#installation_autoconfiguration", null ],
+        [ "Using LedControl.ini files", "installation.html#installation_ledcontrolini", null ],
+        [ "Using configuration files", "installation.html#installation_configfiles", [
+          [ "Table Configuration", "installation.html#installation_tableconfig", null ],
+          [ "Global Configuration", "installation.html#installation_globalconfig", null ],
+          [ "Cabinet Configuration", "installation.html#installation_cabinetconfig", null ]
+        ] ]
       ] ]
+    ] ],
+    [ "Table configuration", "tableconfig.html", [
+      [ "Introduction", "tableconfig.html#tableconfig_intro", null ],
+      [ "VP solid state (SS) tables", "tableconfig.html#tableconfig_VPSS", [
+        [ "Configure SS tables", "tableconfig.html#tableconfig_VPSSconfig", null ],
+        [ "Extend SS tables", "tableconfig.html#tableconfig_VPSSextend", null ]
+      ] ],
+      [ "VP electro mechanical (EM) tables and original tables", "tableconfig.html#tableconfig_VPEM", [
+        [ "Initialization", "tableconfig.html#tableconfig_VPEMinit", null ],
+        [ "Termination", "tableconfig.html#tableconfig_VPEMexit", null ],
+        [ "Score commands", "tableconfig.html#tableconfig_VPEMscore", null ],
+        [ "Table element status updates", "tableconfig.html#tableconfig_VPEMtableelements", null ]
+      ] ],
+      [ "Tables w/o B2S.Server Backglass", "tableconfig.html#tableconfig_nobackglass", null ]
+    ] ],
+    [ "Supported Hardware", "hardware.html", [
+      [ "Introduction", "hardware.html#hardware_intro", null ],
+      [ "Fully supported hardware", "hardware.html#hardware_ready", [
+        [ "LedWiz (GroovyGameGear)", "hardware.html#hardware_ledwiz", null ]
+      ] ],
+      [ "Hardware support in development", "hardware.html#hardware_development", [
+        [ "PacLed64/PacDrive (Ultimarc)", "hardware.html#hardware_ultimarc", null ],
+        [ "Art-Net", "hardware.html#hardware_artnet", null ]
+      ] ],
+      [ "Other Hardware", "hardware.html#hardware_other", null ]
     ] ],
     [ "Global Configuration", "globalconfig.html", [
       [ "Introduction", "globalconfig.html#globalconfig_introduction", null ],
@@ -21,8 +48,11 @@ var NAVTREE =
         [ "TableScriptFilePatterns", "globalconfig.html#globalconfig_tablescriptsfilepattern", null ],
         [ "CabinetConfigFilePatterns", "globalconfig.html#globalconfig_cabinetconfigfilepattern", null ],
         [ "CabinetScriptsFilePattern", "globalconfig.html#globalconfig_cabinetscriptsfilepattern", null ],
-        [ "TableConfigFilePatterns", "globalconfig.html#globalconfig_tableconfigfilepatterns", null ],
-        [ "LedControlIniFiles", "globalconfig.html#globalconfig_ledcontrolinifiles", null ],
+        [ "TableConfigFilePatterns", "globalconfig.html#globalconfig_tableconfigfilepatterns", [
+          [ "LedControl options", "globalconfig.html#globalconfig_ledcontrol", null ],
+          [ "LedControlIniFiles", "globalconfig.html#globalconfig_ledcontrolinifiles", null ],
+          [ "LedControl settings", "globalconfig.html#globalconfig_ledcontrolsettings", null ]
+        ] ],
         [ "Logging", "globalconfig.html#globalconfig_logging", null ]
       ] ],
       [ "Example", "globalconfig.html#globalconfig_example", null ]
@@ -39,18 +69,18 @@ var NAVTREE =
       ] ],
       [ "Example cabinet configuration", "cabinetconfig.html#cabinetconfig_example", null ]
     ] ],
-    [ "Table configuration", "tableconfig.html", [
-      [ "Introduction", "tableconfig.html#tableconfig_introduction", null ],
-      [ "Table config file", "tableconfig.html#tableconfig_configfilestructure", [
-        [ "Table elements section", "tableconfig.html#tableconfig_configfilestructuretableelements", null ],
-        [ "Assigned static effects section", "tableconfig.html#tableconfig_configfilestructurestaticeffects", null ],
-        [ "Effects section", "tableconfig.html#tableconfig_configfilestructureeffects", [
-          [ "BasicAnalogEffect", "tableconfig.html#tableconfig_configfilestructureeffectsbasicanalogeffect", null ],
-          [ "BasicDigitalEffect", "tableconfig.html#tableconfig_configfilestructureeffectsbasicdigitaleffect", null ],
-          [ "BasicRGBEffect", "tableconfig.html#tableconfig_configfilestructureeffectsbasicrgbeffect", null ],
-          [ "ListEffect", "tableconfig.html#tableconfig_configfilestructureeffectslisteffect", null ]
+    [ "Table configuration file", "tableconfigfile.html", [
+      [ "Introduction", "tableconfigfile.html#tableconfigfile_introduction", null ],
+      [ "Table config file", "tableconfigfile.html#tableconfigfile_configfilestructure", [
+        [ "Table elements section", "tableconfigfile.html#tableconfigfile_configfilestructuretableelements", null ],
+        [ "Assigned static effects section", "tableconfigfile.html#tableconfigfile_configfilestructurestaticeffects", null ],
+        [ "Effects section", "tableconfigfile.html#tableconfigfile_configfilestructureeffects", [
+          [ "BasicAnalogEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectsbasicanalogeffect", null ],
+          [ "BasicDigitalEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectsbasicdigitaleffect", null ],
+          [ "BasicRGBEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectsbasicrgbeffect", null ],
+          [ "ListEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectslisteffect", null ]
         ] ],
-        [ "AddLedControlConfig section", "tableconfig.html#tableconfig_configfilestructureaddledcontrolconfig", null ]
+        [ "AddLedControlConfig section", "tableconfigfile.html#tableconfigfile_configfilestructureaddledcontrolconfig", null ]
       ] ]
     ] ],
     [ "LedControl files", "ledcontrolfiles.html", [
@@ -60,6 +90,11 @@ var NAVTREE =
         [ "Auto Cabinet Config", "ledcontrolfiles.html#ledcontrol_autoconfigcabinet", null ]
       ] ],
       [ "Manual Configuration", "ledcontrolfiles.html#ledcontrol_manualconfig", null ],
+      [ "Settings in LedControl files", "ledcontrolfiles.html#ledcontrol_settings", [
+        [ "Colors Section", "ledcontrolfiles.html#ledcontrol_settingscolors", null ],
+        [ "Config Outs Section", "ledcontrolfiles.html#ledcontrol_settingsconfigouts", null ]
+      ] ],
+      [ "LedControl File Testing Application", "ledcontrolfiles.html#ledcontrol_testingapp", null ],
       [ "Example LedControl.ini", "ledcontrolfiles.html#ledcontrol_example", null ]
     ] ],
     [ "Architecture", "md_50__architecture.html", [
@@ -74,38 +109,38 @@ var NAVTREE =
       [ "Multithreading", "md_50__architecture.html#architecture_multithreading", null ]
     ] ],
     [ "B2S Server Plugin", "b2sserverplugin.html", null ],
-    [ "Effects/FX", "md_60__f_x.html", [
-      [ "Introduction", "md_60__f_x.html#effects_introduction", null ],
-      [ "Builtin effects", "md_60__f_x.html#effects_builtineffects", null ],
-      [ "Custom effects", "md_60__f_x.html#effects_customeffects", [
-        [ "Implementation guidelines for custom effects", "md_60__f_x.html#effects_implementationguideline", null ]
+    [ "Effects/FX", "fx.html", [
+      [ "Introduction", "fx.html#effects_introduction", null ],
+      [ "Builtin effects", "fx.html#effects_builtineffects", null ],
+      [ "Custom effects", "fx.html#effects_customeffects", [
+        [ "Implementation guidelines for custom effects", "fx.html#effects_implementationguideline", null ]
       ] ]
     ] ],
-    [ "Toys", "md_63__toys.html", [
-      [ "Introduction", "md_63__toys.html#toys_introduction", null ],
-      [ "Builtin toys", "md_63__toys.html#toys_builtin", [
-        [ "Contactor", "md_63__toys.html#toys_contactor", null ],
-        [ "Lamp", "md_63__toys.html#toys_lamp", null ],
-        [ "RGBLed", "md_63__toys.html#toys_rgbled", null ],
-        [ "ReplayKnocker", "md_63__toys.html#toys_replayknocker", null ],
-        [ "Motor/Shaker/GearMotor", "md_63__toys.html#toys_motor", null ],
-        [ "Flasher", "md_63__toys.html#toys_flasher", null ],
-        [ "LedWizEquivalent", "md_63__toys.html#toys_ledwizequivalent", null ],
-        [ "GenericAnalogToy", "md_63__toys.html#toys_genericdigitaltoy", null ]
+    [ "Toys", "toys.html", [
+      [ "Introduction", "toys.html#toys_introduction", null ],
+      [ "Builtin toys", "toys.html#toys_builtin", [
+        [ "Contactor", "toys.html#toys_contactor", null ],
+        [ "Lamp", "toys.html#toys_lamp", null ],
+        [ "RGBLed", "toys.html#toys_rgbled", null ],
+        [ "ReplayKnocker", "toys.html#toys_replayknocker", null ],
+        [ "Motor/Shaker/GearMotor", "toys.html#toys_motor", null ],
+        [ "Flasher", "toys.html#toys_flasher", null ],
+        [ "LedWizEquivalent", "toys.html#toys_ledwizequivalent", null ],
+        [ "GenericAnalogToy", "toys.html#toys_genericdigitaltoy", null ]
       ] ],
-      [ "Custom toys", "md_63__toys.html#toys_custom", [
-        [ "Implementation guidelines for custom toys", "md_63__toys.html#toys_implementationguideline", null ]
+      [ "Custom toys", "toys.html#toys_custom", [
+        [ "Implementation guidelines for custom toys", "toys.html#toys_implementationguideline", null ]
       ] ]
     ] ],
-    [ "Output controllers", "md_65__output__controllers.html", [
-      [ "Introduction", "md_65__output__controllers.html#outputcontrollers_introduction", null ],
-      [ "Builtin output controllers", "md_65__output__controllers.html#outputcontrollers_builtineffects", null ],
-      [ "Custom output controllers", "md_65__output__controllers.html#outputcontrollers_customeffects", [
-        [ "Interfaces for output controllers", "md_65__output__controllers.html#outputcontrollers_interfaces", [
-          [ "IOutputController interface", "md_65__output__controllers.html#outputcontrollers_ioutputcontroller", null ],
-          [ "IOutput interface", "md_65__output__controllers.html#outputcontrollers_ioutput", null ]
+    [ "Output controllers", "outputcontrollers.html", [
+      [ "Introduction", "outputcontrollers.html#outputcontrollers_introduction", null ],
+      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtineffects", null ],
+      [ "Custom output controllers", "outputcontrollers.html#outputcontrollers_customeffects", [
+        [ "Interfaces for output controllers", "outputcontrollers.html#outputcontrollers_interfaces", [
+          [ "IOutputController interface", "outputcontrollers.html#outputcontrollers_ioutputcontroller", null ],
+          [ "IOutput interface", "outputcontrollers.html#outputcontrollers_ioutput", null ]
         ] ],
-        [ "Implementation guidelines for custom output controllers", "md_65__output__controllers.html#outputcontrollers_implementationguideline", null ]
+        [ "Implementation guidelines for custom output controllers", "outputcontrollers.html#outputcontrollers_implementationguideline", null ]
       ] ]
     ] ],
     [ "Scripting", "scripting.html", [
@@ -121,7 +156,8 @@ var NAVTREE =
       [ "What is where", "sourcecode.html#sourcecode_where", [
         [ "DirectOutput project", "sourcecode.html#sourcecode_wheredirectoutput", null ],
         [ "Documentation project", "sourcecode.html#sourcecode_wheredocu", null ],
-        [ "B2SServerPlugin project", "sourcecode.html#sourcecode_wheredplugin", null ],
+        [ "B2SServerPlugin project", "sourcecode.html#sourcecode_whereplugin", null ],
+        [ "LedControlFileTester project", "sourcecode.html#sourcecode_wheredplugin", null ],
         [ "DirectOutput_Test project", "sourcecode.html#sourcecode_wheredirectoutputest", null ]
       ] ],
       [ "Extending and changing the source code (guidelines)", "sourcecode.html#sourcecode_extend", null ]
@@ -131,6 +167,7 @@ var NAVTREE =
       [ "Squash some bugs", "contribute.html#contribute_squashbugs", null ],
       [ "Share your knowledge", "contribute.html#contribute_help", null ],
       [ "Create scripts", "contribute.html#contribute_scripting", null ],
+      [ "Contribute the to documentation", "contribute.html#contribute_docu", null ],
       [ "Contribute to the source code", "contribute.html#contribute_source", null ]
     ] ],
     [ "Downloads", "downloads.html", null ],
@@ -170,11 +207,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_handler_8cs.html",
-"_replay_knocker_8cs.html",
-"class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_analog_toy.html#a393cce3fb87ca08fd2ad9213f986797f",
-"class_direct_output_1_1_general_1_1_generic_1_1_remove_event_args_3_01_ty_01_4.html",
-"class_direct_output_1_1_table_1_1_table_element_list.html#a24ae8077fd2c8ca0b27e20b3811d5666",
-"md_63__toys.html#toys_rgbled"
+"_r_g_b_led_8cs.html",
+"class_direct_output_1_1_cab_1_1_toys_1_1_color.html#ac03b8bb0ec190810709861cdbaddbcf4",
+"class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a93a29a47e6aaeb8d2037c8643f8e6bc9",
+"class_direct_output_1_1_table_1_1_table.html#aa847e6bc016bce992a5b7dc6edc89565",
+"interface_direct_output_1_1_cab_1_1_toys_1_1_i_digital_toy.html#af3eec101217a3b8404fb3dbb4a8cb771"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

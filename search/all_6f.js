@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['output_20controllers',['Output controllers',['../md_65__output__controllers.html',1,'']]],
   ['olditem',['OldItem',['../class_direct_output_1_1_general_1_1_generic_1_1_set_event_args_3_01_ty_01_4.html#ab9b7564a4cc317049f538ef693308026',1,'DirectOutput::General::Generic::SetEventArgs&lt; Ty &gt;']]],
   ['oldname',['OldName',['../class_direct_output_1_1_general_1_1_generic_1_1_name_change_event_args.html#aab8eedea528ccb996697fea1ee918a66',1,'DirectOutput::General::Generic::NameChangeEventArgs']]],
   ['onlistchanged',['OnListChanged',['../class_direct_output_1_1_general_1_1_generic_1_1_sortable_binding_list_3_01_t_01_4.html#a17a5be302c4dd956e0fa3d295c72c550',1,'DirectOutput::General::Generic::SortableBindingList&lt; T &gt;']]],
@@ -26,7 +25,7 @@ var searchData=
   ['outputcontrollereventargs_2ecs',['OutputControllerEventArgs.cs',['../_output_controller_event_args_8cs.html',1,'']]],
   ['outputcontrollerlist',['OutputControllerList',['../class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html',1,'DirectOutput::Cab::Out']]],
   ['outputcontrollerlist_2ecs',['OutputControllerList.cs',['../_output_controller_list_8cs.html',1,'']]],
-  ['outputcontrollers',['OutputControllers',['../class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783',1,'DirectOutput::Cab::Cabinet']]],
+  ['outputcontrollers',['OutputControllers',['../class_direct_output_1_1_cab_1_1_cabinet.html#aa75899055c55506a4a272b50e60aa783',1,'DirectOutput.Cab.Cabinet.OutputControllers()'],['../outputcontrollers.html',1,'(Global Namespace)']]],
   ['outputeventargs',['OutputEventArgs',['../class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html',1,'DirectOutput::Cab::Out']]],
   ['outputeventargs',['OutputEventArgs',['../class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html#a04eb67819e2cb37349e37512b158caec',1,'DirectOutput.Cab.Out.OutputEventArgs.OutputEventArgs(IOutput Output)'],['../class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html#a21f65d878c4bcfe48b4fc296ceb579db',1,'DirectOutput.Cab.Out.OutputEventArgs.OutputEventArgs()']]],
   ['outputeventargs_2ecs',['OutputEventArgs.cs',['../_output_event_args_8cs.html',1,'']]],

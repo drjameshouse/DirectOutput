@@ -180,6 +180,15 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a67c0c0b134f9ae5483653d1d821e9e5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a67c0c0b134f9ae5483653d1d821e9e5c">LedControlMinimumEffectDurationMs</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a67c0c0b134f9ae5483653d1d821e9e5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the minimum duration in milliseconds for <a class="el" href="namespace_direct_output_1_1_led_control.html" title="The DirectOutput.LedControl namespace contains the classes to read and understand the classical LedCo...">LedControl</a> effects occupying one output (e.g. contactors).<br/>
+ This settings has no effect if a duration or blinking is defined for the LedControlEffect.<br/>
+ If this value is not specified in the globalconfig file, 60 miliseconds will be used by default.  <a href="#a67c0c0b134f9ae5483653d1d821e9e5c">More...</a><br/></td></tr>
+<tr class="separator:a67c0c0b134f9ae5483653d1d821e9e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab603d1b65f8d49389a55db05b674cab2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ab603d1b65f8d49389a55db05b674cab2">LedControlMinimumRGBEffectDurationMs</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab603d1b65f8d49389a55db05b674cab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the minimum duration in milliseconds for <a class="el" href="namespace_direct_output_1_1_led_control.html" title="The DirectOutput.LedControl namespace contains the classes to read and understand the classical LedCo...">LedControl</a> effects controlling RGB leds.<br/>
+ This settings has no effect if a duration or blinking is defined for the LedControlEffect. If this value is not specified in the globalconfig file, 120 miliseconds will be used by default.  <a href="#ab603d1b65f8d49389a55db05b674cab2">More...</a><br/></td></tr>
+<tr class="separator:ab603d1b65f8d49389a55db05b674cab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987f31e5d92ba0c18d7d872315e32056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file_list.html">LedControlIniFileList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056">LedControlIniFiles</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a987f31e5d92ba0c18d7d872315e32056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of LedControl.ini files.<br/>
   <a href="#a987f31e5d92ba0c18d7d872315e32056">More...</a><br/></td></tr>
@@ -231,7 +240,7 @@ Properties</h2></td></tr>
 
 <p>Initializes a new instance of the <a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html" title="Global configuration for the DirectOutput framework.  ">GlobalConfig</a> class. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00496">496</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00531">531</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -252,7 +261,7 @@ Properties</h2></td></tr>
 <p>Gets the cabinet config directory. </p>
 <dl class="section return"><dt>Returns</dt><dd>The DirectoryInfo object for the cabinet config directory or null if no CabinetConfigFile is available.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00074">74</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00109">109</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -272,7 +281,7 @@ Properties</h2></td></tr>
 <p>FileInfo object for the file containing the configuration of the cabinet (outputs, toys and so on). </p>
 <dl class="section return"><dt>Returns</dt><dd>FileInfo object for the file containing the configuration of the cabinet or null if no file has been specified.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00060">60</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00095">95</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -292,7 +301,7 @@ Properties</h2></td></tr>
 <p>Gets a list of FileInfo objects representing the cabinet script files. </p>
 <dl class="section return"><dt>Returns</dt><dd>A list of FileOnfo objects or a empty list of the files have been found.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00105">105</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00140">140</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -312,7 +321,7 @@ Properties</h2></td></tr>
 <p>Gets a DirectoryInfo object for the global config directory. </p>
 <dl class="section return"><dt>Returns</dt><dd>The DirectoryInfo object for the global config directory or null if no GlobalConfigFilename is defined. </dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00333">333</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00368">368</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -332,7 +341,7 @@ Properties</h2></td></tr>
 <p>Gets a FileInfo object for the global config file. </p>
 <dl class="section return"><dt>Returns</dt><dd>FileInfo object for the global config file or null if no filename has been set.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00362">362</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00397">397</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -368,7 +377,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html" title="Global configuration for the DirectOutput framework.  ">GlobalConfig</a> object or null.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00413">413</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00448">448</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -403,7 +412,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html" title="Global configuration for the DirectOutput framework.  ">GlobalConfig</a> object for the specified ConfigXML or null if the XML data can not be deserialized.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00451">451</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00486">486</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -423,7 +432,7 @@ Properties</h2></td></tr>
 <p>Returns a serialized XML representation of the global configuration. </p>
 <dl class="section return"><dt>Returns</dt><dd>XMLString</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00375">375</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00410">410</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -445,7 +454,7 @@ Properties</h2></td></tr>
  The script files are looked up using the value of the property GlobalScriptFilePatterns. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of FileInfo objects for the global script files.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00297">297</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00332">332</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -483,7 +492,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00241">241</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00276">276</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -511,7 +520,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A FileInfo object for the table config file or null if no matching file was found.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00181">181</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00216">216</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -538,7 +547,7 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The list of table script files or a empty list if no table script files have been found. </dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00148">148</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00183">183</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -558,7 +567,7 @@ Properties</h2></td></tr>
 <p>Path to the directory where the global config is stored (readonly). </p>
 <dl class="section return"><dt>Returns</dt><dd>string containing to the global config directory.</dd></dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00321">321</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00356">356</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -585,7 +594,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00471">471</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00506">506</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -611,7 +620,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the cabinet config file pattern. </p>
 <p>The cabinet config file pattern. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00050">50</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00085">85</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -636,7 +645,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the search patterns for cabinet scripts files. </p>
 <p>The search patterns for cabinet scripts files. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00095">95</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00130">130</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -659,10 +668,9 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets or sets a value indicating whether impotant events in the framework are logged to a file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Extend log class to respect this setting </dd></dl>
 <p><code>true</code> if logging is enabled, <code>false</code> if logging is disabled. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00204">204</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00239">239</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -687,7 +695,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the global config filename. </p>
 <p>The global config filename. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00352">352</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00387">387</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -712,7 +720,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the script file patterns used to lookup the global scripts. </p>
 <p>The global script file patterns. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00312">312</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00347">347</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -736,10 +744,63 @@ Properties</h2></td></tr>
 
 <p>Gets or sets the list of LedControl.ini files.<br/>
  </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Check serialization of the property. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Check serialization of the property. </dd></dl>
 <p>The list of LedControl.ini files. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00029">29</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00064">64</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67c0c0b134f9ae5483653d1d821e9e5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DirectOutput.GlobalConfiguration.GlobalConfig.LedControlMinimumEffectDurationMs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the minimum duration in milliseconds for <a class="el" href="namespace_direct_output_1_1_led_control.html" title="The DirectOutput.LedControl namespace contains the classes to read and understand the classical LedCo...">LedControl</a> effects occupying one output (e.g. contactors).<br/>
+ This settings has no effect if a duration or blinking is defined for the LedControlEffect.<br/>
+ If this value is not specified in the globalconfig file, 60 miliseconds will be used by default. </p>
+<p>The minimum effect duration in milliseconds. </p>
+
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00033">33</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab603d1b65f8d49389a55db05b674cab2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DirectOutput.GlobalConfiguration.GlobalConfig.LedControlMinimumRGBEffectDurationMs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets the minimum duration in milliseconds for <a class="el" href="namespace_direct_output_1_1_led_control.html" title="The DirectOutput.LedControl namespace contains the classes to read and understand the classical LedCo...">LedControl</a> effects controlling RGB leds.<br/>
+ This settings has no effect if a duration or blinking is defined for the LedControlEffect. If this value is not specified in the globalconfig file, 120 miliseconds will be used by default. </p>
+<p>The minimum effect duration in milliseconds. </p>
+
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00049">49</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -775,7 +836,7 @@ Properties</h2></td></tr>
 </ul>
 <p>The log file pattern. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00230">230</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00265">265</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -800,7 +861,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the config file patterns used to looup the table configuration. </p>
 <p>The table config file patterns. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00169">169</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00204">204</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -825,7 +886,7 @@ Properties</h2></td></tr>
 <p>Gets or sets the table script file patterns. </p>
 <p>The table script file patterns. </p>
 
-<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00136">136</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
+<p>Definition at line <a class="el" href="_global_config_8cs_source.html#l00171">171</a> of file <a class="el" href="_global_config_8cs_source.html">GlobalConfig.cs</a>.</p>
 
 </div>
 </div>
@@ -839,7 +900,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_global_configuration.html">GlobalConfiguration</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html">GlobalConfig</a></li>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:15 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:58 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

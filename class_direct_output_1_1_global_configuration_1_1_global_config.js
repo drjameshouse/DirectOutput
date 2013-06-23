@@ -19,6 +19,8 @@ var class_direct_output_1_1_global_configuration_1_1_global_config =
     [ "GlobalConfigFilename", "class_direct_output_1_1_global_configuration_1_1_global_config.html#a921e04fe7a704efe8bb89975f41dfb06", null ],
     [ "GlobalScriptFilePatterns", "class_direct_output_1_1_global_configuration_1_1_global_config.html#a0ae6f30b8f8af905aeefcb3ada721b11", null ],
     [ "LedControlIniFiles", "class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056", null ],
+    [ "LedControlMinimumEffectDurationMs", "class_direct_output_1_1_global_configuration_1_1_global_config.html#a67c0c0b134f9ae5483653d1d821e9e5c", null ],
+    [ "LedControlMinimumRGBEffectDurationMs", "class_direct_output_1_1_global_configuration_1_1_global_config.html#ab603d1b65f8d49389a55db05b674cab2", null ],
     [ "LogFilePattern", "class_direct_output_1_1_global_configuration_1_1_global_config.html#aaecb5b8258cb46769635ed67f64acd91", null ],
     [ "TableConfigFilePatterns", "class_direct_output_1_1_global_configuration_1_1_global_config.html#ac3adfeed96f082414d45a3ac8b932dc7", null ],
     [ "TableScriptFilePatterns", "class_direct_output_1_1_global_configuration_1_1_global_config.html#ad00a3fa0522b5f634f245e759fa85764", null ]

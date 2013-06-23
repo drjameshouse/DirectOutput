@@ -22,5 +22,5 @@ var searchData=
   ['extlist',['ExtList',['../class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#abb50878664855730d458e5d6eeb8b2c6',1,'DirectOutput.General.Generic.ExtList&lt; T &gt;.ExtList()'],['../class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a90b6e416c3730e587d53ed1c7d603ed9',1,'DirectOutput.General.Generic.ExtList&lt; T &gt;.ExtList(IEnumerable&lt; T &gt; EnumerableList)']]],
   ['extlist_2ecs',['ExtList.cs',['../_ext_list_8cs.html',1,'']]],
   ['extlist_3c_20t_20_3e',['ExtList&lt; T &gt;',['../class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html',1,'DirectOutput::General::Generic']]],
-  ['effects_2ffx',['Effects/FX',['../md_60__f_x.html',1,'']]]
+  ['effects_2ffx',['Effects/FX',['../fx.html',1,'']]]
 ];

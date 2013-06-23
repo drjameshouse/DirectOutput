@@ -167,8 +167,10 @@ TableScriptFilePatterns</h2>
 <div class="fragment"><div class="line">&lt;TableScriptFilePatterns&gt;</div>
 <div class="line">  &lt;FilePattern&gt;{GlobalConfigDir}\\{TableName}*.cs&lt;/FilePattern&gt;</div>
 <div class="line">&lt;/TableScriptFilePatterns&gt;</div>
-</div><!-- fragment --><h2><a class="anchor" id="globalconfig_ledcontrolinifiles"></a>
-LedControlIniFiles</h2>
+</div><!-- fragment --><h3><a class="anchor" id="globalconfig_ledcontrol"></a>
+LedControl options</h3>
+<h3><a class="anchor" id="globalconfig_ledcontrolinifiles"></a>
+LedControlIniFiles</h3>
 <p>LedControlIniFiles holds the paths to LedControl.ini files as well as the LedWiz number assiociated with the ledcontrol.ini files. LedControl.ini files can be used as a fallback solution if no cabinet and/or cabinet config is loaded. The LedControlIniFiles section can contain up to 16 LedControlIniFile sections.</p>
 <p>A LedControlIniFile section defines a single LedControl.ini file and the associated LedWiz number.</p>
 <ul>
@@ -183,6 +185,17 @@ LedControlIniFiles</h2>
 <div class="line">    &lt;LedWizNumber&gt;1&lt;/LedWizNumber&gt;</div>
 <div class="line">  &lt;/LedControlIniFile&gt;</div>
 <div class="line">&lt;/LedControlIniFiles&gt;</div>
+</div><!-- fragment --><h3><a class="anchor" id="globalconfig_ledcontrolsettings"></a>
+LedControl settings</h3>
+<p>In addition to the LedControl.ini files you can specify a few more options for LedControl use:</p>
+<ul>
+<li><em>LedControlMinimumEffectDurationMs</em> specifies the minimum duration for LedControl effects which control only one output (e.g. contactors, start button light).</li>
+<li><em>LedControlMinimumRGBEffectDurationMs</em> specifies the minimum duration for LedControl effects control RGBleds.</li>
+</ul>
+<p>Both settings have no effect if the effect setting in the LedControl file specifies a duration.</p>
+<p>Under normal circumstances these settings look like this:</p>
+<div class="fragment"><div class="line">&lt;LedControlMinimumEffectDurationMs&gt;60&lt;/LedControlMinimumEffectDurationMs&gt;</div>
+<div class="line">&lt;LedControlMinimumRGBEffectDurationMs&gt;120&lt;/LedControlMinimumRGBEffectDurationMs&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="globalconfig_logging"></a>
 Logging</h2>
 <p>EnableLogging does whats its name says. It enables log output to the file specified in the LogFilePattern.</p>
@@ -206,7 +219,8 @@ Example</h1>
 <div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div>
 <div class="line"></div>
 <div class="line">&lt;GlobalConfig&gt;</div>
-<div class="line"></div>
+<div class="line">  &lt;LedControlMinimumEffectDurationMs&gt;60&lt;/LedControlMinimumEffectDurationMs&gt;</div>
+<div class="line">  &lt;LedControlMinimumRGBEffectDurationMs&gt;120&lt;/LedControlMinimumRGBEffectDurationMs&gt;</div>
 <div class="line">  &lt;LedControlIniFiles&gt;</div>
 <div class="line">    &lt;LedControlIniFile&gt;</div>
 <div class="line">      &lt;Filename&gt;c:\Ledcontrol\LedControl.ini&lt;/Filename&gt;</div>
@@ -247,7 +261,7 @@ Example</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 6 2013 13:07:13 for DirectOutput by
+    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
