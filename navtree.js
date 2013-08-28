@@ -4,7 +4,11 @@ var NAVTREE =
     [ "Installation and Configuration", "installation.html", [
       [ "Requirements", "installation.html#installation_requirements", null ],
       [ "Download", "installation.html#installation_download", null ],
-      [ "Installation", "installation.html#installation_installation", null ],
+      [ "Installation", "installation.html#installation_installation", [
+        [ "Installation within hosting application directory structure", "installation.html#installation_installation_hostappdir", null ],
+        [ "Installation in own directory (Recommended)", "installation.html#installation_installation_owndir", null ]
+      ] ],
+      [ "Unblock the DLLs", "installation.html#installation_unblockauc", null ],
       [ "B2S.Server Configuration", "installation.html#installation_b2sserverconfig", null ],
       [ "Visual Pinball core.vbs Adjustment", "installation.html#installation_visualpinballcorevbs", null ],
       [ "Configuration", "installation.html#installation_configuration", [
@@ -17,7 +21,7 @@ var NAVTREE =
         ] ]
       ] ]
     ] ],
-    [ "Table configuration", "tableconfig.html", [
+    [ "VP Table configuration", "tableconfig.html", [
       [ "Introduction", "tableconfig.html#tableconfig_intro", null ],
       [ "VP solid state (SS) tables", "tableconfig.html#tableconfig_VPSS", [
         [ "Configure SS tables", "tableconfig.html#tableconfig_VPSSconfig", null ],
@@ -34,11 +38,12 @@ var NAVTREE =
     [ "Supported Hardware", "hardware.html", [
       [ "Introduction", "hardware.html#hardware_intro", null ],
       [ "Fully supported hardware", "hardware.html#hardware_ready", [
-        [ "LedWiz (GroovyGameGear)", "hardware.html#hardware_ledwiz", null ]
+        [ "LedWiz (GroovyGameGear)", "hardware.html#hardware_ledwiz", null ],
+        [ "PacLed64 (Ultimarc)", "hardware.html#hardware_ultimarc_pacled64", null ],
+        [ "Art-Net / DMX", "hardware.html#hardware_artnet", null ]
       ] ],
       [ "Hardware support in development", "hardware.html#hardware_development", [
-        [ "PacLed64/PacDrive (Ultimarc)", "hardware.html#hardware_ultimarc", null ],
-        [ "Art-Net", "hardware.html#hardware_artnet", null ]
+        [ "PacDrive (Ultimarc)", "hardware.html#hardware_ultimarc_pacdrive", null ]
       ] ],
       [ "Other Hardware", "hardware.html#hardware_other", null ]
     ] ],
@@ -87,7 +92,8 @@ var NAVTREE =
       [ "Introduction", "ledcontrolfiles.html#ledcontrol_introduction", null ],
       [ "Auto Configuration", "ledcontrolfiles.html#ledcontrol_autoconfig", [
         [ "Auto Table config", "ledcontrolfiles.html#ledcontrol_autoconfigtable", null ],
-        [ "Auto Cabinet Config", "ledcontrolfiles.html#ledcontrol_autoconfigcabinet", null ]
+        [ "Auto Cabinet Config", "ledcontrolfiles.html#ledcontrol_autoconfigcabinet", null ],
+        [ "LedControl file numbering", "ledcontrolfiles.html#ledcontrol_autoconfignumbering", null ]
       ] ],
       [ "Manual Configuration", "ledcontrolfiles.html#ledcontrol_manualconfig", null ],
       [ "Settings in LedControl files", "ledcontrolfiles.html#ledcontrol_settings", [
@@ -126,7 +132,8 @@ var NAVTREE =
         [ "Motor/Shaker/GearMotor", "toys.html#toys_motor", null ],
         [ "Flasher", "toys.html#toys_flasher", null ],
         [ "LedWizEquivalent", "toys.html#toys_ledwizequivalent", null ],
-        [ "GenericAnalogToy", "toys.html#toys_genericdigitaltoy", null ]
+        [ "GenericDigitalToy", "toys.html#toys_genericdigitaltoy", null ],
+        [ "GenericAnalogToy", "toys.html#toys_genericanalogtoy", null ]
       ] ],
       [ "Custom toys", "toys.html#toys_custom", [
         [ "Implementation guidelines for custom toys", "toys.html#toys_implementationguideline", null ]
@@ -134,7 +141,11 @@ var NAVTREE =
     ] ],
     [ "Output controllers", "outputcontrollers.html", [
       [ "Introduction", "outputcontrollers.html#outputcontrollers_introduction", null ],
-      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtineffects", null ],
+      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtineffects", [
+        [ "LedWiz (GroovyGameGear)", "outputcontrollers.html#outputcontrollers_ledwiz", null ],
+        [ "PacLed64 (Ultimarc)", "outputcontrollers.html#outputcontrollers_ultimarc_pacled64", null ],
+        [ "Art-Net / DMX", "outputcontrollers.html#outputcontrollers_artnet", null ]
+      ] ],
       [ "Custom output controllers", "outputcontrollers.html#outputcontrollers_customeffects", [
         [ "Interfaces for output controllers", "outputcontrollers.html#outputcontrollers_interfaces", [
           [ "IOutputController interface", "outputcontrollers.html#outputcontrollers_ioutputcontroller", null ],
@@ -176,7 +187,7 @@ var NAVTREE =
       [ "History", "_history_roadmap.html#history", null ]
     ] ],
     [ "Credits", "md_90__credits.html", null ],
-    [ "About", "md_99__mainpage_and_about.html", null ],
+    [ "About and Copyright", "md_99__mainpage_and_about.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ],
@@ -193,13 +204,18 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Properties", "functions_prop.html", "functions_prop" ],
         [ "Events", "functions_evnt.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -207,11 +223,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_handler_8cs.html",
-"_r_g_b_led_8cs.html",
-"class_direct_output_1_1_cab_1_1_toys_1_1_color.html#ac03b8bb0ec190810709861cdbaddbcf4",
-"class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a93a29a47e6aaeb8d2037c8643f8e6bc9",
-"class_direct_output_1_1_table_1_1_table.html#aa847e6bc016bce992a5b7dc6edc89565",
-"interface_direct_output_1_1_cab_1_1_toys_1_1_i_digital_toy.html#af3eec101217a3b8404fb3dbb4a8cb771"
+"_out_8cs.html",
+"class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html",
+"class_direct_output_1_1_f_x_1_1_combined_effect_list.html#a3d4e9625f188c9660a44d258032dcffb",
+"class_direct_output_1_1_global_configuration_1_1_global_config.html#a67c0c0b134f9ae5483653d1d821e9e5c",
+"class_direct_output_hyperpin_plugin_1_1_direct_output_plugin.html#adb7599264d033a8bfb151527ad3b59e6",
+"md_50__architecture.html#architecture_table"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

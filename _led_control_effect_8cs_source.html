@@ -73,6 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('_led_control_effect_8cs_source.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -336,102 +337,104 @@ $(document).ready(function(){initNavTree('_led_control_effect_8cs_source.html','
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
 <div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a59b99b460e700d00214fb431187dfc96">  280</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Trigger(Table.TableElementData TableElementData)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="keywordflow">if</span> (TableElementData == null)</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="comment">//Static effect init</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                Set();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                BlinkInit();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                <span class="keywordflow">if</span> (Duration &gt; 0)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                    AlarmHandler.RegisterAlarm(Duration, DurationAlarmHandler);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="comment">//Controlled effect call</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keywordflow">if</span> (TableElementData.Value &gt; 0)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                    Set();</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                    BlinkInit();</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    <span class="keywordflow">if</span> (SetTime == DateTime.MinValue)</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                    {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                        SetTime = DateTime.Now;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                    }</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                    <span class="keywordflow">if</span> (Duration &gt; 0)</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                        AlarmHandler.RegisterAlarm(Duration, DurationAlarmHandler);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                    }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                    <span class="keywordflow">if</span> (Duration &lt;= 0 &amp;&amp; Blink &lt;= 0)</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                    {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                        <span class="keywordflow">if</span> (SetTime != DateTime.MinValue)</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                        {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                            <span class="keywordtype">int</span> D = (int)(DateTime.Now - SetTime).TotalMilliseconds;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="keywordflow">if</span> (TableElementData == null)</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="comment">//Static effect init</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                Set();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                BlinkInit();</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <span class="keywordflow">if</span> (Duration &gt; 0)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                    AlarmHandler.RegisterAlarm(Duration, DurationAlarmHandler);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="comment">//Controlled effect call</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                <span class="keywordflow">if</span> (TableElementData.Value &gt; 0)</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    Set();</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                    BlinkInit();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    <span class="keywordflow">if</span> (SetTime == DateTime.MinValue)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                    {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                        SetTime = DateTime.Now;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                    }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                    <span class="keywordflow">if</span> (Duration &gt; 0)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                    {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                        AlarmHandler.RegisterAlarm(Duration, DurationAlarmHandler);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    <span class="keywordflow">if</span> (Duration &lt;= 0 &amp;&amp; Blink &lt;= 0)</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                    {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                        <span class="keywordflow">if</span> (SetTime != DateTime.MinValue)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                        {</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                            <span class="keywordflow">if</span> (D &lt; (IsRGBEffect ? MinimumRGBEffectDurationMs : MinimumEffectDurationMs))</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                            {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                                AlarmHandler.RegisterAlarm(((IsRGBEffect ? MinimumRGBEffectDurationMs : MinimumEffectDurationMs) - D).Limit(1, 10000), DelayedUnsetAlarmHandler);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                            }</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                        }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                        BlinkFinish();</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                        Unset();</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                        SetTime = DateTime.MinValue;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                    }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> DelayedUnsetAlarmHandler()</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            BlinkFinish();</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            Unset();</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            SetTime = DateTime.MinValue;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a9621693ea31bed07511b3ab474c1d800">  345</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(Pinball Pinball)</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            ResolveName(Pinball);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            AlarmHandler = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            MinimumEffectDurationMs = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a5dae670a72b5b63a80664336b56fb871" title="Gets the global config for the Pinnball object. ">GlobalConfig</a>.LedControlMinimumEffectDurationMs;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            MinimumRGBEffectDurationMs = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a5dae670a72b5b63a80664336b56fb871" title="Gets the global config for the Pinnball object. ">GlobalConfig</a>.LedControlMinimumRGBEffectDurationMs;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a400df76794c876af0c91180249687d35">  356</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            AlarmHandler.UnregisterAlarm(DurationAlarmHandler);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            AlarmHandler.UnregisterIntervalAlarm(BlinkAlarmHandler);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            Unset();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            AlarmHandler = null;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                            <span class="keywordtype">int</span> D = (int)(DateTime.Now - SetTime).TotalMilliseconds;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                            <span class="keywordflow">if</span> (D &lt; (IsRGBEffect ? MinimumRGBEffectDurationMs : MinimumEffectDurationMs))</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                            {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                                AlarmHandler.RegisterAlarm(((IsRGBEffect ? MinimumRGBEffectDurationMs : MinimumEffectDurationMs) - D).Limit(1, 10000), DelayedUnsetAlarmHandler);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                            }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                        }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                        BlinkFinish();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                        Unset();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                        SetTime = DateTime.MinValue;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                    }</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        }</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> DelayedUnsetAlarmHandler()</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            BlinkFinish();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            Unset();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            SetTime = DateTime.MinValue;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a9621693ea31bed07511b3ab474c1d800">  347</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(Pinball Pinball)</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            ResolveName(Pinball);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            AlarmHandler = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            MinimumEffectDurationMs = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a5dae670a72b5b63a80664336b56fb871" title="Gets the global config for the Pinnball object. ">GlobalConfig</a>.LedControlMinimumEffectDurationMs;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            MinimumRGBEffectDurationMs = Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#a5dae670a72b5b63a80664336b56fb871" title="Gets the global config for the Pinnball object. ">GlobalConfig</a>.LedControlMinimumRGBEffectDurationMs;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a400df76794c876af0c91180249687d35">  358</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Finish()</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            AlarmHandler.UnregisterAlarm(DurationAlarmHandler);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            AlarmHandler.UnregisterIntervalAlarm(BlinkAlarmHandler);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            Unset();</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            AlarmHandler = null;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        }</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a425a7b7cc646ec628ded98f8afd9c7c6">  369</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a425a7b7cc646ec628ded98f8afd9c7c6" title="Initializes a new instance of the LedControlEffect class. ">LedControlEffect</a>() { }</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#aaece52ddcec3e34e2c30093a6877aa72">  376</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html" title="The LedControlEffect is used when LedControl.ini files are parsed for this framework.  It is recommended not to use this effect, for other purposes. Use specific effects instead. ">LedControlEffect</a>(<span class="keywordtype">string</span> LedWizEquivalentName, <span class="keywordtype">int</span> FirstOutputNumber)</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            : this()</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            this.LedWizEquivalentName = LedWizEquivalentName;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            this.FirstOutputNumber = FirstOutputNumber;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a425a7b7cc646ec628ded98f8afd9c7c6">  371</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a425a7b7cc646ec628ded98f8afd9c7c6" title="Initializes a new instance of the LedControlEffect class. ">LedControlEffect</a>() { }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#aaece52ddcec3e34e2c30093a6877aa72">  378</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html" title="The LedControlEffect is used when LedControl.ini files are parsed for this framework.  It is recommended not to use this effect, for other purposes. Use specific effects instead. ">LedControlEffect</a>(<span class="keywordtype">string</span> LedWizEquivalentName, <span class="keywordtype">int</span> FirstOutputNumber)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            : this()</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            this.LedWizEquivalentName = LedWizEquivalentName;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            this.FirstOutputNumber = FirstOutputNumber;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_3e554180b925145de090e82e9ce1143b.html">FX</a></li><li class="navelem"><a class="el" href="dir_48a941d235a344e5fc82aaf0eb1b09fd.html">LedControlFX</a></li><li class="navelem"><a class="el" href="_led_control_effect_8cs.html">LedControlEffect.cs</a></li>
-    <li class="footer">Generated on Tue Jun 25 2013 15:50:55 for DirectOutput by
+    <li class="navelem"><a class="el" href="dir_47e6c69249102d832240994dfe76ec93.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_aa86c433d3084651430d9207db338f91.html">FX</a></li><li class="navelem"><a class="el" href="dir_a1d8a0934304f579e3626122ec7a19e0.html">LedControlFX</a></li><li class="navelem"><a class="el" href="_led_control_effect_8cs.html">LedControlEffect.cs</a></li>
+    <li class="footer">Generated on Wed Aug 28 2013 15:47:33 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

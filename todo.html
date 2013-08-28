@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,10 +111,16 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </dd>
 <dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html#a7d78290f26d38086c675ff6135cbc29d">DirectOutput.Cab.Out.LW.LedWizOutput.LedWizOutput</a>  (int LedWizOutputNumber)</dt>
 <dd>Generate unique output names  </dd>
-<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html">DirectOutput.FX.AssignedEffect</a>  </dt>
+<dt><a class="anchor" id="_todo000006"></a>Class <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html">DirectOutput.Cab.Out.OutputNameConverter</a>  </dt>
+<dd>We can ldrop this class. It is not required.  </dd>
+<dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html">DirectOutput.FX.AssignedEffect</a>  </dt>
 <dd>Add conditions (expressions that evluate to true or false) for assigned effects. CSScript makes this easy, but unlopading of changed effects will not be possible without restarting the framework.  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056">DirectOutput.GlobalConfiguration.GlobalConfig.LedControlIniFiles</a>  </dt>
-<dd>Check serialization of the property. </dd>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="class_direct_output_1_1_general_1_1_kernel32_imports.html#ae44b3c9a159681498af3b537da5bc429">DirectOutput.General.Kernel32Imports.GetCurrentProcessorNumber</a>  ()</dt>
+<dd>Find a way to get current processor number if running on xp.  </dd>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056">DirectOutput.GlobalConfiguration.GlobalConfig.LedControlIniFiles</a>  </dt>
+<dd>Check serialization of the property.  </dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="class_direct_output_1_1_log.html#a7d4cd99f14356ff7e5295d0ba6acc1b3">DirectOutput.Log.Debug</a>  (string Message="")</dt>
+<dd>Make conditional compilation work </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -122,7 +128,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
+    <li class="footer">Generated on Wed Aug 28 2013 15:47:36 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

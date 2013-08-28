@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute.html" title="DirectOutput.Cab.Out.Output\lNameAttribute" alt="" coords="126,5,317,46"/>
+<area shape="rect" id="node1" href="$interface_direct_output_1_1_cab_1_1_out_1_1_i_auto_config_output_controller.html" title="Interface for classes used to automatically detect and configure output controllers ..." alt="" coords="5,38,187,79"/>
+<area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_auto_configurator.html" title="This class is used to detect and configure LedWiz output controllers automatically. " alt="" coords="237,5,411,46"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64_auto_configurator.html" title="This class detects all connected PacLed64 units and configures them. " alt="" coords="235,70,413,111"/>
 </map>

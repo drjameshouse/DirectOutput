@@ -7,5 +7,6 @@ var searchData=
   ['assembly',['Assembly',['../class_direct_output_1_1_scripting_1_1_script.html#aeaab734589e1da1df3b3227202c60533',1,'DirectOutput::Scripting::Script']]],
   ['assignedeffects',['AssignedEffects',['../class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a822d69d9a65a5b4cb26b3e633a603ae6',1,'DirectOutput.FX.ListFX.ListEffect.AssignedEffects()'],['../class_direct_output_1_1_table_1_1_table_element.html#acc272a31437e43cc44eeba5db8a6738a',1,'DirectOutput.Table.TableElement.AssignedEffects()']]],
   ['assignedstaticeffects',['AssignedStaticEffects',['../class_direct_output_1_1_table_1_1_table.html#a54c9b01e78d96d4db12e806c54cf3fcb',1,'DirectOutput::Table::Table']]],
-  ['averageduration',['AverageDuration',['../class_direct_output_1_1_general_1_1_time_span_statistics.html#a1fc07f6ea267d73f9acaa741b912c10e',1,'DirectOutput::General::TimeSpanStatistics']]]
+  ['autoconfigenabled',['AutoConfigEnabled',['../class_direct_output_1_1_cab_1_1_cabinet.html#abd9f7d93d10c71f0e2c59d55174cf3bf',1,'DirectOutput::Cab::Cabinet']]],
+  ['averageduration',['AverageDuration',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a10dce9e1ad5c146a7fe5a2fc432842a2',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]]
 ];

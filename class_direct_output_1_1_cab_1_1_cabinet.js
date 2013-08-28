@@ -6,6 +6,7 @@ var class_direct_output_1_1_cab_1_1_cabinet =
     [ "GetConfigXml", "class_direct_output_1_1_cab_1_1_cabinet.html#a36d091950e0319fd139f57960b49fe83", null ],
     [ "Init", "class_direct_output_1_1_cab_1_1_cabinet.html#aa85fc3aadb04dd4a151e24a9d0d68d98", null ],
     [ "SaveConfigXmlFile", "class_direct_output_1_1_cab_1_1_cabinet.html#a5436db2ff478323a279c53d2245713b1", null ],
+    [ "AutoConfigEnabled", "class_direct_output_1_1_cab_1_1_cabinet.html#abd9f7d93d10c71f0e2c59d55174cf3bf", null ],
     [ "CabinetConfigurationFilename", "class_direct_output_1_1_cab_1_1_cabinet.html#ace619086291087d131550a4cad2bbd3e", null ],
     [ "Colors", "class_direct_output_1_1_cab_1_1_cabinet.html#a27352bcef77a62b76edb6a5b97ebec52", null ],
     [ "Effects", "class_direct_output_1_1_cab_1_1_cabinet.html#a53c22cf68f18f1b40e2a10a0a878a858", null ],

@@ -10,5 +10,7 @@ var searchData=
   ['colorconfiglist_2ecs',['ColorConfigList.cs',['../_color_config_list_8cs.html',1,'']]],
   ['colorlist_2ecs',['ColorList.cs',['../_color_list_8cs.html',1,'']]],
   ['combinedeffectlist_2ecs',['CombinedEffectList.cs',['../_combined_effect_list_8cs.html',1,'']]],
+  ['configtester_2ecs',['ConfigTester.cs',['../_config_tester_8cs.html',1,'']]],
+  ['configtester_2edesigner_2ecs',['ConfigTester.Designer.cs',['../_config_tester_8_designer_8cs.html',1,'']]],
   ['contactor_2ecs',['Contactor.cs',['../_contactor_8cs.html',1,'']]]
 ];

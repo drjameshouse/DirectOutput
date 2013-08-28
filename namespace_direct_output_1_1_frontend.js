@@ -6,5 +6,7 @@ var namespace_direct_output_1_1_frontend =
     [ "GlobalConfigEdit", "class_direct_output_1_1_frontend_1_1_global_config_edit.html", "class_direct_output_1_1_frontend_1_1_global_config_edit" ],
     [ "MainMenu", "class_direct_output_1_1_frontend_1_1_main_menu.html", "class_direct_output_1_1_frontend_1_1_main_menu" ],
     [ "ScriptInfo", "class_direct_output_1_1_frontend_1_1_script_info.html", "class_direct_output_1_1_frontend_1_1_script_info" ],
-    [ "TableInfo", "class_direct_output_1_1_frontend_1_1_table_info.html", "class_direct_output_1_1_frontend_1_1_table_info" ]
+    [ "SystemMonitor", "class_direct_output_1_1_frontend_1_1_system_monitor.html", "class_direct_output_1_1_frontend_1_1_system_monitor" ],
+    [ "TableInfo", "class_direct_output_1_1_frontend_1_1_table_info.html", "class_direct_output_1_1_frontend_1_1_table_info" ],
+    [ "TimeSpanStatisticsDetails", "class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html", "class_direct_output_1_1_frontend_1_1_time_span_statistics_details" ]
 ];

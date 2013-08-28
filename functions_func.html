@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_prop.html"><span>Properties</span></a></li>
       <li><a href="functions_evnt.html"><span>Events</span></a></li>
@@ -96,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x65.html#index_e"><span>e</span></a></li>
       <li><a href="functions_func_0x66.html#index_f"><span>f</span></a></li>
       <li><a href="functions_func_0x67.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_0x6b.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
@@ -131,7 +133,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -150,15 +152,19 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a2fbad27b8906a0fafced18dd95c34331">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
 , <a class="el" href="class_direct_output_1_1_table_1_1_table_element_list.html#a572ed9ad3bced8021e6101a87b05c7ed">DirectOutput.Table.TableElementList</a>
 </li>
-<li>AddMissingOutputs()
-: <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html#acbd5be327633dc2122476fc50580aeaa">DirectOutput.Cab.Out.LW.LedWiz</a>
+<li>AddDuration()
+: <a class="el" href="class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#affe4ecd06308c77ad462fdc5cb41e063">DirectOutput.General.Statistics.TimeSpanStatisticsItem</a>
+, <a class="el" href="class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_list.html#af43323abc2f63cfd742243f7717a2220">DirectOutput.General.Statistics.TimeSpanStatisticsList</a>
+</li>
+<li>AddOutputs()
+: <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html#a91365c5a2fbdb259b3a2e021eb219426">DirectOutput.Cab.Out.LW.LedWiz</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html#a586b81010610afa0cfa44e3208582237">DirectOutput.Cab.Out.Pac.PacLed64</a>
 </li>
 <li>AddRange()
 : <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#aa850b04030b8262da29d2f16497eef9d">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
 </li>
 <li>AddValue()
-: <a class="el" href="class_direct_output_1_1_general_1_1_simple_statistics_3_01_t_01_4.html#a24e2704de5f401b197486443131b9b4d">DirectOutput.General.SimpleStatistics&lt; T &gt;</a>
-, <a class="el" href="class_direct_output_1_1_general_1_1_time_span_statistics.html#ae517cf5c73d28068f3a13c13beb46fab">DirectOutput.General.TimeSpanStatistics</a>
+: <a class="el" href="class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#aae235295aecdcd403a9c0044f1b8258b">DirectOutput.General.Statistics.SimpleStatistics&lt; ValueType &gt;</a>
 </li>
 <li>AlarmHandler()
 : <a class="el" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a09b4e64ceebe1367fea5ea021d28c251">DirectOutput.PinballSupport.AlarmHandler</a>
@@ -166,8 +172,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>ApplySortCore()
 : <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_sortable_binding_list_3_01_t_01_4.html#a13f19cd4ef00546f9117f75412abe341">DirectOutput.General.Generic.SortableBindingList&lt; T &gt;</a>
 </li>
+<li>ArtNet()
+: <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_art_net.html#acb72db3027e22dc55e63d3ff94c0f1b8">DirectOutput.Cab.Out.DMX.ArtNet</a>
+</li>
 <li>AssignedEffect()
-: <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html#a2aa5bec2371141fc4800abf8ea64ae08">DirectOutput.FX.AssignedEffect</a>
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html#a75a9408ecccc14a996549a7dccc84981">DirectOutput.FX.AssignedEffect</a>
 </li>
 <li>AssignedEffectList()
 : <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html#a947b7dde2bfe75e397d1c0c3da0ad63b">DirectOutput.FX.AssignedEffectList</a>
@@ -176,7 +185,10 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect_order.html#ac617d56ab07f75c923f6cd5ac8c59fb2">DirectOutput.FX.AssignedEffectOrder</a>
 </li>
 <li>AutoConfig()
-: <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html#a62c83af4d9830d183a48cbef17cb365e">DirectOutput.Cab.Cabinet</a>
+: <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_auto_config_output_controller.html#a709a482b6ef5efd0e857d4e3590b301f">DirectOutput.Cab.Out.IAutoConfigOutputController</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_auto_configurator.html#ad098d46a314038d002d69c3dc720b2dc">DirectOutput.Cab.Out.LW.LedWizAutoConfigurator</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html#a62c83af4d9830d183a48cbef17cb365e">DirectOutput.Cab.Cabinet</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64_auto_configurator.html#a6375f596bfdb53eb3f74eda0a4c1b60a">DirectOutput.Cab.Out.Pac.PacLed64AutoConfigurator</a>
 </li>
 <li>AvailableEffectsInfo()
 : <a class="el" href="class_direct_output_1_1_frontend_1_1_available_effects_info.html#adf1713154043244cbbb0532e8b84accb">DirectOutput.Frontend.AvailableEffectsInfo</a>
@@ -191,7 +203,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 25 2013 15:50:59 for DirectOutput by
+    <li class="footer">Generated on Wed Aug 28 2013 15:47:42 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

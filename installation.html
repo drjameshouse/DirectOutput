@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('installation.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,29 +110,84 @@ Requirements</h1>
 <p>Therefore you must first install and configure Herwehs B2S-Server before you can install the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework. You can download the B2S-Server from <a href="http://vpuniverse.com/forums/files/file/2042-b2s-backglass-server/">vpuniverse.com</a> or <a href="http://www.vpforums.org/index.php?app=downloads&amp;showfile=7426">VPForums</a>.</p>
 <h1><a class="anchor" id="installation_download"></a>
 Download</h1>
+<dl class="section note"><dt>Note</dt><dd>Sorry, public downloads are not yet available. As soon as the framework is released to the public, everyone will be allowed to download the framework.</dd></dl>
 <p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework can be downloaded from <a href="http://www.vpuniverse.com" target="_blank">vpuniverse.com</a>, but other sites might host the binaries as well.</p>
 <p>You are also very welcome to fork/download and enhance the source code from <a href="https://github.com/DirectOutput/DirectOutput" target="_blank">GitHub</a>.</p>
 <h1><a class="anchor" id="installation_installation"></a>
 Installation</h1>
-<p>Unzip the contents of the zip-file containing the framework to the following subpath of the B2S-Server: {B2S-Server directory}\plugins\<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a></p>
-<p>The B2S-Server will automatically detect the framework on startup and integrate it. Please check <a href="http://www.vpforums.org/index.php?showforum=86" target="_blank">VPForums</a> for more information on the B2S-Server.</p>
-<p>Typically the directory and file structure of your installtion should look like this (depending on the framework version, more files might exist in the installation directory):</p>
+<p>Hosting applications which can use the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework, implement plugin interfaces which will automatically detect, load and use the library if it is correctly installed.</p>
+<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework can be installed in two ways:</p>
+<ul>
+<li>Directly within the directory structure of the hosting application (e.g. B2S.Server). This will require only minimal effort when installing, but it might lead to duplicate installations if DOF is used in more than one hosting application.</li>
+<li>In any other directory of your system. This will require a little more work during installation, because shortcuts from the hosting applications plugin directory to the directoy containg DOF have to be added. This installation pattern will all all applications which support DOF to use the same installation, so no duplicate installtions are required. This is the recommanded installtion pattern.</li>
+</ul>
+<h2><a class="anchor" id="installation_installation_hostappdir"></a>
+Installation within hosting application directory structure</h2>
+<p>To install DOF withing the directory structure of the application using the framework (e.g. B2S.Server), please do the following:</p>
+<ul>
+<li>In the installation directory of the hosting application, create a directoy called <em>plugins</em>.</li>
+<li>Inside the newly created <em>plugins</em> directory, create a subdirectory called <em><a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a></em> (any other name will be ok as well).</li>
+<li>Unzip the contents of the zip-file containg the framework to the newly created <em><a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a></em> directory.</li>
+<li>If using platforms like Vista or Win7, the installed files might be blocked by UAC. To unblock the files please read: <a class="el" href="installation.html#installation_unblockauc">Unblock the DLLs</a></li>
+</ul>
+<p>If this has been done correctly, the hosting application will automatically detect, load and use the framework.</p>
+<p><b>Example:</b> A typical installation of the framework for the B2S.Server (provided that B2S.Server is installed in the VP tables directory) will have to following directory and file structure:</p>
 <div class="image">
 <img src="Installation_DirectoryStructure.png" alt="Installation_DirectoryStructure.png"/>
-</div>
-<p>Alternatively the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework can also be put into any other directory on your system and a windows shortcut pointing to this directory can be added to the {B2S-Server directory}\plugins directory. The B2S.Server will follow this shortcut to your plugin directory.</p>
+<div class="caption">
+Installation in hosting application directory structure</div></div>
+<p> Note: Depending on the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework version, more files might exist in the installation.</p>
+<h2><a class="anchor" id="installation_installation_owndir"></a>
+Installation in own directory (Recommended)</h2>
+<p>To avoid duplicate installations of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework, the applications using the framework as a plugin can follow windows shortcuts to the directory containging DOF.</p>
+<p>To install <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> like this, please do the following:</p>
+<ul>
+<li>Create a directory for you <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> installtion (e.g. C:\<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a>). The name and the path to this directory can be anything you like, but it might be a clever idea to have <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> in the directory name.</li>
+<li>Unzip the contents of the zip-file containg the framework to the newly created directory.</li>
+<li>If using platforms like Vista or Win7, the installed files might be blocked by UAC. To unblock the files please read: <a class="el" href="installation.html#installation_unblockauc">Unblock the DLLs</a></li>
+</ul>
+<p>To allow the hosting application (e.g. B2S.Server) to detect the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework, do the following:</p>
+<ul>
+<li>Go to the directory containing the files of the hosting application (For B2S.Server this is typically the VP tables folder).</li>
+<li>In this directory create a subdirectory named <em>plugins</em>.</li>
+<li>In the newly created <em>plugins</em> directory, create a windows shortcut pointing to the directory containg the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework. This can be done by right clicking in the <em>plugins</em> directory and selecting New -&gt; Shortcut in the context menu.</li>
+</ul>
+<p><b>Example:</b> A typical installation of the framework in its own directory might resemble the following file and directory structure: </p>
+<div class="image">
+<img src="Installation_OwnDirectory1.png" alt="Installation_OwnDirectory1.png"/>
+<div class="caption">
+DirectOutput installtion in own directory</div></div>
+<p> Note: Depending on the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework version, more files might exist in the installation.</p>
+<p>If the framework is used with a B2S.Server installtion (which normaly reside in the VP table folder), you should have the following directory structure and shortcut (pointing to the directory containg the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework): </p>
+<div class="image">
+<img src="Installation_OwnDirectory2.png" alt="Installation_OwnDirectory2.png"/>
+<div class="caption">
+Shortcut pinting to the DirectOutput installation directory</div></div>
+<h1><a class="anchor" id="installation_unblockauc"></a>
+Unblock the DLLs</h1>
+<p>On platforms like Win7 or Vista you might need to unblock the files of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework, before it can be recognized by hosting applications (e.g. B2S.Server).</p>
+<p>Please exceute the following procedure for all dll and exe files of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> installtion:</p>
+<ul>
+<li>Right click the DLL file and select <em>Properties</em> in the context menu.</li>
+<li>Select the <em>General</em> tab in the properties window.</li>
+<li>If you find the text _"This file came from another computer and might be blocked to help protect this computer" or somthing similar on this tab, click the <em>Unblock</em> button. This should fix the issue.</li>
+</ul>
+<p>If the text about the file coming from another computer does not exist, everthing should be fine.</p>
 <h1><a class="anchor" id="installation_b2sserverconfig"></a>
 B2S.Server Configuration</h1>
-<p>To enable the plugin support in the B2S.Server (<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> is a B2S.Server plugin) you need to add the <em>ArePluginsOn</em> option to your B2STableSettings.xml file:</p>
+<p>To enable the plugin support in the B2S.Server (<a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> is a B2S.Server plugin) you need to add the <em>ArePluginsOn</em> option to your B2STableSettings.xml file. The result should resemble to following example:</p>
 <div class="fragment"><div class="line">&lt;B2STableSettings&gt;</div>
 <div class="line">  ....</div>
 <div class="line">  &lt;ArePluginsOn&gt;1&lt;/ArePluginsOn&gt;</div>
 <div class="line">  ...</div>
 <div class="line">&lt;/B2STableSettings&gt;</div>
-</div><!-- fragment --><h1><a class="anchor" id="installation_visualpinballcorevbs"></a>
+</div><!-- fragment --><p>: This block does not go to the end of the B2STableSettings.xml file. You really only have to put the line containing <em>ArePluginsOn</em> into the file.</p>
+<h1><a class="anchor" id="installation_visualpinballcorevbs"></a>
 Visual Pinball core.vbs Adjustment</h1>
-<p>If you have used the <a href="http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive" target="_blank">VBScript solution</a> to control your LedWiz before you will have to <em>REMOVE</em> the following line from your core.vbs:</p>
+<p>If you have used the <a href="http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive" target="_blank">VBScript solution</a> to control your LedWiz before you will have to <em>REMOVE</em> the line loading ledcontrol.vbs from your core.vbs.</p>
+<p>Depending on your version of core.vbs this line might looks like one of the following two: </p>
 <div class="fragment"><div class="line">ExecuteGlobal GetTextFile(<span class="stringliteral">&quot;ledcontrol.vbs&quot;</span>)</div>
+</div><!-- fragment --><div class="fragment"><div class="line">LoadScript(<span class="stringliteral">&quot;ledcontrol.vbs&quot;</span>):Err.Clear    </div>
 </div><!-- fragment --><p>If you dont remove the mentioned statement you'll run into trouble since the framework and the ledcontrol.vbs solutions will run simultaneously!</p>
 <h1><a class="anchor" id="installation_tableconfig"></a>
 Table Configuration</h1>
@@ -141,7 +196,7 @@ Table Configuration</h1>
 </div><!-- fragment --><p>with</p>
 <div class="fragment"><div class="line">Set Controller = CreateObject(<span class="stringliteral">&quot;B2S.Server&quot;</span>) </div>
 </div><!-- fragment --><p>For EM tables it is also necessary to a some statements to send data about the table element statuses to <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> and B2S.Server.</p>
-<p>Please read the page on <a class="el" href="tableconfig.html">Table configuration</a> for more detailed information on this topic.</p>
+<p>Please read the page on <a class="el" href="tableconfig.html">VP Table configuration</a> for more detailed information on this topic.</p>
 <h1><a class="anchor" id="installation_configuration"></a>
 Configuration</h1>
 <p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework supports several configuration options:</p>
@@ -194,14 +249,14 @@ Cabinet Configuration</h3>
 <h3><a class="anchor" id="installation_tableconfig"></a>
 Table Configuration</h3>
 <p>The table configuration specifies the elements on a pinball table (e.g. solenoids or lamps) and the effects assigned to the table elements.</p>
-<p>Please read the page on <a class="el" href="tableconfig.html">Table configuration</a> for details. </p>
+<p>Please read the page on <a class="el" href="tableconfig.html">VP Table configuration</a> for details. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 25 2013 15:50:56 for DirectOutput by
+    <li class="footer">Generated on Wed Aug 28 2013 15:47:35 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['vp_20table_20configuration',['VP Table configuration',['../tableconfig.html',1,'']]],
   ['validateconfigdata',['ValidateConfigData',['../class_direct_output_1_1_frontend_1_1_global_config_edit.html#a4e149c71306863ce521b0f5fdcdf374d',1,'DirectOutput::Frontend::GlobalConfigEdit']]],
   ['validateitemeventargs',['ValidateItemEventArgs',['../class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#af0def7311b573f25c22735f1e8620b2e',1,'DirectOutput.General.Generic.ValidateItemEventArgs&lt; Ty &gt;.ValidateItemEventArgs()'],['../class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#a1ad1eab8e3866fed33c9144c1dcf6512',1,'DirectOutput.General.Generic.ValidateItemEventArgs&lt; Ty &gt;.ValidateItemEventArgs(Ty Item)']]],
   ['validateitemeventargs_2ecs',['ValidateItemEventArgs.cs',['../_validate_item_event_args_8cs.html',1,'']]],
@@ -9,5 +10,5 @@ var searchData=
   ['valuechangedeventhandler',['ValueChangedEventHandler',['../class_direct_output_1_1_cab_1_1_out_1_1_output.html#ab37659c7c637bf0329c2e5b263a2b4a7',1,'DirectOutput::Cab::Out::Output']]],
   ['valueoff',['ValueOff',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_analog_effect.html#a3e37e68bf18fd0ad0a9310eb6dbed9bd',1,'DirectOutput::FX::BasicFX::BasicAnalogEffect']]],
   ['valueon',['ValueOn',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_analog_effect.html#adbde2ce701c2a8f79b38fa8bc1332d16',1,'DirectOutput::FX::BasicFX::BasicAnalogEffect']]],
-  ['valuescount',['ValuesCount',['../class_direct_output_1_1_general_1_1_simple_statistics_3_01_t_01_4.html#a487e95110af1d07064f065b8f65d235d',1,'DirectOutput::General::SimpleStatistics&lt; T &gt;']]]
+  ['valuescount',['ValuesCount',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a4d0863865b9faa701856f871298d188f',1,'DirectOutput.General.Statistics.SimpleStatistics&lt; ValueType &gt;.ValuesCount()'],['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a24d0cc58c0fc0de4492d4ed2437b7d63',1,'DirectOutput.General.Statistics.TimeSpanStatisticsItem.ValuesCount()']]]
 ];

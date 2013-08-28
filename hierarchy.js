@@ -16,6 +16,7 @@ var hierarchy =
     ] ],
     [ "DirectOutput.Cab.Cabinet", "class_direct_output_1_1_cab_1_1_cabinet.html", null ],
     [ "DirectOutput.LedControl.ColorConfig", "class_direct_output_1_1_led_control_1_1_color_config.html", null ],
+    [ "DirectOutput.Cab.Out.DMX.ArtnetEngine.Engine", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine_1_1_engine.html", null ],
     [ "EventArgs", null, [
       [ "DirectOutput.Cab.Out.OutputControllerEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html", null ],
       [ "DirectOutput.Cab.Out.OutputEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html", null ],
@@ -43,19 +44,30 @@ var hierarchy =
       [ "DirectOutput.Frontend.GlobalConfigEdit", "class_direct_output_1_1_frontend_1_1_global_config_edit.html", null ],
       [ "DirectOutput.Frontend.MainMenu", "class_direct_output_1_1_frontend_1_1_main_menu.html", null ],
       [ "DirectOutput.Frontend.ScriptInfo", "class_direct_output_1_1_frontend_1_1_script_info.html", null ],
+      [ "DirectOutput.Frontend.SystemMonitor", "class_direct_output_1_1_frontend_1_1_system_monitor.html", null ],
       [ "DirectOutput.Frontend.TableInfo", "class_direct_output_1_1_frontend_1_1_table_info.html", null ],
+      [ "DirectOutput.Frontend.TimeSpanStatisticsDetails", "class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html", null ],
       [ "DirectOutput_Test.Form1", "class_direct_output___test_1_1_form1.html", null ],
+      [ "DirectOutputConfigTester.ConfigTester", "class_direct_output_config_tester_1_1_config_tester.html", null ],
+      [ "DirectOutputConfigTester.OpenConfigDialog", "class_direct_output_config_tester_1_1_open_config_dialog.html", null ],
       [ "LedControlFileTester.LedControlFileTestWizard", "class_led_control_file_tester_1_1_led_control_file_test_wizard.html", null ]
     ] ],
     [ "DirectOutput.GlobalConfiguration.GlobalConfig", "class_direct_output_1_1_global_configuration_1_1_global_config.html", null ],
+    [ "DirectOutput.Cab.Out.IAutoConfigOutputController", "interface_direct_output_1_1_cab_1_1_out_1_1_i_auto_config_output_controller.html", [
+      [ "DirectOutput.Cab.Out.LW.LedWizAutoConfigurator", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_auto_configurator.html", null ],
+      [ "DirectOutput.Cab.Out.Pac.PacLed64AutoConfigurator", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64_auto_configurator.html", null ]
+    ] ],
     [ "IDirectPlugin", null, [
-      [ "B2SServerPlugin.Plugin", "class_b2_s_server_plugin_1_1_plugin.html", null ]
+      [ "B2SServerPlugin.Plugin", "class_b2_s_server_plugin_1_1_plugin.html", null ],
+      [ "DirectPlugin.DirectOutputPlugin", "class_direct_plugin_1_1_direct_output_plugin.html", null ]
     ] ],
     [ "IDirectPluginFrontend", null, [
-      [ "B2SServerPlugin.Plugin", "class_b2_s_server_plugin_1_1_plugin.html", null ]
+      [ "B2SServerPlugin.Plugin", "class_b2_s_server_plugin_1_1_plugin.html", null ],
+      [ "DirectPlugin.DirectOutputPlugin", "class_direct_plugin_1_1_direct_output_plugin.html", null ]
     ] ],
     [ "IDisposable", null, [
-      [ "DirectOutput.Cab.Out.LW.LedWiz", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html", null ]
+      [ "DirectOutput.Cab.Out.LW.LedWiz", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html", null ],
+      [ "DirectOutput.General.ThreadInfo", "class_direct_output_1_1_general_1_1_thread_info.html", null ]
     ] ],
     [ "IEnumerable< IEffect >", null, [
       [ "DirectOutput.FX.CombinedEffectList", "class_direct_output_1_1_f_x_1_1_combined_effect_list.html", null ]
@@ -72,6 +84,9 @@ var hierarchy =
     [ "IEnumerator< IOutput >", null, [
       [ "DirectOutput.Cab.CabinetOutputList.Enumerator", "class_direct_output_1_1_cab_1_1_cabinet_output_list_1_1_enumerator.html", null ]
     ] ],
+    [ "IHyperpinPlugin", null, [
+      [ "DirectOutputHyperpinPlugin.DirectOutputPlugin", "class_direct_output_hyperpin_plugin_1_1_direct_output_plugin.html", null ]
+    ] ],
     [ "IList< T >", null, [
       [ "DirectOutput.General.Generic.ExtList< T >", "class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html", [
         [ "DirectOutput.General.Generic.NamedItemList< T >", "class_direct_output_1_1_general_1_1_generic_1_1_named_item_list_3_01_t_01_4.html", null ]
@@ -79,18 +94,28 @@ var hierarchy =
     ] ],
     [ "DirectOutput.General.Generic.INamedItem", "interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html", [
       [ "DirectOutput.Cab.Out.IOutput", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html", [
+        [ "DirectOutput.Cab.Out.DMX.DMXOutput", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html", null ],
+        [ "DirectOutput.Cab.Out.IOutputNumbered", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output_numbered.html", [
+          [ "DirectOutput.Cab.Out.OutputNumbered", "class_direct_output_1_1_cab_1_1_out_1_1_output_numbered.html", null ]
+        ] ],
         [ "DirectOutput.Cab.Out.LW.LedWizOutput", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html", null ],
         [ "DirectOutput.Cab.Out.Output", "class_direct_output_1_1_cab_1_1_out_1_1_output.html", [
-          [ "DirectOutput.Cab.Out.LW.LedWizOutput", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html", null ]
+          [ "DirectOutput.Cab.Out.DMX.DMXOutput", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html", null ],
+          [ "DirectOutput.Cab.Out.LW.LedWizOutput", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html", null ],
+          [ "DirectOutput.Cab.Out.OutputNumbered", "class_direct_output_1_1_cab_1_1_out_1_1_output_numbered.html", null ]
         ] ]
       ] ],
       [ "DirectOutput.Cab.Out.IOutputController", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html", [
+        [ "DirectOutput.Cab.Out.DMX.ArtNet", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_art_net.html", null ],
         [ "DirectOutput.Cab.Out.LW.LedWiz", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html", null ],
         [ "DirectOutput.Cab.Out.NullOutputController.NullOutputController", "class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html", null ],
         [ "DirectOutput.Cab.Out.OutputControllerBase", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html", [
+          [ "DirectOutput.Cab.Out.DMX.ArtNet", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_art_net.html", null ],
           [ "DirectOutput.Cab.Out.LW.LedWiz", "class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html", null ],
-          [ "DirectOutput.Cab.Out.NullOutputController.NullOutputController", "class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html", null ]
-        ] ]
+          [ "DirectOutput.Cab.Out.NullOutputController.NullOutputController", "class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html", null ],
+          [ "DirectOutput.Cab.Out.Pac.PacLed64", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html", null ]
+        ] ],
+        [ "DirectOutput.Cab.Out.Pac.PacLed64", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html", null ]
       ] ],
       [ "DirectOutput.Cab.Toys.Color", "class_direct_output_1_1_cab_1_1_toys_1_1_color.html", null ],
       [ "DirectOutput.Cab.Toys.IToy", "interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html", [
@@ -144,21 +169,9 @@ var hierarchy =
           [ "DirectOutput.FX.LedControlFX.LedControlEffect", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html", null ],
           [ "DirectOutput.FX.ListFX.ListEffect", "class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html", null ],
           [ "DirectOutput.FX.NullFX.NullEffect", "class_direct_output_1_1_f_x_1_1_null_f_x_1_1_null_effect.html", null ],
-          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-          [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
           [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ]
         ] ],
         [ "DirectOutput.FX.LedControlFX.LedControlEffect", "class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html", null ],
-        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
-        [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ],
         [ "DirectOutput.FX.TimedDimmerLampEffect", "class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html", null ]
       ] ],
       [ "DirectOutput.General.Generic.NamedItemBase", "class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html", [
@@ -166,7 +179,8 @@ var hierarchy =
         [ "DirectOutput.Cab.Out.OutputControllerBase", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html", null ],
         [ "DirectOutput.Cab.Toys.Color", "class_direct_output_1_1_cab_1_1_toys_1_1_color.html", null ],
         [ "DirectOutput.Cab.Toys.ToyBase", "class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html", null ],
-        [ "DirectOutput.FX.EffectBase", "class_direct_output_1_1_f_x_1_1_effect_base.html", null ]
+        [ "DirectOutput.FX.EffectBase", "class_direct_output_1_1_f_x_1_1_effect_base.html", null ],
+        [ "DirectOutput.General.Statistics.TimeSpanStatisticsItem", "class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html", null ]
       ] ]
     ] ],
     [ "INotifyPropertyChanged", null, [
@@ -182,6 +196,7 @@ var hierarchy =
       [ "DirectOutput.FX.EffectList", "class_direct_output_1_1_f_x_1_1_effect_list.html", null ],
       [ "DirectOutput.GlobalConfiguration.FilePattern", "class_direct_output_1_1_global_configuration_1_1_file_pattern.html", null ]
     ] ],
+    [ "DirectOutput.General.Kernel32Imports", "class_direct_output_1_1_general_1_1_kernel32_imports.html", null ],
     [ "DirectOutput.LedControl.LedControlConfig", "class_direct_output_1_1_led_control_1_1_led_control_config.html", null ],
     [ "DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalentOutput", "class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html", null ],
     [ "List< ColorConfig >", null, [
@@ -205,6 +220,9 @@ var hierarchy =
     [ "List< TableConfigSetting >", null, [
       [ "DirectOutput.LedControl.TableConfigColumn", "class_direct_output_1_1_led_control_1_1_table_config_column.html", null ]
     ] ],
+    [ "List< ThreadInfo >", null, [
+      [ "DirectOutput.General.ThreadInfoList", "class_direct_output_1_1_general_1_1_thread_info_list.html", null ]
+    ] ],
     [ "List< Type >", null, [
       [ "DirectOutput.General.TypeList", "class_direct_output_1_1_general_1_1_type_list.html", null ]
     ] ],
@@ -224,20 +242,22 @@ var hierarchy =
     [ "NamedItemList< IToy >", null, [
       [ "DirectOutput.Cab.Toys.ToyList", "class_direct_output_1_1_cab_1_1_toys_1_1_toy_list.html", null ]
     ] ],
+    [ "NamedItemList< TimeSpanStatisticsItem >", null, [
+      [ "DirectOutput.General.Statistics.TimeSpanStatisticsList", "class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_list.html", null ]
+    ] ],
+    [ "DirectOutput.Cab.Out.Pac.PacDriveSingleton", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html", null ],
     [ "DirectOutput.Pinball", "class_direct_output_1_1_pinball.html", null ],
     [ "Queue< TableElementData >", null, [
       [ "DirectOutput.PinballSupport.InputQueue", "class_direct_output_1_1_pinball_support_1_1_input_queue.html", null ]
     ] ],
     [ "DirectOutput.Scripting.Script", "class_direct_output_1_1_scripting_1_1_script.html", null ],
-    [ "DirectOutput.General.SimpleStatistics< T >", "class_direct_output_1_1_general_1_1_simple_statistics_3_01_t_01_4.html", [
-      [ "DirectOutput.General.TimeSpanStatistics", "class_direct_output_1_1_general_1_1_time_span_statistics.html", null ]
-    ] ],
+    [ "DirectOutputConfigTester.Settings", "class_direct_output_config_tester_1_1_settings.html", null ],
+    [ "DirectOutput.General.Statistics.SimpleStatistics< ValueType >", "class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html", null ],
     [ "StringConverter", null, [
       [ "DirectOutput.Cab.Out.OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", null ]
     ] ],
     [ "DirectOutput.Table.Table", "class_direct_output_1_1_table_1_1_table.html", null ],
     [ "DirectOutput.LedControl.TableConfig", "class_direct_output_1_1_led_control_1_1_table_config.html", null ],
     [ "DirectOutput.LedControl.TableConfigSetting", "class_direct_output_1_1_led_control_1_1_table_config_setting.html", null ],
-    [ "DirectOutput.Table.TableElementData", "class_direct_output_1_1_table_1_1_table_element_data.html", null ],
-    [ "DirectOutput.General.ThreadTools", "class_direct_output_1_1_general_1_1_thread_tools.html", null ]
+    [ "DirectOutput.Table.TableElementData", "class_direct_output_1_1_table_1_1_table_element_data.html", null ]
 ];

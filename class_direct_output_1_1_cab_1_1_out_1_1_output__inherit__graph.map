@@ -1,6 +1,8 @@
 <map id="DirectOutput.Cab.Out.Output" name="DirectOutput.Cab.Out.Output">
-<area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html" title="Output class for LedWiz output controllers. " alt="" coords="34,230,208,271"/>
-<area shape="rect" id="node2" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/>
-<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="76,5,167,32"/>
-<area shape="rect" id="node4" href="$interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and..." alt="" coords="148,80,212,107"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html" title="DirectOutput.Cab.Out.DMX.\lDMXOutput" alt="" coords="557,5,739,46"/>
+<area shape="rect" id="node6" href="$class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html" title="Output class for LedWiz output controllers. " alt="" coords="561,70,735,111"/>
+<area shape="rect" id="node7" href="$class_direct_output_1_1_cab_1_1_out_1_1_output_numbered.html" title="Basic IOutputNumbered implementation " alt="" coords="553,135,743,177"/>
+<area shape="rect" id="node2" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="145,52,263,79"/>
+<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="5,77,96,104"/>
+<area shape="rect" id="node4" href="$interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and..." alt="" coords="172,103,236,129"/>
 </map>
