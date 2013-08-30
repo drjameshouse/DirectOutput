@@ -163,24 +163,41 @@ $(document).ready(function(){initNavTree('17___supported_01_hardware_8md.html','
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;Each Art-Net node/DMX universe supports 512 DMX channels and several Art-Net nodes controlling different DMX universes can be used in parallel.</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;\section hardware_development Hardware support in development</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;Here is a small demo video showing DMX/Artnet support in action:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;Support for the following devices is currently in development.</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;\subsection hardware_ultimarc_pacdrive PacDrive (Ultimarc)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;\htmlonly</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http:<span class="comment">//www.youtube.com/embed/F4FI1NQ5nrc&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;\endhtmlonly</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;The PacDrive is smaller output controller with 16 outputs. It is capable of driving Leds and other smaller gadgets directly, but will require a booster to driver power hungry loads (e.g. motors). Only 1 PacDrive unit can be connected to the system.</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;\section hardware_development Hardware support in development</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;\image html pacdrivelogo.jpg</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;Support for the following devices is currently in development.</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;This unit is made and sold by &lt;a target=&quot;_blank&quot; href=&quot;http:<span class="comment">//www.ultimarc.com&quot;&gt;Ultimarc&lt;/a&gt;.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;\subsection hardware_ultimarc_pacdrive PacDrive (Ultimarc)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;\section hardware_other Other Hardware</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;The PacDrive is smaller output controller with 16 outputs. It is capable of driving Leds and other smaller gadgets directly, but will require a booster to driver power hungry loads (e.g. motors). Only 1 PacDrive unit can be connected to the system.</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;Other output controllers might be supported in the future.</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;\image html pacdrivelogo.jpg</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;If you want to implement support for some outputput controller (e.g. some home grown Raspberry Pi solution), please read the page on \ref outputcontrollers for more information. Implementing drivers for new hardware should be rather simple.</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;This unit is made and sold by &lt;a target=&quot;_blank&quot; href=&quot;http:<span class="comment">//www.ultimarc.com&quot;&gt;Ultimarc&lt;/a&gt;.</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;\section hardware_WS2811 WS2811 based led stripes</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;I have already installed some of those stripes in my cabinet and I want to be able to control them through DirectOutput. So this is a must!&lt;br/&gt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;Some working controller hardware has already been designed and tested.&lt;br/&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;Check the following video to get a idea what those stripes can do:&lt;/br&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;\htmlonly</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http:<span class="comment">//www.youtube.com/embed/Y_qV8rwzaxs&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;\endhtmlonly</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;\section hardware_other Other Hardware</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;Other output controllers might be supported in the future.</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;If you want to implement support for some outputput controller (e.g. some home grown Raspberry Pi solution), please read the page on \ref outputcontrollers for more information. Implementing drivers for new hardware should be rather simple.</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -188,7 +205,7 @@ $(document).ready(function(){initNavTree('17___supported_01_hardware_8md.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="17___supported_01_hardware_8md.html">17_Supported Hardware.md</a></li>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:34 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:47 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

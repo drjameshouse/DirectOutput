@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_cab_1_1_out_1_
 </div><!--header-->
 <div class="contents">
 
-<p>Abstract OutputController base class.<br/>
+<p>Abstract OutputController base class to be used for <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> implementations.<br/>
  Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>.  
  <a href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#details">More...</a></p>
 <div class="dynheader">
@@ -137,10 +137,10 @@ Collaboration diagram for DirectOutput.Cab.Out.OutputControllerBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afd14f9074f479f780119b6d94a26ddbe"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#afd14f9074f479f780119b6d94a26ddbe">Init</a> (<a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a> <a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a>)</td></tr>
-<tr class="memdesc:afd14f9074f479f780119b6d94a26ddbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init must be overwritten and must initialize the ouput controller.<br/>
- This method is called after the objects haven been instanciated.  <a href="#afd14f9074f479f780119b6d94a26ddbe">More...</a><br/></td></tr>
-<tr class="separator:afd14f9074f479f780119b6d94a26ddbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6b387b02571743d261150f27555b90"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#a5a6b387b02571743d261150f27555b90">Init</a> (<a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a> <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a>)</td></tr>
+<tr class="memdesc:a5a6b387b02571743d261150f27555b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init must be overwritten and must initialize the ouput controller.<br/>
+ This method is called after the objects haven been instanciated.  <a href="#a5a6b387b02571743d261150f27555b90">More...</a><br/></td></tr>
+<tr class="separator:a5a6b387b02571743d261150f27555b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c124dc0997e5db1dc2d5e2c9816ef84"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#a8c124dc0997e5db1dc2d5e2c9816ef84">Finish</a> ()</td></tr>
 <tr class="memdesc:a8c124dc0997e5db1dc2d5e2c9816ef84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finish must be overwritten and must finish the ouput controller.<br/>
  All necessary cleanup tasks have to be implemented here und all physical outputs have to be turned off.  <a href="#a8c124dc0997e5db1dc2d5e2c9816ef84">More...</a><br/></td></tr>
@@ -165,7 +165,7 @@ Properties</h2></td></tr>
 <tr class="separator:afdd2dfec93dfb0090d7fcb99f967d354 inherit properties_interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html">DirectOutput.Cab.Out.IOutputController</a></td></tr>
 <tr class="memitem:aa707e66632aec42122eececa4063b104 inherit properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td class="memItemLeft" align="right" valign="top">new string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#aa707e66632aec42122eececa4063b104">Name</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aa707e66632aec42122eececa4063b104 inherit properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>. This property is fully implemented in the abstract <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html" title="Abstract OutputController base class.  Implements IOutputController. ">OutputControllerBase</a> class.  <a href="#aa707e66632aec42122eececa4063b104">More...</a><br/></td></tr>
+<tr class="memdesc:aa707e66632aec42122eececa4063b104 inherit properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>. This property is fully implemented in the abstract <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html" title="Abstract OutputController base class to be used for IOutputController implementations.  Implements IOutputController. ">OutputControllerBase</a> class.  <a href="#aa707e66632aec42122eececa4063b104">More...</a><br/></td></tr>
 <tr class="separator:aa707e66632aec42122eececa4063b104 inherit properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa4e594ea6c526ad86a5ba2f41027bc inherit properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_list.html">OutputList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a6fa4e594ea6c526ad86a5ba2f41027bc">Outputs</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a6fa4e594ea6c526ad86a5ba2f41027bc inherit properties_interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_list.html" title="List of IOutput objects ">OutputList</a> containing the <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> objects for a <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>.  <a href="#a6fa4e594ea6c526ad86a5ba2f41027bc">More...</a><br/></td></tr>
@@ -187,9 +187,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ac045be3c17c3bc94a0062856aced616a inherit events_interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract OutputController base class.<br/>
+<div class="textblock"><p>Abstract OutputController base class to be used for <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> implementations.<br/>
  Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a>. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>Remember that <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> doeas inherit INamedItem, so the members of that interface have to be implemented as well. The easiest way to achiev this is to inherit the NamedItemBase class. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Remember that <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> does inherit INamedItem, so the members of that interface have to be implemented as well. The easiest way to achiev this is to inherit the NamedItemBase class. </dd></dl>
 
 <p>Definition at line <a class="el" href="_output_controller_base_8cs_source.html#l00017">17</a> of file <a class="el" href="_output_controller_base_8cs_source.html">OutputControllerBase.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -223,7 +223,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afd14f9074f479f780119b6d94a26ddbe"></a>
+<a class="anchor" id="a5a6b387b02571743d261150f27555b90"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -233,8 +233,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">abstract void DirectOutput.Cab.Out.OutputControllerBase.Init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a>&#160;</td>
-          <td class="paramname"><em>Pinball</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a>&#160;</td>
+          <td class="paramname"><em>Cabinet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -249,14 +249,14 @@ Additional Inherited Members</h2></td></tr>
  This method is called after the objects haven been instanciated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a></td><td>The pinball object which is using the <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> instance.</td></tr>
+    <tr><td class="paramname"><a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a></td><td>The <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a> object which is using the <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html" title="Common interface for all outputcontrollers. Only classes implementing this interface can be used as o...">IOutputController</a> instance.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a16abe29a8a1c98854f3e59d2ae8082ae">DirectOutput.Cab.Out.IOutputController</a>.</p>
+<p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a1b77139c8f71ebd2b6683d86b4c2e566">DirectOutput.Cab.Out.IOutputController</a>.</p>
 
-<p>Implemented in <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_art_net.html#a87b52ba9f69eca163b18d414273061c0">DirectOutput.Cab.Out.DMX.ArtNet</a>, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html#a8cf978091723fb91e59e27fa04fe8c36">DirectOutput.Cab.Out.LW.LedWiz</a>, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html#ad1d82d14bf51fe664a41ec35fcb1518f">DirectOutput.Cab.Out.Pac.PacLed64</a>, and <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html#a44dbe85919da551195bb7a256cecfd86">DirectOutput.Cab.Out.NullOutputController.NullOutputController</a>.</p>
+<p>Implemented in <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_art_net.html#ad12feb6d4f17f3e0f707d128ff07430c">DirectOutput.Cab.Out.DMX.ArtNet</a>, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html#ae60c3919409e7ff947c164c278d71cf2">DirectOutput.Cab.Out.LW.LedWiz</a>, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html#a9c67b7a35cf54b7270c1d975c00cc266">DirectOutput.Cab.Out.Pac.PacLed64</a>, and <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html#a6b0aaf21dca359732d29064c95372e81">DirectOutput.Cab.Out.NullOutputController.NullOutputController</a>.</p>
 
 </div>
 </div>
@@ -282,6 +282,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Update must update the physical outputs to the values defined in the Outputs list. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Since communication with external components can be slow, it is a good practice to send the actual updates from a separate thread and to use this method only to notify the updater thread that data has to be sent. </dd></dl>
 
 <p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a0d178ddcb22fd2a091f6c05d3701ad32">DirectOutput.Cab.Out.IOutputController</a>.</p>
 
@@ -324,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab.html">Cab</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab_1_1_out.html">Out</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html">OutputControllerBase</a></li>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:36 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:49 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

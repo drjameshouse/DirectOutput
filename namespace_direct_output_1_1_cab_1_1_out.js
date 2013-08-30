@@ -10,11 +10,8 @@ var namespace_direct_output_1_1_cab_1_1_out =
     [ "IOutputNumbered", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output_numbered.html", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output_numbered" ],
     [ "Output", "class_direct_output_1_1_cab_1_1_out_1_1_output.html", "class_direct_output_1_1_cab_1_1_out_1_1_output" ],
     [ "OutputControllerBase", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base" ],
-    [ "OutputControllerEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args" ],
     [ "OutputControllerList", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list" ],
     [ "OutputEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args" ],
     [ "OutputList", "class_direct_output_1_1_cab_1_1_out_1_1_output_list.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_list" ],
-    [ "OutputNameAttribute", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute" ],
-    [ "OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter" ],
     [ "OutputNumbered", "class_direct_output_1_1_cab_1_1_out_1_1_output_numbered.html", "class_direct_output_1_1_cab_1_1_out_1_1_output_numbered" ]
 ];

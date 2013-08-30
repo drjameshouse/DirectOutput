@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cabinet',['Cabinet',['../class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html#a61300804cf4bc51d5aa2bd3710f0b806',1,'DirectOutput.Cab.Out.OutputNameConverter.Cabinet()'],['../class_direct_output_1_1_frontend_1_1_cabinet_info.html#ad4d7c9ce762534c4c6c04a99b2493263',1,'DirectOutput.Frontend.CabinetInfo.Cabinet()'],['../class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb',1,'DirectOutput.Pinball.Cabinet()']]],
+  ['cabinet',['Cabinet',['../class_direct_output_1_1_frontend_1_1_cabinet_info.html#ad4d7c9ce762534c4c6c04a99b2493263',1,'DirectOutput.Frontend.CabinetInfo.Cabinet()'],['../class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb',1,'DirectOutput.Pinball.Cabinet()']]],
   ['cabinetconfigfilepatterns',['CabinetConfigFilePatterns',['../class_direct_output_1_1_global_configuration_1_1_global_config.html#a2ac7c2a66b193f3d286f692c33c0a724',1,'DirectOutput::GlobalConfiguration::GlobalConfig']]],
   ['cabinetconfigurationfilename',['CabinetConfigurationFilename',['../class_direct_output_1_1_cab_1_1_cabinet.html#ace619086291087d131550a4cad2bbd3e',1,'DirectOutput::Cab::Cabinet']]],
   ['cabinetscriptfilepatterns',['CabinetScriptFilePatterns',['../class_direct_output_1_1_global_configuration_1_1_global_config.html#a6860dd1b98508e46b6db56c4edb4c0be',1,'DirectOutput::GlobalConfiguration::GlobalConfig']]],

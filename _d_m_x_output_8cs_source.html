@@ -117,34 +117,34 @@ $(document).ready(function(){initNavTree('_d_m_x_output_8cs_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>DirectOutput.Cab.Out.DMX</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html">DMXOutput</a>: <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output.html" title="Basic IOutput implementation. ">Output</a>, <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _DmxChannel;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> DmxChannel</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html#a762743bff2bc0908412f771dfa5725a6">   13</a></span>&#160;        {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keyword">get</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                <span class="keywordflow">return</span> _DmxChannel;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keyword">set</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordflow">if</span> (_DmxChannel != value)</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                    <span class="keywordflow">if</span> (!value.IsBetween(1, 512))</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Dmx channels numbers must be in the range of 1-512. The supplied number {0} is out of range.&quot;</span>.Build(value));</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    <span class="keywordflow">if</span> (Name.IsNullOrWhiteSpace() || Name == <span class="stringliteral">&quot;DmxChannel {0:000}&quot;</span>.Build(_DmxChannel))</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        Name = <span class="stringliteral">&quot;DmxChannel {0:00}&quot;</span>.Build(value);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    _DmxChannel = value;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html" title="IOutput implementation for DMX.  Inherits from Output and adds the DmxChannel property. ">DMXOutput</a>: <a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_output.html" title="Basic IOutput implementation. ">Output</a>, <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _DmxChannel;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> DmxChannel</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html#a762743bff2bc0908412f771dfa5725a6">   24</a></span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">get</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordflow">return</span> _DmxChannel;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keyword">set</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">if</span> (_DmxChannel != value)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    <span class="keywordflow">if</span> (!value.IsBetween(1, 512))</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Dmx channels numbers must be in the range of 1-512. The supplied number {0} is out of range.&quot;</span>.Build(value));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                    <span class="keywordflow">if</span> (Name.IsNullOrWhiteSpace() || Name == <span class="stringliteral">&quot;DmxChannel {0:000}&quot;</span>.Build(_DmxChannel))</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        Name = <span class="stringliteral">&quot;DmxChannel {0:00}&quot;</span>.Build(value);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    _DmxChannel = value;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('_d_m_x_output_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_47e6c69249102d832240994dfe76ec93.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_4329b8384f432c256086b73da3a12754.html">Cab</a></li><li class="navelem"><a class="el" href="dir_0ab4991b7fc868b4686aa09d5137b59f.html">Out</a></li><li class="navelem"><a class="el" href="dir_49a10d67e64c6c4195e20c4c22224bc1.html">DMX</a></li><li class="navelem"><a class="el" href="_d_m_x_output_8cs.html">DMXOutput.cs</a></li>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:32 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:45 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

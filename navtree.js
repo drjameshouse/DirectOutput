@@ -45,6 +45,7 @@ var NAVTREE =
       [ "Hardware support in development", "hardware.html#hardware_development", [
         [ "PacDrive (Ultimarc)", "hardware.html#hardware_ultimarc_pacdrive", null ]
       ] ],
+      [ "WS2811 based led stripes", "hardware.html#hardware_WS2811", null ],
       [ "Other Hardware", "hardware.html#hardware_other", null ]
     ] ],
     [ "Global Configuration", "globalconfig.html", [
@@ -224,11 +225,11 @@ var NAVTREEINDEX =
 [
 "_alarm_handler_8cs.html",
 "_out_8cs.html",
-"class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html",
-"class_direct_output_1_1_f_x_1_1_combined_effect_list.html#a3d4e9625f188c9660a44d258032dcffb",
-"class_direct_output_1_1_global_configuration_1_1_global_config.html#a67c0c0b134f9ae5483653d1d821e9e5c",
-"class_direct_output_hyperpin_plugin_1_1_direct_output_plugin.html#adb7599264d033a8bfb151527ad3b59e6",
-"md_50__architecture.html#architecture_table"
+"class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html#a21f65d878c4bcfe48b4fc296ceb579db",
+"class_direct_output_1_1_f_x_1_1_effect_base.html#a06cdee7610ce58faaf7beb19fc6cbda7",
+"class_direct_output_1_1_global_configuration_1_1_global_config.html#af7ae1ee9330b9ae82b5061b39f387b1b",
+"contribute.html#contribute_docu",
+"namespace_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

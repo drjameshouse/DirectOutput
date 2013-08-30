@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('_table_config_setting_8cs_source.html'
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Parts[1].IsInteger())</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                    <span class="comment">//Its a duration</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    DurationMs = Parts[1].ToInteger();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    DurationMs = Parts[1].ToInteger().Limit(1,<span class="keywordtype">int</span>.MaxValue);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                }</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Parts[1].ToUpper().Substring(0, 1) == <span class="stringliteral">&quot;I&quot;</span> &amp;&amp; Parts[1].Substring(1).IsInteger())</div>
@@ -252,11 +252,11 @@ $(document).ready(function(){initNavTree('_table_config_setting_8cs_source.html'
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <span class="comment">//Indicates number of blinks or duration</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    <span class="keywordflow">if</span> (OutputType == <a class="code" href="namespace_direct_output_1_1_led_control.html#ab2d86fcac2a0d355ebf397b872edc5f9">OutputTypeEnum</a>.RGBOutput)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        DurationMs = Parts[2].ToInteger();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        DurationMs = Parts[2].ToInteger().Limit(1,<span class="keywordtype">int</span>.MaxValue);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        Blink = Parts[2].ToInteger();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        Blink = Parts[2].ToInteger().Limit(1,<span class="keywordtype">int</span>.MaxValue);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                        <span class="keywordflow">if</span> (DurationMs &gt; 0)</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                        {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                            BlinkIntervalMs = (DurationMs / Blink / 2).Limit(1, <span class="keywordtype">int</span>.MaxValue);</div>
@@ -279,35 +279,65 @@ $(document).ready(function(){initNavTree('_table_config_setting_8cs_source.html'
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                }</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a72439fc7c3659901aa96235be4775804">  287</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html" title="A single setting from a LedControl.ini file. ">TableConfigSetting</a>(<span class="keywordtype">string</span> SettingData)</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            : this()</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            ParseSettingData(SettingData);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keywordflow">if</span> (Parts.Length &gt; 3)</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="keywordflow">if</span> (Parts[3].IsInteger() &amp;&amp; OutputType == <a class="code" href="namespace_direct_output_1_1_led_control.html#ab2d86fcac2a0d355ebf397b872edc5f9">OutputTypeEnum</a>.RGBOutput)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                    <span class="keywordflow">if</span> (Blink == -1)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                    {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        BlinkIntervalMs = Parts[3].ToInteger().Limit(1,<span class="keywordtype">int</span>.MaxValue);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                    {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;              </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        Blink = Parts[3].ToInteger().Limit(1,<span class="keywordtype">int</span>.MaxValue);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                        <span class="keywordflow">if</span> (DurationMs &gt; 0)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                        {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                            BlinkIntervalMs = (DurationMs / Blink / 2).Limit(1, <span class="keywordtype">int</span>.MaxValue);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                            DurationMs = 0;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                    }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a37ba451f35fb83ef0f91e0b9a2a0b21d" title="Writes a warning message to the log. ">Warning</a>(<span class="stringliteral">&quot;Cant parse the part {0} of the ledcontrol table config setting {1}.&quot;</span>.Build(Parts[3], SettingData));</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                    <span class="keywordflow">throw</span> <span class="keyword">new</span> Exception(<span class="stringliteral">&quot;Cant parse the part {0} of the ledcontrol table config setting {3}.&quot;</span>.Build(Parts[2], SettingData));</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a8a2f7ca12729df412eff5384b0367e80">  295</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html" title="A single setting from a LedControl.ini file. ">TableConfigSetting</a>()</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            this.Intensity = 48;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            this.Blink = 0;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            this.DurationMs = -1;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        }</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
+<div class="line"><a name="l00317"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a72439fc7c3659901aa96235be4775804">  317</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html" title="A single setting from a LedControl.ini file. ">TableConfigSetting</a>(<span class="keywordtype">string</span> SettingData)</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            : this()</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            ParseSettingData(SettingData);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#a8a2f7ca12729df412eff5384b0367e80">  325</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html" title="A single setting from a LedControl.ini file. ">TableConfigSetting</a>()</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            this.Intensity = 48;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            this.Blink = 0;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            this.DurationMs = -1;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -315,7 +345,7 @@ $(document).ready(function(){initNavTree('_table_config_setting_8cs_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_47e6c69249102d832240994dfe76ec93.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_974e93db1e4d0e0f102f3843ad0ed01c.html">LedControl</a></li><li class="navelem"><a class="el" href="_table_config_setting_8cs.html">TableConfigSetting.cs</a></li>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:33 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:46 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

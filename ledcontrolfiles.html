@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('ledcontrolfiles.html','');});
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="ledcontrol_introduction"></a>
 Introduction</h1>
-<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework supports the use of the classical LedControl.ini files used in the <a href="http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive">VBScript solution</a> to control the cabinet outputs. Since this framework supports the use of more than one output controller/LedWiz, the use of more than one LedControl.ini file is supported as well.</p>
+<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework supports the use of the classical LedControl.ini files used in the <a href="http://www.hyperspin-fe.com/forum/showthread.php?10980-Tutorial-How-to-config-Ledwiz-PacDrive">VBScript solution</a> to control the cabinet outputs. Since this framework supports the use of more than one output controller/LedWiz, the use of more than one LedControl.ini file is supported as well.</p>
 <p>To facilitate the use of the framework, the auto config function will automatically load LedControl.ini file(s) and select a table config from the data based on the RomName, if no table config can be found, but even if a table config file is available is is possible to use the ledcontrol configs together with the table configs by setting the right option in the table config.</p>
 <p>Please check the <a href="http://www.hyperspin-fe.com/forum/forumdisplay.php?34-HyperPin-Support">HyperSpin Forum</a> for more information on LedControl.ini files and details on the VBScript solution which uses the LedControl files normally.</p>
 <p>If you dont have a ledcontrol file for your cabinet, it is best if you go to the <a href="http://vpuniverse.com/ledwiz/login.php">LedWiz ConfigTool Website</a> and create a ledcontrol file matching your cabinet.</p>
@@ -195,7 +195,7 @@ Lamp='L', Switch='W', Solenoid='S', GIString='G', Mech='M', EMTableElement (thro
 <p>If you want to do your own definitions, it is likely best if you download some configs from the <a href="http://vpuniverse.com/ledwiz/login.php">LedWiz ConfigTool Website</a> and try to learn from the settings in the downloaded file. In addition it is recommanded that you use the LedControlFileTester.exe (explained in the next section) to check your ledcontrol files, if you create your own settings.</p>
 <h1><a class="anchor" id="ledcontrol_testingapp"></a>
 LedControl File Testing Application</h1>
-<p>The package of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework does also contain a small tool named <em>LedControlFileTester.exe</em> which can be used to test wether the contens of a ledcontrol file can be read and understood be the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework.</p>
+<p>The package of the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework does also contain a small tool named <em>LedControlFileTester.exe</em> which can be used to test wether the contens of a ledcontrol file can be read and understood be the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework.</p>
 <p>The tool can by started directly as any other program, but it can also be used from the command line.</p>
 <p>For command line use you have to specify a single parameter with the name and path to you ledcontrol file:</p>
 <div class="fragment"><div class="line">LedControlFileTester.exe LedControl.ini</div>
@@ -367,7 +367,7 @@ Example LedControl.ini</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:36 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:49 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

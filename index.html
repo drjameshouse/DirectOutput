@@ -104,21 +104,21 @@ $(document).ready(function(){initNavTree('index.html','');});
 <img src="DirectOutput_Big.png" alt="DirectOutput_Big.png"/>
 <div class="caption">
 DirectOutput framework for virtual pinball cabinets</div></div>
- <h1>Welcome to the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework for virtual pinball cabinets</h1>
+ <h1>Welcome to the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework for virtual pinball cabinets</h1>
 <dl class="section warning"><dt>Warning</dt><dd>This software has been designed to control hardware which is connected to a computer. This means that there is always a risk that something goes wrong and that your hardware or something else gets damaged. You use this software at your own risk. Dont blame me if your boards go up in smoke, your house burns down or something or someone else gets damaged. You have been warned!</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Please take note that this documentation is not yet complete and that some parts of it might change in the future.</dd>
 <dd>
 This project is still in a beta status. This means that not all functionality has been fully tested and that problems have to be expected.</dd></dl>
-<p>During my first experiments with Visual Pinball on my laptop, I thought that it would be a cool idea to a some kind of force feedback to the system. It didn't take me long to find out that a solution for this idea did already exist. When I started to build my own cabinet the current vbscript implementation supporting only a single LedWiz with 32 outputs became too limited pretty soon. On some table there were also stuttering issues. So I started to think about another solution and began to implement the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework.</p>
-<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework tries to overcome some limitations of the current solution to control toys in cabinets:</p>
+<p>During my first experiments with Visual Pinball on my laptop, I thought that it would be a cool idea to a some kind of force feedback to the system. It didn't take me long to find out that a solution for this idea did already exist. When I started to build my own cabinet the current vbscript implementation supporting only a single LedWiz with 32 outputs became too limited pretty soon. On some table there were also stuttering issues. So I started to think about another solution and began to implement the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework.</p>
+<p>The <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework tries to overcome some limitations of the current solution to control toys in cabinets:</p>
 <ul>
 <li><b>Stuttering</b> is hopefully a thing of the past. By using several threads the framework isolates the main thread doing the work in Visual Pinball from the communication with the Ledwiz and other output controllers.</li>
 <li><b>More outputs</b> are also possible. Instead of using only one LedWiz it is now possible to connect up to 16 LedWiz and 4 PacLed64 units or other output controllers.</li>
-<li><b>More configuration options</b> are available troughthe <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework as well.</li>
+<li><b>More configuration options</b> are available troughthe <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework as well.</li>
 <li><b>Legacy support</b> by supporting LedControl.ini file(s).</li>
 <li><b>Open for extensions</b> means that the framework is able to load uncompiled C#-script files containing new effects, toys or other types of output controllers at runtime. After the scripts have been loaded they are copiled and integrated into the framework.</li>
 </ul>
-<p>If you are new to the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for this direct output library. ">DirectOutput</a> framework the page on  installation is a good starting point.</p>
+<p>If you are new to the <a class="el" href="namespace_direct_output.html" title="DirectOutput is the root namespace for the DirectOutput framework. ">DirectOutput</a> framework the page on  installation is a good starting point.</p>
 <p>Enjoy (virtual) pinball and keep pinball alive!</p>
 <div class="image">
 <img src="swisslizard.png" alt="swisslizard.png"/>
@@ -130,7 +130,7 @@ Swisslizard</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:41 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:54 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

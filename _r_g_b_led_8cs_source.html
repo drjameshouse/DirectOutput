@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_r_g_b_led_8cs_source.html','');});
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html" title="RGB led toy controlls a multicolor led. Implement IToy, inherits Toy. ">RGBLed</a> : <a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations ">ToyBase</a>, <a class="code" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_r_g_b_toy.html" title="This interface is to be used for toys outputing RGB colors (e.g. RGBLed toy).  ">IRGBToy</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a> _Cabinet;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a> _Cabinet;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">        #region Init</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('_r_g_b_led_8cs_source.html','');});
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            InitOutputs(Pinball.<a class="code" href="class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb" title="Gets the Cabinet object for the Pinball object. ">Cabinet</a>);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> InitOutputs(<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a> <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="Cabinet objects are describing the parts of a cabinet. ">Cabinet</a>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> InitOutputs(<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a> <a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a>)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (Cabinet.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet.html#a85d370c78279d60ef3b5c9aa2b3334ee" title="List of IOutput objects representing all outputs of all all output controllers in the cabinet...">Outputs</a>.<a class="code" href="class_direct_output_1_1_cab_1_1_cabinet_output_list.html#a303e224af289c90796c50169678cb726" title="Checks if the specified IOutput exists in the list. ">Contains</a>(OutputNameRed))</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div>
@@ -175,17 +175,17 @@ $(document).ready(function(){initNavTree('_r_g_b_led_8cs_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">private</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> _OutputRed;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        [OutputName]</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;       </div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html#afe2c485b6fe898aa0efb02a9692a3e41">   78</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> OutputNameRed { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">private</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> _OutputGreen;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        [OutputName]</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        </div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html#ab5834e5ad12abb1b8280338bd72eef89">   86</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> OutputNameGreen { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">private</span> <a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and...">IOutput</a> _OutputBlue;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        [OutputName]</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
 <div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html#abb5333025a7b7e3be4d9662bcdb408df">   94</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> OutputNameBlue { <span class="keyword">get</span>; <span class="keyword">set</span>; }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('_r_g_b_led_8cs_source.html','');});
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                _BrightnessRed = value.Limit(0, 255);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">if</span> (_OutputRed != null)</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    _OutputRed.<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html#a64b28df0f84068094dc2543ecc6de1f4" title="Value of the output The implementation of this property has to be thread safe ">Value</a> = (byte)_BrightnessRed;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    _OutputRed.<a class="code" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html#a64b28df0f84068094dc2543ecc6de1f4" title="Value of the output. ">Value</a> = (byte)_BrightnessRed;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('_r_g_b_led_8cs_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_47e6c69249102d832240994dfe76ec93.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_4329b8384f432c256086b73da3a12754.html">Cab</a></li><li class="navelem"><a class="el" href="dir_3c1493a1b9fe938801a4e4408c81aa1f.html">Toys</a></li><li class="navelem"><a class="el" href="dir_83df54955f1cfc04bc122a3bada64c96.html">Basic</a></li><li class="navelem"><a class="el" href="_r_g_b_led_8cs.html">RGBLed.cs</a></li>
-    <li class="footer">Generated on Wed Aug 28 2013 15:47:32 for DirectOutput by
+    <li class="footer">Generated on Fri Aug 30 2013 13:39:45 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -5,9 +5,6 @@ var hierarchy =
       [ "DirectOutput.FX.AssignedEffectOrder", "class_direct_output_1_1_f_x_1_1_assigned_effect_order.html", null ],
       [ "DirectOutput.FX.DelayFX.DelayEffect", "class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html", null ]
     ] ],
-    [ "Attribute", null, [
-      [ "DirectOutput.Cab.Out.OutputNameAttribute", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_attribute.html", null ]
-    ] ],
     [ "BindingList< LedControlIniFile >", null, [
       [ "DirectOutput.GlobalConfiguration.LedControlIniFileList", "class_direct_output_1_1_global_configuration_1_1_led_control_ini_file_list.html", null ]
     ] ],
@@ -18,7 +15,6 @@ var hierarchy =
     [ "DirectOutput.LedControl.ColorConfig", "class_direct_output_1_1_led_control_1_1_color_config.html", null ],
     [ "DirectOutput.Cab.Out.DMX.ArtnetEngine.Engine", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine_1_1_engine.html", null ],
     [ "EventArgs", null, [
-      [ "DirectOutput.Cab.Out.OutputControllerEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_controller_event_args.html", null ],
       [ "DirectOutput.Cab.Out.OutputEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html", null ],
       [ "DirectOutput.Cab.Toys.ToyEventArgs", "class_direct_output_1_1_cab_1_1_toys_1_1_toy_event_args.html", null ],
       [ "DirectOutput.FX.EffectEventArgs", "class_direct_output_1_1_f_x_1_1_effect_event_args.html", [
@@ -253,9 +249,6 @@ var hierarchy =
     [ "DirectOutput.Scripting.Script", "class_direct_output_1_1_scripting_1_1_script.html", null ],
     [ "DirectOutputConfigTester.Settings", "class_direct_output_config_tester_1_1_settings.html", null ],
     [ "DirectOutput.General.Statistics.SimpleStatistics< ValueType >", "class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html", null ],
-    [ "StringConverter", null, [
-      [ "DirectOutput.Cab.Out.OutputNameConverter", "class_direct_output_1_1_cab_1_1_out_1_1_output_name_converter.html", null ]
-    ] ],
     [ "DirectOutput.Table.Table", "class_direct_output_1_1_table_1_1_table.html", null ],
     [ "DirectOutput.LedControl.TableConfig", "class_direct_output_1_1_led_control_1_1_table_config.html", null ],
     [ "DirectOutput.LedControl.TableConfigSetting", "class_direct_output_1_1_led_control_1_1_table_config_setting.html", null ],
