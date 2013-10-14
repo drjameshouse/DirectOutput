@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_log.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -127,6 +127,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae18d7a3376ecb53e13858eb9314c3842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the log using the file defnied in the Filename property.  <a href="#ae18d7a3376ecb53e13858eb9314c3842">More...</a><br/></td></tr>
 <tr class="separator:ae18d7a3376ecb53e13858eb9314c3842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca127fc761722dcffdcea4920febb73"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_log.html#a9ca127fc761722dcffdcea4920febb73">Finish</a> ()</td></tr>
+<tr class="memdesc:a9ca127fc761722dcffdcea4920febb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes the logger.<br/>
+ Closes the log file.  <a href="#a9ca127fc761722dcffdcea4920febb73">More...</a><br/></td></tr>
 <tr class="separator:a9ca127fc761722dcffdcea4920febb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7f70036372b1095529523c32adeba29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_log.html#ac7f70036372b1095529523c32adeba29">Write</a> (string Message)</td></tr>
 <tr class="memdesc:ac7f70036372b1095529523c32adeba29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the specified message to the logfile.  <a href="#ac7f70036372b1095529523c32adeba29">More...</a><br/></td></tr>
@@ -179,7 +181,7 @@ Properties</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Writes the specified debug message to the log file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo:</a></b></dt><dd>Make conditional compilation work </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo:</a></b></dt><dd>Make conditional compilation work </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The calls to this method are only executed, if the DebugLog symbol is defined. Generally this will only be active in special debug releases. The statement to define or undefine the DebugLog symbol can be found on the top of the code of this class. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -188,7 +190,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_log_8cs_source.html#l00184">184</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
+<p>Definition at line <a class="el" href="_log_8cs_source.html#l00188">188</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
 
 </div>
 </div>
@@ -233,7 +235,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_log_8cs_source.html#l00139">139</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
+<p>Definition at line <a class="el" href="_log_8cs_source.html#l00143">143</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
 
 </div>
 </div>
@@ -267,7 +269,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_log_8cs_source.html#l00171">171</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
+<p>Definition at line <a class="el" href="_log_8cs_source.html#l00175">175</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
 
 </div>
 </div>
@@ -292,7 +294,10 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_log_8cs_source.html#l00073">73</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
+<p>Finishes the logger.<br/>
+ Closes the log file. </p>
+
+<p>Definition at line <a class="el" href="_log_8cs_source.html#l00077">77</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
 
 </div>
 </div>
@@ -353,7 +358,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_log_8cs_source.html#l00129">129</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
+<p>Definition at line <a class="el" href="_log_8cs_source.html#l00133">133</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
 
 </div>
 </div>
@@ -387,7 +392,7 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_log_8cs_source.html#l00094">94</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
+<p>Definition at line <a class="el" href="_log_8cs_source.html#l00098">98</a> of file <a class="el" href="_log_8cs_source.html">Log.cs</a>.</p>
 
 </div>
 </div>
@@ -427,7 +432,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_log.html">Log</a></li>
-    <li class="footer">Generated on Fri Aug 30 2013 13:39:49 for DirectOutput by
+    <li class="footer">Generated on Mon Oct 14 2013 22:46:59 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

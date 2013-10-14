@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine_1_1_engine.html" title="Artnet Engine used for DMX output. &#160;The code of this class is a stripped down and modified version of..." alt="" coords="6,5,189,46"/>
+<area shape="rect" id="node2" href="$class_direct_output_1_1_global_configuration_1_1_file_pattern.html" title="A file pattern class used to lookup files matching a specified pattern. " alt="" coords="286,70,501,111"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html" title="DirectOutput.GlobalConfiguration.\lLedControlIniFile" alt="" coords="286,5,501,46"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_color_1_1_color_list.html" title="List for Color objects " alt="" coords="288,136,499,163"/>
+<area shape="rect" id="node6" href="$class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html" title="List of IOutputController objects " alt="" coords="298,187,489,229"/>
+<area shape="rect" id="node7" href="$class_direct_output_1_1_cab_1_1_out_1_1_output_list.html" title="List of IOutput objects " alt="" coords="288,253,499,280"/>
+<area shape="rect" id="node8" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_list.html" title="List of IToy objects " alt="" coords="293,304,493,331"/>
+<area shape="rect" id="node9" href="$class_direct_output_1_1_f_x_1_1_effect_list.html" title="Collection of IEffect objects. Every object can only exist once in the list and every objects needs t..." alt="" coords="307,355,479,381"/>
 </map>

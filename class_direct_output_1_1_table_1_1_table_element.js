@@ -9,6 +9,5 @@ var class_direct_output_1_1_table_1_1_table_element =
     [ "TableElementType", "class_direct_output_1_1_table_1_1_table_element.html#a03811dc1b7106e41cd22192fa6403e11", null ],
     [ "Value", "class_direct_output_1_1_table_1_1_table_element.html#a351c8d4f2aebd34a0f606f7101187556", null ],
     [ "NameChanged", "class_direct_output_1_1_table_1_1_table_element.html#aeac9fa455d5e8d8c86d0b66b728e1baf", null ],
-    [ "PropertyChanged", "class_direct_output_1_1_table_1_1_table_element.html#a750d51e2fcb09b26a3e2db3650a5a5e4", null ],
     [ "ValueChanged", "class_direct_output_1_1_table_1_1_table_element.html#a696e5bc982a009f22f4b3cdcc77b618a", null ]
 ];

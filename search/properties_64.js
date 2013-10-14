@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['defaultintervallms',['DefaultIntervallMs',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_flasher.html#a51d5c5be4076ec594cb0d2f8e8c21b01',1,'DirectOutput.Cab.Toys.Basic.Flasher.DefaultIntervallMs()'],['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_replay_knocker.html#a3092aff9398e105a74f7164bf195735f',1,'DirectOutput.Cab.Toys.Basic.ReplayKnocker.DefaultIntervallMs()']]],
-  ['delayms',['DelayMs',['../class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html#abdcfae460dbf29cbadb76f93e5e4780e',1,'DirectOutput::FX::DelayFX::DelayEffect']]],
-  ['digitaltoy',['DigitalToy',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_digital_effect.html#a35dcff5f02a1b071c50c68b620635b2b',1,'DirectOutput::FX::BasicFX::BasicDigitalEffect']]],
-  ['digitaltoyname',['DigitalToyName',['../class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_digital_effect.html#ae3b8441387fbff5832eaf51615c19f2f',1,'DirectOutput::FX::BasicFX::BasicDigitalEffect']]],
-  ['dimmerdurationms',['DimmerDurationMs',['../class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html#a9d7387b857b478886effaaf5b237fa51',1,'DirectOutput::FX::TimedDimmerLampEffect']]],
+  ['delayms',['DelayMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html#ab703256d0921e40e6b6e3b98f9a4b232',1,'DirectOutput::FX::TimmedFX::DelayEffect']]],
   ['dmxchannel',['DmxChannel',['../class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html#a762743bff2bc0908412f771dfa5725a6',1,'DirectOutput::Cab::Out::DMX::DMXOutput']]],
-  ['duration',['Duration',['../class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a8823242a4de037b357375a2ed4b3645b',1,'DirectOutput::FX::LedControlFX::LedControlEffect']]],
-  ['durationms',['DurationMs',['../class_direct_output_1_1_led_control_1_1_table_config_setting.html#a2751ecb789a4b3581717f384d655f2f3',1,'DirectOutput::LedControl::TableConfigSetting']]]
+  ['durationactivems',['DurationActiveMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_blink_effect.html#a99159f4f0316ab43d23b2d4f9791bb99',1,'DirectOutput::FX::TimmedFX::BlinkEffect']]],
+  ['durationinactivems',['DurationInactiveMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_blink_effect.html#a56410462b33dde8f4315fb5266cb7858',1,'DirectOutput::FX::TimmedFX::BlinkEffect']]],
+  ['durationms',['DurationMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_duration_effect.html#aff6ae3fabe1c9a6d8d5d1fb4e4001bb0',1,'DirectOutput.FX.TimmedFX.DurationEffect.DurationMs()'],['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_extend_duration_effect.html#a3e9a2d9ba2d7787fc64f4ae98d382b4e',1,'DirectOutput.FX.TimmedFX.ExtendDurationEffect.DurationMs()'],['../class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#a0d815205e8235823b12ae1ac8c17b0dc',1,'DirectOutput.LedControl.Loader.TableConfigSetting.DurationMs()']]]
 ];

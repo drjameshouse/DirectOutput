@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['outputcontrolenum',['OutputControlEnum',['../namespace_direct_output_1_1_led_control.html#ab2145cea2bcec865d5c4843e37eb937e',1,'DirectOutput::LedControl']]],
-  ['outputtypeenum',['OutputTypeEnum',['../namespace_direct_output_1_1_led_control.html#ab2d86fcac2a0d355ebf397b872edc5f9',1,'DirectOutput::LedControl']]]
+  ['outputcontrolenum',['OutputControlEnum',['../namespace_direct_output_1_1_led_control_1_1_loader.html#a2e9b8a8248ba75f6df15411b7bd353ad',1,'DirectOutput::LedControl::Loader']]],
+  ['outputtypeenum',['OutputTypeEnum',['../namespace_direct_output_1_1_led_control_1_1_loader.html#a29215e8fa8ff2479d846aea855f7401c',1,'DirectOutput::LedControl::Loader']]]
 ];

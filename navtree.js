@@ -80,29 +80,28 @@ var NAVTREE =
       [ "Table config file", "tableconfigfile.html#tableconfigfile_configfilestructure", [
         [ "Table elements section", "tableconfigfile.html#tableconfigfile_configfilestructuretableelements", null ],
         [ "Assigned static effects section", "tableconfigfile.html#tableconfigfile_configfilestructurestaticeffects", null ],
-        [ "Effects section", "tableconfigfile.html#tableconfigfile_configfilestructureeffects", [
-          [ "BasicAnalogEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectsbasicanalogeffect", null ],
-          [ "BasicDigitalEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectsbasicdigitaleffect", null ],
-          [ "BasicRGBEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectsbasicrgbeffect", null ],
-          [ "ListEffect", "tableconfigfile.html#tableconfigfile_configfilestructureeffectslisteffect", null ]
-        ] ],
-        [ "AddLedControlConfig section", "tableconfigfile.html#tableconfigfile_configfilestructureaddledcontrolconfig", null ]
+        [ "Effects section", "tableconfigfile.html#tableconfigfile_configfilestructureeffects", null ]
       ] ]
     ] ],
-    [ "LedControl files", "ledcontrolfiles.html", [
-      [ "Introduction", "ledcontrolfiles.html#ledcontrol_introduction", null ],
-      [ "Auto Configuration", "ledcontrolfiles.html#ledcontrol_autoconfig", [
-        [ "Auto Table config", "ledcontrolfiles.html#ledcontrol_autoconfigtable", null ],
-        [ "Auto Cabinet Config", "ledcontrolfiles.html#ledcontrol_autoconfigcabinet", null ],
-        [ "LedControl file numbering", "ledcontrolfiles.html#ledcontrol_autoconfignumbering", null ]
+    [ "ini files", "inifiles.html", [
+      [ "Introduction", "inifiles.html#inifiles_introduction", null ],
+      [ "Configuration loading", "inifiles.html#inifiles_configloading", [
+        [ "Automatic configuration", "inifiles.html#inifiles_auto", [
+          [ "File locations and names", "inifiles.html#inifiles_autolocations", null ],
+          [ "LedControl file numbering", "inifiles.html#inifiles_autoconfignumbering", null ]
+        ] ],
+        [ "Manual configuration", "inifiles.html#inifiles_manual", null ]
       ] ],
-      [ "Manual Configuration", "ledcontrolfiles.html#ledcontrol_manualconfig", null ],
-      [ "Settings in LedControl files", "ledcontrolfiles.html#ledcontrol_settings", [
-        [ "Colors Section", "ledcontrolfiles.html#ledcontrol_settingscolors", null ],
-        [ "Config Outs Section", "ledcontrolfiles.html#ledcontrol_settingsconfigouts", null ]
+      [ "Cabinet configuration", "inifiles.html#inifiles_cabinetconfig", [
+        [ "Automatic cabinet configuration", "inifiles.html#inifiles_autocabinetconfig", null ],
+        [ "Manual cabinet configuration", "inifiles.html#inifiles_manualcabinetconfig", null ]
       ] ],
-      [ "LedControl File Testing Application", "ledcontrolfiles.html#ledcontrol_testingapp", null ],
-      [ "Example LedControl.ini", "ledcontrolfiles.html#ledcontrol_example", null ]
+      [ "Settings in DirectOutputConfig/LedControl ini files", "inifiles.html#inifiles_settings", [
+        [ "Colors Section", "inifiles.html#inifiles_settingscolors", null ],
+        [ "Config DOF Section", "inifiles.html#inifiles_settingsconfigouts", null ],
+        [ "Setting examples", "inifiles.html#inifiles_settingspara", null ]
+      ] ],
+      [ "LedControl File Testing Application", "inifiles.html#inifiles_testingapp", null ]
     ] ],
     [ "Architecture", "md_50__architecture.html", [
       [ "Object model", "md_50__architecture.html#architecture_objectmodel", [
@@ -117,42 +116,287 @@ var NAVTREE =
     ] ],
     [ "B2S Server Plugin", "b2sserverplugin.html", null ],
     [ "Effects/FX", "fx.html", [
-      [ "Introduction", "fx.html#effects_introduction", null ],
-      [ "Builtin effects", "fx.html#effects_builtineffects", null ],
-      [ "Custom effects", "fx.html#effects_customeffects", [
-        [ "Implementation guidelines for custom effects", "fx.html#effects_implementationguideline", null ]
+      [ "Introduction", "fx.html#fx_introduction", null ],
+      [ "Stacking/chaining of effect effects", "fx.html#fx_stacking", null ],
+      [ "Built in effects", "fx.html#fx_builtinfx", null ],
+      [ "Custom effects", "fx.html#fx_customeffects", null ],
+      [ "Implementation guidelines for effects", "fx.html#fx_implementationguideline", null ]
+    ] ],
+    [ "Built in Effects", "fx_builtin.html", [
+      [ "AnalogToyFadeOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_properties", [
+          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_ActiveValue", null ],
+          [ "FadeActiveDurationMs", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeActiveDurationMs", null ],
+          [ "FadeInactiveDurationMs", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeInactiveDurationMs", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeMode", null ],
+          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_InactiveValue", null ],
+          [ "Layer", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_Layer", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_Name", null ],
+          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_RetriggerBehaviour", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_ToyName", null ]
+        ] ]
+      ] ],
+      [ "AnalogToyOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_properties", [
+          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_ActiveValue", null ],
+          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_InactiveValue", null ],
+          [ "Layer", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_Layer", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_Name", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_ToyName", null ]
+        ] ]
+      ] ],
+      [ "ListEffect", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_properties", [
+          [ "AssignedEffects", "fx_builtin.html#DirectOutput_FX_ListFX_ListEffect_AssignedEffects", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_ListFX_ListEffect_Name", null ]
+        ] ]
+      ] ],
+      [ "NullEffect", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_properties", [
+          [ "Name", "fx_builtin.html#DirectOutput_FX_NullFX_NullEffect_Name", null ]
+        ] ]
+      ] ],
+      [ "RGBAFadeOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_properties", [
+          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_ActiveColor", null ],
+          [ "FadeActiveDurationMs", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeActiveDurationMs", null ],
+          [ "FadeInactiveDurationMs", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeInactiveDurationMs", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeMode", null ],
+          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_InactiveColor", null ],
+          [ "Layer", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_Layer", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_Name", null ],
+          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_RetriggerBehaviour", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_ToyName", null ]
+        ] ]
+      ] ],
+      [ "RGBAOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_properties", [
+          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_ActiveColor", null ],
+          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_InactiveColor", null ],
+          [ "Layer", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_Layer", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_Name", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_ToyName", null ]
+        ] ]
+      ] ],
+      [ "BlinkEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_BlinkEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_BlinkEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_BlinkEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_BlinkEffect_properties", [
+          [ "DurationActiveMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_DurationActiveMs", null ],
+          [ "DurationInactiveMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_DurationInactiveMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "DelayEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DelayEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DelayEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DelayEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DelayEffect_properties", [
+          [ "DelayMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_DelayEffect_DelayMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_DelayEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_DelayEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "DurationEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DurationEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DurationEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DurationEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DurationEffect_properties", [
+          [ "DurationMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_DurationEffect_DurationMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_DurationEffect_Name", null ],
+          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_TimmedFX_DurationEffect_RetriggerBehaviour", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_DurationEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "ExtendDurationEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_ExtendDurationEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_ExtendDurationEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_ExtendDurationEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_ExtendDurationEffect_properties", [
+          [ "DurationMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_ExtendDurationEffect_DurationMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_ExtendDurationEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_ExtendDurationEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "MinDurationEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect_properties", [
+          [ "MinDurationMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_MinDurationEffect_MinDurationMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_MinDurationEffect_Name", null ],
+          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_TimmedFX_MinDurationEffect_RetriggerBehaviour", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_MinDurationEffect_TargetEffectName", null ]
+        ] ]
       ] ]
     ] ],
     [ "Toys", "toys.html", [
       [ "Introduction", "toys.html#toys_introduction", null ],
-      [ "Builtin toys", "toys.html#toys_builtin", [
-        [ "Contactor", "toys.html#toys_contactor", null ],
-        [ "Lamp", "toys.html#toys_lamp", null ],
-        [ "RGBLed", "toys.html#toys_rgbled", null ],
-        [ "ReplayKnocker", "toys.html#toys_replayknocker", null ],
-        [ "Motor/Shaker/GearMotor", "toys.html#toys_motor", null ],
-        [ "Flasher", "toys.html#toys_flasher", null ],
-        [ "LedWizEquivalent", "toys.html#toys_ledwizequivalent", null ],
-        [ "GenericDigitalToy", "toys.html#toys_genericdigitaltoy", null ],
-        [ "GenericAnalogToy", "toys.html#toys_genericanalogtoy", null ]
+      [ "Custom toys", "toys.html#toys_custom", null ],
+      [ "Implementation guidelines for custom toys", "toys.html#toys_implementationguideline", null ]
+    ] ],
+    [ "Built in Toys", "toy_builtin.html", [
+      [ "AnalogToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_AnalogToy_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_AnalogToy_OutputName", null ]
+        ] ]
       ] ],
-      [ "Custom toys", "toys.html#toys_custom", [
-        [ "Implementation guidelines for custom toys", "toys.html#toys_implementationguideline", null ]
+      [ "Contactor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Contactor_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Contactor_OutputName", null ]
+        ] ]
+      ] ],
+      [ "DigitalToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_DigitalToy_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_DigitalToy_OutputName", null ]
+        ] ]
+      ] ],
+      [ "GearMotor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor_properties", [
+          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_KickstartDurationMs", null ],
+          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_KickstartPower", null ],
+          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_MaxPower", null ],
+          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_MaxRunTimeMs", null ],
+          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_MinPower", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_OutputName", null ]
+        ] ]
+      ] ],
+      [ "Lamp", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Lamp_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Lamp_OutputName", null ]
+        ] ]
+      ] ],
+      [ "Motor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor_properties", [
+          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_KickstartDurationMs", null ],
+          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_KickstartPower", null ],
+          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_MaxPower", null ],
+          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_MaxRunTimeMs", null ],
+          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_MinPower", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_OutputName", null ]
+        ] ]
+      ] ],
+      [ "RGBLed", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_Name", null ],
+          [ "OutputNameBlue", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_OutputNameBlue", null ],
+          [ "OutputNameGreen", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_OutputNameGreen", null ],
+          [ "OutputNameRed", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_OutputNameRed", null ]
+        ] ]
+      ] ],
+      [ "Shaker", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker_properties", [
+          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_KickstartDurationMs", null ],
+          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_KickstartPower", null ],
+          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_MaxPower", null ],
+          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_MaxRunTimeMs", null ],
+          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_MinPower", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_OutputName", null ]
+        ] ]
+      ] ],
+      [ "AnalogAlphaToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_OutputName", null ]
+        ] ]
+      ] ],
+      [ "RGBAToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_properties", [
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_Name", null ],
+          [ "OutputNameBlue", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameBlue", null ],
+          [ "OutputNameGreen", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameGreen", null ],
+          [ "OutputNameRed", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameRed", null ]
+        ] ]
+      ] ],
+      [ "LedWizEquivalent", "toy_builtin.html#use_DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_properties", [
+          [ "LedWizNumber", "toy_builtin.html#DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_LedWizNumber", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_Name", null ],
+          [ "Outputs", "toy_builtin.html#DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_Outputs", null ]
+        ] ]
       ] ]
     ] ],
     [ "Output controllers", "outputcontrollers.html", [
       [ "Introduction", "outputcontrollers.html#outputcontrollers_introduction", null ],
-      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtineffects", [
-        [ "LedWiz (GroovyGameGear)", "outputcontrollers.html#outputcontrollers_ledwiz", null ],
-        [ "PacLed64 (Ultimarc)", "outputcontrollers.html#outputcontrollers_ultimarc_pacled64", null ],
-        [ "Art-Net / DMX", "outputcontrollers.html#outputcontrollers_artnet", null ]
-      ] ],
-      [ "Custom output controllers", "outputcontrollers.html#outputcontrollers_customeffects", [
+      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtincontrollers", null ],
+      [ "Custom output controllers", "outputcontrollers.html#outputcontrollers_custom", [
         [ "Interfaces for output controllers", "outputcontrollers.html#outputcontrollers_interfaces", [
           [ "IOutputController interface", "outputcontrollers.html#outputcontrollers_ioutputcontroller", null ],
           [ "IOutput interface", "outputcontrollers.html#outputcontrollers_ioutput", null ]
         ] ],
         [ "Implementation guidelines for custom output controllers", "outputcontrollers.html#outputcontrollers_implementationguideline", null ]
+      ] ]
+    ] ],
+    [ "Built in Output controllers", "outputcontrollers_builtin.html", [
+      [ "LedWiz", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz_properties", [
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_LW_LedWiz_Name", null ],
+          [ "Number", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_LW_LedWiz_Number", null ]
+        ] ]
+      ] ],
+      [ "PacLed64", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacLed64", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacLed64_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacLed64_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacLed64_properties", [
+          [ "Id", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_Pac_PacLed64_Id", null ],
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_Pac_PacLed64_Name", null ]
+        ] ]
+      ] ],
+      [ "ArtNet", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_properties", [
+          [ "BroadcastAddress", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_BroadcastAddress", null ],
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_Name", null ],
+          [ "Universe", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_Universe", null ]
+        ] ]
+      ] ],
+      [ "NullOutputController", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_properties", [
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_NullOutputController_NullOutputController_Name", null ]
+        ] ]
       ] ]
     ] ],
     [ "Scripting", "scripting.html", [
@@ -190,6 +434,7 @@ var NAVTREE =
     [ "Credits", "md_90__credits.html", null ],
     [ "About and Copyright", "md_99__mainpage_and_about.html", null ],
     [ "Todo List", "todo.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -205,6 +450,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Properties", "functions_prop.html", "functions_prop" ],
@@ -224,12 +470,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_handler_8cs.html",
-"_out_8cs.html",
-"class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html#a21f65d878c4bcfe48b4fc296ceb579db",
-"class_direct_output_1_1_f_x_1_1_effect_base.html#a06cdee7610ce58faaf7beb19fc6cbda7",
-"class_direct_output_1_1_global_configuration_1_1_global_config.html#af7ae1ee9330b9ae82b5061b39f387b1b",
-"contribute.html#contribute_docu",
-"namespace_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine.html"
+"_led_control_file_tester_2_properties_2_assembly_info_8cs_source.html",
+"class_direct_output_1_1_cab_1_1_cabinet.html#a5436db2ff478323a279c53d2245713b1",
+"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a4a4eb26835ea8ee4e13743c4fb075146",
+"class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a1adbe1f5ecee951303d5c11bcfd9f713",
+"class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#a7c220bca721e7bee3e243a7ddd9b4ff2",
+"dir_2f646108dc17b77d2792c6906506ce8e.html",
+"inifiles.html#inifiles_settingspara",
+"tableconfig.html#tableconfig_intro"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

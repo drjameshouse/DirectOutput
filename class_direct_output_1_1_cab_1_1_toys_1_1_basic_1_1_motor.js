@@ -1,7 +1,7 @@
 var class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor =
 [
     [ "Finish", "class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#aac42522667f0a07566e726308d4c57af", null ],
-    [ "Init", "class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a7e54b9610455195f86c95337e50a5a9e", null ],
+    [ "Init", "class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a8bfb51f8346edd24819027afb3a4caac", null ],
     [ "SetPower", "class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#adae6cc77ea2a9ac016e3bae45c379825", null ],
     [ "KickstartDurationMs", "class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a10d109d7dee8b37c7257798636318001", null ],
     [ "KickstartPower", "class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#acebd0bb29e4059f532f80ff453409610", null ],

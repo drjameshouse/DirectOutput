@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['opcodesenum_2ecs',['OpCodesEnum.cs',['../_op_codes_enum_8cs.html',1,'']]],
   ['openconfigdialog_2ecs',['OpenConfigDialog.cs',['../_open_config_dialog_8cs.html',1,'']]],
   ['openconfigdialog_2edesigner_2ecs',['OpenConfigDialog.Designer.cs',['../_open_config_dialog_8_designer_8cs.html',1,'']]],
   ['out_2ecs',['Out.cs',['../_out_8cs.html',1,'']]],

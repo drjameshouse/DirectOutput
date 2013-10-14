@@ -1,8 +1,8 @@
 <map id="DirectOutput.Cab.Toys.Basic.ReplayKnocker" name="DirectOutput.Cab.Toys.Basic.ReplayKnocker">
-<area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_digital_toy.html" title="Implementation of a generic digital toy. Implements IToy. " alt="" coords="129,245,252,272"/>
-<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="27,163,100,189"/>
-<area shape="rect" id="node4" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_digital_toy.html" title="Implementation of a generic digital toy. Implements IToy. " alt="" coords="138,229,216,256"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="27,155,100,181"/>
+<area shape="rect" id="node4" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/>
 <area shape="rect" id="node5" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="72,5,163,32"/>
 <area shape="rect" id="node6" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy. &#160;The abstract class Toy implements this interface. ..." alt="" coords="147,80,193,107"/>
-<area shape="rect" id="node7" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_digital_toy.html" title="Generic interface for Toys having only 2 states. &#160;The main purpose of this interface is to facilitate..." alt="" coords="177,155,311,197"/>
+<area shape="rect" id="node7" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_digital_toy.html" title="Generic interface for Toys having only 2 states. &#160;The main purpose of this interface is to facilitate..." alt="" coords="176,155,259,181"/>
 </map>

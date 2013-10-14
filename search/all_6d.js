@@ -14,6 +14,9 @@ var searchData=
   ['measurementstop',['MeasurementStop',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a40e3b153a206587683a11b055d6cb214',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
   ['mech',['Mech',['../class_direct_output_1_1_table_1_1_table_element_list.html#ab477756093302833f8bc7889179d2af6',1,'DirectOutput.Table.TableElementList.Mech()'],['../namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38ae45ae8e1d63029c402b37a5eebcf5f4f',1,'DirectOutput.Mech()']]],
   ['minduration',['MinDuration',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a95130f815be351ea4cacd17ce8a7956e',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
+  ['mindurationeffect',['MinDurationEffect',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html',1,'DirectOutput::FX::TimmedFX']]],
+  ['mindurationeffect_2ecs',['MinDurationEffect.cs',['../_min_duration_effect_8cs.html',1,'']]],
+  ['mindurationms',['MinDurationMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html#a2cb21c4a03f7770759e9de95164f4dbb',1,'DirectOutput.FX.TimmedFX.MinDurationEffect.MinDurationMs()'],['../class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#ab44da6a21c298dc6de65b876343f6a28',1,'DirectOutput.LedControl.Loader.TableConfigSetting.MinDurationMs()']]],
   ['mindurations',['MinDurations',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a544081ee9abc9f4a93fc41eeca4655f2',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
   ['minpower',['MinPower',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a182aef8e304ffee4b1ab4ed4eba87bce',1,'DirectOutput::Cab::Toys::Basic::Motor']]],
   ['minvalue',['MinValue',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a36589e97e44b25a9e5cecf0b7e33590d',1,'DirectOutput::General::Statistics::SimpleStatistics&lt; ValueType &gt;']]],
@@ -21,5 +24,5 @@ var searchData=
   ['modified',['Modified',['../class_direct_output_1_1_frontend_1_1_global_config_edit.html#a103ed870f2ac9f8d027bfb97274a8a79',1,'DirectOutput::Frontend::GlobalConfigEdit']]],
   ['motor',['Motor',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html',1,'DirectOutput::Cab::Toys::Basic']]],
   ['motor_2ecs',['Motor.cs',['../_motor_8cs.html',1,'']]],
-  ['movenext',['MoveNext',['../class_direct_output_1_1_cab_1_1_cabinet_output_list_1_1_enumerator.html#addeff41758550328292de0fd79e4e673',1,'DirectOutput.Cab.CabinetOutputList.Enumerator.MoveNext()'],['../class_direct_output_1_1_f_x_1_1_combined_effect_list_1_1_enumerator.html#a84ee0ecba694525e889d798e2e932ce0',1,'DirectOutput.FX.CombinedEffectList.Enumerator.MoveNext()']]]
+  ['movenext',['MoveNext',['../class_direct_output_1_1_cab_1_1_cabinet_output_list_1_1_enumerator.html#addeff41758550328292de0fd79e4e673',1,'DirectOutput::Cab::CabinetOutputList::Enumerator']]]
 ];

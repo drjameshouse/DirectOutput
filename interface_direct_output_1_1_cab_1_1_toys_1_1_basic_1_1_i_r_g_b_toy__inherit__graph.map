@@ -1,0 +1,5 @@
+<map id="DirectOutput.Cab.Toys.Basic.IRGBToy" name="DirectOutput.Cab.Toys.Basic.IRGBToy">
+<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html" title="DirectOutput.Cab.Toys.Basic.\lRGBLed" alt="" coords="5,246,200,287"/>
+<area shape="rect" id="node2" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all toy implementations. &#160;The abstract class ToyBase implements this interface..." alt="" coords="79,80,125,107"/>
+<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="57,5,148,32"/>
+</map>

@@ -11,6 +11,7 @@ var class_direct_output_1_1_table_1_1_table =
     [ "AssignedStaticEffects", "class_direct_output_1_1_table_1_1_table.html#a54c9b01e78d96d4db12e806c54cf3fcb", null ],
     [ "ConfigurationSource", "class_direct_output_1_1_table_1_1_table.html#a6feb7b524484489a59c6f41dea2b7394", null ],
     [ "Effects", "class_direct_output_1_1_table_1_1_table.html#a98fd3c8a7ce5d1ecf63b18610a7ae70d", null ],
+    [ "Pinball", "class_direct_output_1_1_table_1_1_table.html#a3dbc5d5b53f14f8c473a43fc214df0ea", null ],
     [ "RomName", "class_direct_output_1_1_table_1_1_table.html#a9b44f56f56ff4c2c25dd10ac3a47bce7", null ],
     [ "TableConfigurationFilename", "class_direct_output_1_1_table_1_1_table.html#a85e6e5bf8ff7716a2abc54a60a91a82b", null ],
     [ "TableElements", "class_direct_output_1_1_table_1_1_table.html#ac7277a662bf6b0aeace8a5466a65e87e", null ],

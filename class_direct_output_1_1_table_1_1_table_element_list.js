@@ -8,7 +8,7 @@ var class_direct_output_1_1_table_1_1_table_element_list =
     [ "FinishAssignedEffects", "class_direct_output_1_1_table_1_1_table_element_list.html#a24ae8077fd2c8ca0b27e20b3811d5666", null ],
     [ "GetTableElementDictonaryForType", "class_direct_output_1_1_table_1_1_table_element_list.html#af2c85283e9dab67d2c6ae460a1e4fc60", null ],
     [ "GetTableElementListForType", "class_direct_output_1_1_table_1_1_table_element_list.html#ae634f3412035b4a00d21bcf80396cc9d", null ],
-    [ "InitAssignedEffects", "class_direct_output_1_1_table_1_1_table_element_list.html#a17c337e20a5c5b4f363069251ef8f71b", null ],
+    [ "InitAssignedEffects", "class_direct_output_1_1_table_1_1_table_element_list.html#a9ec64f46e7d7a8c44ad5505739b957fb", null ],
     [ "Remove", "class_direct_output_1_1_table_1_1_table_element_list.html#a7905c74c0716d1e98229542619a2d6b5", null ],
     [ "Remove", "class_direct_output_1_1_table_1_1_table_element_list.html#ae6c2ec78c0c2e8fafcf36e85ee47d63d", null ],
     [ "TableElementValueChangedEventHandler", "class_direct_output_1_1_table_1_1_table_element_list.html#a568c3fcf44cf847892f22b864a164cb5", null ],

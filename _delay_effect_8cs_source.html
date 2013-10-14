@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/FX/DelayFX/DelayEffect.cs Source File</title>
+<title>DirectOutput: C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/FX/TimmedFX/DelayEffect.cs Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('_delay_effect_8cs_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,56 +116,69 @@ $(document).ready(function(){initNavTree('_delay_effect_8cs_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> System.Text;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> DirectOutput.Table;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="namespace_direct_output_1_1_f_x_1_1_delay_f_x.html">    7</a></span>&#160;<span class="keyword">namespace </span>DirectOutput.FX.DelayFX</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>DirectOutput.FX.TimmedFX</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html" title="The effect fires a assigned effect after a specified delay. ">DelayEffect</a>:<a class="code" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html" title="Handles the assignemt of a effect to a AssignedEffectList. ">AssignedEffect</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _DelayMs=0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> DelayMs</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html#abdcfae460dbf29cbadb76f93e5e4780e">   23</a></span>&#160;        {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _DelayMs; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keyword">set</span> { _DelayMs = value; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html#a4a1f2c3d13cacdc9ddf8f495890c8bcb">   34</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">new</span> <span class="keywordtype">void</span> Trigger(<a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a> <a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>.UnregisterAlarm(TriggerAssignedEffect);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            this.TableElementData = TableElementData;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>.RegisterAlarm(DelayMs, TriggerAssignedEffect);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a> <a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> TriggerAssignedEffect()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            base.Trigger(<a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html#ad35267440a286b9bf1702b4032c7f0ad">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">new</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            this.Pinball = Pinball;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            base.<a class="code" href="class_direct_output_1_1_pinball.html#aa1344df3ca7be7500e89f83f5e967f8c" title="Configures and initializes/starts and configures the Pinball object ">Init</a>(Pinball);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html#a6d5eb37d71e36abcd6c6626b7d4fc936">   61</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">new</span> <span class="keywordtype">void</span> Finish()</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a>.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>.UnregisterAlarm(TriggerAssignedEffect);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> = null;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            base.<a class="code" href="class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa" title="Finishes the Pinball object. ">Finish</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html" title="The effect fires a assigned target effect after a specified delay.  The original values supplied when...">DelayEffect</a>:<a class="code" href="class_direct_output_1_1_f_x_1_1_effect_effect_base.html" title="Base class for effects targeting another effect. ">EffectEffectBase</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">int</span> _DelayMs=0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> DelayMs</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html#ab703256d0921e40e6b6e3b98f9a4b232">   26</a></span>&#160;        {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> _DelayMs; }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keyword">set</span> { _DelayMs = value; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html#a5dd4d349285e47b4e57cc106729b7c29">   37</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Trigger(<a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a> <a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">if</span> (TargetEffect != null)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a>.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#a3dbc5d5b53f14f8c473a43fc214df0ea" title="Gets the pinball object to which the Table object belongs. ">Pinball</a>.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>.RegisterAlarm(DelayMs, TriggerTargetEffect, TableElementData, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">private</span> <span class="keywordtype">void</span> TriggerTargetEffect(<span class="keywordtype">object</span> AlarmParameter)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (TargetEffect != null)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    TargetEffect.Trigger((<a class="code" href="class_direct_output_1_1_table_1_1_table_element_data.html" title="Data representing the state of a table emlement ">TableElementData</a>)AlarmParameter);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">catch</span> (Exception E)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <a class="code" href="class_direct_output_1_1_log.html" title="A simple logger used to record important events and exceptions.  ">Log</a>.<a class="code" href="class_direct_output_1_1_log.html#a1e13bd3df7d60a039f2c763543d3bbbf" title="Writes a exception message to the log. ">Exception</a>(<span class="stringliteral">&quot;The target effect {0} of the DelayEffect {1} has trown a exception.&quot;</span>.Build(TargetEffectName, Name), E);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    TargetEffect = null;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html#adda1490345d93140e03249625c0025de">   67</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Init(<a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a>.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#aec11ebcfb2cb9788d6389e390c063678" title="Initializes a new instance of the Table class. ">Table</a> <a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            base.Init(<a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html#a2a3176e5e4acb5b73725ca2b5cb3b2bb">   76</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">new</span> <span class="keywordtype">void</span> Finish()</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="class_direct_output_1_1_table_1_1_table.html" title="Holds all table specific information and handles all TableElements ">Table</a>.<a class="code" href="class_direct_output_1_1_table_1_1_table.html#a3dbc5d5b53f14f8c473a43fc214df0ea" title="Gets the pinball object to which the Table object belongs. ">Pinball</a>.<a class="code" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9" title="Gets the AlarmHandler object for the Pinball object. ">Alarms</a>.UnregisterAlarm(TriggerTargetEffect);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;         </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            base.Finish();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_47e6c69249102d832240994dfe76ec93.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_aa86c433d3084651430d9207db338f91.html">FX</a></li><li class="navelem"><a class="el" href="dir_01561c1479e214846698dd812e7cd540.html">DelayFX</a></li><li class="navelem"><a class="el" href="_delay_effect_8cs.html">DelayEffect.cs</a></li>
-    <li class="footer">Generated on Fri Aug 30 2013 13:39:46 for DirectOutput by
+    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_3e554180b925145de090e82e9ce1143b.html">FX</a></li><li class="navelem"><a class="el" href="dir_3ab26af18f9813e808bab1a9d3c5017d.html">TimmedFX</a></li><li class="navelem"><a class="el" href="_delay_effect_8cs.html">DelayEffect.cs</a></li>
+    <li class="footer">Generated on Mon Oct 14 2013 22:46:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('_ext_list_8cs_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('_ext_list_8cs_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="code" href="namespace_direct_output_1_1_general_1_1_generic.html">    5</a></span>&#160;<span class="keyword">namespace </span>DirectOutput.General.Generic</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>ExtList&lt;T&gt; :  IList&lt;T&gt;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>ExtList&lt;T&gt; : IList&lt;T&gt;, ICollection&lt;T&gt;, IEnumerable&lt;T&gt;, IEnumerable, ICollection, IList</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">private</span> List&lt;T&gt; _InternalList = <span class="keyword">new</span> List&lt;T&gt;();</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
@@ -371,17 +371,103 @@ $(document).ready(function(){initNavTree('_ext_list_8cs_source.html','');});
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            AddRange(EnumerableList);</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;}</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">        #region ICollection Member</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#abd69b7ccd32428a1a285a1b8de498608">  373</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> CopyTo(Array array, <span class="keywordtype">int</span> index)</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            ((ICollection)_InternalList).CopyTo(array, index);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> IsSynchronized</div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a5b606402b94bead3880901a03b6210d0">  379</a></span>&#160;        {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> ((ICollection)_InternalList).IsSynchronized; }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">object</span> SyncRoot</div>
+<div class="line"><a name="l00384"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a1adbe1f5ecee951303d5c11bcfd9f713">  384</a></span>&#160;        {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> ((ICollection)_InternalList).SyncRoot; }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="preprocessor">        #region IList Member</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#aea2ed91e9b1c84c6a01fac0e054abb6d">  392</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> Add(<span class="keywordtype">object</span> value)</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        {</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keywordflow">if</span>(value.GetType() != typeof(T)) {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot; Value is of a wrong type.&quot;</span>);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            }</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            Add((T)value);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            <span class="keywordflow">return</span> _InternalList.Count - 1;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a55ff0e8398187c497d736fbca7773c97">  401</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> Contains(<span class="keywordtype">object</span> value)</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        {</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">if</span> (value.GetType() != typeof(T))</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot; Value is of a wrong type.&quot;</span>);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">return</span> _InternalList.Contains((T)value);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a691b981c34f4fb1041fd67ce6dceabc1">  410</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> IndexOf(<span class="keywordtype">object</span> value)</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            <span class="keywordflow">if</span> (value.GetType() != typeof(T))</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot; Value is of a wrong type.&quot;</span>);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            <span class="keywordflow">return</span> _InternalList.IndexOf((T)value);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
+<div class="line"><a name="l00419"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a0ba3bd84d95985816f2a221044434868">  419</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Insert(<span class="keywordtype">int</span> index, <span class="keywordtype">object</span> value)</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        {</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            <span class="keywordflow">if</span> (value.GetType() != typeof(T))</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot; Value is of a wrong type.&quot;</span>);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            Insert(index, (T)value);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> IsFixedSize</div>
+<div class="line"><a name="l00429"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a139c78c140ca51c9c490f200c0a6a991">  429</a></span>&#160;        {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> ((IList)_InternalList).IsFixedSize; }</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        }</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno"><a class="code" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#ac63efbbf9d6a5b9bc96527c2b7fc8ae2">  433</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Remove(<span class="keywordtype">object</span> value)</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <span class="keywordflow">if</span> (value.GetType() != typeof(T))</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            {</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot; Value is of a wrong type.&quot;</span>);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;            }</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;            Remove((T)value);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        }</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keywordtype">object</span> IList.this[<span class="keywordtype">int</span> index]</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        {</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="keyword">get</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                <span class="keywordflow">return</span> _InternalList[index];</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            }</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keyword">set</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            {</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                <span class="keyword">this</span>[index] = (T)value;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            }</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        }</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor"></span>    }</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_47e6c69249102d832240994dfe76ec93.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_dbd23a0a037ba459482739aeb8a58fff.html">General</a></li><li class="navelem"><a class="el" href="dir_ce9dbd1fea162c9b1c4e49948658d2b7.html">Generic</a></li><li class="navelem"><a class="el" href="_ext_list_8cs.html">ExtList.cs</a></li>
-    <li class="footer">Generated on Fri Aug 30 2013 13:39:46 for DirectOutput by
+    <li class="navelem"><a class="el" href="dir_224fdf3933e3085a212a98264a4767a9.html">DirectOutput</a></li><li class="navelem"><a class="el" href="dir_36adbf483c8de90af02d887a293f450a.html">General</a></li><li class="navelem"><a class="el" href="dir_e38c67dc576607ad8b6ccc6cf95151b1.html">Generic</a></li><li class="navelem"><a class="el" href="_ext_list_8cs.html">ExtList.cs</a></li>
+    <li class="footer">Generated on Mon Oct 14 2013 22:46:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_f_x_1_1_basic_
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,6 +118,7 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_f_x_1_1_basic_
 <div class="contents">
 
 <p>The BasicRGBToyEffect is used to turn on (/set a color) and off RGB toys based on the value of a TableElement.<br/>
+ If the value of the table element is &gt;0, the assigned IRGBToy will be set to the value specified in the Color property, for 0 the IRGBToy is set to black. <br/>
   
  <a href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#details">More...</a></p>
 <div class="dynheader">
@@ -125,25 +126,25 @@ Inheritance diagram for DirectOutput.FX.BasicFX.BasicRGBEffect:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect__inherit__graph.png" border="0" usemap="#_direct_output_8_f_x_8_basic_f_x_8_basic_r_g_b_effect_inherit__map" alt="Inheritance graph"/></div>
 <map name="_direct_output_8_f_x_8_basic_f_x_8_basic_r_g_b_effect_inherit__map" id="_direct_output_8_f_x_8_basic_f_x_8_basic_r_g_b_effect_inherit__map">
-<area shape="rect" id="node2" href="class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. This class does inherit IEffect. " alt="" coords="55,155,140,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="75,5,165,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="148,80,207,107"/></map>
+<area shape="rect" id="node2" href="class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. &#160;This class inherits NamedItemBase and implements IEffect..." alt="" coords="55,155,140,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="75,5,165,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="148,80,207,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for DirectOutput.FX.BasicFX.BasicRGBEffect:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect__coll__graph.png" border="0" usemap="#_direct_output_8_f_x_8_basic_f_x_8_basic_r_g_b_effect_coll__map" alt="Collaboration graph"/></div>
 <map name="_direct_output_8_f_x_8_basic_f_x_8_basic_r_g_b_effect_coll__map" id="_direct_output_8_f_x_8_basic_f_x_8_basic_r_g_b_effect_coll__map">
-<area shape="rect" id="node2" href="class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. This class does inherit IEffect. " alt="" coords="55,155,140,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="75,5,165,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="148,80,207,107"/></map>
+<area shape="rect" id="node2" href="class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. &#160;This class inherits NamedItemBase and implements IEffect..." alt="" coords="55,155,140,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="75,5,165,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="148,80,207,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a02e73b1b3bddaaf3e76f4a8df7bd13b8"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a02e73b1b3bddaaf3e76f4a8df7bd13b8">Trigger</a> (<a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a> <a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>)</td></tr>
 <tr class="memdesc:a02e73b1b3bddaaf3e76f4a8df7bd13b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers the effect.<br/>
- If the Value property of the TableElement is 0 the RGB toy will be turned off resp. set to color #000000, if the value is not 0 the RGB toy will be set to the color specified in the Color property. If TableElement is null, the IRGBToy will be set to the value of Color.  <a href="#a02e73b1b3bddaaf3e76f4a8df7bd13b8">More...</a><br/></td></tr>
+ If the Value property of the TableElement is 0 the RGB toy will be turned off resp. set to color #000000, if the value is not 0 the RGB toy will be set to the color specified in the Color property.  <a href="#a02e73b1b3bddaaf3e76f4a8df7bd13b8">More...</a><br/></td></tr>
 <tr class="separator:a02e73b1b3bddaaf3e76f4a8df7bd13b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f70230c335ad911e62f8e2b5fe02b6"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a96f70230c335ad911e62f8e2b5fe02b6">Init</a> (<a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a> <a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a>)</td></tr>
-<tr class="memdesc:a96f70230c335ad911e62f8e2b5fe02b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html" title="The BasicRGBToyEffect is used to turn on (/set a color) and off RGB toys based on the value of a Tabl...">BasicRGBEffect</a>.  <a href="#a96f70230c335ad911e62f8e2b5fe02b6">More...</a><br/></td></tr>
-<tr class="separator:a96f70230c335ad911e62f8e2b5fe02b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9c8ef0bf2f142a652dcaefca481e72"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a7e9c8ef0bf2f142a652dcaefca481e72">Init</a> (<a class="el" href="class_direct_output_1_1_table_1_1_table.html">Table.Table</a> <a class="el" href="class_direct_output_1_1_table_1_1_table.html">Table</a>)</td></tr>
+<tr class="memdesc:a7e9c8ef0bf2f142a652dcaefca481e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html" title="The BasicRGBToyEffect is used to turn on (/set a color) and off RGB toys based on the value of a Tabl...">BasicRGBEffect</a>.  <a href="#a7e9c8ef0bf2f142a652dcaefca481e72">More...</a><br/></td></tr>
+<tr class="separator:a7e9c8ef0bf2f142a652dcaefca481e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee9ab010cd1bfe49ce26830a3fdc672"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a9ee9ab010cd1bfe49ce26830a3fdc672">Finish</a> ()</td></tr>
 <tr class="memdesc:a9ee9ab010cd1bfe49ce26830a3fdc672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes the <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html" title="The BasicRGBToyEffect is used to turn on (/set a color) and off RGB toys based on the value of a Tabl...">BasicRGBEffect</a>.  <a href="#a9ee9ab010cd1bfe49ce26830a3fdc672">More...</a><br/></td></tr>
 <tr class="separator:a9ee9ab010cd1bfe49ce26830a3fdc672"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,7 +157,7 @@ Properties</h2></td></tr>
 <tr class="memitem:a55d7d3c26e2cd7292c06a41ef189a0d5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a55d7d3c26e2cd7292c06a41ef189a0d5">Color</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a55d7d3c26e2cd7292c06a41ef189a0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color for the RGB toy.  <a href="#a55d7d3c26e2cd7292c06a41ef189a0d5">More...</a><br/></td></tr>
 <tr class="separator:a55d7d3c26e2cd7292c06a41ef189a0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac473b906580f1e1266c6f58fa112911c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_r_g_b_toy.html">IRGBToy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#ac473b906580f1e1266c6f58fa112911c">RGBToy</a><code> [get]</code></td></tr>
+<tr class="memitem:ac473b906580f1e1266c6f58fa112911c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_r_g_b_toy.html">IRGBToy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#ac473b906580f1e1266c6f58fa112911c">RGBToy</a><code> [get]</code></td></tr>
 <tr class="memdesc:ac473b906580f1e1266c6f58fa112911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refrence to the RGB Toy specified in the RGBToyName property.<br/>
  If the RGBToyName property is empty or contains a unknown name or the name of a toy which does not implement IRGBToy this property will return null.  <a href="#ac473b906580f1e1266c6f58fa112911c">More...</a><br/></td></tr>
 <tr class="separator:ac473b906580f1e1266c6f58fa112911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,9 +191,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The BasicRGBToyEffect is used to turn on (/set a color) and off RGB toys based on the value of a TableElement.<br/>
+ If the value of the table element is &gt;0, the assigned IRGBToy will be set to the value specified in the Color property, for 0 the IRGBToy is set to black. <br/>
  </p>
 
-<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00013">13</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
+<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00015">15</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9ee9ab010cd1bfe49ce26830a3fdc672"></a>
 <div class="memitem">
@@ -219,11 +221,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_base.html#a06cdee7610ce58faaf7beb19fc6cbda7">DirectOutput.FX.EffectBase</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00118">118</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
+<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00112">112</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a96f70230c335ad911e62f8e2b5fe02b6"></a>
+<a class="anchor" id="a7e9c8ef0bf2f142a652dcaefca481e72"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -233,8 +235,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">override void DirectOutput.FX.BasicFX.BasicRGBEffect.Init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a>&#160;</td>
-          <td class="paramname"><em>Pinball</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_direct_output_1_1_table_1_1_table.html">Table.Table</a>&#160;</td>
+          <td class="paramname"><em>Table</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -246,10 +248,16 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html" title="The BasicRGBToyEffect is used to turn on (/set a color) and off RGB toys based on the value of a Tabl...">BasicRGBEffect</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="namespace_direct_output_1_1_table.html" title="The Table namespace contains all table specific classes like the Table class itself, TableElement and effect assigment classes. ">Table</a></td><td><a class="el" href="namespace_direct_output_1_1_table.html" title="The Table namespace contains all table specific classes like the Table class itself, TableElement and effect assigment classes. ">Table</a> object containing the effect.</td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_base.html#a5999926e7543fc0a9c7460217d622507">DirectOutput.FX.EffectBase</a>.</p>
+<p>Implements <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_base.html#a2b74daaf0f3ba25b8194ae7691cee9f1">DirectOutput.FX.EffectBase</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00109">109</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
+<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00103">103</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
 
 </div>
 </div>
@@ -276,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Triggers the effect.<br/>
- If the Value property of the TableElement is 0 the RGB toy will be turned off resp. set to color #000000, if the value is not 0 the RGB toy will be set to the color specified in the Color property. If TableElement is null, the IRGBToy will be set to the value of Color. </p>
+ If the Value property of the TableElement is 0 the RGB toy will be turned off resp. set to color #000000, if the value is not 0 the RGB toy will be set to the color specified in the Color property. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">TableElementData</td><td>TableElementData for the TableElement which has triggered the effect.</td></tr>
@@ -286,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_base.html#a1c9b0f8e1cb1e7594995db03bc7a357c">DirectOutput.FX.EffectBase</a>.</p>
 
-<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00084">84</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
+<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00082">82</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
 
 </div>
 </div>
@@ -312,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Color for the RGB toy. </p>
 <p>The color for the RGB toy. </p>
 
-<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00046">46</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
+<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00045">45</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
 
 </div>
 </div>
@@ -324,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_r_g_b_toy.html">IRGBToy</a> DirectOutput.FX.BasicFX.BasicRGBEffect.RGBToy</td>
+          <td class="memname"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_r_g_b_toy.html">IRGBToy</a> DirectOutput.FX.BasicFX.BasicRGBEffect.RGBToy</td>
         </tr>
       </table>
   </td>
@@ -337,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Refrence to the RGB Toy specified in the RGBToyName property.<br/>
  If the RGBToyName property is empty or contains a unknown name or the name of a toy which does not implement IRGBToy this property will return null. </p>
 
-<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00056">56</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
+<p>Definition at line <a class="el" href="_basic_r_g_b_effect_8cs_source.html#l00055">55</a> of file <a class="el" href="_basic_r_g_b_effect_8cs_source.html">BasicRGBEffect.cs</a>.</p>
 
 </div>
 </div>
@@ -376,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_f_x.html">FX</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_f_x_1_1_basic_f_x.html">BasicFX</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html">BasicRGBEffect</a></li>
-    <li class="footer">Generated on Fri Aug 30 2013 13:39:52 for DirectOutput by
+    <li class="footer">Generated on Mon Oct 14 2013 11:51:52 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

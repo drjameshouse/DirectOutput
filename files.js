@@ -1,10 +1,13 @@
 var files =
 [
-    [ "B2SServerPlugin", "dir_e4463413e3af6099529c2f799116105f.html", "dir_e4463413e3af6099529c2f799116105f" ],
-    [ "DirectOutput", "dir_47e6c69249102d832240994dfe76ec93.html", "dir_47e6c69249102d832240994dfe76ec93" ],
-    [ "DirectOutput_Test", "dir_adf3cce4e33cb7cdf14d35d205c90b80.html", "dir_adf3cce4e33cb7cdf14d35d205c90b80" ],
-    [ "DirectOutputConfigTester", "dir_38753ec874551ebe54b423182bc9711d.html", "dir_38753ec874551ebe54b423182bc9711d" ],
-    [ "DirectPlugin", "dir_f2e54b595268a95315f8a4424c6f9e21.html", "dir_f2e54b595268a95315f8a4424c6f9e21" ],
-    [ "HyperpinPlugin", "dir_ca2e510d9e05731c2543aa5668cf4fa0.html", "dir_ca2e510d9e05731c2543aa5668cf4fa0" ],
-    [ "LedControlFileTester", "dir_8a25b78d71064998eb9427cfb9f830ec.html", "dir_8a25b78d71064998eb9427cfb9f830ec" ]
+    [ "B2SServerPlugin", "dir_0363a3d8c599423727bee70fc435bb39.html", "dir_0363a3d8c599423727bee70fc435bb39" ],
+    [ "DirectOutput", "dir_224fdf3933e3085a212a98264a4767a9.html", "dir_224fdf3933e3085a212a98264a4767a9" ],
+    [ "DirectOutput_Test", "dir_74996821937017c2d553e8824c2d2ecc.html", "dir_74996821937017c2d553e8824c2d2ecc" ],
+    [ "DirectOutputComObjectRegister", "dir_3a8f0bcbff5a1fb4a520cab18a648021.html", "dir_3a8f0bcbff5a1fb4a520cab18a648021" ],
+    [ "DirectOutputConfigTester", "dir_0bc4932a7ae12babf235682821fd5891.html", "dir_0bc4932a7ae12babf235682821fd5891" ],
+    [ "DirectPlugin", "dir_08700f4b3b6059e73bedd4231a2256ca.html", "dir_08700f4b3b6059e73bedd4231a2256ca" ],
+    [ "DocumentationHelper", "dir_f60db2a16589a02573d3895167eba910.html", "dir_f60db2a16589a02573d3895167eba910" ],
+    [ "HyperpinPlugin", "dir_4b6a4127cb70a742fce6b8b2db22b294.html", "dir_4b6a4127cb70a742fce6b8b2db22b294" ],
+    [ "LedControlConverter", "dir_bf5ae403b101a0c90883d5ac7b56abd4.html", "dir_bf5ae403b101a0c90883d5ac7b56abd4" ],
+    [ "LedControlFileTester", "dir_d8c2e297ebb5deff0a73efa57f81a868.html", "dir_d8c2e297ebb5deff0a73efa57f81a868" ]
 ];

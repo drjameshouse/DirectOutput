@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_cab_1_1_toys_1
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,57 +117,53 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_cab_1_1_toys_1
 </div><!--header-->
 <div class="contents">
 
-<p>The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.<br/>
- The outputs listes in the Outputs property can point to any IOutput in the <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a>.<br/>
- This toy is also used when legacy LedCOntrol.ini files are used to configure the framework.  
+<p>The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration to determine which outputs should be controled by the columns in the ini files.<br/>
+ Do not target this type of toy with any effects.  
  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent__inherit__graph.png" border="0" usemap="#_direct_output_8_cab_8_toys_8_l_w_equivalent_8_led_wiz_equivalent_inherit__map" alt="Inheritance graph"/></div>
 <map name="_direct_output_8_cab_8_toys_8_l_w_equivalent_8_led_wiz_equivalent_inherit__map" id="_direct_output_8_cab_8_toys_8_l_w_equivalent_8_led_wiz_equivalent_inherit__map">
-<area shape="rect" id="node2" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="59,155,132,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="72,5,163,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy. &#160;The abstract class Toy implements this interface. ..." alt="" coords="147,80,193,107"/></map>
+<area shape="rect" id="node2" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="59,155,132,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="72,5,163,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all toy implementations. &#160;The abstract class ToyBase implements this interface..." alt="" coords="147,80,193,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalent:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent__coll__graph.png" border="0" usemap="#_direct_output_8_cab_8_toys_8_l_w_equivalent_8_led_wiz_equivalent_coll__map" alt="Collaboration graph"/></div>
 <map name="_direct_output_8_cab_8_toys_8_l_w_equivalent_8_led_wiz_equivalent_coll__map" id="_direct_output_8_cab_8_toys_8_l_w_equivalent_8_led_wiz_equivalent_coll__map">
-<area shape="rect" id="node2" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="59,155,132,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="NamedItemBase" alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="72,5,163,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy. &#160;The abstract class Toy implements this interface. ..." alt="" coords="147,80,193,107"/></map>
+<area shape="rect" id="node2" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="59,155,132,181"/><area shape="rect" id="node3" href="class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/><area shape="rect" id="node4" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="72,5,163,32"/><area shape="rect" id="node5" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all toy implementations. &#160;The abstract class ToyBase implements this interface..." alt="" coords="147,80,193,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa82beeacdc83a35ffb140cb7239f8b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#aa82beeacdc83a35ffb140cb7239f8b83">SetOutputValue</a> (int OutputNumber, int Value)</td></tr>
-<tr class="memdesc:aa82beeacdc83a35ffb140cb7239f8b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a>.  <a href="#aa82beeacdc83a35ffb140cb7239f8b83">More...</a><br/></td></tr>
-<tr class="separator:aa82beeacdc83a35ffb140cb7239f8b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae367b6418ce655db5f05b393cfbcffda"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#ae367b6418ce655db5f05b393cfbcffda">Init</a> (<a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a> <a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a>)</td></tr>
-<tr class="memdesc:ae367b6418ce655db5f05b393cfbcffda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the LedwizEquivalent toy.  <a href="#ae367b6418ce655db5f05b393cfbcffda">More...</a><br/></td></tr>
-<tr class="separator:ae367b6418ce655db5f05b393cfbcffda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd836d571cbac5d5ae6f9e30f07fd43"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#acdd836d571cbac5d5ae6f9e30f07fd43">Init</a> (<a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a> <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a>)</td></tr>
+<tr class="memdesc:acdd836d571cbac5d5ae6f9e30f07fd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the LedwizEquivalent toy.  <a href="#acdd836d571cbac5d5ae6f9e30f07fd43">More...</a><br/></td></tr>
+<tr class="separator:acdd836d571cbac5d5ae6f9e30f07fd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740dbf1cdb7bb1a22e452fe24181f181"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a740dbf1cdb7bb1a22e452fe24181f181">Reset</a> ()</td></tr>
 <tr class="memdesc:a740dbf1cdb7bb1a22e452fe24181f181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all output to their default state.  <a href="#a740dbf1cdb7bb1a22e452fe24181f181">More...</a><br/></td></tr>
 <tr class="separator:a740dbf1cdb7bb1a22e452fe24181f181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e552fd1b2ae511d3b6ef82c548c7d7c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a4e552fd1b2ae511d3b6ef82c548c7d7c">Finish</a> ()</td></tr>
-<tr class="memdesc:a4e552fd1b2ae511d3b6ef82c548c7d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> toy.  <a href="#a4e552fd1b2ae511d3b6ef82c548c7d7c">More...</a><br/></td></tr>
+<tr class="memdesc:a4e552fd1b2ae511d3b6ef82c548c7d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> toy.  <a href="#a4e552fd1b2ae511d3b6ef82c548c7d7c">More...</a><br/></td></tr>
 <tr class="separator:a4e552fd1b2ae511d3b6ef82c548c7d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2eaae8f1da24f3dbdf7a9e79dce149c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#ad2eaae8f1da24f3dbdf7a9e79dce149c">LedWizEquivalent</a> ()</td></tr>
-<tr class="memdesc:ad2eaae8f1da24f3dbdf7a9e79dce149c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> class.  <a href="#ad2eaae8f1da24f3dbdf7a9e79dce149c">More...</a><br/></td></tr>
+<tr class="memdesc:ad2eaae8f1da24f3dbdf7a9e79dce149c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> class.  <a href="#ad2eaae8f1da24f3dbdf7a9e79dce149c">More...</a><br/></td></tr>
 <tr class="separator:ad2eaae8f1da24f3dbdf7a9e79dce149c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a9e92f807fbc785a6104e84cd6dcf95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a0a9e92f807fbc785a6104e84cd6dcf95">LedWizEquivalent</a> (<a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html">DirectOutput.Cab.Out.LW.LedWiz</a> LedWiz)</td></tr>
-<tr class="memdesc:a0a9e92f807fbc785a6104e84cd6dcf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> class.  <a href="#a0a9e92f807fbc785a6104e84cd6dcf95">More...</a><br/></td></tr>
+<tr class="memdesc:a0a9e92f807fbc785a6104e84cd6dcf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> class.  <a href="#a0a9e92f807fbc785a6104e84cd6dcf95">More...</a><br/></td></tr>
 <tr class="separator:a0a9e92f807fbc785a6104e84cd6dcf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:adaf8a34e086deba318abb30072fab95c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html">LedWizEquivalentOutputList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#adaf8a34e086deba318abb30072fab95c">Outputs</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:adaf8a34e086deba318abb30072fab95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the outputs of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> toy.  <a href="#adaf8a34e086deba318abb30072fab95c">More...</a><br/></td></tr>
+<tr class="memdesc:adaf8a34e086deba318abb30072fab95c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the outputs of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> toy.  <a href="#adaf8a34e086deba318abb30072fab95c">More...</a><br/></td></tr>
 <tr class="separator:adaf8a34e086deba318abb30072fab95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f9d6ebdd6579e0980bdc9f5e0862df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a32f9d6ebdd6579e0980bdc9f5e0862df">LedWizNumber</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a32f9d6ebdd6579e0980bdc9f5e0862df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number of the virtual LedWiz emulated by the LedWizEquivalentToy.  <a href="#a32f9d6ebdd6579e0980bdc9f5e0862df">More...</a><br/></td></tr>
+<tr class="memdesc:a32f9d6ebdd6579e0980bdc9f5e0862df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number of the virtual LedWiz resp. ini file to be matched with the LedWizEquivalentToy.  <a href="#a32f9d6ebdd6579e0980bdc9f5e0862df">More...</a><br/></td></tr>
 <tr class="separator:a32f9d6ebdd6579e0980bdc9f5e0862df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html">DirectOutput.Cab.Toys.IToy</a></td></tr>
 <tr class="memitem:a671f6995f39dd01cf6ce17a43d0e6fba inherit properties_interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy"><td class="memItemLeft" align="right" valign="top">new string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a671f6995f39dd01cf6ce17a43d0e6fba">Name</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a671f6995f39dd01cf6ce17a43d0e6fba inherit properties_interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the Name of the <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy.  The abstract class Toy implements this interface. ...">IToy</a>.  <a href="#a671f6995f39dd01cf6ce17a43d0e6fba">More...</a><br/></td></tr>
+<tr class="memdesc:a671f6995f39dd01cf6ce17a43d0e6fba inherit properties_interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the Name of the <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all toy implementations.  The abstract class ToyBase implements this interface...">IToy</a>.  <a href="#a671f6995f39dd01cf6ce17a43d0e6fba">More...</a><br/></td></tr>
 <tr class="separator:a671f6995f39dd01cf6ce17a43d0e6fba inherit properties_interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html">DirectOutput.General.Generic.INamedItem</a></td></tr>
 <tr class="memitem:afdd2dfec93dfb0090d7fcb99f967d354 inherit properties_interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html#afdd2dfec93dfb0090d7fcb99f967d354">Name</a><code> [get, set]</code></td></tr>
@@ -189,11 +185,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ac045be3c17c3bc94a0062856aced616a inherit events_interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.<br/>
- The outputs listes in the Outputs property can point to any IOutput in the <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a>.<br/>
- This toy is also used when legacy LedCOntrol.ini files are used to configure the framework. </p>
+<div class="textblock"><p>The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration to determine which outputs should be controled by the columns in the ini files.<br/>
+ Do not target this type of toy with any effects. </p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00013">13</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00012">12</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad2eaae8f1da24f3dbdf7a9e79dce149c"></a>
 <div class="memitem">
@@ -208,9 +203,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> class. </p>
+<p>Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> class. </p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00088">88</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00075">75</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
@@ -228,15 +223,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> class. </p>
+<p>Initializes a new instance of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">LedWiz</td><td>Reference to a LedWiz object used to configure the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a>.</td></tr>
+    <tr><td class="paramname">LedWiz</td><td>Reference to a LedWiz object used to configure the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a>.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00094">94</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00081">81</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
@@ -254,23 +249,23 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finishes the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> toy. </p>
+<p>Finishes the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> toy. </p>
 
 <p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a0bbfbbe3686a888f6601d21813030eb7">DirectOutput.Cab.Toys.IToy</a>.</p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00080">80</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00067">67</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae367b6418ce655db5f05b393cfbcffda"></a>
+<a class="anchor" id="acdd836d571cbac5d5ae6f9e30f07fd43"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">override void DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalent.Init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a>&#160;</td>
-          <td class="paramname"><em>Pinball</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a>&#160;</td>
+          <td class="paramname"><em>Cabinet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -279,14 +274,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Initializes the LedwizEquivalent toy. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a></td><td><a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object containing the <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a> to which the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> belongs.</td></tr>
+    <tr><td class="paramname"><a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a></td><td><a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html" title="The Cabinet object describes the parts of a pinball cabinet (toys, outputcontrollers, outputs and more). ">Cabinet</a> object to which the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> belongs.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a4f506929b36fe64e789830d4d9853a77">DirectOutput.Cab.Toys.IToy</a>.</p>
+<p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a87f2c5e9c9b1388c42745ee3ad5d572e">DirectOutput.Cab.Toys.IToy</a>.</p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00063">63</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00050">50</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
@@ -307,44 +302,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a315e8c97eb32417e67605acf0b3fab92">DirectOutput.Cab.Toys.IToy</a>.</p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00072">72</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa82beeacdc83a35ffb140cb7239f8b83"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalent.SetOutputValue </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>OutputNumber</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets the value of a <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">OutputNumber</td><td>The number of the the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a>.</td></tr>
-    <tr><td class="paramname">Value</td><td>The value for the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html" title="LEDWizEquivalentOutput is the output object for the LedWizEquivalent IToy. ">LedWizEquivalentOutput</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00023">23</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00059">59</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
@@ -367,10 +325,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the number of the virtual LedWiz emulated by the LedWizEquivalentToy. </p>
-<p>The number of the virtual LedWiz emulated by the LedWizEquivalentToy. </p>
+<p>Gets or sets the number of the virtual LedWiz resp. ini file to be matched with the LedWizEquivalentToy. </p>
+<p>The number of the virtual LedWiz resp. ini file to be matched with the LedWizEquivalentToy. </p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00053">53</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00040">40</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
@@ -392,10 +350,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the outputs of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> toy. </p>
-<p>The outputs of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy provides a Ledwiz like interface to 32 outputs.  The outputs listes in the O...">LedWizEquivalent</a> toy. </p>
+<p>Gets or sets the outputs of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> toy. </p>
+<p>The outputs of the <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ...">LedWizEquivalent</a> toy. </p>
 
-<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00039">39</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
+<p>Definition at line <a class="el" href="_led_wiz_equivalent_8cs_source.html#l00026">26</a> of file <a class="el" href="_led_wiz_equivalent_8cs_source.html">LedWizEquivalent.cs</a>.</p>
 
 </div>
 </div>
@@ -409,7 +367,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab.html">Cab</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys.html">Toys</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent.html">LWEquivalent</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html">LedWizEquivalent</a></li>
-    <li class="footer">Generated on Fri Aug 30 2013 13:39:51 for DirectOutput by
+    <li class="footer">Generated on Mon Oct 14 2013 22:47:01 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

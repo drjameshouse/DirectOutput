@@ -82,6 +82,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
       <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
       <li><a href="functions_prop.html"><span>Properties</span></a></li>
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('functions_0x69.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Events</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -149,83 +150,102 @@ $(document).ready(function(){initNavTree('functions_0x69.html','');});
 <li>Id
 : <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html#aa077afcb3f19f999c143cafcf31aa189">DirectOutput.Cab.Out.Pac.PacLed64</a>
 </li>
+<li>InactiveColor
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_fade_on_off_effect.html#a0329b295d29d2c57b3a9fd0564ce1440">DirectOutput.FX.RGBAFX.RGBAFadeOnOffEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_on_off_effect.html#a44491b1235373cb256f3fe15832071e4">DirectOutput.FX.RGBAFX.RGBAOnOffEffect</a>
+</li>
+<li>InactiveValue
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_fade_on_off_effect.html#a69be52cc80bfbbfff4abc43e449a6f3d">DirectOutput.FX.AnalogToyFX.AnalogToyFadeOnOffEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_on_off_effect.html#a467863402fce47d4527706a907d2f64f">DirectOutput.FX.AnalogToyFX.AnalogToyOnOffEffect</a>
+</li>
 <li>Index
-: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a3ca3188a61d1b24bff0ceb7c09c482c4">DirectOutput.General.Generic.InsertEventArgs&lt; Ty &gt;</a>
-, <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_set_event_args_3_01_ty_01_4.html#a54e7db3de85dc1028392527fc0228f6f">DirectOutput.General.Generic.SetEventArgs&lt; Ty &gt;</a>
+: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_set_event_args_3_01_ty_01_4.html#a54e7db3de85dc1028392527fc0228f6f">DirectOutput.General.Generic.SetEventArgs&lt; Ty &gt;</a>
+, <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a3ca3188a61d1b24bff0ceb7c09c482c4">DirectOutput.General.Generic.InsertEventArgs&lt; Ty &gt;</a>
 , <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_remove_event_args_3_01_ty_01_4.html#ab5cf6cbb4da1f1c617dfc868d14cd884">DirectOutput.General.Generic.RemoveEventArgs&lt; Ty &gt;</a>
 </li>
 <li>IndexOf()
 : <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a5e06d70e534bcb3f59d0b8e3a57a2978">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
 </li>
 <li>Init()
-: <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a1b77139c8f71ebd2b6683d86b4c2e566">DirectOutput.Cab.Out.IOutputController</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_replay_knocker.html#aa40452af790dea563a024f934d543812">DirectOutput.Cab.Toys.Basic.ReplayKnocker</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_digital_effect.html#a2125e3026f09b94114daf80d47606922">DirectOutput.FX.BasicFX.BasicDigitalEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_r_g_b_effect.html#a96f70230c335ad911e62f8e2b5fe02b6">DirectOutput.FX.BasicFX.BasicRGBEffect</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html#a1c7812181e525df4d585c7546e3466bb">DirectOutput.Cab.Toys.Basic.RGBLed</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_delay_f_x_1_1_delay_effect.html#ad35267440a286b9bf1702b4032c7f0ad">DirectOutput.FX.DelayFX.DelayEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_base.html#a5999926e7543fc0a9c7460217d622507">DirectOutput.FX.EffectBase</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html#ae60c3919409e7ff947c164c278d71cf2">DirectOutput.Cab.Out.LW.LedWiz</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_analog_toy.html#a393cce3fb87ca08fd2ad9213f986797f">DirectOutput.Cab.Toys.Generic.GenericAnalogToy</a>
+: <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#a5a6b387b02571743d261150f27555b90">DirectOutput.Cab.Out.OutputControllerBase</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_list.html#a1b20f7fc05bd27a5d49541c618bb5136">DirectOutput.Cab.Toys.ToyList</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_fade_on_off_effect.html#a0cf57d41018e8a30d68c36dd8219b55b">DirectOutput.FX.AnalogToyFX.AnalogToyFadeOnOffEffect</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html#a26030229458083d02f10dbeadbd90bdf">DirectOutput.Cab.Out.OutputControllerList</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_on_off_effect.html#a87612d627e72b673ff9613a98725bd35">DirectOutput.FX.AnalogToyFX.AnalogToyOnOffEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_ananlog_toy_effect_base.html#a546926fdc6843ed1dd42b5197f56c09b">DirectOutput.FX.AnalogToyFX.AnanlogToyEffectBase</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html#a9c67b7a35cf54b7270c1d975c00cc266">DirectOutput.Cab.Out.Pac.PacLed64</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html#acfe1ca295939cde097a7c2e235def1aa">DirectOutput.FX.AssignedEffect</a>
 , <a class="el" href="class_direct_output_1_1_table_1_1_table.html#a71412a415177d4e98e3beddbaca6c92f">DirectOutput.Table.Table</a>
 , <a class="el" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html#a17d2d791f967c53eb2576e4f6cb47fe2">DirectOutput.PinballSupport.AlarmHandler</a>
-, <a class="el" href="class_direct_output_1_1_pinball.html#aa1344df3ca7be7500e89f83f5e967f8c">DirectOutput.Pinball</a>
-, <a class="el" href="class_direct_output_1_1_log.html#ae18d7a3376ecb53e13858eb9314c3842">DirectOutput.Log</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_list.html#a750f4a6067bb9ae298a7eab3f7428175">DirectOutput.FX.EffectList</a>
-, <a class="el" href="interface_direct_output_1_1_f_x_1_1_i_effect.html#aa9d424622231030bbb616a18fe0e3f0f">DirectOutput.FX.IEffect</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_generic_1_1_generic_digital_toy.html#aa961a4696b9a3fc4cd4bb372fe444a27">DirectOutput.Cab.Toys.Generic.GenericDigitalToy</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a9621693ea31bed07511b3ab474c1d800">DirectOutput.FX.LedControlFX.LedControlEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a73800340c47aeceaa6339d963591d404">DirectOutput.FX.ListFX.ListEffect</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html#a6b0aaf21dca359732d29064c95372e81">DirectOutput.Cab.Out.NullOutputController.NullOutputController</a>
-, <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_analog_toy.html#a1185b4e77b228a9f5cdb1c23f11758fd">DirectOutput.Cab.Toys.IAnalogToy</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_null_f_x_1_1_null_effect.html#a5f46ead6d62f43c003e0a9879ead2273">DirectOutput.FX.NullFX.NullEffect</a>
-, <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_digital_toy.html#af3eec101217a3b8404fb3dbb4a8cb771">DirectOutput.Cab.Toys.IDigitalToy</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_basic_f_x_1_1_basic_analog_effect.html#ac8816856f75fcd2d47404adc4b008e61">DirectOutput.FX.BasicFX.BasicAnalogEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html#a67506fa4f8ee45bd419977dfcfcaa806">DirectOutput.FX.AssignedEffectList</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect.html#affba562f0d3bdd1760cf4b317ecb7836">DirectOutput.FX.AssignedEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_timed_dimmer_lamp_effect.html#a9db4d1f08fcdbfcdbe2bbd10fb09a27a">DirectOutput.FX.TimedDimmerLampEffect</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_list.html#ac3957acc878de4856505c223a81ed888">DirectOutput.Cab.Toys.ToyList</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html#a3dda3d8ebac90d0d39ad1dfea89d45a9">DirectOutput.Cab.Toys.ToyBase</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html#a2061c3cd1afeb0380d7dab4b30349c6e">DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalentOutputList</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_base.html#a5a6b387b02571743d261150f27555b90">DirectOutput.Cab.Out.OutputControllerBase</a>
-, <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a4f506929b36fe64e789830d4d9853a77">DirectOutput.Cab.Toys.IToy</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#ae367b6418ce655db5f05b393cfbcffda">DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalent</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_assigned_effect_list.html#a5a10d90ced518369ca079018adab0779">DirectOutput.FX.AssignedEffectList</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_analog_toy.html#ade82af7265b4532ba758c11265d8a734">DirectOutput.Cab.Toys.Basic.AnalogToy</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_extend_duration_effect.html#abc625df9d54ffc8745de1062230c6844">DirectOutput.FX.TimmedFX.ExtendDurationEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_delay_effect.html#adda1490345d93140e03249625c0025de">DirectOutput.FX.TimmedFX.DelayEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_on_off_effect.html#a106e392ad0a6d29eb7499408cf3756ee">DirectOutput.FX.RGBAFX.RGBAOnOffEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_effect_base.html#a0d1159279cc9edef887225c8633160c9">DirectOutput.FX.RGBAFX.RGBAEffectBase</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_null_f_x_1_1_null_effect.html#aae3489327e698b61de418f84242abb3a">DirectOutput.FX.NullFX.NullEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_list_f_x_1_1_list_effect.html#a80ec06a0aa554eacf825facaa7b969ae">DirectOutput.FX.ListFX.ListEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_base.html#a2b74daaf0f3ba25b8194ae7691cee9f1">DirectOutput.FX.EffectBase</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_effect_base.html#a23e5c9042ebb87016cceb32e2b2889f9">DirectOutput.FX.EffectEffectBase</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_digital_toy.html#a43e0669e9fcfe191e2f725d57e0ce024">DirectOutput.Cab.Toys.Basic.DigitalToy</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_effect_list.html#af2c01336a6b55044dbb55fb0d3e2e384">DirectOutput.FX.EffectList</a>
+, <a class="el" href="interface_direct_output_1_1_f_x_1_1_i_effect.html#af9626f1702d6a50c507c6fc9b9332bfe">DirectOutput.FX.IEffect</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a8bfb51f8346edd24819027afb3a4caac">DirectOutput.Cab.Toys.Basic.Motor</a>
 , <a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html#aa85fc3aadb04dd4a151e24a9d0d68d98">DirectOutput.Cab.Cabinet</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_output_controller_list.html#a26030229458083d02f10dbeadbd90bdf">DirectOutput.Cab.Out.OutputControllerList</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#ad14e6aaa9d2d5bd13700b0fe09ae5a90">DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalentOutput</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64.html#a9c67b7a35cf54b7270c1d975c00cc266">DirectOutput.Cab.Out.Pac.PacLed64</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html#ac64c4672d2b3c0777ff408e27123f0f6">DirectOutput.Cab.Toys.Basic.RGBLed</a>
+, <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html#a87f2c5e9c9b1388c42745ee3ad5d572e">DirectOutput.Cab.Toys.IToy</a>
 , <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_art_net.html#ad12feb6d4f17f3e0f707d128ff07430c">DirectOutput.Cab.Out.DMX.ArtNet</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_flasher.html#a4da7da65840e60c6ebc03fc72529f909">DirectOutput.Cab.Toys.Basic.Flasher</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a7e54b9610455195f86c95337e50a5a9e">DirectOutput.Cab.Toys.Basic.Motor</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html#ab17833c3ed24a0ca5e97bfc4af024695">DirectOutput.Cab.Toys.ToyBase</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output_list.html#a2061c3cd1afeb0380d7dab4b30349c6e">DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalentOutputList</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#ad14e6aaa9d2d5bd13700b0fe09ae5a90">DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalentOutput</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_toy.html#a7774dc485101227629240a203221ff04">DirectOutput.Cab.Toys.Layer.AnalogAlphaToy</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html#ac28c548b2b58e08ad6aef7dcdff7a8a3">DirectOutput.Cab.Toys.Layer.RGBAToy</a>
+, <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_r_g_b_a_toy.html#a795e1acd0cefa3724e0a23dc7a3ce692">DirectOutput.Cab.Toys.Layer.IRGBAToy</a>
+, <a class="el" href="class_direct_output_1_1_log.html#ae18d7a3376ecb53e13858eb9314c3842">DirectOutput.Log</a>
+, <a class="el" href="class_direct_output_1_1_pinball.html#aa1344df3ca7be7500e89f83f5e967f8c">DirectOutput.Pinball</a>
+, <a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_analog_alpha_toy.html#ae489d540dc98bd7354cf5f4c933dc70f">DirectOutput.Cab.Toys.Layer.IAnalogAlphaToy</a>
+, <a class="el" href="interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a1b77139c8f71ebd2b6683d86b4c2e566">DirectOutput.Cab.Out.IOutputController</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html#ae60c3919409e7ff947c164c278d71cf2">DirectOutput.Cab.Out.LW.LedWiz</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#acdd836d571cbac5d5ae6f9e30f07fd43">DirectOutput.Cab.Toys.LWEquivalent.LedWizEquivalent</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html#a6b0aaf21dca359732d29064c95372e81">DirectOutput.Cab.Out.NullOutputController.NullOutputController</a>
 </li>
 <li>InitAssignedEffects()
-: <a class="el" href="class_direct_output_1_1_table_1_1_table_element_list.html#a17c337e20a5c5b4f363069251ef8f71b">DirectOutput.Table.TableElementList</a>
+: <a class="el" href="class_direct_output_1_1_table_1_1_table_element_list.html#a9ec64f46e7d7a8c44ad5505739b957fb">DirectOutput.Table.TableElementList</a>
+</li>
+<li>InputFiles
+: <a class="el" href="class_led_control_converter_1_1_settings_1_1_converter_settings.html#a389b3149c79e4a37bd06f36c2f6112aa">LedControlConverter.Settings.ConverterSettings</a>
 </li>
 <li>Insert()
 : <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#afd652473bcc8efbb1dafb934e7671c29">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
 </li>
 <li>InsertEventArgs()
-: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#ab5c85fd70fe31f3cb0d69b97bfbc4832">DirectOutput.General.Generic.InsertEventArgs&lt; Ty &gt;</a>
+: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a390f33ba555634a640bdd40e19778a01">DirectOutput.General.Generic.InsertEventArgs&lt; Ty &gt;</a>
 </li>
 <li>Instance
 : <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#a3212596063e07bbce488232207a0e5bd">DirectOutput.Cab.Out.Pac.PacDriveSingleton</a>
+, <a class="el" href="class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine_1_1_engine.html#a77d16f5b0cf8ee50522cb7be7a03158b">DirectOutput.Cab.Out.DMX.ArtnetEngine.Engine</a>
 </li>
 <li>Intensity
-: <a class="el" href="class_direct_output_1_1_led_control_1_1_table_config_setting.html#afb8237cb97dddfb345b2c4cb3ee31eb5">DirectOutput.LedControl.TableConfigSetting</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_led_control_f_x_1_1_led_control_effect.html#a93a6ff2c5a036a43f521ab3cde7a967e">DirectOutput.FX.LedControlFX.LedControlEffect</a>
+: <a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#a2072fe52d462291e12800c5109d2fa1d">DirectOutput.LedControl.Loader.TableConfigSetting</a>
 </li>
 <li>IsAlive
 : <a class="el" href="class_direct_output_1_1_general_1_1_thread_info.html#a53ddeadaeae371a1b7ee068df7a45b4e">DirectOutput.General.ThreadInfo</a>
 </li>
+<li>IsFixedSize
+: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a139c78c140ca51c9c490f200c0a6a991">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
+</li>
 <li>IsReadOnly
 : <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a4f45c5562d26297e31a5ca6946dd95e7">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
+</li>
+<li>IsSynchronized
+: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a5b606402b94bead3880901a03b6210d0">DirectOutput.General.Generic.ExtList&lt; T &gt;</a>
 </li>
 <li>IsValid
 : <a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html#af697ccac73134495e0b0a31af55ff2dc">DirectOutput.GlobalConfiguration.FilePattern</a>
 </li>
 <li>Item
-: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#ada402fefd4a225b5f1cc1c28aa9c2f76">DirectOutput.General.Generic.ValidateItemEventArgs&lt; Ty &gt;</a>
-, <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a93a29a47e6aaeb8d2037c8643f8e6bc9">DirectOutput.General.Generic.InsertEventArgs&lt; Ty &gt;</a>
+: <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html#a93a29a47e6aaeb8d2037c8643f8e6bc9">DirectOutput.General.Generic.InsertEventArgs&lt; Ty &gt;</a>
+, <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#ada402fefd4a225b5f1cc1c28aa9c2f76">DirectOutput.General.Generic.ValidateItemEventArgs&lt; Ty &gt;</a>
 , <a class="el" href="class_direct_output_1_1_general_1_1_generic_1_1_remove_event_args_3_01_ty_01_4.html#a1b6930bb28a010b4a25c86ed6b63f6df">DirectOutput.General.Generic.RemoveEventArgs&lt; Ty &gt;</a>
 </li>
 </ul>
@@ -235,7 +255,7 @@ $(document).ready(function(){initNavTree('functions_0x69.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 30 2013 13:39:55 for DirectOutput by
+    <li class="footer">Generated on Mon Oct 14 2013 22:47:03 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
