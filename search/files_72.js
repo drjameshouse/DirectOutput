@@ -1,10 +1,8 @@
 var searchData=
 [
   ['removeeventargs_2ecs',['RemoveEventArgs.cs',['../_remove_event_args_8cs.html',1,'']]],
-  ['resources_2edesigner_2ecs',['Resources.Designer.cs',['../_led_control_file_tester_2_properties_2_resources_8_designer_8cs.html',1,'']]],
-  ['resources_2edesigner_2ecs',['Resources.Designer.cs',['../_direct_output___test_2_properties_2_resources_8_designer_8cs.html',1,'']]],
   ['resources_2edesigner_2ecs',['Resources.Designer.cs',['../_direct_output_config_tester_2_properties_2_resources_8_designer_8cs.html',1,'']]],
-  ['resources_2edesigner_2ecs',['Resources.Designer.cs',['../_led_control_converter_2_properties_2_resources_8_designer_8cs.html',1,'']]],
+  ['resources_2edesigner_2ecs',['Resources.Designer.cs',['../_led_control_file_tester_2_properties_2_resources_8_designer_8cs.html',1,'']]],
   ['resources_2edesigner_2ecs',['Resources.Designer.cs',['../_direct_output_2_properties_2_resources_8_designer_8cs.html',1,'']]],
   ['retriggerbehaviourenum_2ecs',['RetriggerBehaviourEnum.cs',['../_retrigger_behaviour_enum_8cs.html',1,'']]],
   ['rgbacolor_2ecs',['RGBAColor.cs',['../_r_g_b_a_color_8cs.html',1,'']]],

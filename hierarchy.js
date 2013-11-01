@@ -10,7 +10,6 @@ var hierarchy =
     [ "DirectOutput.Cab.Cabinet", "class_direct_output_1_1_cab_1_1_cabinet.html", null ],
     [ "DirectOutput.LedControl.Loader.ColorConfig", "class_direct_output_1_1_led_control_1_1_loader_1_1_color_config.html", null ],
     [ "DirectOutput.LedControl.Setup.Configurator", "class_direct_output_1_1_led_control_1_1_setup_1_1_configurator.html", null ],
-    [ "LedControlConverter.Settings.ConverterSettings", "class_led_control_converter_1_1_settings_1_1_converter_settings.html", null ],
     [ "DirectOutput.Cab.Out.DMX.ArtnetEngine.Engine", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine_1_1_engine.html", null ],
     [ "EventArgs", null, [
       [ "DirectOutput.Cab.Out.OutputEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html", null ],
@@ -23,10 +22,7 @@ var hierarchy =
       [ "DirectOutput.General.Generic.RemoveEventArgs< Ty >", "class_direct_output_1_1_general_1_1_generic_1_1_remove_event_args_3_01_ty_01_4.html", null ],
       [ "DirectOutput.General.Generic.SetEventArgs< Ty >", "class_direct_output_1_1_general_1_1_generic_1_1_set_event_args_3_01_ty_01_4.html", null ],
       [ "DirectOutput.General.Generic.ValidateItemEventArgs< Ty >", "class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html", null ],
-      [ "DirectOutput.Table.TableElementValueChangedEventArgs", "class_direct_output_1_1_table_1_1_table_element_value_changed_event_args.html", null ],
-      [ "LedControlConverter.ConverterInput.PageChangeEventArgs", "class_led_control_converter_1_1_converter_input_1_1_page_change_event_args.html", [
-        [ "LedControlConverter.ConverterInput.BeforePageChangeEventArgs", "class_led_control_converter_1_1_converter_input_1_1_before_page_change_event_args.html", null ]
-      ] ]
+      [ "DirectOutput.Table.TableElementValueChangedEventArgs", "class_direct_output_1_1_table_1_1_table_element_value_changed_event_args.html", null ]
     ] ],
     [ "ExtList< AssignedEffect >", null, [
       [ "DirectOutput.FX.AssignedEffectList", "class_direct_output_1_1_f_x_1_1_assigned_effect_list.html", null ]
@@ -44,10 +40,8 @@ var hierarchy =
       [ "DirectOutput.Frontend.SystemMonitor", "class_direct_output_1_1_frontend_1_1_system_monitor.html", null ],
       [ "DirectOutput.Frontend.TableInfo", "class_direct_output_1_1_frontend_1_1_table_info.html", null ],
       [ "DirectOutput.Frontend.TimeSpanStatisticsDetails", "class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html", null ],
-      [ "DirectOutput_Test.Form1", "class_direct_output___test_1_1_form1.html", null ],
       [ "DirectOutputConfigTester.ConfigTester", "class_direct_output_config_tester_1_1_config_tester.html", null ],
       [ "DirectOutputConfigTester.OpenConfigDialog", "class_direct_output_config_tester_1_1_open_config_dialog.html", null ],
-      [ "LedControlConverter.ConverterInput", "class_led_control_converter_1_1_converter_input.html", null ],
       [ "LedControlFileTester.LedControlFileTestWizard", "class_led_control_file_tester_1_1_led_control_file_test_wizard.html", null ]
     ] ],
     [ "DirectOutput.GlobalConfiguration.GlobalConfig", "class_direct_output_1_1_global_configuration_1_1_global_config.html", null ],
@@ -205,7 +199,6 @@ var hierarchy =
       [ "DirectOutput.GlobalConfiguration.FilePattern", "class_direct_output_1_1_global_configuration_1_1_file_pattern.html", null ],
       [ "DirectOutput.GlobalConfiguration.LedControlIniFile", "class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html", null ]
     ] ],
-    [ "LedControlConverter.Settings.InputFile", "class_led_control_converter_1_1_settings_1_1_input_file.html", null ],
     [ "DirectOutput.Cab.Toys.Layer.IRGBAToy", "interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_r_g_b_a_toy.html", [
       [ "DirectOutput.Cab.Toys.Layer.RGBAToy", "class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html", null ]
     ] ],
@@ -292,9 +285,6 @@ var hierarchy =
     ] ],
     [ "SortedDictionary< int, RGBALayer >", null, [
       [ "DirectOutput.Cab.Toys.Layer.RGBALayerDictionary", "class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_layer_dictionary.html", null ]
-    ] ],
-    [ "TabControl", null, [
-      [ "System.Windows.Forms.TablessTabControl", "class_system_1_1_windows_1_1_forms_1_1_tabless_tab_control.html", null ]
     ] ],
     [ "DirectOutput.Table.Table", "class_direct_output_1_1_table_1_1_table.html", null ],
     [ "DirectOutput.LedControl.Loader.TableConfig", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config.html", null ],

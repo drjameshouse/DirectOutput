@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['forms',['Forms',['../namespace_system_1_1_windows_1_1_forms.html',1,'System::Windows']]],
   ['supported_20hardware',['Supported Hardware',['../hardware.html',1,'']]],
   ['saveconfigdata',['SaveConfigData',['../class_direct_output_1_1_frontend_1_1_global_config_edit.html#aa89d8a3a908804909b3e7a9665104d4e',1,'DirectOutput::Frontend::GlobalConfigEdit']]],
   ['saveconfigxmlfile',['SaveConfigXmlFile',['../class_direct_output_1_1_cab_1_1_cabinet.html#a5436db2ff478323a279c53d2245713b1',1,'DirectOutput.Cab.Cabinet.SaveConfigXmlFile()'],['../class_direct_output_1_1_table_1_1_table.html#acf7aba6a1b8e0a28aa8ba5daa955b8a1',1,'DirectOutput.Table.Table.SaveConfigXmlFile()']]],
@@ -8,11 +7,11 @@ var searchData=
   ['savesettings',['SaveSettings',['../class_direct_output_config_tester_1_1_settings.html#a60a0c6f213c000683e840d06f615e0ad',1,'DirectOutputConfigTester::Settings']]],
   ['score',['Score',['../namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a5dd135d1bcfa7f63c3b7f25425c2a4a1',1,'DirectOutput']]],
   ['scoredigit',['ScoreDigit',['../namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38a25671b51820e2534108abe82a44ef450',1,'DirectOutput']]],
-  ['script',['Script',['../class_direct_output_1_1_scripting_1_1_script.html#aa583ed97e0e4f5b926debc0935346c92',1,'DirectOutput.Scripting.Script.Script(string ScriptFilename, bool ThrowExceptions=false)'],['../class_direct_output_1_1_scripting_1_1_script.html#a0442e7bcc7225700accd4ccc3cb2756e',1,'DirectOutput.Scripting.Script.Script(FileInfo ScriptFile, bool ThrowExceptions=false)'],['../class_direct_output_1_1_scripting_1_1_script.html#a150d3cdf75cc04cd27e8f7deff47a8e1',1,'DirectOutput.Scripting.Script.Script()']]],
   ['script',['Script',['../class_direct_output_1_1_scripting_1_1_script.html',1,'DirectOutput::Scripting']]],
+  ['script',['Script',['../class_direct_output_1_1_scripting_1_1_script.html#aa583ed97e0e4f5b926debc0935346c92',1,'DirectOutput.Scripting.Script.Script(string ScriptFilename, bool ThrowExceptions=false)'],['../class_direct_output_1_1_scripting_1_1_script.html#a0442e7bcc7225700accd4ccc3cb2756e',1,'DirectOutput.Scripting.Script.Script(FileInfo ScriptFile, bool ThrowExceptions=false)'],['../class_direct_output_1_1_scripting_1_1_script.html#a150d3cdf75cc04cd27e8f7deff47a8e1',1,'DirectOutput.Scripting.Script.Script()']]],
   ['script_2ecs',['Script.cs',['../_script_8cs.html',1,'']]],
-  ['scriptinfo',['ScriptInfo',['../class_direct_output_1_1_frontend_1_1_script_info.html#aee1f061922b81d1147ad10e460694127',1,'DirectOutput::Frontend::ScriptInfo']]],
   ['scriptinfo',['ScriptInfo',['../class_direct_output_1_1_frontend_1_1_script_info.html',1,'DirectOutput::Frontend']]],
+  ['scriptinfo',['ScriptInfo',['../class_direct_output_1_1_frontend_1_1_script_info.html#aee1f061922b81d1147ad10e460694127',1,'DirectOutput::Frontend::ScriptInfo']]],
   ['scriptinfo_2ecs',['ScriptInfo.cs',['../_script_info_8cs.html',1,'']]],
   ['scriptinfo_2edesigner_2ecs',['ScriptInfo.Designer.cs',['../_script_info_8_designer_8cs.html',1,'']]],
   ['scripting',['Scripting',['../scripting.html',1,'']]],
@@ -33,9 +32,7 @@ var searchData=
   ['setstate',['SetState',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_digital_toy.html#a7f02861e9ee6f40b9da98f5dc69b4bbb',1,'DirectOutput.Cab.Toys.Basic.DigitalToy.SetState()'],['../interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_digital_toy.html#a1a88766f977afcf0b6d87de70d756504',1,'DirectOutput.Cab.Toys.Basic.IDigitalToy.SetState()']]],
   ['settings',['Settings',['../class_direct_output_config_tester_1_1_settings.html',1,'DirectOutputConfigTester']]],
   ['settings_2ecs',['Settings.cs',['../_settings_8cs.html',1,'']]],
-  ['settings_2edesigner_2ecs',['Settings.Designer.cs',['../_direct_output___test_2_properties_2_settings_8_designer_8cs.html',1,'']]],
   ['settings_2edesigner_2ecs',['Settings.Designer.cs',['../_direct_output_config_tester_2_properties_2_settings_8_designer_8cs.html',1,'']]],
-  ['settings_2edesigner_2ecs',['Settings.Designer.cs',['../_led_control_converter_2_properties_2_settings_8_designer_8cs.html',1,'']]],
   ['settings_2edesigner_2ecs',['Settings.Designer.cs',['../_led_control_file_tester_2_properties_2_settings_8_designer_8cs.html',1,'']]],
   ['setup',['Setup',['../class_direct_output_1_1_led_control_1_1_setup_1_1_configurator.html#a734f58330cc8601f6d7b9ce0d9e1500e',1,'DirectOutput::LedControl::Setup::Configurator']]],
   ['setvalue',['SetValue',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_analog_toy.html#a42d4773276903cb2403c7b1c9ffe72dd',1,'DirectOutput.Cab.Toys.Basic.AnalogToy.SetValue()'],['../interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_analog_toy.html#a47c684401a396363b8db11c041a54d20',1,'DirectOutput.Cab.Toys.Basic.IAnalogToy.SetValue()']]],
@@ -58,13 +55,12 @@ var searchData=
   ['status',['Status',['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a4fda48c67587022cdd10628dc7c1c106',1,'DirectOutput::GlobalConfiguration::LedControlIniFile']]],
   ['stringextensions_2ecs',['StringExtensions.cs',['../_string_extensions_8cs.html',1,'']]],
   ['summary',['Summary',['../class_documentation_helper_1_1_property_docu_data.html#a97ff69eda3113fe1723220a8ae73d241',1,'DocumentationHelper.PropertyDocuData.Summary()'],['../class_documentation_helper_1_1_type_docu_data.html#a6ec7facebdf5a0d7e4ac1d55aed0cfbd',1,'DocumentationHelper.TypeDocuData.Summary()']]],
+  ['support',['Support',['../support.html',1,'']]],
   ['supportssortingcore',['SupportsSortingCore',['../class_direct_output_1_1_general_1_1_generic_1_1_sortable_binding_list_3_01_t_01_4.html#a40d6212b5605f0b88ef31564e2fca4c9',1,'DirectOutput::General::Generic::SortableBindingList&lt; T &gt;']]],
   ['switch',['Switch',['../class_direct_output_1_1_table_1_1_table_element_list.html#af6112334b315084404e9aeab399d4528',1,'DirectOutput.Table.TableElementList.Switch()'],['../namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38abbc155fb2b111bf61c4f5ff892915e6b',1,'DirectOutput.Switch()']]],
   ['syncroot',['SyncRoot',['../class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a1adbe1f5ecee951303d5c11bcfd9f713',1,'DirectOutput::General::Generic::ExtList&lt; T &gt;']]],
-  ['system',['System',['../namespace_system.html',1,'']]],
-  ['systemmonitor',['SystemMonitor',['../class_direct_output_1_1_frontend_1_1_system_monitor.html#ab354a4ae1e25a7dae71c8e3a299973ea',1,'DirectOutput::Frontend::SystemMonitor']]],
   ['systemmonitor',['SystemMonitor',['../class_direct_output_1_1_frontend_1_1_system_monitor.html',1,'DirectOutput::Frontend']]],
+  ['systemmonitor',['SystemMonitor',['../class_direct_output_1_1_frontend_1_1_system_monitor.html#ab354a4ae1e25a7dae71c8e3a299973ea',1,'DirectOutput::Frontend::SystemMonitor']]],
   ['systemmonitor_2ecs',['SystemMonitor.cs',['../_system_monitor_8cs.html',1,'']]],
-  ['systemmonitor_2edesigner_2ecs',['SystemMonitor.Designer.cs',['../_system_monitor_8_designer_8cs.html',1,'']]],
-  ['windows',['Windows',['../namespace_system_1_1_windows.html',1,'System']]]
+  ['systemmonitor_2edesigner_2ecs',['SystemMonitor.Designer.cs',['../_system_monitor_8_designer_8cs.html',1,'']]]
 ];

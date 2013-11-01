@@ -3,6 +3,6 @@
 <area shape="rect" id="node4" href="$interface_direct_output_1_1_cab_1_1_out_1_1_i_output_numbered.html" title="Common interface for numbered outputs. " alt="" coords="387,162,581,203"/>
 <area shape="rect" id="node6" href="$class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_output.html" title="Output class for LedWiz output controllers. " alt="" coords="638,75,813,117"/>
 <area shape="rect" id="node7" href="$class_direct_output_1_1_cab_1_1_out_1_1_output.html" title="Basic IOutput implementation. " alt="" coords="389,60,579,87"/>
-<area shape="rect" id="node2" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="5,85,96,112"/>
+<area shape="rect" id="node2" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="5,85,96,112"/>
 <area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_out_1_1_output_numbered.html" title="Basic IOutputNumbered implementation. " alt="" coords="630,147,821,189"/>
 </map>

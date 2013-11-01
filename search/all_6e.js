@@ -14,7 +14,6 @@ var searchData=
   ['namespacename',['NamespaceName',['../class_documentation_helper_1_1_property_docu_data.html#aa847512aff994a2c15238b2d4f026c0d',1,'DocumentationHelper.PropertyDocuData.NamespaceName()'],['../class_documentation_helper_1_1_type_docu_data.html#a759c3ce44a464df56656f4d2083bcb7b',1,'DocumentationHelper.TypeDocuData.NamespaceName()']]],
   ['newitem',['NewItem',['../class_direct_output_1_1_general_1_1_generic_1_1_set_event_args_3_01_ty_01_4.html#aa3b896bd003dc41e2758a6562805f440',1,'DirectOutput::General::Generic::SetEventArgs&lt; Ty &gt;']]],
   ['newname',['NewName',['../class_direct_output_1_1_f_x_1_1_before_effect_name_change_avent_args.html#a7a72157a9f0a1153c3a5835aa648a7d3',1,'DirectOutput.FX.BeforeEffectNameChangeAventArgs.NewName()'],['../class_direct_output_1_1_general_1_1_generic_1_1_name_change_event_args.html#a562d5ab00f522ddf2ed1466dde6940a1',1,'DirectOutput.General.Generic.NameChangeEventArgs.NewName()']]],
-  ['nextpagenr',['NextPageNr',['../class_led_control_converter_1_1_converter_input_1_1_page_change_event_args.html#a55423f58215a54b66c991ee94b82f475',1,'LedControlConverter::ConverterInput::PageChangeEventArgs']]],
   ['nulleffect',['NullEffect',['../class_direct_output_1_1_f_x_1_1_null_f_x_1_1_null_effect.html',1,'DirectOutput::FX::NullFX']]],
   ['nulleffect_2ecs',['NullEffect.cs',['../_null_effect_8cs.html',1,'']]],
   ['nulloutputcontroller',['NullOutputController',['../class_direct_output_1_1_cab_1_1_out_1_1_null_output_controller_1_1_null_output_controller.html',1,'DirectOutput::Cab::Out::NullOutputController']]],

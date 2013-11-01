@@ -3,7 +3,7 @@
 <area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_toy.html" title="This toy handles analog values (0&#45;255) in a layer structure including alpha value (0=completely trans..." alt="" coords="1159,1213,1353,1254"/>
 <area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz.html" title="The LedWiz is a easy to use outputcontroller with 32 outputs which all support 49 pwm levels..." alt="" coords="863,561,1038,602"/>
 <area shape="rect" id="node5" href="$class_direct_output_1_1_general_1_1_thread_info.html" title="This object provides information on a thread. " alt="" coords="847,509,1054,536"/>
-<area shape="rect" id="node6" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="DirectOutput.General.Generic.\lINamedItem" alt="" coords="20,347,217,389"/>
+<area shape="rect" id="node6" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="20,347,217,389"/>
 <area shape="rect" id="node7" href="$class_direct_output_1_1_cab_1_1_color_1_1_r_g_b_a_color_named.html" title="This class stores information on colors used for toys (e.g. RGBLed). " alt="" coords="280,66,507,107"/>
 <area shape="rect" id="node8" href="$class_direct_output_1_1_cab_1_1_color_1_1_r_g_b_color_named.html" title="Named RGBColor object " alt="" coords="284,131,503,173"/>
 <area shape="rect" id="node9" href="$interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and..." alt="" coords="297,197,490,224"/>

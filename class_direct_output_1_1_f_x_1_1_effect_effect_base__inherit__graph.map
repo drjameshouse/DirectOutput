@@ -6,6 +6,6 @@
 <area shape="rect" id="node10" href="$class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html" title="This effect enforces a minimum duration on the effect calls. &#160;Calls which are setting a effect to act..." alt="" coords="710,266,893,307"/>
 <area shape="rect" id="node2" href="$class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. &#160;This class inherits NamedItemBase and implements IEffect..." alt="" coords="312,143,397,169"/>
 <area shape="rect" id="node3" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="145,117,263,144"/>
-<area shape="rect" id="node4" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="5,143,96,169"/>
+<area shape="rect" id="node4" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="5,143,96,169"/>
 <area shape="rect" id="node5" href="$interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="175,168,233,195"/>
 </map>

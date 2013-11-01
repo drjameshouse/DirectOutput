@@ -7,7 +7,6 @@ var searchData=
   ['ieffect',['IEffect',['../interface_direct_output_1_1_f_x_1_1_i_effect.html',1,'DirectOutput::FX']]],
   ['ilamptoy',['ILampToy',['../interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_lamp_toy.html',1,'DirectOutput::Cab::Toys::Basic']]],
   ['inameditem',['INamedItem',['../interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html',1,'DirectOutput::General::Generic']]],
-  ['inputfile',['InputFile',['../class_led_control_converter_1_1_settings_1_1_input_file.html',1,'LedControlConverter::Settings']]],
   ['inputqueue',['InputQueue',['../class_direct_output_1_1_pinball_support_1_1_input_queue.html',1,'DirectOutput::PinballSupport']]],
   ['inserteventargs_3c_20ty_20_3e',['InsertEventArgs&lt; Ty &gt;',['../class_direct_output_1_1_general_1_1_generic_1_1_insert_event_args_3_01_ty_01_4.html',1,'DirectOutput::General::Generic']]],
   ['ioutput',['IOutput',['../interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html',1,'DirectOutput::Cab::Out']]],

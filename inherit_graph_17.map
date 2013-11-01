@@ -8,9 +8,7 @@
 <area shape="rect" id="node8" href="$class_direct_output_1_1_frontend_1_1_system_monitor.html" title="DirectOutput.Frontend.System\lMonitor" alt="" coords="117,355,315,397"/>
 <area shape="rect" id="node9" href="$class_direct_output_1_1_frontend_1_1_table_info.html" title="DirectOutput.Frontend.TableInfo" alt="" coords="113,421,319,448"/>
 <area shape="rect" id="node10" href="$class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html" title="DirectOutput.Frontend.Time\lSpanStatisticsDetails" alt="" coords="125,473,307,514"/>
-<area shape="rect" id="node11" href="$class_direct_output___test_1_1_form1.html" title="DirectOutput_Test.Form1" alt="" coords="132,539,300,565"/>
-<area shape="rect" id="node12" href="$class_direct_output_config_tester_1_1_config_tester.html" title="DirectOutputConfigTester.\lConfigTester" alt="" coords="131,590,301,631"/>
-<area shape="rect" id="node13" href="$class_direct_output_config_tester_1_1_open_config_dialog.html" title="DirectOutputConfigTester.\lOpenConfigDialog" alt="" coords="131,655,301,697"/>
-<area shape="rect" id="node14" href="$class_led_control_converter_1_1_converter_input.html" title="LedControlConverter.Converter\lInput" alt="" coords="118,721,314,762"/>
-<area shape="rect" id="node15" href="$class_led_control_file_tester_1_1_led_control_file_test_wizard.html" title="This is the main form of the LedControlFileTester application. &#160;&#160;It contains all functionality of the..." alt="" coords="133,786,299,827"/>
+<area shape="rect" id="node11" href="$class_direct_output_config_tester_1_1_config_tester.html" title="DirectOutputConfigTester.\lConfigTester" alt="" coords="131,538,301,579"/>
+<area shape="rect" id="node12" href="$class_direct_output_config_tester_1_1_open_config_dialog.html" title="DirectOutputConfigTester.\lOpenConfigDialog" alt="" coords="131,603,301,645"/>
+<area shape="rect" id="node13" href="$class_led_control_file_tester_1_1_led_control_file_test_wizard.html" title="This is the main form of the LedControlFileTester application. &#160;&#160;It contains all functionality of the..." alt="" coords="133,669,299,710"/>
 </map>

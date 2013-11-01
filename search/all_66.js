@@ -10,9 +10,9 @@ var searchData=
   ['file',['File',['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#aba7719cdf18fa01ef03ea8f7781e0e81',1,'DirectOutput.GlobalConfiguration.LedControlIniFile.File()'],['../class_direct_output_1_1_scripting_1_1_script.html#a3091be52c3dedf0e4bae1fd7c8259326',1,'DirectOutput.Scripting.Script.File()']]],
   ['fileexists',['FileExists',['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#adf6573472d051767d058f7894ff9f9db',1,'DirectOutput::GlobalConfiguration::LedControlIniFile']]],
   ['fileinfoextensions_2ecs',['FileInfoExtensions.cs',['../_file_info_extensions_8cs.html',1,'']]],
-  ['filename',['Filename',['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a580bee0ec6d942a5dd78eb0b854cae75',1,'DirectOutput.GlobalConfiguration.LedControlIniFile.Filename()'],['../class_direct_output_1_1_log.html#af43d58cb62936e2e6e4e8a8bfcbd8682',1,'DirectOutput.Log.Filename()'],['../class_led_control_converter_1_1_settings_1_1_input_file.html#a173131ac9e10648414d03e5d0a1f4f05',1,'LedControlConverter.Settings.InputFile.Filename()']]],
-  ['filepattern',['FilePattern',['../class_direct_output_1_1_global_configuration_1_1_file_pattern.html',1,'DirectOutput::GlobalConfiguration']]],
+  ['filename',['Filename',['../class_direct_output_1_1_global_configuration_1_1_led_control_ini_file.html#a580bee0ec6d942a5dd78eb0b854cae75',1,'DirectOutput.GlobalConfiguration.LedControlIniFile.Filename()'],['../class_direct_output_1_1_log.html#af43d58cb62936e2e6e4e8a8bfcbd8682',1,'DirectOutput.Log.Filename()']]],
   ['filepattern',['FilePattern',['../class_direct_output_1_1_global_configuration_1_1_file_pattern.html#a3635272752a2ecaa37b1b49530849043',1,'DirectOutput.GlobalConfiguration.FilePattern.FilePattern(string Pattern)'],['../class_direct_output_1_1_global_configuration_1_1_file_pattern.html#a5a75c39e7d48360c1a2b1672d24a26f4',1,'DirectOutput.GlobalConfiguration.FilePattern.FilePattern()']]],
+  ['filepattern',['FilePattern',['../class_direct_output_1_1_global_configuration_1_1_file_pattern.html',1,'DirectOutput::GlobalConfiguration']]],
   ['filepattern_2ecs',['FilePattern.cs',['../_file_pattern_8cs.html',1,'']]],
   ['filepatternlist',['FilePatternList',['../class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html',1,'DirectOutput::GlobalConfiguration']]],
   ['filepatternlist_2ecs',['FilePatternList.cs',['../_file_pattern_list_8cs.html',1,'']]],
@@ -24,9 +24,5 @@ var searchData=
   ['fixedon',['FixedOn',['../namespace_direct_output_1_1_led_control_1_1_loader.html#a2e9b8a8248ba75f6df15411b7bd353ada804aeba3e49d00950579b204812d6b58',1,'DirectOutput::LedControl::Loader']]],
   ['flashspeed',['FlashSpeed',['../class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#ab6230ce2ca1e909c2553782c6e491cca',1,'DirectOutput::Cab::Out::Pac::PacDriveSingleton']]],
   ['floatextensions_2ecs',['FloatExtensions.cs',['../_float_extensions_8cs.html',1,'']]],
-  ['form1',['Form1',['../class_direct_output___test_1_1_form1.html#ab25ccf49172786424c52aa3db6b4e2ad',1,'DirectOutput_Test::Form1']]],
-  ['form1',['Form1',['../class_direct_output___test_1_1_form1.html',1,'DirectOutput_Test']]],
-  ['form1_2ecs',['Form1.cs',['../_form1_8cs.html',1,'']]],
-  ['form1_2edesigner_2ecs',['Form1.Designer.cs',['../_form1_8_designer_8cs.html',1,'']]],
   ['fx_2ecs',['FX.cs',['../_f_x_8cs.html',1,'']]]
 ];

@@ -12,7 +12,7 @@
 <area shape="rect" id="node15" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy_updatable.html" title="Interface for toys which need a update method which is used to update their outputs. " alt="" coords="390,730,573,771"/>
 <area shape="rect" id="node19" href="$class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html" title="The LEDWizEquivalent toy is only used by the framework when ini files are used for the configuration ..." alt="" coords="635,640,877,682"/>
 <area shape="rect" id="node20" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="377,628,586,654"/>
-<area shape="rect" id="node2" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="5,394,96,421"/>
+<area shape="rect" id="node2" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="5,394,96,421"/>
 <area shape="rect" id="node11" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_i_lamp_toy.html" title="Common interface for lamp like toys. &#160;Implement this interface if a toy resembles some kind of lamp s..." alt="" coords="659,162,853,203"/>
 <area shape="rect" id="node14" href="$class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html" title="DirectOutput.Cab.Toys.Basic.\lRGBLed" alt="" coords="659,566,853,607"/>
 <area shape="rect" id="node16" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_base_updatable.html" title="Base class for toys which need update calls to update the state of their assigned outputs..." alt="" coords="667,724,845,766"/>

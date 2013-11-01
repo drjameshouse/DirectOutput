@@ -174,7 +174,13 @@ Table element status updates</h2>
 <h1><a class="anchor" id="tableconfig_nobackglass"></a>
 Tables w/o B2S.Server Backglass</h1>
 <p>There are still some tables around which dont have a backglass running with B2S.Server. If the B2S.Server is instanciated in such a table, it will normaly complain about the missing backglass file and therefore stop you from running the B2S.Server and the DirectOuput framework plugin.</p>
-<p>To overcome the problem you will have to add the following line to your B2STableSettings.xml file:</p>
+<p>To overcome the problem, uncheck the "Error message without backglass" checkbox in the B2S.Server settings window.</p>
+<div class="image">
+<img src="B2SServer_Settings_NoBackglass.png" alt="B2SServer_Settings_NoBackglass.png"/>
+<div class="caption">
+Error message without backglass checkbox.</div></div>
+<dl class="section note"><dt>Note</dt><dd>For tables without a backglass you will not be able to call the settings window of the B2S.Server.</dd></dl>
+<p>Alternatively it is also possible to edit the B2STableSettings.xml file in the table directory. You will need to add the following line to your B2STableSettings.xml file:</p>
 <div class="fragment"><div class="line">&lt;B2STableSettings&gt;</div>
 <div class="line">  ....</div>
 <div class="line">  &lt;ShowStartupError&gt;0&lt;/ShowStartupError&gt;</div>
@@ -186,7 +192,6 @@ Tables w/o B2S.Server Backglass</h1>
 </div><!-- fragment --><p>with this modifed version</p>
 <div class="fragment"><div class="line">Set Controller = CreateObject(<span class="stringliteral">&quot;B2S.Server&quot;</span>) </div>
 </div><!-- fragment --><p>Using this option any table can use the B2S.Server no matter wether it has a backglass or not. Even tables with a classic Rosve style, no B2S.Server, legacy backglass can use the B2S.Server and its plugins using the mentioned option.</p>
-<dl class="section note"><dt>Note</dt><dd>For tables without a backglass you will not be able to call the settings window of the B2S.Server.</dd></dl>
 <p>Apart from setting the mentioned option in the B2STableSettings.xml file, configuring the table for <a class="el" href="namespace_direct_output.html">DirectOutput</a> and B2S.Server is exactly the same as explained in the sections above. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -194,7 +199,7 @@ Tables w/o B2S.Server Backglass</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 14 2013 22:46:59 for DirectOutput by
+    <li class="footer">Generated on Fri Nov 1 2013 11:21:45 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

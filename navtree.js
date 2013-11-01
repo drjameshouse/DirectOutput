@@ -67,11 +67,7 @@ var NAVTREE =
       [ "Introduction", "cabinetconfig.html#cabinetconfig_introduction", null ],
       [ "Cabinet configuration file", "cabinetconfig.html#cabinetconfig_configfile", [
         [ "OutputControllers section", "cabinetconfig.html#cabinetconfig_outputcontrollers", null ],
-        [ "Toys section", "cabinetconfig.html#cabinetconfig_toys", [
-          [ "Toy configuration examples", "cabinetconfig.html#cabinetconfig_toysexamples", null ]
-        ] ],
-        [ "Effects section", "cabinetconfig.html#cabinetconfig_effects", null ],
-        [ "Colors section", "cabinetconfig.html#cabinetconfig_colors", null ]
+        [ "Toys section", "cabinetconfig.html#cabinetconfig_toys", null ]
       ] ],
       [ "Example cabinet configuration", "cabinetconfig.html#cabinetconfig_example", null ]
     ] ],
@@ -241,6 +237,7 @@ var NAVTREE =
     ] ],
     [ "Toys", "toys.html", [
       [ "Introduction", "toys.html#toys_introduction", null ],
+      [ "Builtin toys", "toys.html#toys_bultin", null ],
       [ "Custom toys", "toys.html#toys_custom", null ],
       [ "Implementation guidelines for custom toys", "toys.html#toys_implementationguideline", null ]
     ] ],
@@ -413,11 +410,11 @@ var NAVTREE =
         [ "DirectOutput project", "sourcecode.html#sourcecode_wheredirectoutput", null ],
         [ "Documentation project", "sourcecode.html#sourcecode_wheredocu", null ],
         [ "B2SServerPlugin project", "sourcecode.html#sourcecode_whereplugin", null ],
-        [ "LedControlFileTester project", "sourcecode.html#sourcecode_wheredplugin", null ],
-        [ "DirectOutput_Test project", "sourcecode.html#sourcecode_wheredirectoutputest", null ]
+        [ "LedControlFileTester project", "sourcecode.html#sourcecode_wheredplugin", null ]
       ] ],
       [ "Extending and changing the source code (guidelines)", "sourcecode.html#sourcecode_extend", null ]
     ] ],
+    [ "Support", "support.html", null ],
     [ "Contribute", "contribute.html", [
       [ "Report bugs and issues", "contribute.html#contribute_bugs", null ],
       [ "Squash some bugs", "contribute.html#contribute_squashbugs", null ],
@@ -426,15 +423,17 @@ var NAVTREE =
       [ "Contribute the to documentation", "contribute.html#contribute_docu", null ],
       [ "Contribute to the source code", "contribute.html#contribute_source", null ]
     ] ],
-    [ "Downloads", "downloads.html", null ],
+    [ "Downloads", "downloads.html", [
+      [ "Binary Package", "downloads.html#download_binaries", null ],
+      [ "Source Code", "downloads.html#downloads_sourcecode", null ],
+      [ "Documentation", "downloads.html#downloads_docu", null ]
+    ] ],
     [ "History and Roadmap", "_history_roadmap.html", [
       [ "Roadmap", "_history_roadmap.html#roadmap", null ],
       [ "History", "_history_roadmap.html#history", null ]
     ] ],
     [ "Credits", "md_90__credits.html", null ],
     [ "About and Copyright", "md_99__mainpage_and_about.html", null ],
-    [ "Todo List", "todo.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
     [ "Packages", null, [
       [ "Packages", "namespaces.html", "namespaces" ],
       [ "Package Functions", "namespacemembers.html", [
@@ -470,14 +469,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alarm_handler_8cs.html",
-"_led_control_file_tester_2_properties_2_assembly_info_8cs_source.html",
-"class_direct_output_1_1_cab_1_1_cabinet.html#a5436db2ff478323a279c53d2245713b1",
-"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent_output.html#a4a4eb26835ea8ee4e13743c4fb075146",
-"class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html#a1adbe1f5ecee951303d5c11bcfd9f713",
-"class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#a7c220bca721e7bee3e243a7ddd9b4ff2",
-"dir_2f646108dc17b77d2792c6906506ce8e.html",
-"inifiles.html#inifiles_settingspara",
-"tableconfig.html#tableconfig_intro"
+"class_b2_s_server_plugin_1_1_plugin.html#ade5dafe47b142dba5595cfb29750b020",
+"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a32f9d6ebdd6579e0980bdc9f5e0862df",
+"class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html",
+"class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#a0d815205e8235823b12ae1ac8c17b0dc",
+"dir_b4e6403bc4e020099b8e5a94b0a301c0.html",
+"interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a1b77139c8f71ebd2b6683d86b4c2e566",
+"toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_OutputName"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

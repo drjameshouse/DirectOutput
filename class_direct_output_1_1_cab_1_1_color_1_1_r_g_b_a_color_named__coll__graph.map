@@ -1,4 +1,4 @@
 <map id="DirectOutput.Cab.Color.RGBAColorNamed" name="DirectOutput.Cab.Color.RGBAColorNamed">
 <area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_color_1_1_r_g_b_a_color.html" title="This class stores information on colors used for toys and effects (e.g. RGBLed). " alt="" coords="17,5,105,32"/>
-<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="131,5,221,32"/>
+<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="131,5,221,32"/>
 </map>

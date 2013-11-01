@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html" title="DirectOutput.General.Generic.\lExtList\&lt; T \&gt;" alt="" coords="179,125,376,166"/>
-<area shape="rect" id="node3" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_list_3_01_t_01_4.html" title="DirectOutput.General.Generic.\lNamedItemList\&lt; T \&gt;" alt="" coords="424,125,621,166"/>
+<area shape="rect" id="node2" href="$class_direct_output_1_1_general_1_1_generic_1_1_ext_list_3_01_t_01_4.html" title="Extended version of the generic List class supporting events for various actions on the list..." alt="" coords="179,125,376,166"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_list_3_01_t_01_4.html" title="A list of uniquely named items which can be referenced by their name. " alt="" coords="424,125,621,166"/>
 </map>

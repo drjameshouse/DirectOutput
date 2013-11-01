@@ -107,11 +107,10 @@ $(document).ready(function(){initNavTree('installation.html','');});
 <div class="textblock"><h1><a class="anchor" id="installation_requirements"></a>
 Requirements</h1>
 <p>The Directoutput framework relies on the B2S-Server which has been developed by Herweh/Stefan. The B2S-Server implements a plugin interface which can load and execute plugins. This framework has been developed as such a plugin.</p>
-<p>Therefore you must first install and configure Herwehs B2S-Server before you can install the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework. You can download the B2S-Server from <a href="http://vpuniverse.com/forums/files/file/2042-b2s-backglass-server/">vpuniverse.com</a> or <a href="http://www.vpforums.org/index.php?app=downloads&amp;showfile=7426">VPForums</a>.</p>
+<p>Therefore you must first install and configure Herwehs B2S-Server before you can install the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework. You can download the B2S-Server from <a href="http://vpuniverse.com/forums/files/file/2042-b2s-backglass-server/" target="_blank">vpuniverse.com</a> or <a href="http://www.vpforums.org/index.php?app=downloads&amp;showfile=7426" target="_blank">VPForums</a>.</p>
 <h1><a class="anchor" id="installation_download"></a>
 Download</h1>
-<dl class="section note"><dt>Note</dt><dd>Sorry, public downloads are not yet available. As soon as the framework is released to the public, everyone will be allowed to download the framework.</dd></dl>
-<p>The <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework can be downloaded from <a href="http://www.vpuniverse.com" target="_blank">vpuniverse.com</a>, but other sites might host the binaries as well.</p>
+<p>The <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework can be downloaded from the <a href="http://vpuniverse.com/forums/files/category/61-direct-output-framework/" target="_blank">Direct Output Framework download section at vpuniverse.com</a> and from the <a href="http://www.vpforums.org/index.php?app=downloads&amp;showcat=17" target="_blank">Frontends and Addons section at vpforums.org</a>, but other sites might host the binaries as well.</p>
 <p>You are also very welcome to fork/download and enhance the source code from <a href="https://github.com/DirectOutput/DirectOutput" target="_blank">GitHub</a>.</p>
 <h1><a class="anchor" id="installation_installation"></a>
 Installation</h1>
@@ -175,7 +174,12 @@ Unblock the DLLs</h1>
 <p>If the text about the file coming from another computer does not exist, everthing should be fine.</p>
 <h1><a class="anchor" id="installation_b2sserverconfig"></a>
 B2S.Server Configuration</h1>
-<p>To enable the plugin support in the B2S.Server (<a class="el" href="namespace_direct_output.html">DirectOutput</a> is a B2S.Server plugin) you need to add the ArePluginsOn option to your B2STableSettings.xml file (In the Table directory). The result should resemble to following example: </p>
+<p>In order to activate the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framwork you need to check the <em>Active Plugins</em> checkbox in the B2S Server settings window. If you plan to use DOF for tables not having a directB2S backglass file (e.g. a legacy Rosve style B2S table), make sure the "Error message without backglass" checkbox is unchecked. To open the settings window, you need to move the mouse pointer to the backglass (press T to toggle the visibility of the mousepointer) and press S.</p>
+<div class="image">
+<img src="B2SServer_Settings_ActivatePlugins.png" alt="B2SServer_Settings_ActivatePlugins.png"/>
+<div class="caption">
+Activate Plugins checkbox</div></div>
+<p>Alternative you can also edit the B2STableSettings.xml file in the table directory. You will need to add the ArePluginsOn option to the file. The result should resemble to following example: </p>
 <div class="fragment"><div class="line">&lt;B2STableSettings&gt;</div>
 <div class="line">  ....</div>
 <div class="line">  &lt;ArePluginsOn&gt;1&lt;/ArePluginsOn&gt;</div>
@@ -256,7 +260,7 @@ Table Configuration</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 14 2013 22:46:59 for DirectOutput by
+    <li class="footer">Generated on Fri Nov 1 2013 11:21:45 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

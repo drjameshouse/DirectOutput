@@ -11,7 +11,6 @@ var searchData=
   ['tableelementlist',['TableElementList',['../class_direct_output_1_1_table_1_1_table_element_list.html',1,'DirectOutput::Table']]],
   ['tableelementvaluechangedeventargs',['TableElementValueChangedEventArgs',['../class_direct_output_1_1_table_1_1_table_element_value_changed_event_args.html',1,'DirectOutput::Table']]],
   ['tableinfo',['TableInfo',['../class_direct_output_1_1_frontend_1_1_table_info.html',1,'DirectOutput::Frontend']]],
-  ['tablesstabcontrol',['TablessTabControl',['../class_system_1_1_windows_1_1_forms_1_1_tabless_tab_control.html',1,'System::Windows::Forms']]],
   ['threadinfo',['ThreadInfo',['../class_direct_output_1_1_general_1_1_thread_info.html',1,'DirectOutput::General']]],
   ['threadinfolist',['ThreadInfoList',['../class_direct_output_1_1_general_1_1_thread_info_list.html',1,'DirectOutput::General']]],
   ['timespanstatisticsdetails',['TimeSpanStatisticsDetails',['../class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html',1,'DirectOutput::Frontend']]],

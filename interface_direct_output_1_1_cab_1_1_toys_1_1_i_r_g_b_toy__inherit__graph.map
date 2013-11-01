@@ -1,5 +1,0 @@
-<map id="DirectOutput.Cab.Toys.IRGBToy" name="DirectOutput.Cab.Toys.IRGBToy">
-<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_r_g_b_led.html" title="RGB led toy controlls a multicolor led. Implement IToy, inherits Toy. " alt="" coords="13,230,208,271"/>
-<area shape="rect" id="node2" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all IToy. &#160;The abstract class Toy implements this interface. ..." alt="" coords="87,80,133,107"/>
-<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="INamedItem" alt="" coords="65,5,156,32"/>
-</map>
