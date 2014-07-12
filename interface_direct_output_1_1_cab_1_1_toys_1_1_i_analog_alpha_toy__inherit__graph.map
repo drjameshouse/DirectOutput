@@ -1,0 +1,7 @@
+<map id="DirectOutput.Cab.Toys.IAnalogAlphaToy" name="DirectOutput.Cab.Toys.IAnalogAlphaToy">
+<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_toy.html" title="This toy handles analog values (0&#45;255) in a layer structure including alpha value (0=completely trans..." alt="" coords="160,171,355,213"/>
+<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_lamp.html" title="DirectOutput.Cab.Toys.Hardware.Lamp" alt="" coords="5,269,253,296"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_motor.html" title="Motor toy supporting max. and min. power, max. runtime and kickstart settings. &#160;The settings of this ..." alt="" coords="277,262,493,303"/>
+<area shape="rect" id="node6" href="$class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_gear_motor.html" title="GearMotor toy supporting max. and min. power, max. runtime and kickstart settings. &#160;The settings of this toy allow for a detailed definition of the behaviour of the connected motor." alt="" coords="157,353,373,394"/>
+<area shape="rect" id="node7" href="$class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_shaker.html" title="Shaker toy with settings for minimum and maximum power, fading curves, max runtime and kickstart..." alt="" coords="397,353,613,394"/>
+</map>

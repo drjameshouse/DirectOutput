@@ -1,0 +1,6 @@
+<map id="DirectOutput.Cab.Toys.IRGBOutputToy" name="DirectOutput.Cab.Toys.IRGBOutputToy">
+<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html" title="Thie RGBAToy controls RGB leds and other gadgets displaying RGB colors. &#160;&#160;The RGBAToy has multilayer ..." alt="" coords="32,230,227,271"/>
+<area shape="rect" id="node2" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all toy implementations. &#160;The abstract class ToyBase implements this interface..." alt="" coords="106,80,152,107"/>
+<area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="84,5,175,32"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_r_g_b_led.html" title="Toy controlling a RGB led. &#160;This is just a simple wrapper around the RGBAToy. &#160;" alt="" coords="21,321,237,362"/>
+</map>

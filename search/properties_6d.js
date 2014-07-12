@@ -1,18 +1,22 @@
 var searchData=
 [
   ['mainthreadisactive',['MainThreadIsActive',['../class_direct_output_1_1_pinball.html#ab50b668a0f4ea76278e7a05b30e1570b',1,'DirectOutput::Pinball']]],
+  ['matrix',['Matrix',['../class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_effect_base_3_01_matrix_element_type_01_4.html#a6f19a323b9afe726d8f1715d93a0bc11',1,'DirectOutput::FX::MatrixFX::MatrixEffectBase&lt; MatrixElementType &gt;']]],
   ['maxduration',['MaxDuration',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a0600fc165030eeae3171c347090794e4',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
+  ['maxdurationms',['MaxDurationMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_max_duration_effect.html#a727153ae16f3fa2412f5dd75071e1510',1,'DirectOutput.FX.TimmedFX.MaxDurationEffect.MaxDurationMs()'],['../class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#aa3d7f889177911a3f0b0981020d3ce7f',1,'DirectOutput.LedControl.Loader.TableConfigSetting.MaxDurationMs()']]],
   ['maxdurations',['MaxDurations',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a72a7c9bbaa49df9019e2c28e5dadcab7',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
-  ['maxpower',['MaxPower',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#ad768ecea569926f6d0bdb709d923889f',1,'DirectOutput::Cab::Toys::Basic::Motor']]],
-  ['maxruntimems',['MaxRunTimeMs',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a801b8296f10e4a18da1abd9e8c6c6bb1',1,'DirectOutput::Cab::Toys::Basic::Motor']]],
+  ['maxflickerdurationms',['MaxFlickerDurationMs',['../class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_flicker_effect_base_3_01_matrix_element_type_01_4.html#a303d00137baee771c311b86463a75149',1,'DirectOutput::FX::MatrixFX::MatrixFlickerEffectBase&lt; MatrixElementType &gt;']]],
+  ['maxpower',['MaxPower',['../class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_motor.html#ad64b73e07bd68d939ade572cd7fe7bc4',1,'DirectOutput::Cab::Toys::Hardware::Motor']]],
+  ['maxruntimems',['MaxRunTimeMs',['../class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_motor.html#a2234b530bd9b5b47290ba6a56154bd29',1,'DirectOutput::Cab::Toys::Hardware::Motor']]],
   ['maxvalue',['MaxValue',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a9bdd13107dad231eb6189634ac68be67',1,'DirectOutput::General::Statistics::SimpleStatistics&lt; ValueType &gt;']]],
   ['maxvalues',['MaxValues',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a200170a129e7cd67d114039ddc40f6c1',1,'DirectOutput::General::Statistics::SimpleStatistics&lt; ValueType &gt;']]],
   ['mech',['Mech',['../class_direct_output_1_1_table_1_1_table_element_list.html#ab477756093302833f8bc7889179d2af6',1,'DirectOutput::Table::TableElementList']]],
+  ['mindofversion',['MinDOFVersion',['../class_direct_output_1_1_led_control_1_1_loader_1_1_led_control_config.html#ade16d585eb5f42f330ccc14689313939',1,'DirectOutput::LedControl::Loader::LedControlConfig']]],
   ['minduration',['MinDuration',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a95130f815be351ea4cacd17ce8a7956e',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
   ['mindurationms',['MinDurationMs',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html#a2cb21c4a03f7770759e9de95164f4dbb',1,'DirectOutput.FX.TimmedFX.MinDurationEffect.MinDurationMs()'],['../class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#ab44da6a21c298dc6de65b876343f6a28',1,'DirectOutput.LedControl.Loader.TableConfigSetting.MinDurationMs()']]],
   ['mindurations',['MinDurations',['../class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_item.html#a544081ee9abc9f4a93fc41eeca4655f2',1,'DirectOutput::General::Statistics::TimeSpanStatisticsItem']]],
-  ['minpower',['MinPower',['../class_direct_output_1_1_cab_1_1_toys_1_1_basic_1_1_motor.html#a182aef8e304ffee4b1ab4ed4eba87bce',1,'DirectOutput::Cab::Toys::Basic::Motor']]],
+  ['minflickerdurationms',['MinFlickerDurationMs',['../class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_flicker_effect_base_3_01_matrix_element_type_01_4.html#aa269a16cbba348ce42608f3f7c5096eb',1,'DirectOutput::FX::MatrixFX::MatrixFlickerEffectBase&lt; MatrixElementType &gt;']]],
+  ['minpower',['MinPower',['../class_direct_output_1_1_cab_1_1_toys_1_1_hardware_1_1_motor.html#a15c936ea0e9a3dc95cf71136a5779cca',1,'DirectOutput::Cab::Toys::Hardware::Motor']]],
   ['minvalue',['MinValue',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a36589e97e44b25a9e5cecf0b7e33590d',1,'DirectOutput::General::Statistics::SimpleStatistics&lt; ValueType &gt;']]],
-  ['minvalues',['MinValues',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a19db1ddbb790b98a27419e55cc2046b9',1,'DirectOutput::General::Statistics::SimpleStatistics&lt; ValueType &gt;']]],
-  ['modified',['Modified',['../class_direct_output_1_1_frontend_1_1_global_config_edit.html#a103ed870f2ac9f8d027bfb97274a8a79',1,'DirectOutput::Frontend::GlobalConfigEdit']]]
+  ['minvalues',['MinValues',['../class_direct_output_1_1_general_1_1_statistics_1_1_simple_statistics_3_01_value_type_01_4.html#a19db1ddbb790b98a27419e55cc2046b9',1,'DirectOutput::General::Statistics::SimpleStatistics&lt; ValueType &gt;']]]
 ];

@@ -1,6 +1,8 @@
 var dir_f1f5098e865ddf7a787bd39bdb2966e4 =
 [
+    [ "AdressableLedStrip", "dir_21d4f659abdf3e130e03fd7fc60c8831.html", "dir_21d4f659abdf3e130e03fd7fc60c8831" ],
     [ "DMX", "dir_93549ee08faf500acf11fa6f3a7bc3dd.html", "dir_93549ee08faf500acf11fa6f3a7bc3dd" ],
+    [ "FTDIChip", "dir_a07514b7e4cb2378420cba5b95865f9a.html", "dir_a07514b7e4cb2378420cba5b95865f9a" ],
     [ "LW", "dir_90c91509a4554e8307c827f98f77387e.html", "dir_90c91509a4554e8307c827f98f77387e" ],
     [ "NullOutputController", "dir_349b46f28212f1f6e42a662bf45e5801.html", "dir_349b46f28212f1f6e42a662bf45e5801" ],
     [ "Pac", "dir_7ff807c1cf52d88b1da766b6e80a910d.html", "dir_7ff807c1cf52d88b1da766b6e80a910d" ],
@@ -15,6 +17,9 @@ var dir_f1f5098e865ddf7a787bd39bdb2966e4 =
     ] ],
     [ "IOutputNumbered.cs", "_i_output_numbered_8cs.html", [
       [ "IOutputNumbered", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output_numbered.html", "interface_direct_output_1_1_cab_1_1_out_1_1_i_output_numbered" ]
+    ] ],
+    [ "ISupportsSetValues.cs", "_i_supports_set_values_8cs.html", [
+      [ "ISupportsSetValues", "interface_direct_output_1_1_cab_1_1_out_1_1_i_supports_set_values.html", "interface_direct_output_1_1_cab_1_1_out_1_1_i_supports_set_values" ]
     ] ],
     [ "Out.cs", "_out_8cs.html", null ],
     [ "Output.cs", "_output_8cs.html", [

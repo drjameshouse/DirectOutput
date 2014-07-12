@@ -18,6 +18,7 @@ var class_direct_output_1_1_table_1_1_table_element_list =
     [ "Mech", "class_direct_output_1_1_table_1_1_table_element_list.html#ab477756093302833f8bc7889179d2af6", null ],
     [ "Solenoid", "class_direct_output_1_1_table_1_1_table_element_list.html#a0cc648daeacb3a803d55df4c25ca0839", null ],
     [ "Switch", "class_direct_output_1_1_table_1_1_table_element_list.html#af6112334b315084404e9aeab399d4528", null ],
+    [ "this[string TableElementDescriptor]", "class_direct_output_1_1_table_1_1_table_element_list.html#a032fcf45e84085dceed6f6ec329e65c4", null ],
     [ "this[TableElementTypeEnum TableElementType, int Number]", "class_direct_output_1_1_table_1_1_table_element_list.html#aca9816a8adc627fd0f7e436fe8f81177", null ],
     [ "TableElementValueChanged", "class_direct_output_1_1_table_1_1_table_element_list.html#aacabd3b9e43f59d47b52bff1d566751c", null ]
 ];

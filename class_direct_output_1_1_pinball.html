@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -123,13 +123,20 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_pinball.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1344df3ca7be7500e89f83f5e967f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#aa1344df3ca7be7500e89f83f5e967f8c">Init</a> (string GlobalConfigFilename=&quot;&quot;, string TableFilename=&quot;&quot;, string RomName=&quot;&quot;)</td></tr>
-<tr class="memdesc:aa1344df3ca7be7500e89f83f5e967f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures and initializes/starts and configures the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object  <a href="#aa1344df3ca7be7500e89f83f5e967f8c">More...</a><br/></td></tr>
-<tr class="separator:aa1344df3ca7be7500e89f83f5e967f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255067ac4b375f6936fbcce989197cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a255067ac4b375f6936fbcce989197cc2">Setup</a> (string GlobalConfigFilename=&quot;&quot;, string TableFilename=&quot;&quot;, string RomName=&quot;&quot;)</td></tr>
+<tr class="memdesc:a255067ac4b375f6936fbcce989197cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.<br/>
+ Loads the global config, table config and cabinet config  <a href="#a255067ac4b375f6936fbcce989197cc2">More...</a><br/></td></tr>
+<tr class="separator:a255067ac4b375f6936fbcce989197cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8455f5a3c5a3a9999e744745d1fd78c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#ab8455f5a3c5a3a9999e744745d1fd78c">Init</a> ()</td></tr>
+<tr class="memdesc:ab8455f5a3c5a3a9999e744745d1fd78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes/starts the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object  <a href="#ab8455f5a3c5a3a9999e744745d1fd78c">More...</a><br/></td></tr>
+<tr class="separator:ab8455f5a3c5a3a9999e744745d1fd78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cded9eaf4d5aa4b2821e101ea3a61aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a5cded9eaf4d5aa4b2821e101ea3a61aa">Finish</a> ()</td></tr>
 <tr class="memdesc:a5cded9eaf4d5aa4b2821e101ea3a61aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.  <a href="#a5cded9eaf4d5aa4b2821e101ea3a61aa">More...</a><br/></td></tr>
 <tr class="separator:a5cded9eaf4d5aa4b2821e101ea3a61aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6a06cb768aa742f775da07aeef456c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#aab6a06cb768aa742f775da07aeef456c">UpdateTableElementStatistics</a> (<a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a> <a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>, TimeSpan Duration)</td></tr>
+<tr class="memitem:a505fbe4ccc065f5e8e8898996b7f075b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a505fbe4ccc065f5e8e8898996b7f075b">MainThreadSignal</a> ()</td></tr>
+<tr class="memdesc:a505fbe4ccc065f5e8e8898996b7f075b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals the main thread to continue its work (if currently sleeping).  <a href="#a505fbe4ccc065f5e8e8898996b7f075b">More...</a><br/></td></tr>
+<tr class="separator:a505fbe4ccc065f5e8e8898996b7f075b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6a06cb768aa742f775da07aeef456c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#aab6a06cb768aa742f775da07aeef456c">UpdateTableElementStatistics</a> (<a class="el" href="struct_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a> <a class="el" href="struct_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>, TimeSpan Duration)</td></tr>
 <tr class="memdesc:aab6a06cb768aa742f775da07aeef456c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the table element statistics.  <a href="#aab6a06cb768aa742f775da07aeef456c">More...</a><br/></td></tr>
 <tr class="separator:aab6a06cb768aa742f775da07aeef456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71993601bbfe0ac747fec94ebab2df9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a71993601bbfe0ac747fec94ebab2df9a">WriteStatisticsToLog</a> ()</td></tr>
@@ -139,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:add8d0701706913120586ac3e885e9238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives the table element data from the calling app (e.g. B2S.Server providing data through the plugin interface).<br/>
  The received data is put in a queue and the internal thread of the framework is notified about the availability of new data.  <a href="#add8d0701706913120586ac3e885e9238">More...</a><br/></td></tr>
 <tr class="separator:add8d0701706913120586ac3e885e9238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04badc48cbd4bc3bff7276d2f841f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#ab04badc48cbd4bc3bff7276d2f841f2e">ReceiveData</a> (<a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a> <a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>)</td></tr>
+<tr class="memitem:ab04badc48cbd4bc3bff7276d2f841f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#ab04badc48cbd4bc3bff7276d2f841f2e">ReceiveData</a> (<a class="el" href="struct_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a> <a class="el" href="struct_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>)</td></tr>
 <tr class="memdesc:ab04badc48cbd4bc3bff7276d2f841f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives the table element data from the calling app.<br/>
  The received data is put in a queue and the internal thread of the framework is notified about the availability of new data.  <a href="#ab04badc48cbd4bc3bff7276d2f841f2e">More...</a><br/></td></tr>
 <tr class="separator:ab04badc48cbd4bc3bff7276d2f841f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,18 +159,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a8c1066af8dc215726f20f39bec1062d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_general_1_1_thread_info_list.html">ThreadInfoList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a8c1066af8dc215726f20f39bec1062d4">ThreadInfoList</a><code> [get, set]</code></td></tr>
-<tr class="separator:a8c1066af8dc215726f20f39bec1062d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5db47ccf88f683c0827e012c872fa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_general_1_1_statistics_1_1_time_span_statistics_list.html">TimeSpanStatisticsList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a1d5db47ccf88f683c0827e012c872fa0">TimeSpanStatistics</a><code> [get, set]</code></td></tr>
 <tr class="separator:a1d5db47ccf88f683c0827e012c872fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4298cf15990aee45ab7b5146e687a067"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_scripting_1_1_script_list.html">ScriptList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a4298cf15990aee45ab7b5146e687a067">Scripts</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a4298cf15990aee45ab7b5146e687a067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of loaded scripts.  <a href="#a4298cf15990aee45ab7b5146e687a067">More...</a><br/></td></tr>
-<tr class="separator:a4298cf15990aee45ab7b5146e687a067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16b50b5047e6b6b54539ace2ae91593c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_table_1_1_table.html">Table.Table</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a16b50b5047e6b6b54539ace2ae91593c">Table</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a16b50b5047e6b6b54539ace2ae91593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the table object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.  <a href="#a16b50b5047e6b6b54539ace2ae91593c">More...</a><br/></td></tr>
+<tr class="memdesc:a16b50b5047e6b6b54539ace2ae91593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the table object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.  <a href="#a16b50b5047e6b6b54539ace2ae91593c">More...</a><br/></td></tr>
 <tr class="separator:a16b50b5047e6b6b54539ace2ae91593c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad51930842f5db9525cce24c00b3ca5bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_cab_1_1_cabinet.html">Cabinet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#ad51930842f5db9525cce24c00b3ca5bb">Cabinet</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ad51930842f5db9525cce24c00b3ca5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Cabinet object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.  <a href="#ad51930842f5db9525cce24c00b3ca5bb">More...</a><br/></td></tr>
+<tr class="memdesc:ad51930842f5db9525cce24c00b3ca5bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the Cabinet object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.  <a href="#ad51930842f5db9525cce24c00b3ca5bb">More...</a><br/></td></tr>
 <tr class="separator:ad51930842f5db9525cce24c00b3ca5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1109ca9b07aa06896b51efe2b230a0c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_pinball_support_1_1_alarm_handler.html">AlarmHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_pinball.html#a1109ca9b07aa06896b51efe2b230a0c9">Alarms</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a1109ca9b07aa06896b51efe2b230a0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the AlarmHandler object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.  <a href="#a1109ca9b07aa06896b51efe2b230a0c9">More...</a><br/></td></tr>
@@ -214,45 +216,37 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa1344df3ca7be7500e89f83f5e967f8c"></a>
+<a class="anchor" id="ab8455f5a3c5a3a9999e744745d1fd78c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void DirectOutput.Pinball.Init </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>GlobalConfigFilename</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>TableFilename</em> = <code>&quot;&quot;</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>RomName</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Configures and initializes/starts and configures the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">GlobalConfigFilename</td><td>The global config filename.</td></tr>
-    <tr><td class="paramname">TableFilename</td><td>The table filename.</td></tr>
-    <tr><td class="paramname">RomName</td><td>Name of the rom.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Initializes/starts the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object </p>
+
+</div>
+</div>
+<a class="anchor" id="a505fbe4ccc065f5e8e8898996b7f075b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DirectOutput.Pinball.MainThreadSignal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signals the main thread to continue its work (if currently sleeping). </p>
 
 </div>
 </div>
@@ -306,7 +300,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void DirectOutput.Pinball.ReceiveData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>&#160;</td>
           <td class="paramname"><em>TableElementData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -318,6 +312,49 @@ Properties</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">TableElementData</td><td>The table element data to be received.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a255067ac4b375f6936fbcce989197cc2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DirectOutput.Pinball.Setup </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>GlobalConfigFilename</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>TableFilename</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>RomName</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object.<br/>
+ Loads the global config, table config and cabinet config </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GlobalConfigFilename</td><td>The global config filename.</td></tr>
+    <tr><td class="paramname">TableFilename</td><td>The table filename.</td></tr>
+    <tr><td class="paramname">RomName</td><td>Name of the rom.</td></tr>
   </table>
   </dd>
 </dl>
@@ -349,7 +386,7 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void DirectOutput.Pinball.UpdateTableElementStatistics </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_direct_output_1_1_table_1_1_table_element_data.html">TableElementData</a>&#160;</td>
           <td class="paramname"><em>TableElementData</em>, </td>
         </tr>
         <tr>
@@ -436,7 +473,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the Cabinet object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object. </p>
+<p>Gets or sets the Cabinet object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object. </p>
 <p>The cabinet object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object. </p>
 
 </div>
@@ -486,29 +523,6 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4298cf15990aee45ab7b5146e687a067"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_scripting_1_1_script_list.html">ScriptList</a> DirectOutput.Pinball.Scripts</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the list of loaded scripts. </p>
-<p>The list of loaded scripts. </p>
-
-</div>
-</div>
 <a class="anchor" id="a16b50b5047e6b6b54539ace2ae91593c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -527,28 +541,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the table object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object. </p>
+<p>Gets or sets the table object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object. </p>
 <p>The table object for the <a class="el" href="class_direct_output_1_1_pinball.html" title="Pinball is the main object of the DirectOutput framework.  It holds all objects required to process P...">Pinball</a> object. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8c1066af8dc215726f20f39bec1062d4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_general_1_1_thread_info_list.html">ThreadInfoList</a> DirectOutput.Pinball.ThreadInfoList</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -582,7 +576,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_pinball.html">Pinball</a></li>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:46 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:53 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

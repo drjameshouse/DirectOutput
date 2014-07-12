@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -124,15 +124,15 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_global_configu
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af702d37269ffe41e8dc193cad13ca8e2"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; int, FileInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#af702d37269ffe41e8dc193cad13ca8e2">GetIniFilesDictionary</a> (string TableFilename=&quot;&quot;)</td></tr>
+<tr class="memdesc:af702d37269ffe41e8dc193cad13ca8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the a dictionary containing all ini files (file) and their number (key).  <a href="#af702d37269ffe41e8dc193cad13ca8e2">More...</a><br/></td></tr>
+<tr class="separator:af702d37269ffe41e8dc193cad13ca8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad42939316b00cb4313913e022b2d52df"><td class="memItemLeft" align="right" valign="top">FileInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ad42939316b00cb4313913e022b2d52df">GetCabinetConfigFile</a> ()</td></tr>
 <tr class="memdesc:ad42939316b00cb4313913e022b2d52df"><td class="mdescLeft">&#160;</td><td class="mdescRight">FileInfo object for the file containing the configuration of the cabinet (outputs, toys and so on).  <a href="#ad42939316b00cb4313913e022b2d52df">More...</a><br/></td></tr>
 <tr class="separator:ad42939316b00cb4313913e022b2d52df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63d515e620e5cdef19e82c8ed6f5ad09"><td class="memItemLeft" align="right" valign="top">DirectoryInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a63d515e620e5cdef19e82c8ed6f5ad09">GetCabinetConfigDirectory</a> ()</td></tr>
 <tr class="memdesc:a63d515e620e5cdef19e82c8ed6f5ad09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cabinet config directory.  <a href="#a63d515e620e5cdef19e82c8ed6f5ad09">More...</a><br/></td></tr>
 <tr class="separator:a63d515e620e5cdef19e82c8ed6f5ad09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3752a96ce7ce073f66f390373214a798"><td class="memItemLeft" align="right" valign="top">List&lt; FileInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a3752a96ce7ce073f66f390373214a798">GetTableScriptFiles</a> (string FullTableFilename)</td></tr>
-<tr class="memdesc:a3752a96ce7ce073f66f390373214a798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of table script files.  <a href="#a3752a96ce7ce073f66f390373214a798">More...</a><br/></td></tr>
-<tr class="separator:a3752a96ce7ce073f66f390373214a798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d23de3cc8977166397669494871004"><td class="memItemLeft" align="right" valign="top">FileInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a03d23de3cc8977166397669494871004">GetTableConfigFile</a> (string FullTableFilename)</td></tr>
 <tr class="memdesc:a03d23de3cc8977166397669494871004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a FileInfo object for the table config file.<br/>
  The file is lookued up using the list of the property TableConfigFilePatterns. If more than one file matches the search patterns, only the first file is returned.  <a href="#a03d23de3cc8977166397669494871004">More...</a><br/></td></tr>
@@ -140,11 +140,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aec9b764edd329f2ecec776080e0fd7a7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#aec9b764edd329f2ecec776080e0fd7a7">GetLogFilename</a> (string TableFilename=&quot;&quot;, string RomName=&quot;&quot;)</td></tr>
 <tr class="memdesc:aec9b764edd329f2ecec776080e0fd7a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the log filename based on the LogFilePattern with replaced placeholders.  <a href="#aec9b764edd329f2ecec776080e0fd7a7">More...</a><br/></td></tr>
 <tr class="separator:aec9b764edd329f2ecec776080e0fd7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7633b1c415576c038a2c45caa0155b8"><td class="memItemLeft" align="right" valign="top">List&lt; FileInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ac7633b1c415576c038a2c45caa0155b8">GetGlobalScriptFiles</a> ()</td></tr>
-<tr class="memdesc:ac7633b1c415576c038a2c45caa0155b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an list of FileInfo objects for the global script files.<br/>
- If no script files are found or if a error occurs when looking for the script files a empty list is returned.<br/>
- The script files are looked up using the value of the property GlobalScriptFilePatterns.  <a href="#ac7633b1c415576c038a2c45caa0155b8">More...</a><br/></td></tr>
-<tr class="separator:ac7633b1c415576c038a2c45caa0155b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5f0ed2f65c606d33e731dcb8da6024e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#af5f0ed2f65c606d33e731dcb8da6024e">GlobalConfigDirectoryName</a> ()</td></tr>
 <tr class="memdesc:af5f0ed2f65c606d33e731dcb8da6024e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the directory where the global config is stored (readonly).  <a href="#af5f0ed2f65c606d33e731dcb8da6024e">More...</a><br/></td></tr>
 <tr class="separator:af5f0ed2f65c606d33e731dcb8da6024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,29 +181,25 @@ Properties</h2></td></tr>
 <tr class="memdesc:ab603d1b65f8d49389a55db05b674cab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the minimum duration in milliseconds for <a class="el" href="namespace_direct_output_1_1_led_control.html">LedControl</a> effects controlling RGB leds.<br/>
  This settings has no effect if a duration or blinking is defined for the LedControlEffect. If this value is not specified in the globalconfig file, 120 miliseconds will be used by default.  <a href="#ab603d1b65f8d49389a55db05b674cab2">More...</a><br/></td></tr>
 <tr class="separator:ab603d1b65f8d49389a55db05b674cab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a987f31e5d92ba0c18d7d872315e32056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file_list.html">LedControlIniFileList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a987f31e5d92ba0c18d7d872315e32056">LedControlIniFiles</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a987f31e5d92ba0c18d7d872315e32056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the list of LedControl.ini files.<br/>
-  <a href="#a987f31e5d92ba0c18d7d872315e32056">More...</a><br/></td></tr>
-<tr class="separator:a987f31e5d92ba0c18d7d872315e32056"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ac7c2a66b193f3d286f692c33c0a724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a2ac7c2a66b193f3d286f692c33c0a724">CabinetConfigFilePatterns</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a2ac7c2a66b193f3d286f692c33c0a724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the cabinet config file pattern.  <a href="#a2ac7c2a66b193f3d286f692c33c0a724">More...</a><br/></td></tr>
-<tr class="separator:a2ac7c2a66b193f3d286f692c33c0a724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00a3fa0522b5f634f245e759fa85764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ad00a3fa0522b5f634f245e759fa85764">TableScriptFilePatterns</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ad00a3fa0522b5f634f245e759fa85764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the table script file patterns.  <a href="#ad00a3fa0522b5f634f245e759fa85764">More...</a><br/></td></tr>
-<tr class="separator:ad00a3fa0522b5f634f245e759fa85764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3adfeed96f082414d45a3ac8b932dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ac3adfeed96f082414d45a3ac8b932dc7">TableConfigFilePatterns</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ab93992ed58e9b84f21d79a17f0645f52"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ab93992ed58e9b84f21d79a17f0645f52">IniFilesPath</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab93992ed58e9b84f21d79a17f0645f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the path to the ini files used for table configurations  <a href="#ab93992ed58e9b84f21d79a17f0645f52">More...</a><br/></td></tr>
+<tr class="separator:ab93992ed58e9b84f21d79a17f0645f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02738a3cc00e139fe1a631ad4034e967"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_general_1_1_file_pattern.html">FilePattern</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a02738a3cc00e139fe1a631ad4034e967">CabinetConfigFilePattern</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a02738a3cc00e139fe1a631ad4034e967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the path and name of the cabinet config file.  <a href="#a02738a3cc00e139fe1a631ad4034e967">More...</a><br/></td></tr>
+<tr class="separator:a02738a3cc00e139fe1a631ad4034e967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3adfeed96f082414d45a3ac8b932dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_general_1_1_file_pattern_list.html">FilePatternList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#ac3adfeed96f082414d45a3ac8b932dc7">TableConfigFilePatterns</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:ac3adfeed96f082414d45a3ac8b932dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the config file patterns used to looup the table configuration.  <a href="#ac3adfeed96f082414d45a3ac8b932dc7">More...</a><br/></td></tr>
 <tr class="separator:ac3adfeed96f082414d45a3ac8b932dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42d2e81f230d9ecfd5f80aa50d31c6a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a42d2e81f230d9ecfd5f80aa50d31c6a9">EnableLogging</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a42d2e81f230d9ecfd5f80aa50d31c6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether impotant events in the framework are logged to a file.  <a href="#a42d2e81f230d9ecfd5f80aa50d31c6a9">More...</a><br/></td></tr>
 <tr class="separator:a42d2e81f230d9ecfd5f80aa50d31c6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaecb5b8258cb46769635ed67f64acd91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html">FilePattern</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#aaecb5b8258cb46769635ed67f64acd91">LogFilePattern</a><code> [get, set]</code></td></tr>
+<tr class="memitem:a5fd6db3ec84aeed7adb8733c4a884be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a5fd6db3ec84aeed7adb8733c4a884be8">ClearLogOnSessionStart</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a5fd6db3ec84aeed7adb8733c4a884be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether DOF clears the log file on session start.  <a href="#a5fd6db3ec84aeed7adb8733c4a884be8">More...</a><br/></td></tr>
+<tr class="separator:a5fd6db3ec84aeed7adb8733c4a884be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecb5b8258cb46769635ed67f64acd91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_general_1_1_file_pattern.html">FilePattern</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#aaecb5b8258cb46769635ed67f64acd91">LogFilePattern</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:aaecb5b8258cb46769635ed67f64acd91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the log file pattern.<br/>
  The log file pattern supports the following placeholders:  <a href="#aaecb5b8258cb46769635ed67f64acd91">More...</a><br/></td></tr>
 <tr class="separator:aaecb5b8258cb46769635ed67f64acd91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae6f30b8f8af905aeefcb3ada721b11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a0ae6f30b8f8af905aeefcb3ada721b11">GlobalScriptFilePatterns</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a0ae6f30b8f8af905aeefcb3ada721b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the script file patterns used to lookup the global scripts.  <a href="#a0ae6f30b8f8af905aeefcb3ada721b11">More...</a><br/></td></tr>
-<tr class="separator:a0ae6f30b8f8af905aeefcb3ada721b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a921e04fe7a704efe8bb89975f41dfb06"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html#a921e04fe7a704efe8bb89975f41dfb06">GlobalConfigFilename</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a921e04fe7a704efe8bb89975f41dfb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the global config filename.  <a href="#a921e04fe7a704efe8bb89975f41dfb06">More...</a><br/></td></tr>
 <tr class="separator:a921e04fe7a704efe8bb89975f41dfb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,23 +383,28 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac7633b1c415576c038a2c45caa0155b8"></a>
+<a class="anchor" id="af702d37269ffe41e8dc193cad13ca8e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;FileInfo&gt; DirectOutput.GlobalConfiguration.GlobalConfig.GetGlobalScriptFiles </td>
+          <td class="memname">Dictionary&lt;int, FileInfo&gt; DirectOutput.GlobalConfiguration.GlobalConfig.GetIniFilesDictionary </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>TableFilename</em> = <code>&quot;&quot;</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets an list of FileInfo objects for the global script files.<br/>
- If no script files are found or if a error occurs when looking for the script files a empty list is returned.<br/>
- The script files are looked up using the value of the property GlobalScriptFilePatterns. </p>
-<dl class="section return"><dt>Returns</dt><dd>List of FileInfo objects for the global script files.</dd></dl>
+<p>Gets the a dictionary containing all ini files (file) and their number (key). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TableFilename</td><td>The table filename.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Dictionary of ini files. Key is the ini file number, value is the ini file.</dd></dl>
 
 </div>
 </div>
@@ -474,31 +470,6 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3752a96ce7ce073f66f390373214a798"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;FileInfo&gt; DirectOutput.GlobalConfiguration.GlobalConfig.GetTableScriptFiles </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>FullTableFilename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the list of table script files. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">FullTableFilename</td><td>The filename, inckuding path, to the table.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The list of table script files or a empty list if no table script files have been found. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="af5f0ed2f65c606d33e731dcb8da6024e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -543,7 +514,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a2ac7c2a66b193f3d286f692c33c0a724"></a>
+<a class="anchor" id="a02738a3cc00e139fe1a631ad4034e967"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -551,7 +522,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a> DirectOutput.GlobalConfiguration.GlobalConfig.CabinetConfigFilePatterns</td>
+          <td class="memname"><a class="el" href="class_direct_output_1_1_general_1_1_file_pattern.html">FilePattern</a> DirectOutput.GlobalConfiguration.GlobalConfig.CabinetConfigFilePattern</td>
         </tr>
       </table>
   </td>
@@ -561,8 +532,31 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the cabinet config file pattern. </p>
-<p>The cabinet config file pattern. </p>
+<p>Gets or sets the path and name of the cabinet config file. </p>
+<p>The path and name of the cabinet config file. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5fd6db3ec84aeed7adb8733c4a884be8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DirectOutput.GlobalConfiguration.GlobalConfig.ClearLogOnSessionStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets or sets a value indicating whether DOF clears the log file on session start. </p>
+<p><code>true</code> if DOF should clear the log file on session start; otherwise, <code>false</code>. </p>
 
 </div>
 </div>
@@ -612,7 +606,7 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0ae6f30b8f8af905aeefcb3ada721b11"></a>
+<a class="anchor" id="ab93992ed58e9b84f21d79a17f0645f52"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -620,7 +614,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a> DirectOutput.GlobalConfiguration.GlobalConfig.GlobalScriptFilePatterns</td>
+          <td class="memname">string DirectOutput.GlobalConfiguration.GlobalConfig.IniFilesPath</td>
         </tr>
       </table>
   </td>
@@ -630,32 +624,8 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the script file patterns used to lookup the global scripts. </p>
-<p>The global script file patterns. </p>
-
-</div>
-</div>
-<a class="anchor" id="a987f31e5d92ba0c18d7d872315e32056"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_led_control_ini_file_list.html">LedControlIniFileList</a> DirectOutput.GlobalConfiguration.GlobalConfig.LedControlIniFiles</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets or sets the list of LedControl.ini files.<br/>
- </p>
-<p>The list of LedControl.ini files. </p>
+<p>Gets or sets the path to the ini files used for table configurations </p>
+<p>The path to the directory containing the ini files used for table configurations. </p>
 
 </div>
 </div>
@@ -716,7 +686,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern.html">FilePattern</a> DirectOutput.GlobalConfiguration.GlobalConfig.LogFilePattern</td>
+          <td class="memname"><a class="el" href="class_direct_output_1_1_general_1_1_file_pattern.html">FilePattern</a> DirectOutput.GlobalConfiguration.GlobalConfig.LogFilePattern</td>
         </tr>
       </table>
   </td>
@@ -750,7 +720,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a> DirectOutput.GlobalConfiguration.GlobalConfig.TableConfigFilePatterns</td>
+          <td class="memname"><a class="el" href="class_direct_output_1_1_general_1_1_file_pattern_list.html">FilePatternList</a> DirectOutput.GlobalConfiguration.GlobalConfig.TableConfigFilePatterns</td>
         </tr>
       </table>
   </td>
@@ -765,29 +735,6 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad00a3fa0522b5f634f245e759fa85764"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_file_pattern_list.html">FilePatternList</a> DirectOutput.GlobalConfiguration.GlobalConfig.TableScriptFilePatterns</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets or sets the table script file patterns. </p>
-<p>The table script file patterns. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Tom/Documents/GitHub/DirectOutput/DirectOutput/GlobalConfiguration/<a class="el" href="_global_config_8cs.html">GlobalConfig.cs</a></li>
 </ul>
@@ -798,7 +745,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_global_configuration.html">GlobalConfiguration</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_global_configuration_1_1_global_config.html">GlobalConfig</a></li>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:48 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:58 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

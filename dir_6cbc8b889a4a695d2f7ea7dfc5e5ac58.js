@@ -18,23 +18,11 @@ var dir_6cbc8b889a4a695d2f7ea7dfc5e5ac58 =
     [ "CabinetInfo.Designer.cs", "_cabinet_info_8_designer_8cs.html", [
       [ "CabinetInfo", "class_direct_output_1_1_frontend_1_1_cabinet_info.html", "class_direct_output_1_1_frontend_1_1_cabinet_info" ]
     ] ],
-    [ "GlobalConfigEdit.cs", "_global_config_edit_8cs.html", [
-      [ "GlobalConfigEdit", "class_direct_output_1_1_frontend_1_1_global_config_edit.html", "class_direct_output_1_1_frontend_1_1_global_config_edit" ]
-    ] ],
-    [ "GlobalConfigEdit.Designer.cs", "_global_config_edit_8_designer_8cs.html", [
-      [ "GlobalConfigEdit", "class_direct_output_1_1_frontend_1_1_global_config_edit.html", "class_direct_output_1_1_frontend_1_1_global_config_edit" ]
-    ] ],
     [ "MainMenu.cs", "_main_menu_8cs.html", [
       [ "MainMenu", "class_direct_output_1_1_frontend_1_1_main_menu.html", "class_direct_output_1_1_frontend_1_1_main_menu" ]
     ] ],
     [ "MainMenu.Designer.cs", "_main_menu_8_designer_8cs.html", [
       [ "MainMenu", "class_direct_output_1_1_frontend_1_1_main_menu.html", "class_direct_output_1_1_frontend_1_1_main_menu" ]
-    ] ],
-    [ "ScriptInfo.cs", "_script_info_8cs.html", [
-      [ "ScriptInfo", "class_direct_output_1_1_frontend_1_1_script_info.html", "class_direct_output_1_1_frontend_1_1_script_info" ]
-    ] ],
-    [ "ScriptInfo.Designer.cs", "_script_info_8_designer_8cs.html", [
-      [ "ScriptInfo", "class_direct_output_1_1_frontend_1_1_script_info.html", "class_direct_output_1_1_frontend_1_1_script_info" ]
     ] ],
     [ "SystemMonitor.cs", "_system_monitor_8cs.html", [
       [ "SystemMonitor", "class_direct_output_1_1_frontend_1_1_system_monitor.html", "class_direct_output_1_1_frontend_1_1_system_monitor" ]

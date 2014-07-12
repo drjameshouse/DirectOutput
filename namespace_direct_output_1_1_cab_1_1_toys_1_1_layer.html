@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -107,40 +107,31 @@ $(document).ready(function(){initNavTree('namespace_direct_output_1_1_cab_1_1_to
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Package DirectOutput.Cab.Toys.Layer</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Namespace for objects dealing with layers  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>AlphaMappingTable</b></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static class containg a mapping table which is used for faster alpha mapping of toys supporting layers with alpha channels. <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_layer.html">AnalogAlphaLayer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements a layer object with alpha support for toys working analog values.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_layer.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_toy.html">AnalogAlphaToy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This toy handles analog values (0-255) in a layer structure including alpha value (0=completely transparent, 255=fully opaque) and outputs the belended result of the layers on a single output.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_toy.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_value.html">AnalogAlphaValue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object containing a analog value (0-255) and a alpha value (0-255).  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_value.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_layer_toy_3_01_layer_element_type_01_4.html">ILayerToy&lt; LayerElementType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_layer_dictionary.html">AnalogLayerDictionary</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary for <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_layer.html" title="This class implements a layer object with alpha support for toys working analog values. ">AnalogAlphaLayer</a> objects.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_layer_dictionary.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_layer_dictionary_3_01_layer_element_type_01_4.html">LayerDictionary&lt; LayerElementType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary for RGBALayer objects.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_layer_dictionary_3_01_layer_element_type_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_analog_alpha_toy.html">IAnalogAlphaToy</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for toys supporting analog alpha layers.  <a href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_analog_alpha_toy.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_r_g_b_a_toy.html">IRGBAToy</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for RGB toys supporting several layers of color with alpha value.  <a href="interface_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_i_r_g_b_a_toy.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_layer.html">RGBALayer</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html">Layer</a> object for toys supporting several layers of RGB colors with alpha channel.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_layer.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_layer_dictionary.html">RGBALayerDictionary</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary for <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_layer.html" title="Layer object for toys supporting several layers of RGB colors with alpha channel. ...">RGBALayer</a> objects.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_layer_dictionary.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_matrix_dictionary_base_3_01_matrix_element_type_01_4.html">MatrixDictionaryBase&lt; MatrixElementType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorted dictionary of layers for the matrix toys.  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_matrix_dictionary_base_3_01_matrix_element_type_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html">RGBAToy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thie <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html" title="Thie RGBAToy controls RGB leds and other gadgets displaying RGB colors.   The RGBAToy has multilayer ...">RGBAToy</a> controls RGB leds and other gadgets displaying RGB colors.<br/>
@@ -148,7 +139,135 @@ Classes</h2></td></tr>
  The <a class="el" href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html" title="Thie RGBAToy controls RGB leds and other gadgets displaying RGB colors.   The RGBAToy has multilayer ...">RGBAToy</a> has multilayer support with alpha channels. This allows the effects targeting RGBAToys to send their data to different layers. Values in a layer do also have a alpha/transparency channel which will allow us to blend the colors/values in the various layers (e.g. if a bottom layer is blue and top is a semi transparent red, you will get some mix of both or if one of the two blinks you get changing colors).<br/>
  The following picture might give you a clearer idea how the layers with their alpha channels work:  <a href="class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a137e730e1e3e1e77806256333628d004"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004">RGBOrderEnum</a> { <br/>
+&#160;&#160;<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004a889574aebacda6bfd3e534e2b49b8028">RGB</a> = 1, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004a1fca165936b3a279373072a033368940">RBG</a> = 2, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004a50725d49d336ca5507cfcd2a6d2c2f8d">GRB</a> = 3, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004a842e1594958a0f57e8860007f986e712">WS2812</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004aa697acf848b7c983af62cca5f77dd1f2">GBR</a> = 4, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004a4875dadcf9dd9ee93bbd02c8228fade2">BRG</a> = 5, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004a2ad5640ebdec72fc79531d1778c6c2dc">BGR</a> = 6
+<br/>
+ }</td></tr>
+<tr class="memdesc:a137e730e1e3e1e77806256333628d004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used to define the order of the colors of a multicolor element (e.g. RGB led). Depending on the connection of the multi color element, the order of the colors does maybe not match the default Red - Green - Blue order (e.g. addressable WS2812 led chips are using Green - Red - Blue).  <a href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004">More...</a><br/></td></tr>
+<tr class="separator:a137e730e1e3e1e77806256333628d004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2af1c5f222fde86a74579aa8364024"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024">LedStripArrangementEnum</a> { <br/>
+&#160;&#160;<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a6e10eed2ed4c26c079b7a60a51285af7">LeftRightTopDown</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a8bdc020a57cbc80aafa938a987f0c879">LeftRightBottomUp</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024aa69a70ae936876d7ecc9b3a4bea28524">RightLeftTopDown</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a47e8c15d6cfb933d1b6526c645d3a9c8">RightLeftBottomUp</a>, 
+<br/>
+&#160;&#160;<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024abd0d2a72c670132f6cdeb553e48a2873">TopDownLeftRight</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a812a964efabc8204a1f29bfa08461950">TopDownRightLeft</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a25ee1f95f5657c5eed1e5c0c3a5f03b4">BottomUpLeftRight</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a6aa14d99bf791b7d6d24c140e0a95408">BottomUpRightLeft</a>, 
+<br/>
+&#160;&#160;<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a01187f589e2f2da27836693d46c545b5">LeftRightAlternateTopDown</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024ae36d769040eb8ced18788640d1f7da19">LeftRightAlternateBottomUp</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024ae62ea036bd79ad91273e874a5cc47173">RightLeftAlternateTopDown</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024a6e98420a8de776963e8843195faab103">RightLeftAlternateBottomUp</a>, 
+<br/>
+&#160;&#160;<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024adefc2b9b39f6fd08ea40bb9b77d80343">TopDownAlternateLeftRight</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024af879fdaef4c4309d2f00bda6c97d004a">TopDownAlternateRightLeft</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024af4b01406428cd299a5fdb492f61022ec">BottomUpAlternateLeftRight</a>, 
+<a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024af734341b8d0fba052a0e170e3ca532a5">BottomUpAlternateRightLeft</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:adb2af1c5f222fde86a74579aa8364024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum used to specify the arrangement of the ledstripe(s).  <a href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024">More...</a><br/></td></tr>
+<tr class="separator:adb2af1c5f222fde86a74579aa8364024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Namespace for objects dealing with layers </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="adb2af1c5f222fde86a74579aa8364024"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#adb2af1c5f222fde86a74579aa8364024">DirectOutput.Cab.Toys.Layer.LedStripArrangementEnum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum used to specify the arrangement of the ledstripe(s). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a6e10eed2ed4c26c079b7a60a51285af7"></a>LeftRightTopDown</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a8bdc020a57cbc80aafa938a987f0c879"></a>LeftRightBottomUp</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024aa69a70ae936876d7ecc9b3a4bea28524"></a>RightLeftTopDown</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a47e8c15d6cfb933d1b6526c645d3a9c8"></a>RightLeftBottomUp</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024abd0d2a72c670132f6cdeb553e48a2873"></a>TopDownLeftRight</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a812a964efabc8204a1f29bfa08461950"></a>TopDownRightLeft</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a25ee1f95f5657c5eed1e5c0c3a5f03b4"></a>BottomUpLeftRight</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a6aa14d99bf791b7d6d24c140e0a95408"></a>BottomUpRightLeft</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a01187f589e2f2da27836693d46c545b5"></a>LeftRightAlternateTopDown</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024ae36d769040eb8ced18788640d1f7da19"></a>LeftRightAlternateBottomUp</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024ae62ea036bd79ad91273e874a5cc47173"></a>RightLeftAlternateTopDown</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024a6e98420a8de776963e8843195faab103"></a>RightLeftAlternateBottomUp</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024adefc2b9b39f6fd08ea40bb9b77d80343"></a>TopDownAlternateLeftRight</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024af879fdaef4c4309d2f00bda6c97d004a"></a>TopDownAlternateRightLeft</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024af4b01406428cd299a5fdb492f61022ec"></a>BottomUpAlternateLeftRight</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="adb2af1c5f222fde86a74579aa8364024af734341b8d0fba052a0e170e3ca532a5"></a>BottomUpAlternateRightLeft</em>&nbsp;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a137e730e1e3e1e77806256333628d004"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html#a137e730e1e3e1e77806256333628d004">DirectOutput.Cab.Toys.Layer.RGBOrderEnum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enum used to define the order of the colors of a multicolor element (e.g. RGB led). Depending on the connection of the multi color element, the order of the colors does maybe not match the default Red - Green - Blue order (e.g. addressable WS2812 led chips are using Green - Red - Blue). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004a889574aebacda6bfd3e534e2b49b8028"></a>RGB</em>&nbsp;</td><td class="fielddoc">
+<p>Red-Green-Blue (usual color order) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004a1fca165936b3a279373072a033368940"></a>RBG</em>&nbsp;</td><td class="fielddoc">
+<p>Red - Blue - Green </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004a50725d49d336ca5507cfcd2a6d2c2f8d"></a>GRB</em>&nbsp;</td><td class="fielddoc">
+<p>Green - Red - Blue (WS2812 led chips are using the scheme) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004a842e1594958a0f57e8860007f986e712"></a>WS2812</em>&nbsp;</td><td class="fielddoc">
+<p>WS2812 led chip (uses green - red - blue color order) </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004aa697acf848b7c983af62cca5f77dd1f2"></a>GBR</em>&nbsp;</td><td class="fielddoc">
+<p>Green - Blue - Red </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004a4875dadcf9dd9ee93bbd02c8228fade2"></a>BRG</em>&nbsp;</td><td class="fielddoc">
+<p>Green - Blue - Red </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a137e730e1e3e1e77806256333628d004a2ad5640ebdec72fc79531d1778c6c2dc"></a>BGR</em>&nbsp;</td><td class="fielddoc">
+<p>Blue - Green - Red </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
@@ -156,7 +275,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab.html">Cab</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys.html">Toys</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_cab_1_1_toys_1_1_layer.html">Layer</a></li>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:47 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:55 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

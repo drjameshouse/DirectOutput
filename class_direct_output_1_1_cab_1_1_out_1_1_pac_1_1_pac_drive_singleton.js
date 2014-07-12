@@ -21,6 +21,7 @@ var class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton =
     [ "GetVendorName", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#afbc03f7c73a7e8259443b82271eca8e6", null ],
     [ "GetVersionNumber", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#a198c75415ebeba066322c890e33fa45f", null ],
     [ "PacAttachedDelegate", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#a9c9db27ef62ab988296f3a5804bb0f42", null ],
+    [ "PacDriveGetIndex", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#aef75fd5f858290b594157177aac4cdf7", null ],
     [ "PacDriveUHIDSetLEDState", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#aa53194e1b19b3b2d732bbaaafe0ed01d", null ],
     [ "PacDriveUHIDSetLEDStates", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#a3fd937c9ff8aed5d62b0a8dc14a1ebca", null ],
     [ "PacDriveUHIDSetLEDStates", "class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_singleton.html#a2b93dc8be1e2a8aa961cabd348c70fbc", null ],

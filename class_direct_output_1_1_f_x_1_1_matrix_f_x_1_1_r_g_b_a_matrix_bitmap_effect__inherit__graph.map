@@ -1,0 +1,8 @@
+<map id="DirectOutput.FX.MatrixFX.RGBAMatrixBitmapEffect" name="DirectOutput.FX.MatrixFX.RGBAMatrixBitmapEffect">
+<area shape="rect" id="node2" href="$class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_bitmap_effect_base_3_01_matrix_element_type_01_4.html" title="Outputs a defined part of a bitmap on a area of a matrix " alt="" coords="39,321,201,362"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_effect_base_3_01_matrix_element_type_01_4.html" title="Base class for effects targeting a matrix of toys (e.g. addressable ledstrip) " alt="" coords="13,230,227,271"/>
+<area shape="rect" id="node4" href="$class_direct_output_1_1_f_x_1_1_effect_base.html" title="Abstract base class for IEffect objects. &#160;This class inherits NamedItemBase and implements IEffect..." alt="" coords="77,155,163,181"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node6" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="75,5,165,32"/>
+<area shape="rect" id="node7" href="$interface_direct_output_1_1_f_x_1_1_i_effect.html" title="Common interface for all effects. &#160;If a new effect is implemented it is best to inherit from the abst..." alt="" coords="148,80,207,107"/>
+</map>

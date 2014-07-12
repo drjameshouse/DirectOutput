@@ -13,7 +13,7 @@ var NAVTREE =
       [ "Visual Pinball core.vbs Adjustment", "installation.html#installation_visualpinballcorevbs", null ],
       [ "Configuration", "installation.html#installation_configuration", [
         [ "Using Auto configuration", "installation.html#installation_autoconfiguration", null ],
-        [ "Using LedControl.ini files", "installation.html#installation_ledcontrolini", null ],
+        [ "Using directoutputconfig.ini files", "installation.html#installation_ledcontrolini", null ],
         [ "Using configuration files", "installation.html#installation_configfiles", [
           [ "Table Configuration", "installation.html#installation_tableconfig", null ],
           [ "Global Configuration", "installation.html#installation_globalconfig", null ],
@@ -31,37 +31,30 @@ var NAVTREE =
         [ "Initialization", "tableconfig.html#tableconfig_VPEMinit", null ],
         [ "Termination", "tableconfig.html#tableconfig_VPEMexit", null ],
         [ "Score commands", "tableconfig.html#tableconfig_VPEMscore", null ],
-        [ "Table element status updates", "tableconfig.html#tableconfig_VPEMtableelements", null ]
+        [ "Table element status updates", "tableconfig.html#tableconfig_VPEMtableelements", [
+          [ "The basics", "tableconfig.html#tableconfig_VPEMtableelements_basics", null ],
+          [ "The easy way", "tableconfig.html#tableconfig_VPEMtableelements_easy", null ]
+        ] ]
       ] ],
       [ "Tables w/o B2S.Server Backglass", "tableconfig.html#tableconfig_nobackglass", null ]
     ] ],
     [ "Supported Hardware", "hardware.html", [
       [ "Introduction", "hardware.html#hardware_intro", null ],
-      [ "Fully supported hardware", "hardware.html#hardware_ready", [
-        [ "LedWiz (GroovyGameGear)", "hardware.html#hardware_ledwiz", null ],
-        [ "PacLed64 (Ultimarc)", "hardware.html#hardware_ultimarc_pacled64", null ],
-        [ "Art-Net / DMX", "hardware.html#hardware_artnet", null ]
-      ] ],
-      [ "Hardware support in development", "hardware.html#hardware_development", [
-        [ "PacDrive (Ultimarc)", "hardware.html#hardware_ultimarc_pacdrive", null ]
-      ] ],
-      [ "WS2811 based led stripes", "hardware.html#hardware_WS2811", null ],
-      [ "Other Hardware", "hardware.html#hardware_other", null ]
+      [ "LedWiz (GroovyGameGear)", "hardware.html#hardware_ledwiz", null ],
+      [ "PacLed64 (Ultimarc)", "hardware.html#hardware_ultimarc_pacled64", null ],
+      [ "PacDrive (Ultimarc)", "hardware.html#hardware_ultimarc_pacdrive", null ],
+      [ "Art-Net / DMX", "hardware.html#hardware_artnet", null ],
+      [ "WS2811 addressable LedStrip controller", "hardware.html#hardware_WS2811", null ],
+      [ "FT245RL based controllers (e.g. SainSmart)", "hardware.html#hardware_FT245bitbang", null ]
     ] ],
-    [ "Global Configuration", "globalconfig.html", [
-      [ "Introduction", "globalconfig.html#globalconfig_introduction", null ],
-      [ "Global configuration file sections", "globalconfig.html#globalconfig_settings", [
-        [ "TableScriptFilePatterns", "globalconfig.html#globalconfig_tablescriptsfilepattern", null ],
-        [ "CabinetConfigFilePatterns", "globalconfig.html#globalconfig_cabinetconfigfilepattern", null ],
-        [ "CabinetScriptsFilePattern", "globalconfig.html#globalconfig_cabinetscriptsfilepattern", null ],
-        [ "TableConfigFilePatterns", "globalconfig.html#globalconfig_tableconfigfilepatterns", [
-          [ "LedControl options", "globalconfig.html#globalconfig_ledcontrol", null ],
-          [ "LedControlIniFiles", "globalconfig.html#globalconfig_ledcontrolinifiles", null ],
-          [ "LedControl settings", "globalconfig.html#globalconfig_ledcontrolsettings", null ]
-        ] ],
-        [ "Logging", "globalconfig.html#globalconfig_logging", null ]
+    [ "Global Configuration", "globalconfig2.html", [
+      [ "Introduction", "globalconfig2.html#globalconfig_introduction", null ],
+      [ "Global config editor", "globalconfig2.html#globalconfig_editor", [
+        [ "Ini Files tab", "globalconfig2.html#globalconfig_inifiles", null ],
+        [ "Cabinet Config tab", "globalconfig2.html#globalconfig_cabinetconfig", null ],
+        [ "Logging tab", "globalconfig2.html#globalconfig_logging", null ]
       ] ],
-      [ "Example", "globalconfig.html#globalconfig_example", null ]
+      [ "File format", "globalconfig2.html#globalconfig_fileformat", null ]
     ] ],
     [ "Cabinet Configuration", "cabinetconfig.html", [
       [ "Introduction", "cabinetconfig.html#cabinetconfig_introduction", null ],
@@ -81,22 +74,22 @@ var NAVTREE =
     ] ],
     [ "ini files", "inifiles.html", [
       [ "Introduction", "inifiles.html#inifiles_introduction", null ],
-      [ "Configuration loading", "inifiles.html#inifiles_configloading", [
-        [ "Automatic configuration", "inifiles.html#inifiles_auto", [
-          [ "File locations and names", "inifiles.html#inifiles_autolocations", null ],
-          [ "LedControl file numbering", "inifiles.html#inifiles_autoconfignumbering", null ]
-        ] ],
-        [ "Manual configuration", "inifiles.html#inifiles_manual", null ]
+      [ "How it works", "inifiles.html#inifiles_howitworks", null ],
+      [ "File locations", "inifiles.html#inifiles_directories", null ],
+      [ "LedControl file numbering", "inifiles.html#inifiles_filenumbering", null ],
+      [ "Settings in DirectOutputConfig/LedControl ini files", "inifiles.html#inifiles_settings", null ],
+      [ "Colors Section", "inifiles.html#inifiles_settingscolors", null ],
+      [ "Config DOF Section", "inifiles.html#inifiles_settingsconfigouts", null ],
+      [ "Trigger parameters", "inifiles.html#inifiles_triggerpara", null ],
+      [ "General parameters", "inifiles.html#inifiles_generalpara", null ],
+      [ "Matrix/area effect parameters", "inifiles.html#inifiles_matrix", [
+        [ "General Matrix Paras", "inifiles.html#inifiles_matrixeffectpara", null ],
+        [ "Shift Effect Paras", "inifiles.html#inifiles_shifteffectpara", null ],
+        [ "Flicker Effect Paras", "inifiles.html#inifiles_flickereffectpara", null ],
+        [ "Bitmap Effect Paras", "inifiles.html#inifiles_bitmapeffectpara", null ],
+        [ "Bitmap Animation Paras", "inifiles.html#inifiles_bitmapanimationpara", null ]
       ] ],
-      [ "Cabinet configuration", "inifiles.html#inifiles_cabinetconfig", [
-        [ "Automatic cabinet configuration", "inifiles.html#inifiles_autocabinetconfig", null ],
-        [ "Manual cabinet configuration", "inifiles.html#inifiles_manualcabinetconfig", null ]
-      ] ],
-      [ "Settings in DirectOutputConfig/LedControl ini files", "inifiles.html#inifiles_settings", [
-        [ "Colors Section", "inifiles.html#inifiles_settingscolors", null ],
-        [ "Config DOF Section", "inifiles.html#inifiles_settingsconfigouts", null ],
-        [ "Setting examples", "inifiles.html#inifiles_settingspara", null ]
-      ] ],
+      [ "Setting examples", "inifiles.html#inifiles_settingsexamples", null ],
       [ "LedControl File Testing Application", "inifiles.html#inifiles_testingapp", null ]
     ] ],
     [ "Architecture", "md_50__architecture.html", [
@@ -119,71 +112,115 @@ var NAVTREE =
       [ "Implementation guidelines for effects", "fx.html#fx_implementationguideline", null ]
     ] ],
     [ "Built in Effects", "fx_builtin.html", [
-      [ "AnalogToyFadeOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect", [
-        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_summary", null ],
-        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_samplexml", null ],
-        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_properties", [
-          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_ActiveValue", null ],
-          [ "FadeActiveDurationMs", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeActiveDurationMs", null ],
-          [ "FadeInactiveDurationMs", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeInactiveDurationMs", null ],
-          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeMode", null ],
-          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_InactiveValue", null ],
-          [ "Layer", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_Layer", null ],
-          [ "Name", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_Name", null ],
-          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_RetriggerBehaviour", null ],
-          [ "ToyName", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_ToyName", null ]
+      [ "AnalogAlphaMatrixBitmapAnimationEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect", [
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_properties", [
+          [ "AnimationBehaviour", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationBehaviour", null ],
+          [ "AnimationFrameCount", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationFrameCount", null ],
+          [ "AnimationFrameDurationMs", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationFrameDurationMs", null ],
+          [ "AnimationStepDirection", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationStepDirection", null ],
+          [ "AnimationStepSize", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationStepSize", null ],
+          [ "BitmapFilePattern", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapFilePattern", null ],
+          [ "BitmapFrameNumber", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapFrameNumber", null ],
+          [ "BitmapHeight", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapHeight", null ],
+          [ "BitmapLeft", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapLeft", null ],
+          [ "BitmapTop", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapTop", null ],
+          [ "BitmapWidth", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapWidth", null ],
+          [ "DataExtractMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_DataExtractMode", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Height", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Width", null ]
         ] ]
       ] ],
-      [ "AnalogToyOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect", [
-        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_summary", null ],
-        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_samplexml", null ],
-        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_properties", [
-          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_ActiveValue", null ],
-          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_InactiveValue", null ],
-          [ "Layer", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_Layer", null ],
-          [ "Name", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_Name", null ],
-          [ "ToyName", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_ToyName", null ]
+      [ "AnalogAlphaMatrixBitmapEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_properties", [
+          [ "BitmapFilePattern", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapFilePattern", null ],
+          [ "BitmapFrameNumber", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapFrameNumber", null ],
+          [ "BitmapHeight", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapHeight", null ],
+          [ "BitmapLeft", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapLeft", null ],
+          [ "BitmapTop", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapTop", null ],
+          [ "BitmapWidth", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapWidth", null ],
+          [ "DataExtractMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_DataExtractMode", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Height", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Width", null ]
         ] ]
       ] ],
-      [ "ListEffect", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect", [
-        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_summary", null ],
-        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_samplexml", null ],
-        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_properties", [
-          [ "AssignedEffects", "fx_builtin.html#DirectOutput_FX_ListFX_ListEffect_AssignedEffects", null ],
-          [ "Name", "fx_builtin.html#DirectOutput_FX_ListFX_ListEffect_Name", null ]
+      [ "AnalogAlphaMatrixFlickerEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_properties", [
+          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_ActiveValue", null ],
+          [ "Density", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Density", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Height", null ],
+          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_InactiveValue", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Left", null ],
+          [ "MaxFlickerDurationMs", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_MaxFlickerDurationMs", null ],
+          [ "MinFlickerDurationMs", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_MinFlickerDurationMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Width", null ]
         ] ]
       ] ],
-      [ "NullEffect", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect", [
-        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_summary", null ],
-        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_samplexml", null ],
-        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_properties", [
-          [ "Name", "fx_builtin.html#DirectOutput_FX_NullFX_NullEffect_Name", null ]
+      [ "AnalogAlphaMatrixShiftEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect", [
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_properties", [
+          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ActiveValue", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Height", null ],
+          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_InactiveValue", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Name", null ],
+          [ "ShiftAcceleration", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ShiftAcceleration", null ],
+          [ "ShiftDirection", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ShiftDirection", null ],
+          [ "ShiftSpeed", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ShiftSpeed", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Width", null ]
         ] ]
       ] ],
-      [ "RGBAFadeOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect", [
-        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_summary", null ],
-        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_samplexml", null ],
-        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_properties", [
-          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_ActiveColor", null ],
-          [ "FadeActiveDurationMs", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeActiveDurationMs", null ],
-          [ "FadeInactiveDurationMs", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeInactiveDurationMs", null ],
-          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeMode", null ],
-          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_InactiveColor", null ],
-          [ "Layer", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_Layer", null ],
-          [ "Name", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_Name", null ],
-          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_RetriggerBehaviour", null ],
-          [ "ToyName", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_ToyName", null ]
+      [ "AnalogAlphaMatrixValueEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_properties", [
+          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_ActiveValue", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Height", null ],
+          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_InactiveValue", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Width", null ]
         ] ]
       ] ],
-      [ "RGBAOnOffEffect", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect", [
-        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_summary", null ],
-        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_samplexml", null ],
-        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_properties", [
-          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_ActiveColor", null ],
-          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_InactiveColor", null ],
-          [ "Layer", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_Layer", null ],
-          [ "Name", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_Name", null ],
-          [ "ToyName", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAOnOffEffect_ToyName", null ]
+      [ "AnalogToyValueEffect", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_properties", [
+          [ "ActiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_ActiveValue", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_FadeMode", null ],
+          [ "InactiveValue", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_InactiveValue", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_LayerNr", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_Name", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_ToyName", null ]
         ] ]
       ] ],
       [ "BlinkEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_BlinkEffect", [
@@ -192,8 +229,11 @@ var NAVTREE =
         [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_BlinkEffect_properties", [
           [ "DurationActiveMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_DurationActiveMs", null ],
           [ "DurationInactiveMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_DurationInactiveMs", null ],
+          [ "HighValue", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_HighValue", null ],
+          [ "LowValue", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_LowValue", null ],
           [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_Name", null ],
-          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_TargetEffectName", null ]
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_TargetEffectName", null ],
+          [ "UntriggerBehaviour", "fx_builtin.html#DirectOutput_FX_TimmedFX_BlinkEffect_UntriggerBehaviour", null ]
         ] ]
       ] ],
       [ "DelayEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_DelayEffect", [
@@ -224,6 +264,35 @@ var NAVTREE =
           [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_ExtendDurationEffect_TargetEffectName", null ]
         ] ]
       ] ],
+      [ "FadeEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_FadeEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_FadeEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_FadeEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_FadeEffect_properties", [
+          [ "FadeDownDuration", "fx_builtin.html#DirectOutput_FX_TimmedFX_FadeEffect_FadeDownDuration", null ],
+          [ "FadeDurationMode", "fx_builtin.html#DirectOutput_FX_TimmedFX_FadeEffect_FadeDurationMode", null ],
+          [ "FadeUpDuration", "fx_builtin.html#DirectOutput_FX_TimmedFX_FadeEffect_FadeUpDuration", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_FadeEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_FadeEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "ListEffect", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_ListFX_ListEffect_properties", [
+          [ "AssignedEffects", "fx_builtin.html#DirectOutput_FX_ListFX_ListEffect_AssignedEffects", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_ListFX_ListEffect_Name", null ]
+        ] ]
+      ] ],
+      [ "MaxDurationEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MaxDurationEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MaxDurationEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MaxDurationEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MaxDurationEffect_properties", [
+          [ "MaxDurationMs", "fx_builtin.html#DirectOutput_FX_TimmedFX_MaxDurationEffect_MaxDurationMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_TimmedFX_MaxDurationEffect_Name", null ],
+          [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_TimmedFX_MaxDurationEffect_RetriggerBehaviour", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_MaxDurationEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
       [ "MinDurationEffect", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect", [
         [ "Summary", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect_summary", null ],
         [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_TimmedFX_MinDurationEffect_samplexml", null ],
@@ -233,112 +302,210 @@ var NAVTREE =
           [ "RetriggerBehaviour", "fx_builtin.html#DirectOutput_FX_TimmedFX_MinDurationEffect_RetriggerBehaviour", null ],
           [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_TimmedFX_MinDurationEffect_TargetEffectName", null ]
         ] ]
+      ] ],
+      [ "NullEffect", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_properties", [
+          [ "Name", "fx_builtin.html#DirectOutput_FX_NullFX_NullEffect_Name", null ]
+        ] ]
+      ] ],
+      [ "RGBAColorEffect", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect_properties", [
+          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAColorEffect_ActiveColor", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAColorEffect_FadeMode", null ],
+          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAColorEffect_InactiveColor", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAColorEffect_LayerNr", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAColorEffect_Name", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_RGBAFX_RGBAColorEffect_ToyName", null ]
+        ] ]
+      ] ],
+      [ "RGBAMatrixBitmapAnimationEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_properties", [
+          [ "AnimationBehaviour", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationBehaviour", null ],
+          [ "AnimationFrameCount", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationFrameCount", null ],
+          [ "AnimationFrameDurationMs", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationFrameDurationMs", null ],
+          [ "AnimationStepDirection", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationStepDirection", null ],
+          [ "AnimationStepSize", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationStepSize", null ],
+          [ "BitmapFilePattern", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapFilePattern", null ],
+          [ "BitmapFrameNumber", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapFrameNumber", null ],
+          [ "BitmapHeight", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapHeight", null ],
+          [ "BitmapLeft", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapLeft", null ],
+          [ "BitmapTop", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapTop", null ],
+          [ "BitmapWidth", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapWidth", null ],
+          [ "DataExtractMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_DataExtractMode", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Height", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Width", null ]
+        ] ]
+      ] ],
+      [ "RGBAMatrixBitmapEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_properties", [
+          [ "BitmapFilePattern", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapFilePattern", null ],
+          [ "BitmapFrameNumber", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapFrameNumber", null ],
+          [ "BitmapHeight", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapHeight", null ],
+          [ "BitmapLeft", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapLeft", null ],
+          [ "BitmapTop", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapTop", null ],
+          [ "BitmapWidth", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapWidth", null ],
+          [ "DataExtractMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_DataExtractMode", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Height", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Width", null ]
+        ] ]
+      ] ],
+      [ "RGBAMatrixColorEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_properties", [
+          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_ActiveColor", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Height", null ],
+          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_InactiveColor", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Width", null ]
+        ] ]
+      ] ],
+      [ "RGBAMatrixFlickerEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_properties", [
+          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_ActiveColor", null ],
+          [ "Density", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Density", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Height", null ],
+          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_InactiveColor", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Left", null ],
+          [ "MaxFlickerDurationMs", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_MaxFlickerDurationMs", null ],
+          [ "MinFlickerDurationMs", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_MinFlickerDurationMs", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Name", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Width", null ]
+        ] ]
+      ] ],
+      [ "RGBAMatrixShiftEffect", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect", [
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_properties", [
+          [ "ActiveColor", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ActiveColor", null ],
+          [ "FadeMode", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_FadeMode", null ],
+          [ "Height", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Height", null ],
+          [ "InactiveColor", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_InactiveColor", null ],
+          [ "LayerNr", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_LayerNr", null ],
+          [ "Left", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Left", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Name", null ],
+          [ "ShiftAcceleration", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ShiftAcceleration", null ],
+          [ "ShiftDirection", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ShiftDirection", null ],
+          [ "ShiftSpeed", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ShiftSpeed", null ],
+          [ "Top", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Top", null ],
+          [ "ToyName", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ToyName", null ],
+          [ "Width", "fx_builtin.html#DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Width", null ]
+        ] ]
+      ] ],
+      [ "TableElementConditionEffect", "fx_builtin.html#use_DirectOutput_FX_ConditionFX_TableElementConditionEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_ConditionFX_TableElementConditionEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_ConditionFX_TableElementConditionEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_ConditionFX_TableElementConditionEffect_properties", [
+          [ "Condition", "fx_builtin.html#DirectOutput_FX_ConditionFX_TableElementConditionEffect_Condition", null ],
+          [ "Name", "fx_builtin.html#DirectOutput_FX_ConditionFX_TableElementConditionEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_ConditionFX_TableElementConditionEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "ValueInvertEffect", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueInvertEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueInvertEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueInvertEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueInvertEffect_properties", [
+          [ "Name", "fx_builtin.html#DirectOutput_FX_ValueFX_ValueInvertEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_ValueFX_ValueInvertEffect_TargetEffectName", null ]
+        ] ]
+      ] ],
+      [ "ValueMapFullRangeEffect", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect", [
+        [ "Summary", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_summary", null ],
+        [ "Sample XML", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_samplexml", null ],
+        [ "Properties", "fx_builtin.html#use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_properties", [
+          [ "Name", "fx_builtin.html#DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_Name", null ],
+          [ "TargetEffectName", "fx_builtin.html#DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_TargetEffectName", null ]
+        ] ]
       ] ]
     ] ],
     [ "Toys", "toys.html", [
       [ "Introduction", "toys.html#toys_introduction", null ],
       [ "Builtin toys", "toys.html#toys_bultin", null ],
-      [ "Custom toys", "toys.html#toys_custom", null ],
       [ "Implementation guidelines for custom toys", "toys.html#toys_implementationguideline", null ]
     ] ],
     [ "Built in Toys", "toy_builtin.html", [
-      [ "AnalogToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_AnalogToy_properties", [
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_AnalogToy_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_AnalogToy_OutputName", null ]
-        ] ]
-      ] ],
-      [ "Contactor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Contactor_properties", [
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Contactor_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Contactor_OutputName", null ]
-        ] ]
-      ] ],
-      [ "DigitalToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_DigitalToy_properties", [
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_DigitalToy_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_DigitalToy_OutputName", null ]
-        ] ]
-      ] ],
-      [ "GearMotor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_GearMotor_properties", [
-          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_KickstartDurationMs", null ],
-          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_KickstartPower", null ],
-          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_MaxPower", null ],
-          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_MaxRunTimeMs", null ],
-          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_MinPower", null ],
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_GearMotor_OutputName", null ]
-        ] ]
-      ] ],
-      [ "Lamp", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Lamp_properties", [
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Lamp_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Lamp_OutputName", null ]
-        ] ]
-      ] ],
-      [ "Motor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Motor_properties", [
-          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_KickstartDurationMs", null ],
-          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_KickstartPower", null ],
-          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_MaxPower", null ],
-          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_MaxRunTimeMs", null ],
-          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_MinPower", null ],
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Motor_OutputName", null ]
-        ] ]
-      ] ],
-      [ "RGBLed", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_RGBLed_properties", [
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_Name", null ],
-          [ "OutputNameBlue", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_OutputNameBlue", null ],
-          [ "OutputNameGreen", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_OutputNameGreen", null ],
-          [ "OutputNameRed", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_RGBLed_OutputNameRed", null ]
-        ] ]
-      ] ],
-      [ "Shaker", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Basic_Shaker_properties", [
-          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_KickstartDurationMs", null ],
-          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_KickstartPower", null ],
-          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_MaxPower", null ],
-          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_MaxRunTimeMs", null ],
-          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_MinPower", null ],
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_Name", null ],
-          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_OutputName", null ]
-        ] ]
-      ] ],
       [ "AnalogAlphaToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy", [
         [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_summary", null ],
         [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_samplexml", null ],
         [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_FadingCurveName", null ],
           [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_Name", null ],
           [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_AnalogAlphaToy_OutputName", null ]
         ] ]
       ] ],
-      [ "RGBAToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy", [
-        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_summary", null ],
-        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_samplexml", null ],
-        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_properties", [
-          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_Name", null ],
-          [ "OutputNameBlue", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameBlue", null ],
-          [ "OutputNameGreen", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameGreen", null ],
-          [ "OutputNameRed", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameRed", null ]
+      [ "AnalogAlphaToyGroup", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup_properties", [
+          [ "LayerOffset", "toy_builtin.html#DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup_LayerOffset", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup_Name", null ],
+          [ "ToyNames", "toy_builtin.html#DirectOutput_Cab_Toys_Virtual_AnalogAlphaToyGroup_ToyNames", null ]
+        ] ]
+      ] ],
+      [ "GearMotor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_GearMotor", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_GearMotor_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_GearMotor_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_GearMotor_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_FadingCurveName", null ],
+          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_KickstartDurationMs", null ],
+          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_KickstartPower", null ],
+          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_MaxPower", null ],
+          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_MaxRunTimeMs", null ],
+          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_MinPower", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_GearMotor_OutputName", null ]
+        ] ]
+      ] ],
+      [ "Lamp", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Lamp", [
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Lamp_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Lamp_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Lamp_FadingCurveName", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Lamp_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Lamp_OutputName", null ]
+        ] ]
+      ] ],
+      [ "LedStrip", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_LedStrip", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_LedStrip_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_LedStrip_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_LedStrip_properties", [
+          [ "ColorOrder", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_ColorOrder", null ],
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_FadingCurveName", null ],
+          [ "FirstLedNumber", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_FirstLedNumber", null ],
+          [ "Height", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_Height", null ],
+          [ "LedStripArrangement", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_LedStripArrangement", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_Name", null ],
+          [ "OutputControllerName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_OutputControllerName", null ],
+          [ "Width", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_LedStrip_Width", null ]
         ] ]
       ] ],
       [ "LedWizEquivalent", "toy_builtin.html#use_DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent", [
@@ -349,12 +516,70 @@ var NAVTREE =
           [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_Name", null ],
           [ "Outputs", "toy_builtin.html#DirectOutput_Cab_Toys_LWEquivalent_LedWizEquivalent_Outputs", null ]
         ] ]
+      ] ],
+      [ "Motor", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Motor", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Motor_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Motor_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Motor_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_FadingCurveName", null ],
+          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_KickstartDurationMs", null ],
+          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_KickstartPower", null ],
+          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_MaxPower", null ],
+          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_MaxRunTimeMs", null ],
+          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_MinPower", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Motor_OutputName", null ]
+        ] ]
+      ] ],
+      [ "RGBAToy", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Layer_RGBAToy_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_FadingCurveName", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_Name", null ],
+          [ "OutputNameBlue", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameBlue", null ],
+          [ "OutputNameGreen", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameGreen", null ],
+          [ "OutputNameRed", "toy_builtin.html#DirectOutput_Cab_Toys_Layer_RGBAToy_OutputNameRed", null ]
+        ] ]
+      ] ],
+      [ "RGBAToyGroup", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_RGBAToyGroup", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_RGBAToyGroup_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_RGBAToyGroup_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Virtual_RGBAToyGroup_properties", [
+          [ "LayerOffset", "toy_builtin.html#DirectOutput_Cab_Toys_Virtual_RGBAToyGroup_LayerOffset", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Virtual_RGBAToyGroup_Name", null ],
+          [ "ToyNames", "toy_builtin.html#DirectOutput_Cab_Toys_Virtual_RGBAToyGroup_ToyNames", null ]
+        ] ]
+      ] ],
+      [ "RGBLed", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_RGBLed", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_RGBLed_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_RGBLed_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_RGBLed_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_RGBLed_FadingCurveName", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_RGBLed_Name", null ],
+          [ "OutputNameBlue", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_RGBLed_OutputNameBlue", null ],
+          [ "OutputNameGreen", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_RGBLed_OutputNameGreen", null ],
+          [ "OutputNameRed", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_RGBLed_OutputNameRed", null ]
+        ] ]
+      ] ],
+      [ "Shaker", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Shaker", [
+        [ "Summary", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Shaker_summary", null ],
+        [ "Sample XML", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Shaker_samplexml", null ],
+        [ "Properties", "toy_builtin.html#use_DirectOutput_Cab_Toys_Hardware_Shaker_properties", [
+          [ "FadingCurveName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_FadingCurveName", null ],
+          [ "KickstartDurationMs", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_KickstartDurationMs", null ],
+          [ "KickstartPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_KickstartPower", null ],
+          [ "MaxPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_MaxPower", null ],
+          [ "MaxRunTimeMs", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_MaxRunTimeMs", null ],
+          [ "MinPower", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_MinPower", null ],
+          [ "Name", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_Name", null ],
+          [ "OutputName", "toy_builtin.html#DirectOutput_Cab_Toys_Hardware_Shaker_OutputName", null ]
+        ] ]
       ] ]
     ] ],
     [ "Output controllers", "outputcontrollers.html", [
       [ "Introduction", "outputcontrollers.html#outputcontrollers_introduction", null ],
-      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtincontrollers", null ],
-      [ "Custom output controllers", "outputcontrollers.html#outputcontrollers_custom", [
+      [ "Builtin output controllers", "outputcontrollers.html#outputcontrollers_builtincontrollers", [
         [ "Interfaces for output controllers", "outputcontrollers.html#outputcontrollers_interfaces", [
           [ "IOutputController interface", "outputcontrollers.html#outputcontrollers_ioutputcontroller", null ],
           [ "IOutput interface", "outputcontrollers.html#outputcontrollers_ioutput", null ]
@@ -363,12 +588,43 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Built in Output controllers", "outputcontrollers_builtin.html", [
+      [ "ArtNet", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_properties", [
+          [ "BroadcastAddress", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_BroadcastAddress", null ],
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_Name", null ],
+          [ "Universe", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_Universe", null ]
+        ] ]
+      ] ],
+      [ "FT245RBitbangController", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_FTDIChip_FT245RBitbangController", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_FTDIChip_FT245RBitbangController_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_FTDIChip_FT245RBitbangController_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_FTDIChip_FT245RBitbangController_properties", [
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_FTDIChip_FT245RBitbangController_Name", null ],
+          [ "SerialNumber", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_FTDIChip_FT245RBitbangController_SerialNumber", null ]
+        ] ]
+      ] ],
       [ "LedWiz", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz", [
         [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz_summary", null ],
         [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz_samplexml", null ],
         [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_LW_LedWiz_properties", [
           [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_LW_LedWiz_Name", null ],
           [ "Number", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_LW_LedWiz_Number", null ]
+        ] ]
+      ] ],
+      [ "NullOutputController", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_properties", [
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_NullOutputController_NullOutputController_Name", null ]
+        ] ]
+      ] ],
+      [ "PacDrive", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacDrive", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacDrive_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacDrive_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacDrive_properties", [
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_Pac_PacDrive_Name", null ]
         ] ]
       ] ],
       [ "PacLed64", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_Pac_PacLed64", [
@@ -379,26 +635,15 @@ var NAVTREE =
           [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_Pac_PacLed64_Name", null ]
         ] ]
       ] ],
-      [ "ArtNet", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet", [
-        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_summary", null ],
-        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_samplexml", null ],
-        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_DMX_ArtNet_properties", [
-          [ "BroadcastAddress", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_BroadcastAddress", null ],
-          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_Name", null ],
-          [ "Universe", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_DMX_ArtNet_Universe", null ]
-        ] ]
-      ] ],
-      [ "NullOutputController", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController", [
-        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_summary", null ],
-        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_samplexml", null ],
-        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_NullOutputController_NullOutputController_properties", [
-          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_NullOutputController_NullOutputController_Name", null ]
+      [ "WS2811StripController", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController", [
+        [ "Summary", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController_summary", null ],
+        [ "Sample XML", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController_samplexml", null ],
+        [ "Properties", "outputcontrollers_builtin.html#use_DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController_properties", [
+          [ "ControllerNumber", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController_ControllerNumber", null ],
+          [ "Name", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController_Name", null ],
+          [ "NumberOfLeds", "outputcontrollers_builtin.html#DirectOutput_Cab_Out_AdressableLedStrip_WS2811StripController_NumberOfLeds", null ]
         ] ]
       ] ]
-    ] ],
-    [ "Scripting", "scripting.html", [
-      [ "Introduction", "scripting.html#scripting_introduction", null ],
-      [ "Scripting guidelines", "scripting.html#scripting_guidelines", null ]
     ] ],
     [ "Source Code", "sourcecode.html", [
       [ "Introduction", "sourcecode.html#sourcecode_introduction", null ],
@@ -419,19 +664,16 @@ var NAVTREE =
       [ "Report bugs and issues", "contribute.html#contribute_bugs", null ],
       [ "Squash some bugs", "contribute.html#contribute_squashbugs", null ],
       [ "Share your knowledge", "contribute.html#contribute_help", null ],
-      [ "Create scripts", "contribute.html#contribute_scripting", null ],
       [ "Contribute the to documentation", "contribute.html#contribute_docu", null ],
       [ "Contribute to the source code", "contribute.html#contribute_source", null ]
     ] ],
     [ "Downloads", "downloads.html", [
       [ "Binary Package", "downloads.html#download_binaries", null ],
       [ "Source Code", "downloads.html#downloads_sourcecode", null ],
-      [ "Documentation", "downloads.html#downloads_docu", null ]
+      [ "Documentation", "downloads.html#downloads_docu", null ],
+      [ "Table config files", "downloads.html#downloads_config", null ]
     ] ],
-    [ "History and Roadmap", "_history_roadmap.html", [
-      [ "Roadmap", "_history_roadmap.html#roadmap", null ],
-      [ "History", "_history_roadmap.html#history", null ]
-    ] ],
+    [ "History", "_history.html", null ],
     [ "Credits", "md_90__credits.html", null ],
     [ "About and Copyright", "md_99__mainpage_and_about.html", null ],
     [ "Packages", null, [
@@ -449,7 +691,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
         [ "Properties", "functions_prop.html", "functions_prop" ],
@@ -468,14 +710,17 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_alarm_handler_8cs.html",
-"class_b2_s_server_plugin_1_1_plugin.html#ade5dafe47b142dba5595cfb29750b020",
-"class_direct_output_1_1_cab_1_1_toys_1_1_l_w_equivalent_1_1_led_wiz_equivalent.html#a32f9d6ebdd6579e0980bdc9f5e0862df",
-"class_direct_output_1_1_frontend_1_1_time_span_statistics_details.html",
-"class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html#a0d815205e8235823b12ae1ac8c17b0dc",
-"dir_b4e6403bc4e020099b8e5a94b0a301c0.html",
-"interface_direct_output_1_1_cab_1_1_out_1_1_i_output_controller.html#a1b77139c8f71ebd2b6683d86b4c2e566",
-"toy_builtin.html#DirectOutput_Cab_Toys_Basic_Shaker_OutputName"
+"_adressable_led_strip_8cs.html",
+"_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024a25ee1f95f5657c5eed1e5c0c3a5f03b4",
+"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a2cb20cdf9d8a5e22e7bcafb34362e41d",
+"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i_1_1_f_t___x_s_e_r_i_e_s___c_b_u_s___o_p_t_i_o_n_s.html#a2f5528d207713911984189be048fc8c2",
+"class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html#aae14e44da03121351e99e88499aab6a5",
+"class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_fade_effect.html#aef95eb582db61db65cacbd3213668eaa",
+"class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#ada402fefd4a225b5f1cc1c28aa9c2f76",
+"class_direct_output_1_1_table_1_1_table_element.html",
+"fx_builtin.html",
+"fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect_samplexml",
+"outputcontrollers.html#outputcontrollers_introduction"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -151,14 +151,19 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 : <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_blink_effect.html#a368788b1bdc311ce4a0e75dda7f7b59a">DirectOutput.FX.TimmedFX.BlinkEffect</a>
 , <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_duration_effect.html#aaa7e5d3a06e7c3f86b5eca509efa08ff">DirectOutput.FX.TimmedFX.DurationEffect</a>
 , <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html#aba9811b43637df8c395da3ca77832ea5">DirectOutput.FX.TimmedFX.MinDurationEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_max_duration_effect.html#aa8f97ce7c29a6827c098dec4631d5aaf">DirectOutput.FX.TimmedFX.MaxDurationEffect</a>
 </li>
 <li>ActiveColor
-: <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_fade_on_off_effect.html#ab5a377a7e04390bfa2867bbc480423fd">DirectOutput.FX.RGBAFX.RGBAFadeOnOffEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_on_off_effect.html#a84d942684d17439051634dc1b143146a">DirectOutput.FX.RGBAFX.RGBAOnOffEffect</a>
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_r_g_b_a_f_x_1_1_r_g_b_a_color_effect.html#a080611207219ce49f03a4472a44fe91e">DirectOutput.FX.RGBAFX.RGBAColorEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_r_g_b_a_matrix_color_effect.html#aec462a24f3518b8a4aadb04b591485c6">DirectOutput.FX.MatrixFX.RGBAMatrixColorEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_r_g_b_a_matrix_flicker_effect.html#a588c16f2878cc919f8fa575c4a17bd21">DirectOutput.FX.MatrixFX.RGBAMatrixFlickerEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_r_g_b_a_matrix_shift_effect.html#abc9acbef6ec044b5d365d5dace1e7cf5">DirectOutput.FX.MatrixFX.RGBAMatrixShiftEffect</a>
 </li>
 <li>ActiveValue
-: <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_fade_on_off_effect.html#ae511a6078d536b38019de57e9d9e067f">DirectOutput.FX.AnalogToyFX.AnalogToyFadeOnOffEffect</a>
-, <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_on_off_effect.html#aa1e174091e25de67d6854d3a9b8222e7">DirectOutput.FX.AnalogToyFX.AnalogToyOnOffEffect</a>
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_analog_toy_f_x_1_1_analog_toy_value_effect.html#a8c7aecbadaf70c07a0af780737f504a0">DirectOutput.FX.AnalogToyFX.AnalogToyValueEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_analog_alpha_matrix_flicker_effect.html#a5e99cdd3ccf3f094fadfdce56a088612">DirectOutput.FX.MatrixFX.AnalogAlphaMatrixFlickerEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_analog_alpha_matrix_shift_effect.html#a075c5a9922de7f4f1a8f65f666f70436">DirectOutput.FX.MatrixFX.AnalogAlphaMatrixShiftEffect</a>
+, <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_analog_alpha_matrix_value_effect.html#ad4d0ebe0ec0a3713913020cac5f7ccf1">DirectOutput.FX.MatrixFX.AnalogAlphaMatrixValueEffect</a>
 </li>
 <li>AddLedControlConfig
 : <a class="el" href="class_direct_output_1_1_table_1_1_table.html#a4871460c4656fa219287a0f1ec0dc58e">DirectOutput.Table.Table</a>
@@ -168,13 +173,28 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 </li>
 <li>Alpha
 : <a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_color_config.html#a0a8f19976b455c5a95c43a8f5ebb05b9">DirectOutput.LedControl.Loader.ColorConfig</a>
-, <a class="el" href="class_direct_output_1_1_cab_1_1_color_1_1_r_g_b_a_color.html#a69747417c76e3ea30c4015b7bb60cfd8">DirectOutput.Cab.Color.RGBAColor</a>
+, <a class="el" href="class_direct_output_1_1_general_1_1_color_1_1_r_g_b_a_color.html#a21d61f46aaf7acf7046702293af44f04">DirectOutput.General.Color.RGBAColor</a>
 </li>
-<li>AnalogOutputRequired
-: <a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column.html#af5119684ca34ada63f6617e8945aa032">DirectOutput.LedControl.Loader.TableConfigColumn</a>
+<li>AnimationBehaviour
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_bitmap_animation_effect_base_3_01_matrix_element_type_01_4.html#ab2b6cb3b29ff9515a5723a2e40081d27">DirectOutput.FX.MatrixFX.MatrixBitmapAnimationEffectBase&lt; MatrixElementType &gt;</a>
 </li>
-<li>Assembly
-: <a class="el" href="class_direct_output_1_1_scripting_1_1_script.html#aeaab734589e1da1df3b3227202c60533">DirectOutput.Scripting.Script</a>
+<li>AnimationFrameCount
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_bitmap_animation_effect_base_3_01_matrix_element_type_01_4.html#aa323c896228b37f470be0d565b3d8321">DirectOutput.FX.MatrixFX.MatrixBitmapAnimationEffectBase&lt; MatrixElementType &gt;</a>
+</li>
+<li>AnimationFrameDurationMs
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_bitmap_animation_effect_base_3_01_matrix_element_type_01_4.html#a27261faba16bfc16099159d7599828d3">DirectOutput.FX.MatrixFX.MatrixBitmapAnimationEffectBase&lt; MatrixElementType &gt;</a>
+</li>
+<li>AnimationStepDirection
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_bitmap_animation_effect_base_3_01_matrix_element_type_01_4.html#a39cecbe7d79eef59412a00a3e60065d0">DirectOutput.FX.MatrixFX.MatrixBitmapAnimationEffectBase&lt; MatrixElementType &gt;</a>
+</li>
+<li>AnimationStepSize
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_bitmap_animation_effect_base_3_01_matrix_element_type_01_4.html#ab8a31824ee83c7ce3bf776be16604a29">DirectOutput.FX.MatrixFX.MatrixBitmapAnimationEffectBase&lt; MatrixElementType &gt;</a>
+</li>
+<li>AreaHeight
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_effect_base_3_01_matrix_element_type_01_4.html#a66bf6fa2a90934d7a6c2062703636fd2">DirectOutput.FX.MatrixFX.MatrixEffectBase&lt; MatrixElementType &gt;</a>
+</li>
+<li>AreaWidth
+: <a class="el" href="class_direct_output_1_1_f_x_1_1_matrix_f_x_1_1_matrix_effect_base_3_01_matrix_element_type_01_4.html#afa0fff7b4c5a37bec751c347fed9ed3a">DirectOutput.FX.MatrixFX.MatrixEffectBase&lt; MatrixElementType &gt;</a>
 </li>
 <li>AssignedEffects
 : <a class="el" href="class_direct_output_1_1_table_1_1_table_element.html#acc272a31437e43cc44eeba5db8a6738a">DirectOutput.Table.TableElement</a>
@@ -196,7 +216,7 @@ $(document).ready(function(){initNavTree('functions_prop.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:50 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:01:01 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

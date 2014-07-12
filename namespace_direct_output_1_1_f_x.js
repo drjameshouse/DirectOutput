@@ -1,10 +1,13 @@
 var namespace_direct_output_1_1_f_x =
 [
     [ "AnalogToyFX", "namespace_direct_output_1_1_f_x_1_1_analog_toy_f_x.html", "namespace_direct_output_1_1_f_x_1_1_analog_toy_f_x" ],
+    [ "ConditionFX", "namespace_direct_output_1_1_f_x_1_1_condition_f_x.html", "namespace_direct_output_1_1_f_x_1_1_condition_f_x" ],
     [ "ListFX", "namespace_direct_output_1_1_f_x_1_1_list_f_x.html", "namespace_direct_output_1_1_f_x_1_1_list_f_x" ],
+    [ "MatrixFX", "namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html", "namespace_direct_output_1_1_f_x_1_1_matrix_f_x" ],
     [ "NullFX", "namespace_direct_output_1_1_f_x_1_1_null_f_x.html", "namespace_direct_output_1_1_f_x_1_1_null_f_x" ],
     [ "RGBAFX", "namespace_direct_output_1_1_f_x_1_1_r_g_b_a_f_x.html", "namespace_direct_output_1_1_f_x_1_1_r_g_b_a_f_x" ],
     [ "TimmedFX", "namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html", "namespace_direct_output_1_1_f_x_1_1_timmed_f_x" ],
+    [ "ValueFX", "namespace_direct_output_1_1_f_x_1_1_value_f_x.html", "namespace_direct_output_1_1_f_x_1_1_value_f_x" ],
     [ "AssignedEffect", "class_direct_output_1_1_f_x_1_1_assigned_effect.html", "class_direct_output_1_1_f_x_1_1_assigned_effect" ],
     [ "AssignedEffectList", "class_direct_output_1_1_f_x_1_1_assigned_effect_list.html", "class_direct_output_1_1_f_x_1_1_assigned_effect_list" ],
     [ "EffectBase", "class_direct_output_1_1_f_x_1_1_effect_base.html", "class_direct_output_1_1_f_x_1_1_effect_base" ],

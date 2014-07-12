@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -205,24 +205,28 @@ Table Configuration</h1>
 Configuration</h1>
 <p>The <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework supports several configuration options:</p>
 <ul>
-<li><b>Auto configuration</b> which tries to detect the connected hardware and the files containing the table definitions automatically. Auto configuration is using the legacy ledcontrol.ini file(s) for the table definitions if available.</li>
+<li><b>Auto configuration</b> which tries to detect the connected hardware and the files containing the table definitions automatically. Auto configuration is using the legacy directoutputconfig.ini file(s) for the table definitions if available.</li>
 <li><b>XML config files</b> are the best way to configure the framework. They allow to configure every detail of the framework in detail.</li>
 </ul>
 <h2><a class="anchor" id="installation_autoconfiguration"></a>
 Using Auto configuration</h2>
 <p>If correctly installed the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework can configure itself automatically. This means that you dont need to create any of the config files mentioned in the sections below to get started.</p>
-<p>Auto configuration will automatically detect the LedWiz units connected to your system and try to lookup the ledcontrol.ini file(s) with table configurations in the following locations:</p>
+<p>Auto configuration will automatically detect the LedWiz units connected to your system and try to lookup the directoutputconfig.ini file(s) with table configurations in the following locations:</p>
 <ul>
 <li>Table directory</li>
 <li>Config directory of <a class="el" href="namespace_direct_output.html">DirectOutput</a></li>
 <li>Directory containing the DirectOutput.dll</li>
 </ul>
-<p>Up to 16 LedWiz units are supported, which can be controlled by numbered ledcontrol.ini files. For LedWiz nr. 1 the file ledcontrol.ini will be loaded, for LedWiz numbers 2-16 files ledcontrol{LedWizNumber}.ini (e.g. ledcontrol2.ini) will be loaded.</p>
-<p>To create your own lecontrol.ini files it is best to use the <a href="http://vpuniverse.com/ledwiz/login.php" target="_blank">LedWiz Config Tool</a>.</p>
+<p>Up to 16 LedWiz units are supported, which can be controlled by numbered directoutputconfig.ini files. For LedWiz nr. 1 the file directoutputconfig.ini will be loaded, for LedWiz numbers 2-16 files ledcontrol{LedWizNumber}.ini (e.g. ledcontrol2.ini) will be loaded.</p>
+<p>To create your own directoutputconfig.ini files it is best to use the <a href="http://vpuniverse.com/ledwiz/login.php" target="_blank">DOF Config Tool</a>.</p>
+<div class="image">
+<img src="DOFConfigTool.png" alt="DOFConfigTool.png"/>
+<div class="caption">
+DOF ConfigTool </div></div>
 <p>At the moment only LedWiz units are automatically detected. If you are using other output controllers you will have to create a cabinet configuration file, specifying the output controllers and some matching LedWizEquivalent toys, to allow the use of ledcontrol files.</p>
 <h2><a class="anchor" id="installation_ledcontrolini"></a>
-Using LedControl.ini files</h2>
-<p>The <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework can use one or several classical LedControl.ini files to configure tables. If no other table config files are found, the framework will try to load the ledcontrol.ini file(s). By deafult the framework tries to find the ledcontrol files specified in the Global Config file. If global config does not specify ledcontrol file(s) the framework will search for ledcontrol file(s) in the following directories:</p>
+Using directoutputconfig.ini files</h2>
+<p>The <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework can use one or several classical directoutputconfig.ini files to configure tables. If no other table config files are found, the framework will try to load the directoutputconfig.ini file(s). By default the framework tries to find the ledcontrol files specified in the Global Config file. If global config does not specify ledcontrol file(s) the framework will search for ledcontrol file(s) in the following directories:</p>
 <ul>
 <li>Table directory</li>
 <li>Config directory of <a class="el" href="namespace_direct_output.html">DirectOutput</a></li>
@@ -242,7 +246,7 @@ Global Configuration</h3>
 <li>Table directory.</li>
 <li>Directory of the DirectOutput.dll.</li>
 </ul>
-<p>If no global configuration file can be found, the framework tries to configure itself by detecting LedWiz units and searching ledcontrol.ini file in the table directory, the config directory of the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework or the dll directory of the framework (see section on auto configuration above). In this mode, the framework behaves like the vbscript solution.</p>
+<p>If no global configuration file can be found, the framework tries to configure itself by detecting LedWiz units and searching directoutputconfig.ini file in the table directory, the config directory of the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework or the dll directory of the framework (see section on auto configuration above). In this mode, the framework behaves like the vbscript solution.</p>
 <p>To create your own global configuration, you can either use the built in global configuration editor or write a XML-file with the necessary information yourself.</p>
 <p>Please read the page on global config for a detailed explanation of the settings.</p>
 <h3><a class="anchor" id="installation_cabinetconfig"></a>
@@ -260,7 +264,7 @@ Table Configuration</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:45 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:52 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

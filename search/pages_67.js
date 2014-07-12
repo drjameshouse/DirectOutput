@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['global_20configuration',['Global Configuration',['../globalconfig.html',1,'']]]
+  ['global_20configuration',['Global Configuration',['../globalconfig2.html',1,'']]]
 ];

@@ -9,6 +9,7 @@ var class_direct_output_1_1_table_1_1_table =
     [ "UpdateTableElement", "class_direct_output_1_1_table_1_1_table.html#a1596610d6d0e65609d132c966a1ceefc", null ],
     [ "AddLedControlConfig", "class_direct_output_1_1_table_1_1_table.html#a4871460c4656fa219287a0f1ec0dc58e", null ],
     [ "AssignedStaticEffects", "class_direct_output_1_1_table_1_1_table.html#a54c9b01e78d96d4db12e806c54cf3fcb", null ],
+    [ "Bitmaps", "class_direct_output_1_1_table_1_1_table.html#a40cdd47c52a5890e885854b4fc105c6b", null ],
     [ "ConfigurationSource", "class_direct_output_1_1_table_1_1_table.html#a6feb7b524484489a59c6f41dea2b7394", null ],
     [ "Effects", "class_direct_output_1_1_table_1_1_table.html#a98fd3c8a7ce5d1ecf63b18610a7ae70d", null ],
     [ "Pinball", "class_direct_output_1_1_table_1_1_table.html#a3dbc5d5b53f14f8c473a43fc214df0ea", null ],

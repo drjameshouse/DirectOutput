@@ -8,7 +8,7 @@ var dir_2126cebc896d48b570679b125f14762f =
       [ "TableElement", "class_direct_output_1_1_table_1_1_table_element.html", "class_direct_output_1_1_table_1_1_table_element" ]
     ] ],
     [ "TableElementData.cs", "_table_element_data_8cs.html", [
-      [ "TableElementData", "class_direct_output_1_1_table_1_1_table_element_data.html", "class_direct_output_1_1_table_1_1_table_element_data" ]
+      [ "TableElementData", "struct_direct_output_1_1_table_1_1_table_element_data.html", "struct_direct_output_1_1_table_1_1_table_element_data" ]
     ] ],
     [ "TableElementList.cs", "_table_element_list_8cs.html", [
       [ "TableElementList", "class_direct_output_1_1_table_1_1_table_element_list.html", "class_direct_output_1_1_table_1_1_table_element_list" ]

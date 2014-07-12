@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -104,26 +104,235 @@ $(document).ready(function(){initNavTree('fx_builtin.html','');});
 <div class="title">Built in Effects </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect"></a>
-AnalogToyFadeOnOffEffect</h1>
-<h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_summary"></a>
-Summary</h2>
-<p>A effect fading the output value of a AnalogToy object to a active or inactive value. The fading is controlled by the value property (0, not 0) of the TableElementData parameter of the Trigger method. </p>
-<div class="image">
-<img src="FX_FadeOnOff.png" alt="FX_FadeOnOff.png"/>
-<div class="caption">
-FadeOnOff effect</div></div>
- <h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_samplexml"></a>
+<div class="textblock"><h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect"></a>
+AnalogAlphaMatrixBitmapAnimationEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_samplexml"></a>
 Sample XML</h2>
-<p>A configuration section for AnalogToyFadeOnOffEffect might resemble the following structure:</p>
-<div class="fragment"><div class="line">&lt;AnalogToyFadeOnOffEffect&gt;</div>
-<div class="line">  &lt;Name&gt;Name of AnalogToyFadeOnOffEffect&lt;/Name&gt;</div>
+<p>A configuration section for AnalogAlphaMatrixBitmapAnimationEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;AnalogAlphaMatrixBitmapAnimationEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of AnalogAlphaMatrixBitmapAnimationEffect&lt;/Name&gt;</div>
 <div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
-<div class="line">  &lt;Layer&gt;0&lt;/Layer&gt;</div>
-<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a6c5207cf443ef87d8b2741506936e374" title="The effect gets restarted in a retrigger situation. ">RestartEffect</a>&lt;/RetriggerBehaviour&gt;</div>
-<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a30cabb021071ab1d164cf4f6fa9886a8" title="Fadding starts with a defined value (depending on the tigger value either active or in active vallue)...">DefinedToDefined</a>&lt;/FadeMode&gt;</div>
-<div class="line">  &lt;FadeInactiveDurationMs&gt;500&lt;/FadeInactiveDurationMs&gt;</div>
-<div class="line">  &lt;FadeActiveDurationMs&gt;500&lt;/FadeActiveDurationMs&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;AnimationStepDirection&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a3bb3e8c8a24891ba0f7608bcc96f8b0a" title="Animation steps though frames of the source image. ">Frame</a>&lt;/AnimationStepDirection&gt;</div>
+<div class="line">  &lt;AnimationStepSize&gt;1&lt;/AnimationStepSize&gt;</div>
+<div class="line">  &lt;AnimationFrameCount&gt;1&lt;/AnimationFrameCount&gt;</div>
+<div class="line">  &lt;AnimationBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#ace67e1e3e60db3d3bef91fcd760a9273a89d7b10cb4238977d2b523dfd9ea7745" title="The animation restarts when it is triggered and is shown in a loop ">Loop</a>&lt;/AnimationBehaviour&gt;</div>
+<div class="line">  &lt;AnimationFrameDurationMs&gt;30&lt;/AnimationFrameDurationMs&gt;</div>
+<div class="line">  &lt;BitmapFrameNumber&gt;0&lt;/BitmapFrameNumber&gt;</div>
+<div class="line">  &lt;BitmapTop&gt;0&lt;/BitmapTop&gt;</div>
+<div class="line">  &lt;BitmapLeft&gt;0&lt;/BitmapLeft&gt;</div>
+<div class="line">  &lt;BitmapWidth&gt;-1&lt;/BitmapWidth&gt;</div>
+<div class="line">  &lt;BitmapHeight&gt;-1&lt;/BitmapHeight&gt;</div>
+<div class="line">  &lt;DataExtractMode&gt;<a class="code" href="namespace_direct_output_1_1_general_1_1_bitmap_handling.html#a671b0c984f3e1832b0fea3c72b88a8c5a1e374ae0111465886f25059c74dcc7e6">BlendPixels</a>&lt;/DataExtractMode&gt;</div>
+<div class="line">  &lt;BitmapFilePattern&gt;Pattern <span class="keywordtype">string</span>&lt;/BitmapFilePattern&gt;</div>
+<div class="line">&lt;/AnalogAlphaMatrixBitmapAnimationEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_properties"></a>
+Properties</h2>
+<p>AnalogAlphaMatrixBitmapAnimationEffect has the following 20 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationBehaviour"></a>
+AnimationBehaviour</h3>
+<p>The animation behaviour defines if a animation should run only once, run in a loop or continue at its last position when triggered.</p>
+<p>The property AnimationBehaviour accepts the following values:</p>
+<ul>
+<li><b>Continue</b>: The animation continues with the next frame when triggered and is shown in a loop</li>
+<li><b>Loop</b>: The animation restarts when it is triggered and is shown in a loop</li>
+<li><b>Once</b>: The animation restarts when it is triggered, is shown once and stops after the last frame</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationFrameCount"></a>
+AnimationFrameCount</h3>
+<p>The number of frames for the whole animation.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationFrameDurationMs"></a>
+AnimationFrameDurationMs</h3>
+<p>The animation frame duration in miliseconds. Defaults to 30ms if not set.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationStepDirection"></a>
+AnimationStepDirection</h3>
+<p>The direction in which the effect will step formward through the source image to get the next frame of the animation.</p>
+<p>The property AnimationStepDirection accepts the following values:</p>
+<ul>
+<li><b>Down</b>: Animation steps from top to bottom through the source image</li>
+<li><b>Frame</b>: Animation steps though frames of the source image.</li>
+<li><b>Right</b>: Animation steps from left to right through the source image</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_AnimationStepSize"></a>
+AnimationStepSize</h3>
+<p>Thesize of the step in pixels or frames (depending on the AnimationStepDirection) to the next frame of the animation.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapFilePattern"></a>
+BitmapFilePattern</h3>
+<p>The bitmap file pattern which is used to load the bitmap file for the effect.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for BitmapFilePattern:</p>
+<ul>
+<li><b>Pattern</b><br/>
+ The pattern used to look for files.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapFrameNumber"></a>
+BitmapFrameNumber</h3>
+<p>The number of the frame to be displayed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapHeight"></a>
+BitmapHeight</h3>
+<p>The height of the the part of the bitmap which is to be displayed. -1 selects the fully height resp. the remaining height from the BitMapTop position.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapLeft"></a>
+BitmapLeft</h3>
+<p>The left boundary in pixels of the the part of the bitmap which is to be displayed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapTop"></a>
+BitmapTop</h3>
+<p>The top of the the part of the bitmap which is to be displayed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_BitmapWidth"></a>
+BitmapWidth</h3>
+<p>The width in pixels of the the part of the bitmap which is to be displayed. -1 selects the fully width resp. the remaining width from the BitMapLeft position.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_DataExtractMode"></a>
+DataExtractMode</h3>
+<p>The data extract mode which defines how the data is extracted from the source bitmap.</p>
+<p>The property DataExtractMode accepts the following values:</p>
+<ul>
+<li><b>SinglePixelTopLeft</b></li>
+<li><b>SinglePixelCenter</b></li>
+<li><b>BlendPixels</b></li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapAnimationEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect"></a>
+AnalogAlphaMatrixBitmapEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_summary"></a>
+Summary</h2>
+<p>Displays a defined part of a bitmap on a area of a AnalogAlpha Matrix.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for AnalogAlphaMatrixBitmapEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;AnalogAlphaMatrixBitmapEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of AnalogAlphaMatrixBitmapEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;BitmapFrameNumber&gt;0&lt;/BitmapFrameNumber&gt;</div>
+<div class="line">  &lt;BitmapTop&gt;0&lt;/BitmapTop&gt;</div>
+<div class="line">  &lt;BitmapLeft&gt;0&lt;/BitmapLeft&gt;</div>
+<div class="line">  &lt;BitmapWidth&gt;-1&lt;/BitmapWidth&gt;</div>
+<div class="line">  &lt;BitmapHeight&gt;-1&lt;/BitmapHeight&gt;</div>
+<div class="line">  &lt;DataExtractMode&gt;<a class="code" href="namespace_direct_output_1_1_general_1_1_bitmap_handling.html#a671b0c984f3e1832b0fea3c72b88a8c5a1e374ae0111465886f25059c74dcc7e6">BlendPixels</a>&lt;/DataExtractMode&gt;</div>
+<div class="line">  &lt;BitmapFilePattern&gt;Pattern <span class="keywordtype">string</span>&lt;/BitmapFilePattern&gt;</div>
+<div class="line">&lt;/AnalogAlphaMatrixBitmapEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_properties"></a>
+Properties</h2>
+<p>AnalogAlphaMatrixBitmapEffect has the following 15 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapFilePattern"></a>
+BitmapFilePattern</h3>
+<p>The bitmap file pattern which is used to load the bitmap file for the effect.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for BitmapFilePattern:</p>
+<ul>
+<li><b>Pattern</b><br/>
+ The pattern used to look for files.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapFrameNumber"></a>
+BitmapFrameNumber</h3>
+<p>The number of the frame to be used (for animated gifs).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapHeight"></a>
+BitmapHeight</h3>
+<p>The height of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapLeft"></a>
+BitmapLeft</h3>
+<p>The left boundary of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapTop"></a>
+BitmapTop</h3>
+<p>The top of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_BitmapWidth"></a>
+BitmapWidth</h3>
+<p>The width of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_DataExtractMode"></a>
+DataExtractMode</h3>
+<p>The data extract mode which defines how the data is extracted from the source bitmap.</p>
+<p>The property DataExtractMode accepts the following values:</p>
+<ul>
+<li><b>SinglePixelTopLeft</b></li>
+<li><b>SinglePixelCenter</b></li>
+<li><b>BlendPixels</b></li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixBitmapEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect"></a>
+AnalogAlphaMatrixFlickerEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_summary"></a>
+Summary</h2>
+<p>Does create random flickering with a defineable density, durations and value within the spefied area of a matrix.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for AnalogAlphaMatrixFlickerEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;AnalogAlphaMatrixFlickerEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of AnalogAlphaMatrixFlickerEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;Density&gt;10&lt;/Density&gt;</div>
+<div class="line">  &lt;MinFlickerDurationMs&gt;60&lt;/MinFlickerDurationMs&gt;</div>
+<div class="line">  &lt;MaxFlickerDurationMs&gt;150&lt;/MaxFlickerDurationMs&gt;</div>
 <div class="line">  &lt;ActiveValue&gt;</div>
 <div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
 <div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
@@ -132,71 +341,71 @@ Sample XML</h2>
 <div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
 <div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
 <div class="line">  &lt;/InactiveValue&gt;</div>
-<div class="line">&lt;/AnalogToyFadeOnOffEffect&gt;</div>
-</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_properties"></a>
+<div class="line">&lt;/AnalogAlphaMatrixFlickerEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_properties"></a>
 Properties</h2>
-<p>AnalogToyFadeOnOffEffect has the following 9 configurable properties:</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_ActiveValue"></a>
+<p>AnalogAlphaMatrixFlickerEffect has the following 13 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_ActiveValue"></a>
 ActiveValue</h3>
-<p>The active value between 0 and 255.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeActiveDurationMs"></a>
-FadeActiveDurationMs</h3>
-<p>The fading duration in milliseconds.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeInactiveDurationMs"></a>
-FadeInactiveDurationMs</h3>
-<p>The fading duration in milliseconds.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_FadeMode"></a>
+<p>The active value.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Density"></a>
+Density</h3>
+<p>The density if the flickering in percent.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_FadeMode"></a>
 FadeMode</h3>
-<p>CurrentToDefinedColor or DefinedColor</p>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
 <p>The property FadeMode accepts the following values:</p>
-<p>CurrentToDefined</p>
 <ul>
-<li>DefinedToDefined</li>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
 </ul>
-<p><b>Valid values</b></p>
-<p>The property FadeMode accepts the following values:</p>
-<p>CurrentToDefined</p>
-<ul>
-<li>DefinedToDefined </li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_InactiveValue"></a>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_InactiveValue"></a>
 InactiveValue</h3>
-<p>The inactive value between 0 and 255.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_Layer"></a>
-Layer</h3>
-<p>The layer number.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_Name"></a>
+<p>The inactive value.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_MaxFlickerDurationMs"></a>
+MaxFlickerDurationMs</h3>
+<p>The max duration in milliseconds for a single flicker/blink of a element.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_MinFlickerDurationMs"></a>
+MinFlickerDurationMs</h3>
+<p>The min duration in milliseconds for a single flicker/blink of a element.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Name"></a>
 Name</h3>
 <p>The name of the item.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_RetriggerBehaviour"></a>
-RetriggerBehaviour</h3>
-<p>Valid values are RestartEffect or IgnoreRetrigger.</p>
-<p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
-<ul>
-<li>IgnoreRetrigger</li>
-</ul>
-<p><b>Valid values</b></p>
-<p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
-<ul>
-<li>IgnoreRetrigger </li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyFadeOnOffEffect_ToyName"></a>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_ToyName"></a>
 ToyName</h3>
-<p>The name of the AnalogToy.</p>
-<h1><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect"></a>
-AnalogToyOnOffEffect</h1>
-<h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_summary"></a>
-Summary</h2>
-<p>A basic effect setting the output of a AnalogToy object to a active or inactive value, based on value property (0, not 0) of the TableElementData parameter of the Trigger method.</p>
-<h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_samplexml"></a>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixFlickerEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect"></a>
+AnalogAlphaMatrixShiftEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_samplexml"></a>
 Sample XML</h2>
-<p>A configuration section for AnalogToyOnOffEffect might resemble the following structure:</p>
-<div class="fragment"><div class="line">&lt;AnalogToyOnOffEffect&gt;</div>
-<div class="line">  &lt;Name&gt;Name of AnalogToyOnOffEffect&lt;/Name&gt;</div>
+<p>A configuration section for AnalogAlphaMatrixShiftEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;AnalogAlphaMatrixShiftEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of AnalogAlphaMatrixShiftEffect&lt;/Name&gt;</div>
 <div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
-<div class="line">  &lt;Layer&gt;0&lt;/Layer&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;ShiftDirection&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a92b09c7c48c520c3c55e497875da437c" title="Animation steps from left to right through the source image ">Right</a>&lt;/ShiftDirection&gt;</div>
+<div class="line">  &lt;ShiftSpeed&gt;200&lt;/ShiftSpeed&gt;</div>
+<div class="line">  &lt;ShiftAcceleration&gt;0&lt;/ShiftAcceleration&gt;</div>
 <div class="line">  &lt;ActiveValue&gt;</div>
 <div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
 <div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
@@ -205,225 +414,174 @@ Sample XML</h2>
 <div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
 <div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
 <div class="line">  &lt;/InactiveValue&gt;</div>
-<div class="line">&lt;/AnalogToyOnOffEffect&gt;</div>
-</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_properties"></a>
+<div class="line">&lt;/AnalogAlphaMatrixShiftEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_properties"></a>
 Properties</h2>
-<p>AnalogToyOnOffEffect has the following 5 configurable properties:</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_ActiveValue"></a>
+<p>AnalogAlphaMatrixShiftEffect has the following 13 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ActiveValue"></a>
 ActiveValue</h3>
-<p>The active value between 0 and 255.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_InactiveValue"></a>
+<p>The active Value.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_InactiveValue"></a>
 InactiveValue</h3>
-<p>The inactive value between 0 and 255.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_Layer"></a>
-Layer</h3>
-<p>The layer number.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_Name"></a>
+<p>The inactive Value.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Name"></a>
 Name</h3>
 <p>The name of the item.</p>
-<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyOnOffEffect_ToyName"></a>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ShiftAcceleration"></a>
+ShiftAcceleration</h3>
+<p>The acceleration for the shift speed in percent of the effect area per second.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ShiftDirection"></a>
+ShiftDirection</h3>
+<p>The shift direction (Left, Right, Up, Down).</p>
+<p>The property ShiftDirection accepts the following values:</p>
+<ul>
+<li><b>Down</b>: Shift down</li>
+<li><b>Left</b>: Shift left</li>
+<li><b>Right</b>: Shift right</li>
+<li><b>Up</b>: Shift up</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ShiftSpeed"></a>
+ShiftSpeed</h3>
+<p>The shift speed in percentage of the effect area (Left, Top, Width, Height properties) per second .</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixShiftEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect"></a>
+AnalogAlphaMatrixValueEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_summary"></a>
+Summary</h2>
+<p>Sets the spefied area of matrix to the specified values depending on the trigger value.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for AnalogAlphaMatrixValueEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;AnalogAlphaMatrixValueEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of AnalogAlphaMatrixValueEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;ActiveValue&gt;</div>
+<div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
+<div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
+<div class="line">  &lt;/ActiveValue&gt;</div>
+<div class="line">  &lt;InactiveValue&gt;</div>
+<div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
+<div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
+<div class="line">  &lt;/InactiveValue&gt;</div>
+<div class="line">&lt;/AnalogAlphaMatrixValueEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_properties"></a>
+Properties</h2>
+<p>AnalogAlphaMatrixValueEffect has the following 10 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_ActiveValue"></a>
+ActiveValue</h3>
+<p>The active value.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_InactiveValue"></a>
+InactiveValue</h3>
+<p>The inactive value.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_AnalogAlphaMatrixValueEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect"></a>
+AnalogToyValueEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_summary"></a>
+Summary</h2>
+<p>This effect controlls sets the value and alpha channel of a analog alpha toy based on the trigger value.</p>
+<p>Dependinging on the FadeMode property the effect sets the value of the target layer either to the active inactive value in OnOff mode or a mix of the value in Fade mode.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for AnalogToyValueEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;AnalogToyValueEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of AnalogToyValueEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;ActiveValue&gt;</div>
+<div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
+<div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
+<div class="line">  &lt;/ActiveValue&gt;</div>
+<div class="line">  &lt;InactiveValue&gt;</div>
+<div class="line">    &lt;Value&gt;0&lt;/Value&gt;</div>
+<div class="line">    &lt;Alpha&gt;0&lt;/Alpha&gt;</div>
+<div class="line">  &lt;/InactiveValue&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">&lt;/AnalogToyValueEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_properties"></a>
+Properties</h2>
+<p>AnalogToyValueEffect has the following 6 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_ActiveValue"></a>
+ActiveValue</h3>
+<p>The active value and alpha channel between 0 and 255.</p>
+<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive color will fade depending on trigger value) or OnOff (actvice color is used for triger values &gt;0, otherwise inactive color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_InactiveValue"></a>
+InactiveValue</h3>
+<p>The inactive value and alpha channel between 0 and 255.</p>
+<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The layer number.</p>
+<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_ToyName"></a>
 ToyName</h3>
 <p>The name of the AnalogToy.</p>
-<h1><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect"></a>
-ListEffect</h1>
-<h2><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect_summary"></a>
-Summary</h2>
-<p>This effect triggers a list of other effect when it is triggered.<br/>
-</p>
-<dl class="section warning"><dt>Warning</dt><dd>Be careful not to add ListEffect objects which finnaly contain a reference to the instance you're working with. This will create a recursive loop which never exit!.</dd></dl>
-<h2><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect_samplexml"></a>
-Sample XML</h2>
-<p>A configuration section for ListEffect might resemble the following structure:</p>
-<div class="fragment"><div class="line">&lt;ListEffect&gt;</div>
-<div class="line">  &lt;Name&gt;Name of ListEffect&lt;/Name&gt;</div>
-<div class="line">  &lt;AssignedEffects&gt;</div>
-<div class="line">    &lt;AssignedEffect&gt;</div>
-<div class="line">      &lt;EffectName&gt;Name of Effect&lt;/EffectName&gt;</div>
-<div class="line">    &lt;/AssignedEffect&gt;</div>
-<div class="line">    &lt;AssignedEffect&gt;</div>
-<div class="line">      &lt;EffectName&gt;Name of Effect&lt;/EffectName&gt;</div>
-<div class="line">    &lt;/AssignedEffect&gt;</div>
-<div class="line">    &lt;AssignedEffect&gt;</div>
-<div class="line">      &lt;EffectName&gt;Name of Effect&lt;/EffectName&gt;</div>
-<div class="line">    &lt;/AssignedEffect&gt;</div>
-<div class="line">  &lt;/AssignedEffects&gt;</div>
-<div class="line">&lt;/ListEffect&gt;</div>
-</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect_properties"></a>
-Properties</h2>
-<p>ListEffect has the following 2 configurable properties:</p>
-<h3><a class="anchor" id="DirectOutput_FX_ListFX_ListEffect_AssignedEffects"></a>
-AssignedEffects</h3>
-<p>The list of effects assigned to the ListEffect.</p>
-<p><b>Nested Properties</b></p>
-<p>The following nested propteries exist for AssignedEffects:</p>
-<ul>
-<li><b>EffectName</b><br/>
- The name of the assigned effect.</li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_ListFX_ListEffect_Name"></a>
-Name</h3>
-<p>The name of the item.</p>
-<h1><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect"></a>
-NullEffect</h1>
-<h2><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect_summary"></a>
-Summary</h2>
-<p>The NullEffect is a empty effect no doing anything.</p>
-<h2><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect_samplexml"></a>
-Sample XML</h2>
-<p>A configuration section for NullEffect might resemble the following structure:</p>
-<div class="fragment"><div class="line">&lt;NullEffect&gt;</div>
-<div class="line">  &lt;Name&gt;Name of NullEffect&lt;/Name&gt;</div>
-<div class="line">&lt;/NullEffect&gt;</div>
-</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect_properties"></a>
-Properties</h2>
-<p>NullEffect has the following 1 configurable properties:</p>
-<h3><a class="anchor" id="DirectOutput_FX_NullFX_NullEffect_Name"></a>
-Name</h3>
-<p>The name of the item.</p>
-<h1><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect"></a>
-RGBAFadeOnOffEffect</h1>
-<h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_summary"></a>
-Summary</h2>
-<p>This RGBA effect fades the color of a RGBA toys towards a defined target color based on the state (not 0, 0) of the triggering table element. </p>
-<div class="image">
-<img src="FX_FadeOnOff.png" alt="FX_FadeOnOff.png"/>
-<div class="caption">
-FadeOnOff effect</div></div>
- <h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_samplexml"></a>
-Sample XML</h2>
-<p>A configuration section for RGBAFadeOnOffEffect might resemble the following structure:</p>
-<div class="fragment"><div class="line">&lt;RGBAFadeOnOffEffect&gt;</div>
-<div class="line">  &lt;Name&gt;Name of RGBAFadeOnOffEffect&lt;/Name&gt;</div>
-<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
-<div class="line">  &lt;Layer&gt;0&lt;/Layer&gt;</div>
-<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a6c5207cf443ef87d8b2741506936e374" title="The effect gets restarted in a retrigger situation. ">RestartEffect</a>&lt;/RetriggerBehaviour&gt;</div>
-<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a30cabb021071ab1d164cf4f6fa9886a8" title="Fadding starts with a defined value (depending on the tigger value either active or in active vallue)...">DefinedToDefined</a>&lt;/FadeMode&gt;</div>
-<div class="line">  &lt;FadeInactiveDurationMs&gt;500&lt;/FadeInactiveDurationMs&gt;</div>
-<div class="line">  &lt;FadeActiveDurationMs&gt;500&lt;/FadeActiveDurationMs&gt;</div>
-<div class="line">  &lt;ActiveColor&gt;</div>
-<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
-<div class="line">  &lt;/ActiveColor&gt;</div>
-<div class="line">  &lt;InactiveColor&gt;</div>
-<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
-<div class="line">  &lt;/InactiveColor&gt;</div>
-<div class="line">&lt;/RGBAFadeOnOffEffect&gt;</div>
-</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_properties"></a>
-Properties</h2>
-<p>RGBAFadeOnOffEffect has the following 9 configurable properties:</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_ActiveColor"></a>
-ActiveColor</h3>
-<p>The RGBA color to be used when the effect is active.</p>
-<p><b>Nested Properties</b></p>
-<p>The following nested propteries exist for ActiveColor:</p>
-<ul>
-<li><b>HexColor</b><br/>
- 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeActiveDurationMs"></a>
-FadeActiveDurationMs</h3>
-<p>The fading duration in milliseconds.</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeInactiveDurationMs"></a>
-FadeInactiveDurationMs</h3>
-<p>The fading duration in milliseconds.</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_FadeMode"></a>
-FadeMode</h3>
-<p>CurrentToDefinedColor or DefinedColor</p>
-<p>The property FadeMode accepts the following values:</p>
-<p>CurrentToDefined</p>
-<ul>
-<li>DefinedToDefined</li>
-</ul>
-<p><b>Valid values</b></p>
-<p>The property FadeMode accepts the following values:</p>
-<p>CurrentToDefined</p>
-<ul>
-<li>DefinedToDefined </li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_InactiveColor"></a>
-InactiveColor</h3>
-<p>The RGBA color to be used when the effect is inactive.</p>
-<p><b>Nested Properties</b></p>
-<p>The following nested propteries exist for InactiveColor:</p>
-<ul>
-<li><b>HexColor</b><br/>
- 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_Layer"></a>
-Layer</h3>
-<p>The layer number.</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_Name"></a>
-Name</h3>
-<p>The name of the item.</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_RetriggerBehaviour"></a>
-RetriggerBehaviour</h3>
-<p>Valid values are RestartEffect or IgnoreRetrigger.</p>
-<p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
-<ul>
-<li>IgnoreRetrigger</li>
-</ul>
-<p><b>Valid values</b></p>
-<p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
-<ul>
-<li>IgnoreRetrigger </li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAFadeOnOffEffect_ToyName"></a>
-ToyName</h3>
-<p>The name of the RGBAToy.</p>
-<h1><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect"></a>
-RGBAOnOffEffect</h1>
-<h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_summary"></a>
-Summary</h2>
-<p>A basic RBA effect which sets the color of a layer of a RGBA toy to a specified color based on the state (not 0, 0) of the triggering table element. </p>
-<div class="image">
-<img src="FX_OnOff.png" alt="FX_OnOff.png"/>
-<div class="caption">
-OnOff effect</div></div>
- <h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_samplexml"></a>
-Sample XML</h2>
-<p>A configuration section for RGBAOnOffEffect might resemble the following structure:</p>
-<div class="fragment"><div class="line">&lt;RGBAOnOffEffect&gt;</div>
-<div class="line">  &lt;Name&gt;Name of RGBAOnOffEffect&lt;/Name&gt;</div>
-<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
-<div class="line">  &lt;Layer&gt;0&lt;/Layer&gt;</div>
-<div class="line">  &lt;ActiveColor&gt;</div>
-<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
-<div class="line">  &lt;/ActiveColor&gt;</div>
-<div class="line">  &lt;InactiveColor&gt;</div>
-<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
-<div class="line">  &lt;/InactiveColor&gt;</div>
-<div class="line">&lt;/RGBAOnOffEffect&gt;</div>
-</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAOnOffEffect_properties"></a>
-Properties</h2>
-<p>RGBAOnOffEffect has the following 5 configurable properties:</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAOnOffEffect_ActiveColor"></a>
-ActiveColor</h3>
-<p>The RGBA color to be used when the effect is active.</p>
-<p><b>Nested Properties</b></p>
-<p>The following nested propteries exist for ActiveColor:</p>
-<ul>
-<li><b>HexColor</b><br/>
- 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAOnOffEffect_InactiveColor"></a>
-InactiveColor</h3>
-<p>The RGBA color to be used when the effect is inactive.</p>
-<p><b>Nested Properties</b></p>
-<p>The following nested propteries exist for InactiveColor:</p>
-<ul>
-<li><b>HexColor</b><br/>
- 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
-</ul>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAOnOffEffect_Layer"></a>
-Layer</h3>
-<p>The layer number.</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAOnOffEffect_Name"></a>
-Name</h3>
-<p>The name of the item.</p>
-<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAOnOffEffect_ToyName"></a>
-ToyName</h3>
-<p>The name of the RGBAToy.</p>
 <h1><a class="anchor" id="use_DirectOutput_FX_TimmedFX_BlinkEffect"></a>
 BlinkEffect</h1>
 <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_BlinkEffect_summary"></a>
@@ -440,18 +598,27 @@ Sample XML</h2>
 <div class="fragment"><div class="line">&lt;BlinkEffect&gt;</div>
 <div class="line">  &lt;Name&gt;Name of BlinkEffect&lt;/Name&gt;</div>
 <div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
+<div class="line">  &lt;HighValue&gt;-1&lt;/HighValue&gt;</div>
+<div class="line">  &lt;LowValue&gt;0&lt;/LowValue&gt;</div>
 <div class="line">  &lt;DurationActiveMs&gt;500&lt;/DurationActiveMs&gt;</div>
 <div class="line">  &lt;DurationInactiveMs&gt;500&lt;/DurationInactiveMs&gt;</div>
+<div class="line">  &lt;UntriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#a68a97df787f3e896e0d45cd74acd9a21a43f6615bbb2c40a5306ff804094420b1" title="Blinking stops immediately ">Immediate</a>&lt;/UntriggerBehaviour&gt;</div>
 <div class="line">&lt;/BlinkEffect&gt;</div>
 </div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_BlinkEffect_properties"></a>
 Properties</h2>
-<p>BlinkEffect has the following 4 configurable properties:</p>
+<p>BlinkEffect has the following 7 configurable properties:</p>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_BlinkEffect_DurationActiveMs"></a>
 DurationActiveMs</h3>
 <p>The active duration of the blinking in milliseconds.</p>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_BlinkEffect_DurationInactiveMs"></a>
 DurationInactiveMs</h3>
 <p>The inactive duration of the blinking in milliseconds.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_BlinkEffect_HighValue"></a>
+HighValue</h3>
+<p>The high value for the blinking. Values between 0 and 255 define the actual values which have to be output during the on phase of the blinking. A value of -1 defines that the value which has been received by the trigger event is used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_BlinkEffect_LowValue"></a>
+LowValue</h3>
+<p>The low value for the blinking (0-255).</p>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_BlinkEffect_Name"></a>
 Name</h3>
 <p>The name of the item.</p>
@@ -459,6 +626,14 @@ Name</h3>
 TargetEffectName</h3>
 <p>Name of the target effect.<br/>
  Triggers EffectNameChanged if value is changed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_BlinkEffect_UntriggerBehaviour"></a>
+UntriggerBehaviour</h3>
+<p>The untrigger behaviour defines how the blinking stops.</p>
+<p>The property UntriggerBehaviour accepts the following values:</p>
+<ul>
+<li><b>Immediate</b>: Blinking stops immediately</li>
+<li><b>CompleteHigh</b>: Completes the high cycle of the blinking before stopping.</li>
+</ul>
 <h1><a class="anchor" id="use_DirectOutput_FX_TimmedFX_DelayEffect"></a>
 DelayEffect</h1>
 <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_DelayEffect_summary"></a>
@@ -508,7 +683,7 @@ Sample XML</h2>
 <div class="fragment"><div class="line">&lt;DurationEffect&gt;</div>
 <div class="line">  &lt;Name&gt;Name of DurationEffect&lt;/Name&gt;</div>
 <div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
-<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a6c5207cf443ef87d8b2741506936e374" title="The effect gets restarted in a retrigger situation. ">RestartEffect</a>&lt;/RetriggerBehaviour&gt;</div>
+<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a51cfbcff36da74a9fc47f3a5140f99f2" title="The effect or its behaviour gets restarted in a retrigger situation. ">Restart</a>&lt;/RetriggerBehaviour&gt;</div>
 <div class="line">  &lt;DurationMs&gt;500&lt;/DurationMs&gt;</div>
 <div class="line">&lt;/DurationEffect&gt;</div>
 </div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_DurationEffect_properties"></a>
@@ -522,17 +697,11 @@ Name</h3>
 <p>The name of the item.</p>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_DurationEffect_RetriggerBehaviour"></a>
 RetriggerBehaviour</h3>
-<p>Valid values are RestartEffect (Restarts the duration) or IgnoreRetrigger (keeps the org duration).</p>
+<p>Valid values are Restart (Restarts the duration) or Ignore (keeps the org duration).</p>
 <p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
 <ul>
-<li>IgnoreRetrigger</li>
-</ul>
-<p><b>Valid values</b></p>
-<p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
-<ul>
-<li>IgnoreRetrigger </li>
+<li><b>Restart</b>: The effect or its behaviour gets restarted in a retrigger situation.</li>
+<li><b>Ignore</b>: Retrigger calls are ignored. The effect or its behaviour is not being restarted.</li>
 </ul>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_DurationEffect_TargetEffectName"></a>
 TargetEffectName</h3>
@@ -570,6 +739,120 @@ Name</h3>
 TargetEffectName</h3>
 <p>Name of the target effect.<br/>
  Triggers EffectNameChanged if value is changed.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_TimmedFX_FadeEffect"></a>
+FadeEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_FadeEffect_summary"></a>
+Summary</h2>
+<p>This effect fades towards the value passed to the effect in the TableElementData of the trigger methods. It is calling the target effect repeatedly with the changing values.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_FadeEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for FadeEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;FadeEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of FadeEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
+<div class="line">  &lt;FadeUpDuration&gt;300&lt;/FadeUpDuration&gt;</div>
+<div class="line">  &lt;FadeDownDuration&gt;300&lt;/FadeDownDuration&gt;</div>
+<div class="line">  &lt;FadeDurationMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#ac90283c968994522a2ccf305e536be8bac4c37c03ecbfe679b1c797efca7da263" title="The duration(s) specify whoe long it will take to fade from the current value to the target value...">CurrentToTarget</a>&lt;/FadeDurationMode&gt;</div>
+<div class="line">&lt;/FadeEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_FadeEffect_properties"></a>
+Properties</h2>
+<p>FadeEffect has the following 5 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_FadeEffect_FadeDownDuration"></a>
+FadeDownDuration</h3>
+<p>The duration for the fading down.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_FadeEffect_FadeDurationMode"></a>
+FadeDurationMode</h3>
+<p>The fade duration mode.<br/>
+ Depending on the FadeDurationMode the transition from the current to the target value will use one of the duration values directly or use the duration values to determine how long it would take to fade through the whole possible value range and the effective fading duration will depend on the defference between the current and the target value.</p>
+<p>The property FadeDurationMode accepts the following values:</p>
+<ul>
+<li><b>CurrentToTarget</b>: The duration(s) specify whoe long it will take to fade from the current value to the target value.</li>
+<li><b>FullValueRange</b>: The duration(s) specify how long it would take to fade through the whole possible value range (0-255) for the target value. The effective fading duration will depend on the difference between the current and the target value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_FadeEffect_FadeUpDuration"></a>
+FadeUpDuration</h3>
+<p>The duration for fading up.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_FadeEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_FadeEffect_TargetEffectName"></a>
+TargetEffectName</h3>
+<p>Name of the target effect.<br/>
+ Triggers EffectNameChanged if value is changed.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect"></a>
+ListEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect_summary"></a>
+Summary</h2>
+<p>This effect triggers a list of other effect when it is triggered.<br/>
+</p>
+<dl class="section warning"><dt>Warning</dt><dd>Be careful not to add ListEffect objects which finnaly contain a reference to the instance you're working with. This will create a recursive loop which never exit!.</dd></dl>
+<h2><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for ListEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;ListEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of ListEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;AssignedEffects&gt;</div>
+<div class="line">    &lt;AssignedEffect&gt;</div>
+<div class="line">      &lt;EffectName&gt;Name of Effect&lt;/EffectName&gt;</div>
+<div class="line">    &lt;/AssignedEffect&gt;</div>
+<div class="line">    &lt;AssignedEffect&gt;</div>
+<div class="line">      &lt;EffectName&gt;Name of Effect&lt;/EffectName&gt;</div>
+<div class="line">    &lt;/AssignedEffect&gt;</div>
+<div class="line">    &lt;AssignedEffect&gt;</div>
+<div class="line">      &lt;EffectName&gt;Name of Effect&lt;/EffectName&gt;</div>
+<div class="line">    &lt;/AssignedEffect&gt;</div>
+<div class="line">  &lt;/AssignedEffects&gt;</div>
+<div class="line">&lt;/ListEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_ListFX_ListEffect_properties"></a>
+Properties</h2>
+<p>ListEffect has the following 2 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_ListFX_ListEffect_AssignedEffects"></a>
+AssignedEffects</h3>
+<p>The list of effects assigned to the ListEffect.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for AssignedEffects:</p>
+<ul>
+<li><b>EffectName</b><br/>
+ The name of the assigned effect.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_ListFX_ListEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MaxDurationEffect"></a>
+MaxDurationEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MaxDurationEffect_summary"></a>
+Summary</h2>
+<p>Limits the max duration of the effect to the specified number of milliseconds.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MaxDurationEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for MaxDurationEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;MaxDurationEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of MaxDurationEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
+<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a51cfbcff36da74a9fc47f3a5140f99f2" title="The effect or its behaviour gets restarted in a retrigger situation. ">Restart</a>&lt;/RetriggerBehaviour&gt;</div>
+<div class="line">  &lt;MaxDurationMs&gt;500&lt;/MaxDurationMs&gt;</div>
+<div class="line">&lt;/MaxDurationEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MaxDurationEffect_properties"></a>
+Properties</h2>
+<p>MaxDurationEffect has the following 4 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_MaxDurationEffect_MaxDurationMs"></a>
+MaxDurationMs</h3>
+<p>The max effect duration in milliseconds.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_MaxDurationEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_MaxDurationEffect_RetriggerBehaviour"></a>
+RetriggerBehaviour</h3>
+<p>Valid values are Restart (restarts the minimal duration) or Ignore (keeps the org duration).</p>
+<p>The property RetriggerBehaviour accepts the following values:</p>
+<ul>
+<li><b>Restart</b>: The effect or its behaviour gets restarted in a retrigger situation.</li>
+<li><b>Ignore</b>: Retrigger calls are ignored. The effect or its behaviour is not being restarted.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_TimmedFX_MaxDurationEffect_TargetEffectName"></a>
+TargetEffectName</h3>
+<p>Name of the target effect.<br/>
+ Triggers EffectNameChanged if value is changed.</p>
 <h1><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MinDurationEffect"></a>
 MinDurationEffect</h1>
 <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MinDurationEffect_summary"></a>
@@ -588,7 +871,7 @@ Sample XML</h2>
 <div class="fragment"><div class="line">&lt;MinDurationEffect&gt;</div>
 <div class="line">  &lt;Name&gt;Name of MinDurationEffect&lt;/Name&gt;</div>
 <div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
-<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a6c5207cf443ef87d8b2741506936e374" title="The effect gets restarted in a retrigger situation. ">RestartEffect</a>&lt;/RetriggerBehaviour&gt;</div>
+<div class="line">  &lt;RetriggerBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a054226b862ae2608983960a34302f099a51cfbcff36da74a9fc47f3a5140f99f2" title="The effect or its behaviour gets restarted in a retrigger situation. ">Restart</a>&lt;/RetriggerBehaviour&gt;</div>
 <div class="line">  &lt;MinDurationMs&gt;500&lt;/MinDurationMs&gt;</div>
 <div class="line">&lt;/MinDurationEffect&gt;</div>
 </div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_TimmedFX_MinDurationEffect_properties"></a>
@@ -602,19 +885,644 @@ Name</h3>
 <p>The name of the item.</p>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_MinDurationEffect_RetriggerBehaviour"></a>
 RetriggerBehaviour</h3>
-<p>Valid values are RestartEffect (Restarts the minimal duration) or IgnoreRetrigger (keeps the org duration).</p>
+<p>Valid values are Restart (restarts the minimal duration) or Ignore (keeps the org duration).</p>
 <p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
 <ul>
-<li>IgnoreRetrigger</li>
-</ul>
-<p><b>Valid values</b></p>
-<p>The property RetriggerBehaviour accepts the following values:</p>
-<p>RestartEffect</p>
-<ul>
-<li>IgnoreRetrigger </li>
+<li><b>Restart</b>: The effect or its behaviour gets restarted in a retrigger situation.</li>
+<li><b>Ignore</b>: Retrigger calls are ignored. The effect or its behaviour is not being restarted.</li>
 </ul>
 <h3><a class="anchor" id="DirectOutput_FX_TimmedFX_MinDurationEffect_TargetEffectName"></a>
+TargetEffectName</h3>
+<p>Name of the target effect.<br/>
+ Triggers EffectNameChanged if value is changed.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect"></a>
+NullEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect_summary"></a>
+Summary</h2>
+<p>The NullEffect is a empty effect no doing anything.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for NullEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;NullEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of NullEffect&lt;/Name&gt;</div>
+<div class="line">&lt;/NullEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_NullFX_NullEffect_properties"></a>
+Properties</h2>
+<p>NullEffect has the following 1 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_NullFX_NullEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAColorEffect"></a>
+RGBAColorEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAColorEffect_summary"></a>
+Summary</h2>
+<p>The effects sets the color of a RGBAToy based on the trigger value.</p>
+<p>Depending on the setting of the FadeMode property, the effect uses the active or inactive color or a mix of those colors.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAColorEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for RGBAColorEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;RGBAColorEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of RGBAColorEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;ActiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/ActiveColor&gt;</div>
+<div class="line">  &lt;InactiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/InactiveColor&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">&lt;/RGBAColorEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_RGBAFX_RGBAColorEffect_properties"></a>
+Properties</h2>
+<p>RGBAColorEffect has the following 6 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAColorEffect_ActiveColor"></a>
+ActiveColor</h3>
+<p>The active color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for ActiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAColorEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive color will fade depending on trigger value) or OnOff (actvice color is used for triger values &gt;0, otherwise inactive color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAColorEffect_InactiveColor"></a>
+InactiveColor</h3>
+<p>The inactive color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for InactiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAColorEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The layer number.</p>
+<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAColorEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_RGBAFX_RGBAColorEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the RGBAToy.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect"></a>
+RGBAMatrixBitmapAnimationEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_summary"></a>
+Summary</h2>
+<p>The RGBAMatrixBitmapAnimationEffect displays a anmation which is based on a image file on the defineable part of a matrix of rgb toys (e.g. adressable ledstrip).</p>
+<p>The properties of the effect allow you to specify the position, frame and size of the first image part to be displayed on the matrix. In addition you can define how the effect steps forward through the source picture for the further animation frames.</p>
+<p>To get a better idea, have a look at the following video and the picture below it.</p>
+﻿<iframe width="853" height="480" src="http://www.youtube.com/embed/rxRGvplv73k" frameborder="0" allowfullscreen></iframe>
+<div class="image">
+<img src="RGBAMatrixBitmapAnimationEffectExample.png" alt="RGBAMatrixBitmapAnimationEffectExample.png"/>
+</div>
+<p> The image above shows what DOF does for the following settings:</p>
+<ul>
+<li>AnimationStepDirection: Down</li>
+<li>AnimationStepSize:5</li>
+<li>AnimationFrameCount:116</li>
+<li>AnimationBehaviour:Loop</li>
+<li>AnimationFrameDurationMs:30</li>
+<li>BitmapTop:10</li>
+<li>BitmapLeft:0</li>
+<li>BitmapWidth:100</li>
+<li>BitmapHeight:20</li>
+<li>DataExtractMode:BlendPixels</li>
+</ul>
+<p>In this example DOF extracts a area of 20x100pixels for every frame of the animation. For every frame of the animation it steps 5 pixels down, so we slowly progress through the whole image.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for RGBAMatrixBitmapAnimationEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;RGBAMatrixBitmapAnimationEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of RGBAMatrixBitmapAnimationEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;AnimationStepDirection&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a3bb3e8c8a24891ba0f7608bcc96f8b0a" title="Animation steps though frames of the source image. ">Frame</a>&lt;/AnimationStepDirection&gt;</div>
+<div class="line">  &lt;AnimationStepSize&gt;1&lt;/AnimationStepSize&gt;</div>
+<div class="line">  &lt;AnimationFrameCount&gt;1&lt;/AnimationFrameCount&gt;</div>
+<div class="line">  &lt;AnimationBehaviour&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#ace67e1e3e60db3d3bef91fcd760a9273a89d7b10cb4238977d2b523dfd9ea7745" title="The animation restarts when it is triggered and is shown in a loop ">Loop</a>&lt;/AnimationBehaviour&gt;</div>
+<div class="line">  &lt;AnimationFrameDurationMs&gt;30&lt;/AnimationFrameDurationMs&gt;</div>
+<div class="line">  &lt;BitmapFrameNumber&gt;0&lt;/BitmapFrameNumber&gt;</div>
+<div class="line">  &lt;BitmapTop&gt;0&lt;/BitmapTop&gt;</div>
+<div class="line">  &lt;BitmapLeft&gt;0&lt;/BitmapLeft&gt;</div>
+<div class="line">  &lt;BitmapWidth&gt;-1&lt;/BitmapWidth&gt;</div>
+<div class="line">  &lt;BitmapHeight&gt;-1&lt;/BitmapHeight&gt;</div>
+<div class="line">  &lt;DataExtractMode&gt;<a class="code" href="namespace_direct_output_1_1_general_1_1_bitmap_handling.html#a671b0c984f3e1832b0fea3c72b88a8c5a1e374ae0111465886f25059c74dcc7e6">BlendPixels</a>&lt;/DataExtractMode&gt;</div>
+<div class="line">  &lt;BitmapFilePattern&gt;Pattern <span class="keywordtype">string</span>&lt;/BitmapFilePattern&gt;</div>
+<div class="line">&lt;/RGBAMatrixBitmapAnimationEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_properties"></a>
+Properties</h2>
+<p>RGBAMatrixBitmapAnimationEffect has the following 20 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationBehaviour"></a>
+AnimationBehaviour</h3>
+<p>The animation behaviour defines if a animation should run only once, run in a loop or continue at its last position when triggered.</p>
+<p>The property AnimationBehaviour accepts the following values:</p>
+<ul>
+<li><b>Continue</b>: The animation continues with the next frame when triggered and is shown in a loop</li>
+<li><b>Loop</b>: The animation restarts when it is triggered and is shown in a loop</li>
+<li><b>Once</b>: The animation restarts when it is triggered, is shown once and stops after the last frame</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationFrameCount"></a>
+AnimationFrameCount</h3>
+<p>The number of frames for the whole animation.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationFrameDurationMs"></a>
+AnimationFrameDurationMs</h3>
+<p>The animation frame duration in miliseconds. Defaults to 30ms if not set.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationStepDirection"></a>
+AnimationStepDirection</h3>
+<p>The direction in which the effect will step formward through the source image to get the next frame of the animation.</p>
+<p>The property AnimationStepDirection accepts the following values:</p>
+<ul>
+<li><b>Down</b>: Animation steps from top to bottom through the source image</li>
+<li><b>Frame</b>: Animation steps though frames of the source image.</li>
+<li><b>Right</b>: Animation steps from left to right through the source image</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_AnimationStepSize"></a>
+AnimationStepSize</h3>
+<p>Thesize of the step in pixels or frames (depending on the AnimationStepDirection) to the next frame of the animation.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapFilePattern"></a>
+BitmapFilePattern</h3>
+<p>The bitmap file pattern which is used to load the bitmap file for the effect.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for BitmapFilePattern:</p>
+<ul>
+<li><b>Pattern</b><br/>
+ The pattern used to look for files.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapFrameNumber"></a>
+BitmapFrameNumber</h3>
+<p>The number of the frame to be displayed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapHeight"></a>
+BitmapHeight</h3>
+<p>The height of the the part of the bitmap which is to be displayed. -1 selects the fully height resp. the remaining height from the BitMapTop position.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapLeft"></a>
+BitmapLeft</h3>
+<p>The left boundary in pixels of the the part of the bitmap which is to be displayed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapTop"></a>
+BitmapTop</h3>
+<p>The top of the the part of the bitmap which is to be displayed.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_BitmapWidth"></a>
+BitmapWidth</h3>
+<p>The width in pixels of the the part of the bitmap which is to be displayed. -1 selects the fully width resp. the remaining width from the BitMapLeft position.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_DataExtractMode"></a>
+DataExtractMode</h3>
+<p>The data extract mode which defines how the data is extracted from the source bitmap.</p>
+<p>The property DataExtractMode accepts the following values:</p>
+<ul>
+<li><b>SinglePixelTopLeft</b></li>
+<li><b>SinglePixelCenter</b></li>
+<li><b>BlendPixels</b></li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapAnimationEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect"></a>
+RGBAMatrixBitmapEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_summary"></a>
+Summary</h2>
+<p>The RGBAMatrixBitmapEffect displays a defined part of a bitmap on a area of a RGBAtoy Matrix.</p>
+<p>The properties of the effect allow you to select the part of the bitmap to display as well as the area of the matrix on which the bitmap is displayed. Dempending on the size of your bitmap you might choose different modes for the image extraction.</p>
+<p>The effect supports numerous imahe formats, inluding png, gif (also animated) and jpg.</p>
+<p>The image extraction takes place upon initalization of the framework. While the framework is active, it only outputs the previously extracted and scaled data to allow for better performance.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for RGBAMatrixBitmapEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;RGBAMatrixBitmapEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of RGBAMatrixBitmapEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;BitmapFrameNumber&gt;0&lt;/BitmapFrameNumber&gt;</div>
+<div class="line">  &lt;BitmapTop&gt;0&lt;/BitmapTop&gt;</div>
+<div class="line">  &lt;BitmapLeft&gt;0&lt;/BitmapLeft&gt;</div>
+<div class="line">  &lt;BitmapWidth&gt;-1&lt;/BitmapWidth&gt;</div>
+<div class="line">  &lt;BitmapHeight&gt;-1&lt;/BitmapHeight&gt;</div>
+<div class="line">  &lt;DataExtractMode&gt;<a class="code" href="namespace_direct_output_1_1_general_1_1_bitmap_handling.html#a671b0c984f3e1832b0fea3c72b88a8c5a1e374ae0111465886f25059c74dcc7e6">BlendPixels</a>&lt;/DataExtractMode&gt;</div>
+<div class="line">  &lt;BitmapFilePattern&gt;Pattern <span class="keywordtype">string</span>&lt;/BitmapFilePattern&gt;</div>
+<div class="line">&lt;/RGBAMatrixBitmapEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_properties"></a>
+Properties</h2>
+<p>RGBAMatrixBitmapEffect has the following 15 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapFilePattern"></a>
+BitmapFilePattern</h3>
+<p>The bitmap file pattern which is used to load the bitmap file for the effect.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for BitmapFilePattern:</p>
+<ul>
+<li><b>Pattern</b><br/>
+ The pattern used to look for files.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapFrameNumber"></a>
+BitmapFrameNumber</h3>
+<p>The number of the frame to be used (for animated gifs).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapHeight"></a>
+BitmapHeight</h3>
+<p>The height of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapLeft"></a>
+BitmapLeft</h3>
+<p>The left boundary of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapTop"></a>
+BitmapTop</h3>
+<p>The top of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_BitmapWidth"></a>
+BitmapWidth</h3>
+<p>The width of the the part of the bitmap which is to be used.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_DataExtractMode"></a>
+DataExtractMode</h3>
+<p>The data extract mode which defines how the data is extracted from the source bitmap.</p>
+<p>The property DataExtractMode accepts the following values:</p>
+<ul>
+<li><b>SinglePixelTopLeft</b></li>
+<li><b>SinglePixelCenter</b></li>
+<li><b>BlendPixels</b></li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixBitmapEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect"></a>
+RGBAMatrixColorEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_summary"></a>
+Summary</h2>
+<p>Sets the spefied area of matrix to the specified colors depending on the trigger value.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for RGBAMatrixColorEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;RGBAMatrixColorEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of RGBAMatrixColorEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;ActiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/ActiveColor&gt;</div>
+<div class="line">  &lt;InactiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/InactiveColor&gt;</div>
+<div class="line">&lt;/RGBAMatrixColorEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_properties"></a>
+Properties</h2>
+<p>RGBAMatrixColorEffect has the following 10 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_ActiveColor"></a>
+ActiveColor</h3>
+<p>The active color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for ActiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_InactiveColor"></a>
+InactiveColor</h3>
+<p>The inactive color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for InactiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixColorEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect"></a>
+RGBAMatrixFlickerEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_summary"></a>
+Summary</h2>
+<p>Does create random flickering with a defineable density, durations and color within the spefied area of a ledstrip.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for RGBAMatrixFlickerEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;RGBAMatrixFlickerEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of RGBAMatrixFlickerEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;Density&gt;10&lt;/Density&gt;</div>
+<div class="line">  &lt;MinFlickerDurationMs&gt;60&lt;/MinFlickerDurationMs&gt;</div>
+<div class="line">  &lt;MaxFlickerDurationMs&gt;150&lt;/MaxFlickerDurationMs&gt;</div>
+<div class="line">  &lt;ActiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/ActiveColor&gt;</div>
+<div class="line">  &lt;InactiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/InactiveColor&gt;</div>
+<div class="line">&lt;/RGBAMatrixFlickerEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_properties"></a>
+Properties</h2>
+<p>RGBAMatrixFlickerEffect has the following 13 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_ActiveColor"></a>
+ActiveColor</h3>
+<p>The active color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for ActiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Density"></a>
+Density</h3>
+<p>The density if the flickering in percent.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_InactiveColor"></a>
+InactiveColor</h3>
+<p>The inactive color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for InactiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_MaxFlickerDurationMs"></a>
+MaxFlickerDurationMs</h3>
+<p>The max duration in milliseconds for a single flicker/blink of a element.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_MinFlickerDurationMs"></a>
+MinFlickerDurationMs</h3>
+<p>The min duration in milliseconds for a single flicker/blink of a element.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixFlickerEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect"></a>
+RGBAMatrixShiftEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for RGBAMatrixShiftEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;RGBAMatrixShiftEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of RGBAMatrixShiftEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;ToyName&gt;Name of Toy&lt;/ToyName&gt;</div>
+<div class="line">  &lt;Width&gt;100&lt;/Width&gt;</div>
+<div class="line">  &lt;Height&gt;100&lt;/Height&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;0&lt;/<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a945d5e233cf7d6240f6b783b36a374ff" title="Shift left ">Left</a>&gt;</div>
+<div class="line">  &lt;Top&gt;0&lt;/Top&gt;</div>
+<div class="line">  &lt;LayerNr&gt;0&lt;/LayerNr&gt;</div>
+<div class="line">  &lt;FadeMode&gt;<a class="code" href="namespace_direct_output_1_1_f_x.html#a74112e98784e682443eb3022e7596397a04e0385c10aefee8e4681617d2f3ef40" title="Fading is enabled. ">Fade</a>&lt;/FadeMode&gt;</div>
+<div class="line">  &lt;ShiftDirection&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a92b09c7c48c520c3c55e497875da437c" title="Animation steps from left to right through the source image ">Right</a>&lt;/ShiftDirection&gt;</div>
+<div class="line">  &lt;ShiftSpeed&gt;200&lt;/ShiftSpeed&gt;</div>
+<div class="line">  &lt;ShiftAcceleration&gt;0&lt;/ShiftAcceleration&gt;</div>
+<div class="line">  &lt;ActiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/ActiveColor&gt;</div>
+<div class="line">  &lt;InactiveColor&gt;</div>
+<div class="line">    &lt;HexColor&gt;#00000000&lt;/HexColor&gt;</div>
+<div class="line">  &lt;/InactiveColor&gt;</div>
+<div class="line">&lt;/RGBAMatrixShiftEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_properties"></a>
+Properties</h2>
+<p>RGBAMatrixShiftEffect has the following 13 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ActiveColor"></a>
+ActiveColor</h3>
+<p>The active color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for ActiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_FadeMode"></a>
+FadeMode</h3>
+<p>Fade (active and inactive values/color will fade depending on trigger value) or OnOff (actvice value/color is used for trigger values &gt;0, otherwise inactive value/color will be used).</p>
+<p>The property FadeMode accepts the following values:</p>
+<ul>
+<li><b>Fade</b>: Fading is enabled.</li>
+<li><b>OnOff</b>: No fading. There will be a simple on/off behaviour depending on the triggering value.</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Height"></a>
+Height</h3>
+<p>The height in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_InactiveColor"></a>
+InactiveColor</h3>
+<p>The inactive color.</p>
+<p><b>Nested Properties</b></p>
+<p>The following nested propteries exist for InactiveColor:</p>
+<ul>
+<li><b>HexColor</b><br/>
+ 6 digit hexadecimal color code with leading #(e.g. #ff0000 for red).</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_LayerNr"></a>
+LayerNr</h3>
+<p>The number of the target layer for the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Left"></a>
+Left</h3>
+<p>The left resp. X position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ShiftAcceleration"></a>
+ShiftAcceleration</h3>
+<p>The acceleration for the shift speed in percent of the effect area per second.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ShiftDirection"></a>
+ShiftDirection</h3>
+<p>The shift direction (Left, Right, Up, Down).</p>
+<p>The property ShiftDirection accepts the following values:</p>
+<ul>
+<li><b>Down</b>: Shift down</li>
+<li><b>Left</b>: Shift left</li>
+<li><b>Right</b>: Shift right</li>
+<li><b>Up</b>: Shift up</li>
+</ul>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ShiftSpeed"></a>
+ShiftSpeed</h3>
+<p>The shift speed in percentage of the effect area (Left, Top, Width, Height properties) per second .</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Top"></a>
+Top</h3>
+<p>The top resp. Y position of the upper left corner in percent of the target area for the effect (0-100).</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_ToyName"></a>
+ToyName</h3>
+<p>The name of the toy which is controlled by the effect.</p>
+<h3><a class="anchor" id="DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_Width"></a>
+Width</h3>
+<p>The width in percent of the target area for the effect (0-100).</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_ConditionFX_TableElementConditionEffect"></a>
+TableElementConditionEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_ConditionFX_TableElementConditionEffect_summary"></a>
+Summary</h2>
+<p>This effect evaluates the condition specified in the Condition property.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_ConditionFX_TableElementConditionEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for TableElementConditionEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;TableElementConditionEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of TableElementConditionEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
+<div class="line">  &lt;<a class="code" href="namespace_direct_output_1_1_led_control_1_1_loader.html#a2e9b8a8248ba75f6df15411b7bd353ada9e2941b3c81256fac10392aaca4ccfde" title="Has a condition (e.g. (S48=1 and S49=0) ">Condition</a>&gt;<a class="code" href="namespace_direct_output_1_1_led_control_1_1_loader.html#a2e9b8a8248ba75f6df15411b7bd353ada9e2941b3c81256fac10392aaca4ccfde" title="Has a condition (e.g. (S48=1 and S49=0) ">Condition</a> <span class="keywordtype">string</span>&lt;/<a class="code" href="namespace_direct_output_1_1_led_control_1_1_loader.html#a2e9b8a8248ba75f6df15411b7bd353ada9e2941b3c81256fac10392aaca4ccfde" title="Has a condition (e.g. (S48=1 and S49=0) ">Condition</a>&gt;</div>
+<div class="line">&lt;/TableElementConditionEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_ConditionFX_TableElementConditionEffect_properties"></a>
+Properties</h2>
+<p>TableElementConditionEffect has the following 3 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_ConditionFX_TableElementConditionEffect_Condition"></a>
+Condition</h3>
+<p>The condition.</p>
+<h3><a class="anchor" id="DirectOutput_FX_ConditionFX_TableElementConditionEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_ConditionFX_TableElementConditionEffect_TargetEffectName"></a>
+TargetEffectName</h3>
+<p>Name of the target effect.<br/>
+ Triggers EffectNameChanged if value is changed.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueInvertEffect"></a>
+ValueInvertEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueInvertEffect_summary"></a>
+Summary</h2>
+<p>Inverts the trigger value of the effect before the target effect is called (e.g. 0 becomes 255, 255 becomes 0, 10 becomes 245).</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueInvertEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for ValueInvertEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;ValueInvertEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of ValueInvertEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
+<div class="line">&lt;/ValueInvertEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueInvertEffect_properties"></a>
+Properties</h2>
+<p>ValueInvertEffect has the following 2 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_ValueFX_ValueInvertEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_ValueFX_ValueInvertEffect_TargetEffectName"></a>
+TargetEffectName</h3>
+<p>Name of the target effect.<br/>
+ Triggers EffectNameChanged if value is changed.</p>
+<h1><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect"></a>
+ValueMapFullRangeEffect</h1>
+<h2><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_summary"></a>
+Summary</h2>
+<p>This effects maps the trigger value to the full range of 0 - 255. If the trigger value is 0, the mapped trigger value for the target effect is also 0. If the trigger value is &gt;0, the mapped trigger value for the target effect is 255.</p>
+<h2><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_samplexml"></a>
+Sample XML</h2>
+<p>A configuration section for ValueMapFullRangeEffect might resemble the following structure:</p>
+<div class="fragment"><div class="line">&lt;ValueMapFullRangeEffect&gt;</div>
+<div class="line">  &lt;Name&gt;Name of ValueMapFullRangeEffect&lt;/Name&gt;</div>
+<div class="line">  &lt;TargetEffectName&gt;Name of TargetEffect&lt;/TargetEffectName&gt;</div>
+<div class="line">&lt;/ValueMapFullRangeEffect&gt;</div>
+</div><!-- fragment --> <h2><a class="anchor" id="use_DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_properties"></a>
+Properties</h2>
+<p>ValueMapFullRangeEffect has the following 2 configurable properties:</p>
+<h3><a class="anchor" id="DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_Name"></a>
+Name</h3>
+<p>The name of the item.</p>
+<h3><a class="anchor" id="DirectOutput_FX_ValueFX_ValueMapFullRangeEffect_TargetEffectName"></a>
 TargetEffectName</h3>
 <p>Name of the target effect.<br/>
  Triggers EffectNameChanged if value is changed. </p>
@@ -624,7 +1532,7 @@ TargetEffectName</h3>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:46 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:53 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

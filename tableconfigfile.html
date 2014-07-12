@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('tableconfigfile.html','');});
 Introduction</h1>
 <p>The table configuration defines the table elements (e.g. solenoids or lamps), the configuration of the effects and the assigment of the effects to the table elements. The assigned effects are triggered if the value of a table element changes (typicaly when new data from Pinmame is received).</p>
 <p>In addition there is also a collection of static effects which are triggered when the framework is starting up. Use the static effects to control toys which dont have to change their state during game play (e.g. set illuminated flipper button to a specific color).</p>
-<p>The framework does also allow to mix the configuration in a table config file with configurations loaded from ledcontrol files. This will allow you to use configurations from the <a href="http://vpuniverse.com/ledwiz/login.php">LedWiz Config Tool</a> for commonly used gadgets and to supplement this with your own config.</p>
+<p>The framework does also allow to mix the configuration in a table config file with configurations loaded from ledcontrol files. This will allow you to use configurations from the <a href="http://vpuniverse.com/ledwiz/login.php">DOF Config Tool</a> for commonly used gadgets and to supplement this with your own config.</p>
 <h1><a class="anchor" id="tableconfigfile_configfilestructure"></a>
 Table config file</h1>
 <p>Table configurations are stored as XML-files. The basic structure of a table configuration file contains the following sections:</p>
@@ -145,13 +145,13 @@ Table elements section</h2>
 <div class="fragment"><div class="line">&lt;TableElement&gt;</div>
 <div class="line">  &lt;TableElementType&gt;<a class="code" href="namespace_direct_output.html#a175aa273230ef2862f0ed4e5551ceb38acd0cc31af3b532343f47d341e0489d5a" title="Solenoid. ">Solenoid</a>&lt;/TableElementType&gt;</div>
 <div class="line">  &lt;Number&gt;4&lt;/Number&gt;</div>
-<div class="line">  &lt;Name&gt;Right slingshot&lt;/Name&gt;</div>
+<div class="line">  &lt;Name&gt;<a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a92b09c7c48c520c3c55e497875da437c" title="Animation steps from left to right through the source image ">Right</a> slingshot&lt;/Name&gt;</div>
 <div class="line">  &lt;AssignedEffects&gt;</div>
 <div class="line">    &lt;AssignedEffect&gt;</div>
-<div class="line">      &lt;EffectName&gt;Fire Right Bottom Contactor&lt;/EffectName&gt;</div>
+<div class="line">      &lt;EffectName&gt;Fire <a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a92b09c7c48c520c3c55e497875da437c" title="Animation steps from left to right through the source image ">Right</a> Bottom Contactor&lt;/EffectName&gt;</div>
 <div class="line">    &lt;/AssignedEffect&gt;</div>
 <div class="line">    &lt;AssignedEffect&gt;</div>
-<div class="line">      &lt;EffectName&gt;Flash Right Backboard Led&lt;/EffectName&gt;</div>
+<div class="line">      &lt;EffectName&gt;Flash <a class="code" href="namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a92b09c7c48c520c3c55e497875da437c" title="Animation steps from left to right through the source image ">Right</a> Backboard Led&lt;/EffectName&gt;</div>
 <div class="line">    &lt;/AssignedEffect&gt;</div>
 <div class="line">  &lt;/AssignedEffects&gt;</div>
 <div class="line">&lt;/TableElement&gt;</div>
@@ -170,7 +170,7 @@ Effects section</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:45 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:52 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

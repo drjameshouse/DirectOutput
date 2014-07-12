@@ -1,13 +1,15 @@
 var searchData=
 [
   ['lamp_2ecs',['Lamp.cs',['../_lamp_8cs.html',1,'']]],
+  ['layer_2ecs',['Layer.cs',['../_layer_8cs.html',1,'']]],
+  ['layerdictionary_2ecs',['LayerDictionary.cs',['../_layer_dictionary_8cs.html',1,'']]],
   ['ledcontrol_2ecs',['LedControl.cs',['../_led_control_8cs.html',1,'']]],
   ['ledcontrolconfig_2ecs',['LedControlConfig.cs',['../_led_control_config_8cs.html',1,'']]],
   ['ledcontrolconfiglist_2ecs',['LedControlConfigList.cs',['../_led_control_config_list_8cs.html',1,'']]],
   ['ledcontrolfiletestwizard_2ecs',['LedControlFileTestWizard.cs',['../_led_control_file_test_wizard_8cs.html',1,'']]],
   ['ledcontrolfiletestwizard_2edesigner_2ecs',['LedControlFileTestWizard.Designer.cs',['../_led_control_file_test_wizard_8_designer_8cs.html',1,'']]],
-  ['ledcontrolinifile_2ecs',['LedControlIniFile.cs',['../_led_control_ini_file_8cs.html',1,'']]],
-  ['ledcontrolinifilelist_2ecs',['LedControlIniFileList.cs',['../_led_control_ini_file_list_8cs.html',1,'']]],
+  ['ledstrip_2ecs',['LedStrip.cs',['../_led_strip_8cs.html',1,'']]],
+  ['ledstripoutput_2ecs',['LedStripOutput.cs',['../_led_strip_output_8cs.html',1,'']]],
   ['ledwiz_2ecs',['LedWiz.cs',['../_led_wiz_8cs.html',1,'']]],
   ['ledwizautoconfigurator_2ecs',['LedWizAutoConfigurator.cs',['../_led_wiz_auto_configurator_8cs.html',1,'']]],
   ['ledwizequivalent_2ecs',['LedWizEquivalent.cs',['../_led_wiz_equivalent_8cs.html',1,'']]],

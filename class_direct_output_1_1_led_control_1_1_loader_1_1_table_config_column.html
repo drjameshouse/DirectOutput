@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -124,11 +124,15 @@ $(document).ready(function(){initNavTree('class_direct_output_1_1_led_control_1_
 Inheritance diagram for DirectOutput.LedControl.Loader.TableConfigColumn:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column__inherit__graph.png" border="0" usemap="#_direct_output_8_led_control_8_loader_8_table_config_column_inherit__map" alt="Inheritance graph"/></div>
+<map name="_direct_output_8_led_control_8_loader_8_table_config_column_inherit__map" id="_direct_output_8_led_control_8_loader_8_table_config_column_inherit__map">
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for DirectOutput.LedControl.Loader.TableConfigColumn:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column__coll__graph.png" border="0" usemap="#_direct_output_8_led_control_8_loader_8_table_config_column_coll__map" alt="Collaboration graph"/></div>
+<map name="_direct_output_8_led_control_8_loader_8_table_config_column_coll__map" id="_direct_output_8_led_control_8_loader_8_table_config_column_coll__map">
+</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -151,12 +155,12 @@ Properties</h2></td></tr>
 <tr class="memitem:a6e68883474f60664fa5fc3c70fd94fef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column.html#a6e68883474f60664fa5fc3c70fd94fef">FirstOutputNumber</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a6e68883474f60664fa5fc3c70fd94fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the number of the first ouput for this column.  <a href="#a6e68883474f60664fa5fc3c70fd94fef">More...</a><br/></td></tr>
 <tr class="separator:a6e68883474f60664fa5fc3c70fd94fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5119684ca34ada63f6617e8945aa032"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column.html#af5119684ca34ada63f6617e8945aa032">AnalogOutputRequired</a><code> [get]</code></td></tr>
-<tr class="memdesc:af5119684ca34ada63f6617e8945aa032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether the settings for this column require a analog output.  <a href="#af5119684ca34ada63f6617e8945aa032">More...</a><br/></td></tr>
-<tr class="separator:af5119684ca34ada63f6617e8945aa032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cb211393d5b35556fa682762b6b771"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column.html#aa3cb211393d5b35556fa682762b6b771">RequiredOutputCount</a><code> [get]</code></td></tr>
 <tr class="memdesc:aa3cb211393d5b35556fa682762b6b771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of required outputs for the column.  <a href="#aa3cb211393d5b35556fa682762b6b771">More...</a><br/></td></tr>
 <tr class="separator:aa3cb211393d5b35556fa682762b6b771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583e7430f23c5f2cefe5c2ab619d5726"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column.html#a583e7430f23c5f2cefe5c2ab619d5726">IsArea</a><code> [get]</code></td></tr>
+<tr class="memdesc:a583e7430f23c5f2cefe5c2ab619d5726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a value indicating whether any setting in the column has area values.  <a href="#a583e7430f23c5f2cefe5c2ab619d5726">More...</a><br/></td></tr>
+<tr class="separator:a583e7430f23c5f2cefe5c2ab619d5726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Column in a LedControl.ini file.<br/>
@@ -257,7 +261,7 @@ Properties</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if all settings have been parsed successfully, fals if a exception occured during parsing.</dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">System.Exception</td><td>Could not parse setting {0} in column data {1}..Build(CC, ColumnData)</td></tr>
+    <tr><td class="paramname">System.Exception</td><td>Could not parse setting {0} in column data {1}.</td></tr>
   </table>
   </dd>
 </dl>
@@ -265,29 +269,6 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="af5119684ca34ada63f6617e8945aa032"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DirectOutput.LedControl.Loader.TableConfigColumn.AnalogOutputRequired</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets a value indicating whether the settings for this column require a analog output. </p>
-<p><code>true</code> if analog output is required; otherwise, <code>false</code>. </p>
-
-</div>
-</div>
 <a class="anchor" id="a6e68883474f60664fa5fc3c70fd94fef"></a>
 <div class="memitem">
 <div class="memproto">
@@ -308,6 +289,29 @@ Properties</h2></td></tr>
 
 <p>Gets or sets the number of the first ouput for this column. </p>
 <p>The number of the first output for this column. </p>
+
+</div>
+</div>
+<a class="anchor" id="a583e7430f23c5f2cefe5c2ab619d5726"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DirectOutput.LedControl.Loader.TableConfigColumn.IsArea</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets a value indicating whether any setting in the column has area values. </p>
+<p><code>true</code> if any area settings exists is area; otherwise, <code>false</code>. </p>
 
 </div>
 </div>
@@ -367,7 +371,7 @@ Properties</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_led_control.html">LedControl</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_led_control_1_1_loader.html">Loader</a></li><li class="navelem"><a class="el" href="class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column.html">TableConfigColumn</a></li>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:48 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:58 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

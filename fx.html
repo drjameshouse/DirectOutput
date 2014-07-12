@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -140,24 +140,19 @@ Built in effects</h1>
 Custom effects</h1>
 <p>The <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework can easily be extended to support your own custom effects.</p>
 <p>All effects must implement the _IEffect__ interface so they are recognized by DOF as effects and must have a globaly unique name (not only within the namespace).</p>
-<p>There are 2 ways how new effects can be included in DOF:</p>
-<ol type="1">
-<li>Effects can be integrated into the source code of the framework. This is recommended for effects which can be of general use.</li>
-<li>Effects can be added through scripting. Script files have to reside in the correct location (see detils on global config), so DOF can detect, compile and integrate them at runtime. This is recommended for effects which are table specific or only for your private use.</li>
-</ol>
-<p>Implementation wise, both options are identical, so scripted effects can easily be integrated into DOF later on if required.</p>
+<p>Depending on the the of effect you want to create, it is best if you inherit one of the abstract effect base classes for your implementation. These base classes take care of all the basic tasks for the effects.</p>
 <h1><a class="anchor" id="fx_implementationguideline"></a>
 Implementation guidelines for effects</h1>
 <ul>
 <li>Effects have to be coded in C# (not that difficult to learn).</li>
 <li>All effects must implement the <em>IEffect</em> interface. This interface specifies some methods, properties and events which have to be implemented for every effect.</li>
-<li>Try to inherit the abstract <em>EffectBase</em> class. <em>EffectBase</em> implements the necessary Name property, the change events for the name as well as the Finish method (virtual).</li>
+<li>Try to inherit one of the abstract base classes in the FX namespace and its subnamespaces.</li>
 <li>Define a globaly unique name (not only unique within its namespace) for your effect class. This name will also be used when a config file is loaded or saved. If the name is not unique loading or saving will probably fail.</li>
 <li>Ensure that your effect class is XMLSerializable. As a rule of thumb, your class must implement a paramaterless constructor and all settings for the effect have to be available through public properties.</li>
 <li>Put your effects into a meaningfull subnamespace of the FX namespace. If no suitable subnamespace exists, create a new subnamespace.</li>
 <li>Be fault tolerant and handle all errors if necessary. In particular keep care that no exceptions are thrown, if the toy which is specified by its name in your effect is of a wrong type. If a effect throws a exception, it will get deactivated by DOF for the session.</li>
 <li>If your effect needs timed events, register for the alarm function of the <em>Alarms</em> object in the <em>Pinball</em> object if possible. This will ensure that the necessary update functions are called and at the same time make sure that no unnessecary update calls to output controllers are triggered.</li>
-<li>Make your code fast! In particular, resolve a references to toys and effects in the Init method.</li>
+<li>Make your code fast! Try to resolve as many references and precalculate as many things as possible in the Init method of the effect.</li>
 <li>Implement your own finish method, if your effect uses the <em>Alarm</em> methods of the Pinball object, to unregister all alarms that might be schedule for the effect. Finish is also a good place to get rid of all allocated resources and to unregister the effect from events it might has registered to earlier.</li>
 <li>Comment your code! At least the public methods and properties of your effect should be properly documented with XML comments. The documentation of DOF is automatically generated from the comments in the source files.</li>
 <li>to be continued..... </li>
@@ -168,7 +163,7 @@ Implementation guidelines for effects</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:46 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:53 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

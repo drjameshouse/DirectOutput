@@ -1,0 +1,11 @@
+<map id="DirectOutput.Cab.Toys.Hardware.Lamp" name="DirectOutput.Cab.Toys.Hardware.Lamp">
+<area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_analog_alpha_toy.html" title="This toy handles analog values (0&#45;255) in a layer structure including alpha value (0=completely trans..." alt="" coords="206,304,321,331"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_base_updatable.html" title="Base class for toys which need update calls to update the state of their assigned outputs..." alt="" coords="48,229,179,256"/>
+<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_toys_1_1_toy_base.html" title="Base class for IToy implementations " alt="" coords="25,155,97,181"/>
+<area shape="rect" id="node5" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node6" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="72,5,163,32"/>
+<area shape="rect" id="node7" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy.html" title="Common interface for all toy implementations. &#160;The abstract class ToyBase implements this interface..." alt="" coords="149,80,195,107"/>
+<area shape="rect" id="node8" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_toy_updatable.html" title="Interface for toys which need a update method which is used to update their outputs. " alt="" coords="123,155,227,181"/>
+<area shape="rect" id="node11" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_single_output_toy.html" title="ISingleOutputToy" alt="" coords="203,229,324,256"/>
+<area shape="rect" id="node9" href="$interface_direct_output_1_1_cab_1_1_toys_1_1_i_analog_alpha_toy.html" title="Common interface for toys supporting analog alpha layers. " alt="" coords="349,229,467,256"/>
+</map>

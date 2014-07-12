@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -151,6 +151,8 @@ Score commands</h2>
 <p>For a list and explanation of commands to set the scores, please read the section on EM tables in the helpfile of the B2S Backglass Deginer.</p>
 <h2><a class="anchor" id="tableconfig_VPEMtableelements"></a>
 Table element status updates</h2>
+<h3><a class="anchor" id="tableconfig_VPEMtableelements_basics"></a>
+The basics</h3>
 <p>Apart from initializing the most important thing for the <a class="el" href="namespace_direct_output.html">DirectOutput</a> framework is to receive updates on table element changes.</p>
 <p>To send this information to the B2S.Server and the framework, you have to use the <em>B2SSetData</em> command of the B2S.Server. This commands accepts 2 parameters:</p>
 <ul>
@@ -171,6 +173,46 @@ Table element status updates</h2>
 <div class="line">  Controller.B2SSetData 205,0</div>
 <div class="line">End Sub</div>
 </div><!-- fragment --><p>It is important, that you also send data to the B2S.Server when the table element reverts back to it original state (e.g. in the UnHit event of a switch). If you only use a single <em>B2SSetData</em> statement which always sends the same value for a element, the framework will not show any reaction, since the value does not change (<a class="el" href="namespace_direct_output.html">DirectOutput</a> reacts on value changes and NOT on the fact that data is sent).</p>
+<h3><a class="anchor" id="tableconfig_VPEMtableelements_easy"></a>
+The easy way</h3>
+<p>Arngrim has developed a more comfortable way to add the code for the status updates to EM tables.</p>
+<p>Instead of using the Controller.B2SSetData command (explained in the previous section) you might add one of the following code segments to your table script:</p>
+<p><b>Version for tables which do always use the B2S.Server</b> </p>
+<div class="fragment"><div class="line"><span class="stringliteral">&#39;*DOF method for non rom controller tables by Arngrim****************</span></div>
+<div class="line"><span class="stringliteral">&#39;</span>*******Use DOF 1**, 1 to activate a ledwiz output*******************</div>
+<div class="line"><span class="stringliteral">&#39;*******Use DOF 1**, 0 to deactivate a ledwiz output*****************</span></div>
+<div class="line"><span class="stringliteral">&#39;</span>*******Use DOF 1**, 2 to pulse a ledwiz output**********************</div>
+<div class="line">Sub DOF(dofevent, dofstate) </div>
+<div class="line"> If dofstate = 2 Then</div>
+<div class="line">  Controller.B2SSetData dofevent, 1:Controller.B2SSetData dofevent, 0</div>
+<div class="line"> Else</div>
+<div class="line">  Controller.B2SSetData dofevent, dofstate</div>
+<div class="line"> End If</div>
+<div class="line">End Sub</div>
+<div class="line">&#39;********************************************************************</div>
+</div><!-- fragment --><p><b>Version for tables which where B2S support can be turned on or off</b> Requires the variable <em>B2SOn</em> to be set to true or false to enable/disable B2S support. </p>
+<div class="fragment"><div class="line"><span class="stringliteral">&#39;*DOF method for non rom controller tables by Arngrim****************</span></div>
+<div class="line"><span class="stringliteral">&#39;</span>*******Use DOF 1**, 1 to activate a ledwiz output*******************</div>
+<div class="line"><span class="stringliteral">&#39;*******Use DOF 1**, 0 to deactivate a ledwiz output*****************</span></div>
+<div class="line"><span class="stringliteral">&#39;</span>*******Use DOF 1**, 2 to pulse a ledwiz output**********************</div>
+<div class="line">Sub DOF(dofevent, dofstate) </div>
+<div class="line"> If B2SOn=True Then</div>
+<div class="line">  If dofstate = 2 Then</div>
+<div class="line">   Controller.B2SSetData dofevent, 1:Controller.B2SSetData dofevent, 0</div>
+<div class="line">  Else</div>
+<div class="line">   Controller.B2SSetData dofevent, dofstate</div>
+<div class="line">  End If</div>
+<div class="line"> End If</div>
+<div class="line">End Sub</div>
+<div class="line">&#39;********************************************************************</div>
+</div><!-- fragment --><p>If these code segements are added, you can simplay call the command DOF to submit status updates to the Direct Output framework.</p>
+<p>You got 3 options:</p>
+<ul>
+<li><b>DOF {TableElementNumber},0</b> sends a off state for the table element to DOF.</li>
+<li><b>DOF {TableElementNumber},1</b> sends a on state for the table element to DOF.</li>
+<li><b>DOF {TableElementNumber},2</b> sends a on state, immediately followed by a off state to DOF.</li>
+</ul>
+<p>For more details on the methode please read Arngrims or post over at <a href="http://vpuniverse.com/forums/topic/1105-easy-methods-to-dof-an-original-table/">http://vpuniverse.com/forums/topic/1105-easy-methods-to-dof-an-original-table/</a></p>
 <h1><a class="anchor" id="tableconfig_nobackglass"></a>
 Tables w/o B2S.Server Backglass</h1>
 <p>There are still some tables around which dont have a backglass running with B2S.Server. If the B2S.Server is instanciated in such a table, it will normaly complain about the missing backglass file and therefore stop you from running the B2S.Server and the DirectOuput framework plugin.</p>
@@ -199,7 +241,7 @@ Error message without backglass checkbox.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:45 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:52 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

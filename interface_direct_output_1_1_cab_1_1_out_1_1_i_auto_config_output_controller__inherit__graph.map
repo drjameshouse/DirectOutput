@@ -1,4 +1,5 @@
 <map id="DirectOutput.Cab.Out.IAutoConfigOutputController" name="DirectOutput.Cab.Out.IAutoConfigOutputController">
 <area shape="rect" id="node2" href="$class_direct_output_1_1_cab_1_1_out_1_1_l_w_1_1_led_wiz_auto_configurator.html" title="This class is used to detect and configure LedWiz output controllers automatically. " alt="" coords="237,5,411,46"/>
-<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64_auto_configurator.html" title="This class detects all connected PacLed64 units and configures them. " alt="" coords="235,70,413,111"/>
+<area shape="rect" id="node3" href="$class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_drive_auto_configurator.html" title="Detectes and configures a PacDrive unit. " alt="" coords="235,70,413,111"/>
+<area shape="rect" id="node4" href="$class_direct_output_1_1_cab_1_1_out_1_1_pac_1_1_pac_led64_auto_configurator.html" title="This class detects all connected PacLed64 units and configures them. " alt="" coords="235,135,413,177"/>
 </map>

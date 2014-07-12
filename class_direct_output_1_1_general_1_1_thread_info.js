@@ -11,7 +11,6 @@ var class_direct_output_1_1_general_1_1_thread_info =
     [ "HostName", "class_direct_output_1_1_general_1_1_thread_info.html#abeca9bbbd4b794fe0efbd659c9480e81", null ],
     [ "IsAlive", "class_direct_output_1_1_general_1_1_thread_info.html#a53ddeadaeae371a1b7ee068df7a45b4e", null ],
     [ "LastHeartBeat", "class_direct_output_1_1_general_1_1_thread_info.html#a8bb0bbf1cfaca2c94c0a9faa472c3bdc", null ],
-    [ "ProcessorNumber", "class_direct_output_1_1_general_1_1_thread_info.html#af6d75076b578e615807855d05334131e", null ],
     [ "Thread", "class_direct_output_1_1_general_1_1_thread_info.html#a2c85ee3a63e38b649bb8bd13bd21ede9", null ],
     [ "ThreadName", "class_direct_output_1_1_general_1_1_thread_info.html#ab0590cbdd79889598cafafaf24407e76", null ]
 ];

@@ -30,11 +30,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="DirectOutput_Small.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="DirectOutputR2_Small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">DirectOutput
    </div>
-   <div id="projectbrief">DirectOutput framework for virtual pinball cabinets.</div>
+   <div id="projectbrief">DirectOutput framework R2 for virtual pinball cabinets.</div>
   </td>
  </tr>
  </tbody>
@@ -107,7 +107,8 @@ $(document).ready(function(){initNavTree('namespace_direct_output_1_1_f_x_1_1_ti
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Package DirectOutput.FX.TimmedFX</div>  </div>
 </div><!--header-->
@@ -137,23 +138,87 @@ Classes</h2></td></tr>
  This is done by forwarding triggers calls which are seting the effect to active directly to the target effect and delaying the forwarding of calls which set the effect to inactive by the number of milliseconds specified in DurationMs.<br/>
   <a href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_extend_duration_effect.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_fade_effect.html">FadeEffect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This effect fades towards the value passed to the effect in the TableElementData of the trigger methods. It is calling the target effect repeatedly with the changing values.  <a href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_fade_effect.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_max_duration_effect.html">MaxDurationEffect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limits the max duration of the effect to the specified number of milliseconds.  <a href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_max_duration_effect.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html">MinDurationEffect</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This effect enforces a minimum duration on the effect calls.<br/>
  Calls which are setting a effect to active (having a trigger value which is not equal 0 or null) are forwarded directly to the TargetEffect.<br/>
  Calls setting the effect to inactive (having a trigger value of 0) are only forwarded to the TargetEffect after the specified minimum duration has expired.<br/>
   <a href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_min_duration_effect.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a68a97df787f3e896e0d45cd74acd9a21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#a68a97df787f3e896e0d45cd74acd9a21">BlinkEffectUntriggerBehaviourEnum</a> { <a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#a68a97df787f3e896e0d45cd74acd9a21a43f6615bbb2c40a5306ff804094420b1">Immediate</a>, 
+<a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#a68a97df787f3e896e0d45cd74acd9a21aa1ac41d9694a5b35aac8bb5001cb62d0">CompleteHigh</a>
+ }</td></tr>
+<tr class="memdesc:a68a97df787f3e896e0d45cd74acd9a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the untrigger behaviours for the blink effect.  <a href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#a68a97df787f3e896e0d45cd74acd9a21">More...</a><br/></td></tr>
+<tr class="separator:a68a97df787f3e896e0d45cd74acd9a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90283c968994522a2ccf305e536be8b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#ac90283c968994522a2ccf305e536be8b">FadeEffectDurationModeEnum</a> { <a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#ac90283c968994522a2ccf305e536be8bac4c37c03ecbfe679b1c797efca7da263">CurrentToTarget</a>, 
+<a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#ac90283c968994522a2ccf305e536be8bafaa1001da15b0023a02ec1101877b2ba">FullValueRange</a>
+ }</td></tr>
+<tr class="memdesc:ac90283c968994522a2ccf305e536be8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options which define how the durations of the FadeEffect are used.  <a href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#ac90283c968994522a2ccf305e536be8b">More...</a><br/></td></tr>
+<tr class="separator:ac90283c968994522a2ccf305e536be8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Namespace for timmed effects (e.g. delay, duration) </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="a68a97df787f3e896e0d45cd74acd9a21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#a68a97df787f3e896e0d45cd74acd9a21">DirectOutput.FX.TimmedFX.BlinkEffectUntriggerBehaviourEnum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the untrigger behaviours for the blink effect. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a68a97df787f3e896e0d45cd74acd9a21a43f6615bbb2c40a5306ff804094420b1"></a>Immediate</em>&nbsp;</td><td class="fielddoc">
+<p>Blinking stops immediately </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a68a97df787f3e896e0d45cd74acd9a21aa1ac41d9694a5b35aac8bb5001cb62d0"></a>CompleteHigh</em>&nbsp;</td><td class="fielddoc">
+<p>Completes the high cycle of the blinking before stopping. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ac90283c968994522a2ccf305e536be8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html#ac90283c968994522a2ccf305e536be8b">DirectOutput.FX.TimmedFX.FadeEffectDurationModeEnum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Options which define how the durations of the <a class="el" href="class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_fade_effect.html" title="This effect fades towards the value passed to the effect in the TableElementData of the trigger metho...">FadeEffect</a> are used. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac90283c968994522a2ccf305e536be8bac4c37c03ecbfe679b1c797efca7da263"></a>CurrentToTarget</em>&nbsp;</td><td class="fielddoc">
+<p>The duration(s) specify whoe long it will take to fade from the current value to the target value. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ac90283c968994522a2ccf305e536be8bafaa1001da15b0023a02ec1101877b2ba"></a>FullValueRange</em>&nbsp;</td><td class="fielddoc">
+<p>The duration(s) specify how long it would take to fade through the whole possible value range (0-255) for the target value. The effective fading duration will depend on the difference between the current and the target value. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.3.1-->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_direct_output.html">DirectOutput</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_f_x.html">FX</a></li><li class="navelem"><a class="el" href="namespace_direct_output_1_1_f_x_1_1_timmed_f_x.html">TimmedFX</a></li>
-    <li class="footer">Generated on Fri Nov 1 2013 11:21:48 for DirectOutput by
+    <li class="footer">Generated on Sat Jul 12 2014 12:00:56 for DirectOutput by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

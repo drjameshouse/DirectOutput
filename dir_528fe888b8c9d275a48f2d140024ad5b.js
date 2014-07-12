@@ -29,5 +29,8 @@ var dir_528fe888b8c9d275a48f2d140024ad5b =
     ] ],
     [ "TableConfigSetting.cs", "_table_config_setting_8cs.html", [
       [ "TableConfigSetting", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting" ]
+    ] ],
+    [ "VariablesDictionary.cs", "_variables_dictionary_8cs.html", [
+      [ "VariablesDictionary", "class_direct_output_1_1_led_control_1_1_loader_1_1_variables_dictionary.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_variables_dictionary" ]
     ] ]
 ];

@@ -5,4 +5,5 @@
 <area shape="rect" id="node2" href="$class_direct_output_1_1_general_1_1_generic_1_1_named_item_base.html" title="Abstract base class for named items. &#160;Implements the name property and the necessary events..." alt="" coords="145,52,263,79"/>
 <area shape="rect" id="node3" href="$interface_direct_output_1_1_general_1_1_generic_1_1_i_named_item.html" title="Interface for items which can be added the the NamedItemList. " alt="" coords="5,77,96,104"/>
 <area shape="rect" id="node4" href="$interface_direct_output_1_1_cab_1_1_out_1_1_i_output.html" title="Common interface for outputs of any output controller. The Output class implements this interface and..." alt="" coords="172,103,236,129"/>
+<area shape="rect" id="node8" href="$class_direct_output_1_1_cab_1_1_out_1_1_adressable_led_strip_1_1_led_strip_output.html" title="A simple wrapper for the OutputNumbered class. This might be replaced with some more sophisticated so..." alt="" coords="792,135,1008,177"/>
 </map>
