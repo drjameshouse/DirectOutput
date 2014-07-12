@@ -673,7 +673,7 @@ var NAVTREE =
       [ "Documentation", "downloads.html#downloads_docu", null ],
       [ "Table config files", "downloads.html#downloads_config", null ]
     ] ],
-    [ "History", "_history.html", null ],
+    [ "DOF History", "dofhistory.html", null ],
     [ "Credits", "md_90__credits.html", null ],
     [ "About and Copyright", "md_99__mainpage_and_about.html", null ],
     [ "Packages", null, [
@@ -711,13 +711,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_adressable_led_strip_8cs.html",
-"_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024a25ee1f95f5657c5eed1e5c0c3a5f03b4",
-"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a2934928efb6b016ccdd2226972d4aa74",
-"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i_1_1_f_t___x_s_e_r_i_e_s___c_b_u_s___o_p_t_i_o_n_s.html#a2c0a1805108648f8850dec5ce3bd69af",
-"class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html#aad21f96831beeb1d515450aa782e6a48",
-"class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_fade_effect.html#ad7fd69aa07f31fe06e782615929108c6",
-"class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#a1ad1eab8e3866fed33c9144c1dcf6512",
-"class_direct_output_1_1_table_1_1_table.html#acce9bcb673641b708c7ab0397e57eed1",
+"_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024a47e8c15d6cfb933d1b6526c645d3a9c8",
+"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a2cb20cdf9d8a5e22e7bcafb34362e41d",
+"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i_1_1_f_t___x_s_e_r_i_e_s___c_b_u_s___o_p_t_i_o_n_s.html#a2f5528d207713911984189be048fc8c2",
+"class_direct_output_1_1_cab_1_1_toys_1_1_layer_1_1_r_g_b_a_toy.html#aae14e44da03121351e99e88499aab6a5",
+"class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_fade_effect.html#aef95eb582db61db65cacbd3213668eaa",
+"class_direct_output_1_1_general_1_1_generic_1_1_validate_item_event_args_3_01_ty_01_4.html#ada402fefd4a225b5f1cc1c28aa9c2f76",
+"class_direct_output_1_1_table_1_1_table.html#acf7aba6a1b8e0a28aa8ba5daa955b8a1",
 "fx.html#fx_customeffects",
 "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_samplexml",
 "outputcontrollers.html"

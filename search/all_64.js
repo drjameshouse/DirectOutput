@@ -36,6 +36,7 @@ var searchData=
   ['dmxoutput',['DMXOutput',['../class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_d_m_x_output.html',1,'DirectOutput::Cab::Out::DMX']]],
   ['dmxoutput_2ecs',['DMXOutput.cs',['../_d_m_x_output_8cs.html',1,'']]],
   ['documentationhelper',['DocumentationHelper',['../namespace_documentation_helper.html',1,'']]],
+  ['dof_20history',['DOF History',['../dofhistory.html',1,'']]],
   ['dontaddifmissing',['DontAddIfMissing',['../class_direct_output_1_1_general_1_1_bitmap_handling_1_1_fast_image_list.html#a01508ec96a63004288c882a3955acf27',1,'DirectOutput::General::BitmapHandling::FastImageList']]],
   ['doubleextensions_2ecs',['DoubleExtensions.cs',['../_double_extensions_8cs.html',1,'']]],
   ['down',['Down',['../namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#aa593095e69be281449b3010cc96e1d64a08a38277b0309070706f6652eeae9a53',1,'DirectOutput.FX.MatrixFX.Down()'],['../namespace_direct_output_1_1_f_x_1_1_matrix_f_x.html#a144d40643f81f6fa05e7eee2ca1513b1a08a38277b0309070706f6652eeae9a53',1,'DirectOutput.FX.MatrixFX.Down()']]],

@@ -7,6 +7,5 @@ var searchData=
   ['hexcolor',['HexColor',['../class_direct_output_1_1_general_1_1_color_1_1_r_g_b_a_color.html#a59a3f10ed3b1d979c733d803bd364af6',1,'DirectOutput.General.Color.RGBAColor.HexColor()'],['../class_direct_output_1_1_general_1_1_color_1_1_r_g_b_color.html#a758c9a7be1d734e1a8f3cb829833a958',1,'DirectOutput.General.Color.RGBColor.HexColor()']]],
   ['highdriveios',['HighDriveIOs',['../class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i_1_1_f_t232_r___e_e_p_r_o_m___s_t_r_u_c_t_u_r_e.html#a5b204ffdfac0a672cb9a477813910895',1,'DirectOutput::Cab::Out::FTDIChip::FTDI::FT232R_EEPROM_STRUCTURE']]],
   ['highvalue',['HighValue',['../class_direct_output_1_1_f_x_1_1_timmed_f_x_1_1_blink_effect.html#a3a968cdf752b64b5b6fc39b3e89031cf',1,'DirectOutput::FX::TimmedFX::BlinkEffect']]],
-  ['history',['History',['../_history.html',1,'']]],
   ['hostname',['HostName',['../class_direct_output_1_1_general_1_1_thread_info.html#abeca9bbbd4b794fe0efbd659c9480e81',1,'DirectOutput::General::ThreadInfo']]]
 ];

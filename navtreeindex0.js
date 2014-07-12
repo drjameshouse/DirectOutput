@@ -106,7 +106,6 @@ var NAVTREEINDEX0 =
 "_global_config_editor_2_properties_2_resources_8_designer_8cs.html":[24,0,4,0,1],
 "_global_config_editor_2_properties_2_settings_8_designer_8cs.html":[24,0,4,0,2],
 "_hardware_8cs.html":[24,0,1,0,1,0,1],
-"_history.html":[19],
 "_i_analog_alpha_toy_8cs.html":[24,0,1,0,1,4],
 "_i_auto_config_output_controller_8cs.html":[24,0,1,0,0,6],
 "_i_effect_8cs.html":[24,0,1,3,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "_string_extensions_8cs.html":[24,0,1,1,8],
 "_strip_arrangement_enum_8cs.html":[24,0,1,0,1,1,8],
 "_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024":[24,0,1,0,1,1,8,0],
-"_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024a01187f589e2f2da27836693d46c545b5":[24,0,1,0,1,1,8,0,8]
+"_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024a01187f589e2f2da27836693d46c545b5":[24,0,1,0,1,1,8,0,8],
+"_strip_arrangement_enum_8cs.html#adb2af1c5f222fde86a74579aa8364024a25ee1f95f5657c5eed1e5c0c3a5f03b4":[24,0,1,0,1,1,8,0,6]
 };
