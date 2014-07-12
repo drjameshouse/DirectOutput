@@ -9,5 +9,6 @@ var namespace_direct_output_1_1_led_control_1_1_loader =
     [ "TableConfigColumnList", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column_list.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_column_list" ],
     [ "TableConfigList", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_list.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_list" ],
     [ "TableConfigSetting", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_config_setting" ],
+    [ "TableVariablesDictionary", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_variables_dictionary.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_variables_dictionary" ],
     [ "VariablesDictionary", "class_direct_output_1_1_led_control_1_1_loader_1_1_variables_dictionary.html", "class_direct_output_1_1_led_control_1_1_loader_1_1_variables_dictionary" ]
 ];

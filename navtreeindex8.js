@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"fx.html#fx_customeffects":[9,3],
+"fx.html#fx_implementationguideline":[9,4],
+"fx.html#fx_introduction":[9,0],
+"fx.html#fx_stacking":[9,1],
 "fx_builtin.html":[10],
 "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_ActiveValue":[10,5,2,0],
 "fx_builtin.html#DirectOutput_FX_AnalogToyFX_AnalogToyValueEffect_FadeMode":[10,5,2,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_properties":[10,20,1],
 "fx_builtin.html#use_DirectOutput_FX_MatrixFX_RGBAMatrixShiftEffect_samplexml":[10,20,0],
 "fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect":[10,14],
-"fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_properties":[10,14,2],
-"fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_samplexml":[10,14,1],
-"fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_summary":[10,14,0],
-"fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect":[10,15],
-"fx_builtin.html#use_DirectOutput_FX_RGBAFX_RGBAColorEffect_properties":[10,15,2]
+"fx_builtin.html#use_DirectOutput_FX_NullFX_NullEffect_properties":[10,14,2]
 };

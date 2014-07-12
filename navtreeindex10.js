@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"outputcontrollers.html":[13],
+"outputcontrollers.html#outputcontrollers_builtincontrollers":[13,1],
+"outputcontrollers.html#outputcontrollers_implementationguideline":[13,1,1],
+"outputcontrollers.html#outputcontrollers_interfaces":[13,1,0],
 "outputcontrollers.html#outputcontrollers_introduction":[13,0],
 "outputcontrollers.html#outputcontrollers_ioutput":[13,1,0,1],
 "outputcontrollers.html#outputcontrollers_ioutputcontroller":[13,1,0,0],

@@ -15,6 +15,7 @@ var searchData=
   ['tableelementvaluechangedeventargs_2ecs',['TableElementValueChangedEventArgs.cs',['../_table_element_value_changed_event_args_8cs.html',1,'']]],
   ['tableinfo_2ecs',['TableInfo.cs',['../_table_info_8cs.html',1,'']]],
   ['tableinfo_2edesigner_2ecs',['TableInfo.Designer.cs',['../_table_info_8_designer_8cs.html',1,'']]],
+  ['tablevariablesdictionary_2ecs',['TableVariablesDictionary.cs',['../_table_variables_dictionary_8cs.html',1,'']]],
   ['threadinfo_2ecs',['ThreadInfo.cs',['../_thread_info_8cs.html',1,'']]],
   ['threadinfolist_2ecs',['ThreadInfoList.cs',['../_thread_info_list_8cs.html',1,'']]],
   ['timespanextensions_2ecs',['TimeSpanExtensions.cs',['../_time_span_extensions_8cs.html',1,'']]],

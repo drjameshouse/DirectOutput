@@ -12,6 +12,9 @@ var hierarchy =
     [ "Dictionary< string, string >", null, [
       [ "DirectOutput.LedControl.Loader.VariablesDictionary", "class_direct_output_1_1_led_control_1_1_loader_1_1_variables_dictionary.html", null ]
     ] ],
+    [ "Dictionary< string, VariablesDictionary >", null, [
+      [ "DirectOutput.LedControl.Loader.TableVariablesDictionary", "class_direct_output_1_1_led_control_1_1_loader_1_1_table_variables_dictionary.html", null ]
+    ] ],
     [ "DirectOutput.Cab.Out.DMX.ArtnetEngine.Engine", "class_direct_output_1_1_cab_1_1_out_1_1_d_m_x_1_1_artnet_engine_1_1_engine.html", null ],
     [ "EventArgs", null, [
       [ "DirectOutput.Cab.Out.OutputEventArgs", "class_direct_output_1_1_cab_1_1_out_1_1_output_event_args.html", null ],

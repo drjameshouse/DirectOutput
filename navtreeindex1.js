@@ -49,6 +49,7 @@ var NAVTREEINDEX1 =
 "_table_element_value_changed_event_args_8cs.html":[24,0,1,9,6],
 "_table_info_8_designer_8cs.html":[24,0,1,2,11],
 "_table_info_8cs.html":[24,0,1,2,10],
+"_table_variables_dictionary_8cs.html":[24,0,1,6,0,12],
 "_thread_info_8cs.html":[24,0,1,4,12],
 "_thread_info_list_8cs.html":[24,0,1,4,13],
 "_time_span_extensions_8cs.html":[24,0,1,1,9],
@@ -76,7 +77,7 @@ var NAVTREEINDEX1 =
 "_value_f_x_8cs.html":[24,0,1,3,7,0],
 "_value_invert_effect_8cs.html":[24,0,1,3,7,1],
 "_value_map_full_range_effect_8cs.html":[24,0,1,3,7,2],
-"_variables_dictionary_8cs.html":[24,0,1,6,0,12],
+"_variables_dictionary_8cs.html":[24,0,1,6,0,13],
 "_virtual_8cs.html":[24,0,1,0,1,3,3],
 "_w_s2811_strip_controller_8cs.html":[24,0,1,0,0,0,2],
 "_w_s2811_strip_controller_api_8cs.html":[24,0,1,0,0,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25":[23,0,1,0,0,2,1,25],
 "class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a00c9ff148751d1e44d6d904043f01776":[23,0,1,0,0,2,1,25,15],
 "class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a0194e414d359539c11196a6479366791":[23,0,1,0,0,2,1,25,1],
-"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a1e0cdaa04c44be619e70da40e360ee3d":[23,0,1,0,0,2,1,25,6],
-"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a2934928efb6b016ccdd2226972d4aa74":[23,0,1,0,0,2,1,25,17]
+"class_direct_output_1_1_cab_1_1_out_1_1_f_t_d_i_chip_1_1_f_t_d_i.html#acf9fe898665ffb4dfee9eb52b06acc25a1e0cdaa04c44be619e70da40e360ee3d":[23,0,1,0,0,2,1,25,6]
 };
