@@ -183,21 +183,17 @@
     <Error Condition="!Exists('..\packages\Costura.Fody.3.1.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.3.1.0\build\Costura.Fody.targets'))" />
     <Error Condition="!Exists('..\packages\Fody.3.1.7\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.1.7\build\Fody.targets'))" />
   </Target>
+  <Target Name="AfterBuild">
+	<PropertyGroup>
+	  <ErrorText>This project requires the use of vcvarsall.bat so it can call tlbexp.exe.  Please verify it exists in a path such as 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxiliary\Build\vcvarsall.bat'.</ErrorText>
+	</PropertyGroup>
+	<Error Condition="!Exists('$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat')" Text="$(ErrorText)" />
+	<Exec Command="&quot;$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat&quot; x86
+				    tlbexp.exe &quot;$(TargetPath)&quot; /out:&quot;$(TargetDir)$(TargetName).tlb&quot;" />
+  </Target>
   <Import Project="..\packages\Fody.3.1.7\build\Fody.targets" Condition="Exists('..\packages\Fody.3.1.7\build\Fody.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>if exist "$(SolutionDir)tlbexp.exe" (
-      "$(SolutionDir)tlbexp" "$(TargetPath)" /out:"$(TargetDir)$(TargetName).tlb"
-) else (
-  where /q tlbexp
-  if not errorlevel 1 (
-      tlbexp "$(TargetPath)" /out:"$(TargetDir)$(TargetName).tlb"
-  ) else (
-     echo **** ERROR: Some additional build system setup is required
-     echo Please find a copy of tlbexp.exe and copy it into a location on your PATH, or
-     echo directly in $(SolutionDir)
-     echo This tool is normally found in the Windows SDK.
-  )
-)
+    <PostBuildEvent>
 </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -205,6 +201,5 @@
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
-  </Target>
   -->
 </Project>
