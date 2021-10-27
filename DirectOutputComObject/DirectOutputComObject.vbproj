@@ -13,7 +13,7 @@
     <AssemblyName>DirectOutputComObject</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -123,6 +123,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -184,17 +185,16 @@
     <Error Condition="!Exists('..\packages\Fody.3.1.7\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.1.7\build\Fody.targets'))" />
   </Target>
   <Target Name="AfterBuild">
-	<PropertyGroup>
-	  <ErrorText>This project requires the use of vcvarsall.bat so it can call tlbexp.exe.  Please verify it exists in a path such as 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxiliary\Build\vcvarsall.bat'.</ErrorText>
-	</PropertyGroup>
-	<Error Condition="!Exists('$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat')" Text="$(ErrorText)" />
-	<Exec Command="&quot;$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat&quot; x86
-				    tlbexp.exe &quot;$(TargetPath)&quot; /out:&quot;$(TargetDir)$(TargetName).tlb&quot;" />
+    <PropertyGroup>
+      <ErrorText>This project requires the use of vcvarsall.bat so it can call tlbexp.exe.  Please verify it exists in a path such as 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxiliary\Build\vcvarsall.bat'.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat')" Text="$(ErrorText)" />
+    <Exec Command="&quot;$(DevEnvDir)..\..\VC\Auxiliary\Build\vcvarsall.bat&quot; x86&#xD;&#xA;				    tlbexp.exe &quot;$(TargetPath)&quot; /out:&quot;$(TargetDir)$(TargetName).tlb&quot;" />
   </Target>
   <Import Project="..\packages\Fody.3.1.7\build\Fody.targets" Condition="Exists('..\packages\Fody.3.1.7\build\Fody.targets')" />
   <PropertyGroup>
     <PostBuildEvent>
-</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
