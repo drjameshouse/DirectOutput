@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using Microsoft.Deployment.WindowsInstaller;
 using System.Text.RegularExpressions;
 using System.Reflection;
-using System.Xml;
 using System.IO;
+using System.Xml;
+using System.Xml.Linq;
 using Microsoft.Win32;
 using IWshRuntimeLibrary;
 
@@ -107,44 +107,41 @@ namespace DOFSetupB2SFixup
                        + exc.Message + ".)");
                 }
 
-                // Fix up B2STableSettings.xml to turn off "backglass not found" error
-                // messages.  A table might want to load B2S.Server as the controller 
-                // even if it doesn't have a backglass to display, purely for DOF access.
-                session.Log("Turning off B2S \"missing backglass\" load error (in B2STableSettings.xml)");
-                String settingsFile = Path.Combine(path, "B2STableSettings.xml");
+                
+                
+                var settingsFile = Path.Combine(path, "B2STableSettings.xml");
                 try
                 {
-                    // load the file
-                    XmlDocument doc = new XmlDocument();
-                    doc.Load(settingsFile);
+                    var document = System.IO.File.Exists(settingsFile) ? XDocument.Load(settingsFile) : new XDocument();
+                    var root = document.GetOrCreateElement("B2STableSettings");
 
-                    // make sure we have a valid root node
-                    XmlNode rootNode = doc.DocumentElement.SelectSingleNode("/B2STableSettings");
-                    if (rootNode != null)
+                    // Fix up B2STableSettings.xml to turn off "backglass not found" error
+                    // messages.  A table might want to load B2S.Server as the controller 
+                    // even if it doesn't have a backglass to display, purely for DOF access.
+                    session.Log("Turning off B2S \"missing backglass\" load error (in B2STableSettings.xml)");
+                    var node = root.GetOrCreateElement("ShowStartupError");
+                    node.Value = "0";
+
+                    // Also activate plugins in B2STableSettings.xml
+                    var pluginsNode = root.GetOrCreateElement("ArePluginsOn");
+                    session.Log("Activating B2S plugins \"ArePluginsOn\" (in B2STableSettings.xml)");
+                    pluginsNode.Value = "1";
+
+                    var settings = new XmlWriterSettings {OmitXmlDeclaration = true, Indent = true};
+                    using (var writer = XmlWriter.Create(settingsFile, settings))
                     {
-                        // find ShowStartUpError
-                        XmlNode errNode = rootNode.SelectSingleNode("/B2STableSettings/ShowStartupError");
-
-                        // if it doesn't exist, add it
-                        if (errNode == null)
-                            errNode = rootNode.AppendChild(doc.CreateElement("ShowStartupError"));
-
-                        // fix it up
-                        errNode.InnerText = "0";
-
-                        // save the file
-                        doc.Save(settingsFile);
+                        document.Save(writer);
                     }
                 }
                 catch (Exception exc)
                 {
                     errors.Add("Setup was unable to update the B2S settings file to disable "
-                        + "errors on startup when backglasses are missing.  This is optional, "
-                        + "but recommended, since it remove unneeded error messages if you "
-                        + "run a DirectOutput-enabled table that doesn't have a backglass "
-                        + "installed.  You can update the setting manually if you wish; see "
-                        + "the DirectOutput documentation for help.  (This happened while "
-                        + "attempting to update \"" + settingsFile + "\"; system error "
+                        + "errors on startup when backglasses are missing or activate plugins." 
+                        + "  These are optional, but recommended, since it removes unneeded error" 
+                        + " messages if you run a DirectOutput-enabled table that doesn't have a backglass " 
+                        + "installed and allows DirectOutput to run automatically.  You can update " 
+                        + "the settings manually if you wish; see the DirectOutput documentation for help. "
+                        + "  (This happened while attempting to update \"" + settingsFile + "\"; system error "
                         + "details: " + exc.Message + ".)");
                 }
             }
@@ -164,5 +161,27 @@ namespace DOFSetupB2SFixup
 
             return ActionResult.Success;
         }
+    }
+
+    public static class XmlExtensions
+    {
+        
+        public static XElement GetOrCreateElement(this XContainer source, string name, string value = null)
+        {
+            if (source == null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            var element = source.Element(name);
+            if (element == null)
+            {
+                element = value == null ? new XElement(name) : new XElement(name, value);
+                source.Add(element);
+            }
+
+            return element;
+        }
+
     }
 }
